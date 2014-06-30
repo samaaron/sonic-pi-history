@@ -6,7 +6,7 @@ rate_mul = 1.0 / rate
 
 define :basic_drum do
   use_bpm 60
-  sample :drum_heavy_kick
+  #sample :drum_heavy_kick
   sleep 0.5
 end
 
