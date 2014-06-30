@@ -1,5 +1,5 @@
 
-use_synth :prophet
+use_synth :dsaw
 use_bpm 30
 rate = 0.7
 rate_mul = 1.0 / rate
