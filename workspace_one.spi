@@ -12,7 +12,7 @@ define :play_note do
     use_transpose 0
     play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5
     use_synth :zawa
-    play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose + 24 , pan: -1, cutoff: rrand(80, 120), amp: 0.5      
+    play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose + 24 , pan: 0, cutoff: rrand(80, 120), amp: 0.5      
     sleep [0.25, 0.5, 0.5, 0.5, 1, 0.25, 0.5, 2].choose * rate_mul
   end
 end
