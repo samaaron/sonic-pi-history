@@ -1,4 +1,5 @@
 # Welcome to Sonic Pi v2.0
+use_synth :tb303
 loop do
   play :C8 if rand < 0.5
   sleep 0.5
