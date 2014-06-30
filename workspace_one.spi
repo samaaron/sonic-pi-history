@@ -16,12 +16,7 @@ define :play_note do
     play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose + -12 , pan: 0, cutoff: rrand(80, 120), amp: 0.5
     sleep [0.25, 0.5, 0.5, 0.5, 1, 0.25, 0.5, 2].choose * rate_mul
   end
-  in_thread(name: drum) do
-    loop do
-      sample :drum_heavy_kick
-      sleep 0.25
-    end
-  end
+  
 end
 
 
