@@ -4,7 +4,7 @@ sd = sample_duration :loop_amen
 with_fx :distortion do
   with_fx :reverb do
     loop do
-      with_fx :slicer, rate: 8.0 / sd do
+      with_fx :slicer, rate: 4.0 / sd do
         sample :bass_dnb_f
       end
       sample :loop_amen, rate: [0.5, 1, 1, -1].choose
