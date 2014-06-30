@@ -3,3 +3,5 @@
 play :C8
 sleep 0.5
 play :E7
+sleep 0.25
+play :F5
