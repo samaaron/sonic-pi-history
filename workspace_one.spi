@@ -8,7 +8,7 @@ define :play_note do
 
   with_fx(:echo, delay: [0.125, 0.25, 0.5].choose * rate_mul, decay: 4) do
     use_bpm 240
-    use_synth_defaults decay: 0.2
+    use_synth_defaults release: 0.2
     use_transpose 24
     play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5, attack: 0, release: 2
     sleep [0.25, 0.5, 0.5, 0.5].choose * rate_mul
