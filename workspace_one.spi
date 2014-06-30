@@ -5,7 +5,7 @@ rate = 0.7
 rate_mul = 1.0 / rate
 
 define :play_note do
-  sample :elec_blip, rate: 0.25
+  sample :drum_bass_hard
   use_synth :saw
   with_fx(:echo, delay: [0.125 / 2.0, 0.125, 0.25, 0.5, 1].choose * rate_mul, decay: 3.5) do
     use_bpm 240
