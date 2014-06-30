@@ -15,7 +15,7 @@ define :play_note do
   use_synth :saw
   with_fx(:echo, delay: [0.125, 0.25, 0.5, 1].choose * rate_mul, decay: 3.5) do
     use_bpm 240
-    use_synth_defaults release: 0.1, attack: [0, 0].choose
+    use_synth_defaults release: 0.1, attack: [0.1, 0].choose
     use_transpose 0
     play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5
     use_synth :zawa
