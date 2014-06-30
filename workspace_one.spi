@@ -13,7 +13,4 @@ end
 
 
 
-loop do
-  play_note
-
-end
+#loop {  play_note}
