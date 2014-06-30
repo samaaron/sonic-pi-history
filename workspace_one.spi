@@ -6,7 +6,7 @@ rate_mul = 1.0 / rate
 
 define :play_note do
 
-  with_fx(:echo, delay: [0.125, 0.25, 0.5].choose * rate_mul, decay: 4) do
+  with_fx(:echo, delay: [0.125, 0.25, 0.5].choose * rate_mul, decay: 1) do
     use_bpm 240
     use_synth_defaults release: 0.2, attack: 0
     use_transpose 24
