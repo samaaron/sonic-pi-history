@@ -6,5 +6,5 @@ with_fx(:rlpf, cutoff: 10, cutoff_slide: 20) do |c|
     sleep sample_duration :loop_amen
     control c, cutoff: rrand(40, 120), cutoff_slide: rrand(1, 20)
   end
-end
  
+end
