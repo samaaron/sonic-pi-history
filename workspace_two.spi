@@ -1,10 +1,10 @@
 # Welcome to Sonic Pi v2.0
 use_synth :tb303
 loop do
-  play :C8 if rand < 0.5
+  play :C5 if rand < 0.5
   sleep 0.5
-  play :E7
+  play :E4
   sleep 0.25
-  play :F5
+  play :F3
   sleep 0.25
 end
