@@ -6,7 +6,7 @@ rate_mul = 1.0 / rate
 
 define :play_note do
   use_synth :tb303
-  with_fx(:echo, delay: [0.125, 0.25, 0.5, 1].choose * rate_mul, decay: 10.5) do
+  with_fx(:echo, delay: [0.125, 0.25, 0.5, 1].choose * rate_mul, decay: 3.5) do
     use_bpm 120
     use_synth_defaults release: 0.1, attack: 0
     use_transpose 0
