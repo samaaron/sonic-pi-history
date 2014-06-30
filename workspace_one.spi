@@ -32,5 +32,10 @@ end
 
 
 
+in_thread do
+  loop do
+    basic_drum
+  end
 
-#loop {  play_note}
+end
+loop {  play_note}
