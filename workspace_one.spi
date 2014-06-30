@@ -5,6 +5,7 @@ rate = 0.7
 rate_mul = 1.0 / rate
 
 define :basic_drum do
+use_bpm 240
   sample :drum_heavy_kick
   sleep 0.5
 end
@@ -21,11 +22,11 @@ define :play_note do
     play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose + -12 , pan: 0, cutoff: rrand(80, 120), amp: 0.5
     sleep [0.25, 0.5, 0.5, 0.5, 1, 0.25, 0.5, 2].choose * rate_mul
   end
-  in_thread(name: :drum) do
-    loop do
-      basic_drum
-    end
-  end
+
+
+
+
+
 end
 
 
