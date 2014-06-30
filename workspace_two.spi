@@ -1,3 +1,5 @@
 # Welcome to Sonic Pi v2.0
 
 play :C8
+sleep 0.5
+play :E7
