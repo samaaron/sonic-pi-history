@@ -5,7 +5,7 @@ rate = 0.7
 rate_mul = 1.0 / rate
 
 define :basic_drum do
-  use_bpm 60
+  use_bpm 120
   sample :drum_heavy_kick
   sleep 0.5
 end
@@ -32,10 +32,5 @@ end
 
 
 
-in_thread do
-  loop do
-    basic_drum
-  end
 
-end
-loop {  play_note}
+#loop {  play_note}
