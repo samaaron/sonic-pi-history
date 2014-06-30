@@ -2,7 +2,9 @@
 with_fx :distortion do
   with_fx :reverb do
     loop do
-      sample :bass_dnb_f
+      with_fx :slicer do
+        sample :bass_dnb_f
+      end
       sample :loop_amen, rate: [0.5, 1, 1, -1].choose
       sleep sample_duration :loop_amen
 
