@@ -1,7 +1,7 @@
 # Welcome to Sonic Pi v2.0
 sd = sample_duration :loop_amen
 
-with_fx :distortion do
+with_fx :distortion, distort: 0.9 do
   with_fx :reverb do
     loop do
       with_fx :slicer, rate: 16.0 / sd do
