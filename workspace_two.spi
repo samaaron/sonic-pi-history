@@ -1,2 +1,2 @@
 # Welcome to Sonic Pi v2.0
-sample :loop_amen
+sample :loop_amen, rate: 0.5
