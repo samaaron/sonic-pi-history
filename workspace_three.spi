@@ -1,2 +1,2 @@
 use_synth :dsaw
-play 50, detune: 3
+play 50, detune: 12
