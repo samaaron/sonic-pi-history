@@ -1,7 +1,7 @@
 # Welcome to Sonic Pi v2.0
 
 define :n do
-  :a3
+  :e3
 end
 
 in_thread(name: :foo) do
