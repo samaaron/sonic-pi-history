@@ -2,8 +2,8 @@
 
 in_thread do
   loop do
-  use_synth :fm
-    play 60, release: 2
+    use_synth :fm
+    play 60, release: 0.5
     sleep 1
   end
 end
