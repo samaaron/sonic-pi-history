@@ -1,4 +1,5 @@
 use_bpm 120
+use_synth :dsaw
 loop do
   play 60
   sleep 1
