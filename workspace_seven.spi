@@ -2,7 +2,7 @@
 
 in_thread do
   loop do
-    play 50, release: 2
+    play 60, release: 2
     sleep 1
   end
 end
