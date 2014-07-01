@@ -1,2 +1,2 @@
-use_synth :saw
+use_synth :dsaw
 play 50
