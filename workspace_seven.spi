@@ -2,5 +2,7 @@
 
 
 with_fx :reverb do
-  sample :loop_industrial
+  in_thread do
+    sample :loop_industrial
+  end
 end
