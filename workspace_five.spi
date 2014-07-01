@@ -1,5 +1,5 @@
 use_bpm 120
-use_synth :dsaw
+use_synth :prophet
 loop do
   play 60
   sleep 1
