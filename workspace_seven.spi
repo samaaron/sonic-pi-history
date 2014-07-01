@@ -1,5 +1,10 @@
 use_synth :dsaw
 
+define :n do
+  :c
+end
+
+
 loop do
   scale(:c, :minor_pentatonic, num_octaves: 3).each do |n|
     play n + 50, cutoff: rrand(50, 100), release: 0.1, attack: 0
