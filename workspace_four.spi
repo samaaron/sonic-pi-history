@@ -16,7 +16,7 @@ with_fx :echo, decay: 1, delay: 0.125 do
   play 33
   sleep 0.25
   play 38
-  sleep 0.125
+  sleep 0.25
   end
 end
 
