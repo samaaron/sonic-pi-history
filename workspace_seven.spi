@@ -3,7 +3,7 @@
 in_thread do
   loop do
     use_synth :fm
-    play :e2, release: 0.5
+    play :e3, release: 0.5
     sleep 1
   end
 end
