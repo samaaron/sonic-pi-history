@@ -1,6 +1,6 @@
 
 define :play_bb do |n|
-  with_fx :distortion  do
+  with_fx :distortion, distort: 0.8 do
     sample :drum_heavy_kick
   end
   sample :ambi_drone, rate: [0.25, 0.5, 0.125, 1].choose, amp: 0.25 if rand < 0.125
