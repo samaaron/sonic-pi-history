@@ -1,11 +1,1 @@
-use_bpm 120
-use_synth :prophet
-use_synth_defaults cutoff: 100
-loop do
-  play 60
-  sleep 1
-  play 72
-  sleep 0.5
-  play 70
-  sleep 0.25
-end
+sample :loop_amen
