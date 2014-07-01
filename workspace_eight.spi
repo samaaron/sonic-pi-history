@@ -17,7 +17,7 @@ use_synth_defaults release: 0.25, attack: 0.5, cutoff: 100
 end
 
 in_thread do
-  #use_synth :tb303
+  use_synth :prophet
   #use_synth_defaults release: 0.25, attack: 0.5, cutoff: 100
   loop do
     play chord(:A3, :minor)
