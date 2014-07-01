@@ -1,4 +1,4 @@
-scale(:c, :major).each do |n| 
+scale(:c, :pentatonic_minor).each do |n| 
   play n + 60
   sleep 0.125
 end
