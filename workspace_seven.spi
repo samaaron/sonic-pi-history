@@ -9,7 +9,7 @@ in_thread do
 end
 
 loop do
-use_synth :prophet
- play chord(:e3, :minor).choose, amp: 1, cutoff: rrand(50, 120), release: 0.2
- sleep 0.25
- end
+  use_synth :prophet
+  play chord(:e3, :minor).choose, amp: 1, cutoff: rrand(50, 120), release: 0.2
+  sleep 0.125
+end
