@@ -1,5 +1,6 @@
 use_bpm 120
 use_synth :prophet
+use_synth_defaults cutoff: 80
 loop do
   play 60
   sleep 1
