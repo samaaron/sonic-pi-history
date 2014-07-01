@@ -1,5 +1,5 @@
 use_synth :dsaw
 
 define :nn do
-  :f
+  :c
 end
