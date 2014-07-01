@@ -50,56 +50,58 @@ end
 in_thread do
   use_synth :tb303
   use_synth_defaults attack: 0.1, release: 0.1, cutoff: lambda{rrand(80, 120)}
-  loop do
-    2.times do
+  use_fx :echo, delay: 0.125, decay: 1 do
+    loop do
+      2.times do
+        sleep 0.25
+        play :C5
+        sleep 0.25
+        play :C5
+        sleep 0.25
+        play :C5
+        sleep 0.125
+        play :C5
+        sleep 0.25
+        play :C5
+        sleep 0.125
+        play :C5
+        sleep 0.25
+        play :D5
+        sleep 0.5
+      end
       sleep 0.25
-      play :C5
+      play :B4
       sleep 0.25
-      play :C5
+      play :B4
       sleep 0.25
-      play :C5
+      play :B4
       sleep 0.125
-      play :C5
+      play :B4
       sleep 0.25
-      play :C5
+      play :B4
       sleep 0.125
-      play :C5
+      play :B4
       sleep 0.25
       play :D5
       sleep 0.5
+      sleep 0.25
+      play :A4
+      sleep 0.25
+      play :A4
+      sleep 0.25
+      play :A4
+      sleep 0.125
+      play :A4
+      sleep 0.25
+      play :A4
+      sleep 0.125
+      play :B4
+      sleep 0.25
+      play :A4
+      sleep 0.25
+      play :G4
+      sleep 0.25
     end
-    sleep 0.25
-    play :B4
-    sleep 0.25
-    play :B4
-    sleep 0.25
-    play :B4
-    sleep 0.125
-    play :B4
-    sleep 0.25
-    play :B4
-    sleep 0.125
-    play :B4
-    sleep 0.25
-    play :D5
-    sleep 0.5
-    sleep 0.25
-    play :A4
-    sleep 0.25
-    play :A4
-    sleep 0.25
-    play :A4
-    sleep 0.125
-    play :A4
-    sleep 0.25
-    play :A4
-    sleep 0.125
-    play :B4
-    sleep 0.25
-    play :A4
-    sleep 0.25
-    play :G4
-    sleep 0.25
   end
 end
 
