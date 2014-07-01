@@ -2,6 +2,7 @@
 
 in_thread do
   loop do
+  use_synth :fm
     play 60, release: 2
     sleep 1
   end
