@@ -9,7 +9,7 @@ define :drums do
 end
 
 define :synths do
-  use_synth :mod_saw
+  use_synth :prophet
   use_transpose [0, 12, 24].choose
   use_synth_defaults amp: 1, mod_range: [12, 24].choose, attack: 0.03, release: 0.16, cutoff: 80, pulse_width: 0.2, mod_rate: 4
   play 33
