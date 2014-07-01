@@ -2,4 +2,5 @@ use_synth :dsaw
 
 define :nn do
   :c
+  use_transpose -12
 end
