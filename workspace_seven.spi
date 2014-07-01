@@ -1,4 +1,4 @@
-scale(:c, :major).each |n| do
+scale(:c, :major).each do |n| 
   play n
   sleep 0.125
 end
