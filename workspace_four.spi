@@ -1,7 +1,7 @@
 loop do
   with_fx :echo, delay: [0.25, 0.125, 0.5].choose, decay: 2 do
 
-    sample :misc_burp, rate: (rrand 0.125, 1.5)
+    sample :guit_e_slide, rate: (rrand 0.125, 1.5)
     sleep rrand(0, 2)
   end
 end
