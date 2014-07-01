@@ -1,6 +1,6 @@
 
 define :play_bb do |n|
-  with_fx :distortion, distort: 0.8 do
+  with_fx :distortion, distort: 0.38 do
     sample :drum_heavy_kick
   end
 #  sample :bass_thick_c, rate: 0.5, amp: 1.5
