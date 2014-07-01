@@ -1,15 +1,21 @@
 # Welcome to Sonic Pi v2.0
 
-in_thread do
+define :n do
+  :e3
+end
+
+in_thread(name: :foo) do
   loop do
     use_synth :fm
-    play :e3, release: 0.5
+    play n, release: 0.5
     sleep 1
   end
 end
 
-loop do
-  use_synth :prophet
-  play chord(:e3, :minor).choose, amp: 1, cutoff: rrand(50, 120), release: 0.2
-  sleep 0.125
+in_thread(name: :bar) do
+  loop do
+    use_synth :prophet
+    play chord(n, :minor).choose, amp: 1, cutoff: rrand(50, 120), release: 0.2
+    sleep 0.125
+  end
 end
