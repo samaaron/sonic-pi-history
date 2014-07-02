@@ -1,1 +1,4 @@
-sample :loop_amen
+loop do
+  play 70
+  sleep 0.25
+end
