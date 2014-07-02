@@ -1,3 +1,6 @@
 # Welcome to Sonic Pi v2.0
 
-play 50
+loop do
+  play 50
+  sleep 1
+end
