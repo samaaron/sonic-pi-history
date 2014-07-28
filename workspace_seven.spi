@@ -3,10 +3,9 @@ use_bpm 240
 define :pat do
   in_thread do
     sample :drum_heavy_kick
-    sleep 4
+    sleep 2
     sample :drum_heavy_kick
   end
-  
     
   use_bpm 480
   use_transpose 0
