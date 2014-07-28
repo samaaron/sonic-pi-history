@@ -14,7 +14,7 @@ define :pat do
     with_fx :echo, delay: 60.0/240, decay: 0.5 do
       use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}
       t = [52, 48, 50].choose
-      t = 48
+      t = 50
       in_thread do
         use_synth :dsaw
         use_synth_defaults release: 0.4, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
