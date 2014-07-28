@@ -3,7 +3,7 @@ use_bpm 240
 define :pat do
   use_bpm 240
   use_transpose 0
-  use_synth :zawa
+  use_synth :prophet
   with_fx :reverb do
     with_fx :echo, delay: 60.0/240, decay: 1 do
       use_synth_defaults release: 0.4, attack: 0, cutoff: lambda{rrand(60, 90)}
