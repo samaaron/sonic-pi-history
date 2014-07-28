@@ -12,7 +12,7 @@ define :pat do
   use_synth :zawa
   with_fx :reverb do
     with_fx :echo, delay: 60.0/240, decay: 2 do
-      use_synth_defaults release: 0.05, attack: 0, cutoff: lambda{rrand(90, 120)}
+      use_synth_defaults release: 0.01, attack: 0, cutoff: lambda{rrand(90, 120)}
       t = [52, 48, 50].choose
       t = 52
       play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
