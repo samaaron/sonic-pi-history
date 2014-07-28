@@ -2,7 +2,7 @@ use_synth :dsaw
 use_bpm 240
 define :pat do
   in_thread do
-    sample :drum_heavy_kick
+    sample :drum_heavy_kick, rate: 0.6
     sleep 4
     sample :drum_heavy_kick
   end
