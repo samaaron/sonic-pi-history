@@ -1,3 +1,4 @@
 use_synth :dsaw
-use_bpm 120
-play_pattern [55, 55, 57, 59]
+use_bpm 240
+t = 52
+play_pattern [55, t, 55, t, 57, t, 59]
