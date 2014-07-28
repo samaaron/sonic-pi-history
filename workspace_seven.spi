@@ -1,4 +1,6 @@
 use_synth :dsaw
 use_bpm 240
-t = 52
+loop do
+t = [52, 48, 50].choose
 play_pattern [55, t, 55, t, 57, t, 59]
+end
