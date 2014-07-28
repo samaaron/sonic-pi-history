@@ -1,7 +1,7 @@
 use_synth :dsaw
 use_bpm 240
 define :pat do
-use_bpm 480
+  use_bpm 240
   with_fx :reverb do
     
     use_synth_defaults release: 0.2, attack: 0
