@@ -3,7 +3,7 @@ use_bpm 240
 define :pat do
   in_thread do
     sample :drum_heavy_kick
-    sleep 2
+    sleep 4
     sample :drum_heavy_kick
   end
     
