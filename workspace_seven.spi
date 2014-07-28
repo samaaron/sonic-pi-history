@@ -2,11 +2,13 @@ use_synth :dsaw
 use_bpm 240
 define :pat do
   use_bpm 240
+
   with_fx :reverb do
-    
-    use_synth_defaults release: 0.2, attack: 0
-    t = [52, 48, 50].choose
-    play_pattern [55, t, 55, t, 57, t, 59, t]
+    with_fx :echo, delay: 60.0/240 do
+      use_synth_defaults release: 0.2, attack: 0
+      t = [52, 48, 50].choose
+      play_pattern [55, t, 55, t, 57, t, 59, t]
+    end
   end
 end
 
