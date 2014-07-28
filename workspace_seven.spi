@@ -19,7 +19,7 @@ define :pat do
         use_synth :dsaw
         use_synth_defaults release: 0.4, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
         use_transpose 7
-        play_pattern_timed [55, t, 55, t, 57, t, 59, t], [8]
+        play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
       end
 
       play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
