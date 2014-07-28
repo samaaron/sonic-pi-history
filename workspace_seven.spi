@@ -6,7 +6,7 @@ define :pat do
     sleep 4
     sample :drum_heavy_kick
   end
-    
+
   use_bpm 480
   use_transpose 0
   use_synth :zawa
@@ -16,9 +16,11 @@ define :pat do
       t = [52, 48, 50].choose
       t = 52
       in_thread do
-      use_synth :dsaw
-            play_pattern_timed [55, t, 55, t, 57, t, 59, t], [2]
-            end
+        use_synth :dsaw
+        use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 80)}
+
+        play_pattern_timed [55, t, 55, t, 57, t, 59, t], [2]
+      end
 
       play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
     end
