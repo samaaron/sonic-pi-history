@@ -20,4 +20,4 @@ define :pat do
   end
 end
 
-#loop{pat}
+loop{pat}
