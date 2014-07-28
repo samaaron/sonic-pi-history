@@ -5,7 +5,7 @@ define :pat do
 
   with_fx :reverb do
     with_fx :echo, delay: 60.0/240, decay: 1 do
-      use_synth_defaults release: 0.4, attack: 0
+      use_synth_defaults release: 0.4, attack: 0, cutoff: lambda{rrand(60, 120)}
       t = [52, 48, 50].choose
       play_pattern [55, t, 55, t, 57, t, 59, t]
     end
