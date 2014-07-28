@@ -1,7 +1,7 @@
 use_synth :dsaw
 use_bpm 240
 define :pat do
-use_synth_defaults :release: 0.2
+use_synth_defaults release: 0.2
   t = [52, 48, 50].choose
   play_pattern [55, t, 55, t, 57, t, 59, t]
 end
