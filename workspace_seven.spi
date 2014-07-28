@@ -1,7 +1,13 @@
 use_synth :dsaw
 use_bpm 240
 define :pat do
-  sample :drum_heavy_kick
+  in_thread do
+    sample :drum_heavy_kick
+    sleep 0.5
+    sample :drum_heavy_kick
+end
+  
+    
   use_bpm 480
   use_transpose 0
   use_synth :zawa
