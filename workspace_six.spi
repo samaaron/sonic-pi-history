@@ -2,4 +2,4 @@
 play 
 use_synth :sound_in
 
-play sustain: 10, input: 1
+play sustain: 10, input: 0
