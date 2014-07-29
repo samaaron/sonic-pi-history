@@ -1,0 +1,2 @@
+use_synth :zawa
+play 60, amp: 0.5, pan: 1
