@@ -24,7 +24,7 @@ define :pat do
   use_synth :zawa
   with_fx :ixi_techno, rate: 7.5/240 do
     with_fx :echo, delay: 60.0/240, decay: 0.5 do
-      use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}
+      use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
 
       in_thread do
         use_synth :beep
