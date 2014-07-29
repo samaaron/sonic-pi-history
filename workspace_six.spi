@@ -3,7 +3,7 @@ use_synth :sound_in
 with_fx :echo do
 
   with_fx :reverb do
-    play 50, sustain: 10
+    play 50, sustain: 10, amp: 2
   end
 
 end
