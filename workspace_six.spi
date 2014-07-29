@@ -8,10 +8,10 @@
 define :my_music do
   loop do
     use_synth :dsaw
-    play 62
+    play 69
     sleep 0.25
   end
 end
 
 
-my_music
+#my_music
