@@ -1,0 +1,31 @@
+
+
+
+rate = 0.7
+rate_mul = 1.0 / rate
+
+define :basic_drum do
+  use_bpm 60
+  #sample :drum_tom_lo_hard
+  sleep 0.5
+end
+
+define :play_note do
+  #sample :drum_heavy_kick if rand < 0.5
+  use_synth :saw
+  with_fx(:echo, delay: [0.125, 0.25, 0.5, 1].choose * rate_mul, decay: 3.5) do
+    use_bpm 240
+    use_synth_defaults release: 0.1, attack: [0.1, 0].choose
+    use_transpose 0
+    play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5
+    use_synth :beep
+    play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose + -12 , pan: 0, cutoff: rrand(80, 120), amp: 0.5
+    sleep [0.5, 0.5, 0.5, 1, 0.25, 0.5, 2].choose * rate_mul
+  end
+end
+
+
+
+
+
+loop {  play_note}
