@@ -4,7 +4,7 @@
 
 use_synth :dsaw
 
-with_fx :reverb do
+with_fx :reverb, reverb: 0.9 do
   play 50 - 12
   play 50
   sleep 1
