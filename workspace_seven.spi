@@ -14,7 +14,7 @@ define :pat do
     with_fx :echo, delay: 60.0/240, decay: 0.5 do
       use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}
       t = [52, 48, 50].choose
-      t = 52
+      #t = 52
       in_thread do
         use_synth :beep
         use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
@@ -29,4 +29,4 @@ define :pat do
   end
 end
 
-loop{pat}
+#loop{pat}
