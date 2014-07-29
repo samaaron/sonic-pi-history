@@ -14,6 +14,6 @@ define :my_music do
 end
 
 
-#loop do
-#  my_music
-#end
+loop do
+  my_music
+end
