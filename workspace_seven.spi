@@ -23,7 +23,7 @@ define :pat do
   use_bpm 480
   use_transpose 0
   use_synth :zawa
-  with_fx :ixi_techno, rate: 15/240 do
+  with_fx :ixi_techno, rate: 15.0/240 do
     with_fx :echo, delay: 60.0/240, decay: 0.5 do
       use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
 
