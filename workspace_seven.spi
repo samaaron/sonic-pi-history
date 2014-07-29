@@ -5,7 +5,7 @@ define :pat do
   t = 52
 
   in_thread do
-    2.times do
+    4.times do
       sleep 1
       use_synth_defaults attack: 0, release: 0.2
       with_synth :fm do
