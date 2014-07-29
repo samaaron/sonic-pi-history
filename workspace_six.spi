@@ -8,12 +8,12 @@
 define :my_music do
 
     use_synth :fm
-    play 30, attack: 0.1, sustain: 0, release: 0.1
+    play [30, 37, 42], attack: 0.1, sustain: 0, release: 0.1
     sleep 0.25
 
 end
 
 
-loop do
-  my_music
-end
+#loop do
+#  my_music
+#end
