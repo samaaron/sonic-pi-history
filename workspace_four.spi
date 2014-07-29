@@ -1,0 +1,6 @@
+ 
+use_synth :sound_in
+
+with_fx :echo do
+  play sustain: 0.1, sustain: 10
+end
