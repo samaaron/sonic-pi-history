@@ -11,6 +11,6 @@ define :my_music do
   sleep 0.25
 end
 
-loop do
-  my_music
-end
+#loop do
+#  my_music
+#end
