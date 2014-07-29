@@ -6,6 +6,7 @@ define :pat do
 
 
   in_thread do
+    sleep 2
     4.times do
       sleep 4
       use_synth_defaults attack: 0, release: 0.3
