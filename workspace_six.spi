@@ -2,24 +2,11 @@
 
 #play [50, 57, 62].choose
 
-use_synth :dsaw
 
-in_thread do
-  with_fx :reverb, room: 0.9 do
-    loop do
-      play 50 - 12
-      play 50
-      sleep 1
-      play 55
-      sleep 0.5
-      play 62
-      sleep 0.5
-    end
-  end
-end
+
 
 loop do
-  use_synth :fm
-  play 50, release: 0.2, attack: 0
+  use_synth :dsaw
+  play 50, release: 0.2, attack: 0, sustain: 0
   sleep 0.25
 end
