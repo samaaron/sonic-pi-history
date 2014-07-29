@@ -20,6 +20,6 @@ end
 
 loop do
   use_synth :fm
-  play 50
+  play 50, release: 0.2, attack: 0
   sleep 0.25
 end
