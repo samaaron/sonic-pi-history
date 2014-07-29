@@ -10,7 +10,7 @@ define :pat do
       sleep 1
       use_synth_defaults attack: 0, release: 0.3
       with_synth :fm do
-        play t - 12
+        play t - 12, amp: 2
       end
     end
   end
