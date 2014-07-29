@@ -1,19 +1,17 @@
-# Welcome to Sonic Pi v2.0
 
-#play [50, 57, 62].choose
+loop do
+  with_synth :dsaw do
+    with_fx(:slicer, freq: [4,8].choose) do
+      with_fx(:reverb, room: 0.5, mix: 0.3) do
+        n1 = chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose
+        n2 = chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose
 
+        p = play n1, amp: 2, release: 8, note_slide: 4, cutoff: 30, cutoff_slide: 4, detune: rrand(0, 0.2)
+        control p, note: n2, cutoff: rrand(80, 120)
+      end
+    end
+  end
 
-
-
-define :my_music do
-
-    use_synth :dsaw
-    play chord(:e3, :minor).choose, attack: 0.0, sustain: 0, release: 0.1, cutoff: rrand(60, 120)    
-    sleep 0.125
-
+  sleep 8
 end
-
-
-#loop do
-#  my_music
-#end
+ 
