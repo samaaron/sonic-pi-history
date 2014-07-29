@@ -1,3 +1,4 @@
+play 
 use_synth :sound_in
 
 with_fx :echo do
