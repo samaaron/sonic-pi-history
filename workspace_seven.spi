@@ -35,10 +35,10 @@ define :pat do
         use_transpose 12
         sleep 1
 
-        #play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
+        play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
       end
 
-      #play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
+      play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
 
 
     end
