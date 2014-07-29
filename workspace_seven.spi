@@ -27,7 +27,7 @@ define :pat do
       use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
 
       in_thread do
-        use_synth :dsaw
+        use_synth :prophet
         use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
         use_transpose 24
         sleep 1
