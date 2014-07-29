@@ -19,6 +19,7 @@ in_thread do
 end
 
 loop do
+  use_synth :fm
   play 50
   sleep 0.25
 end
