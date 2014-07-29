@@ -4,14 +4,15 @@ t = [52, 48, 50].choose
 define :pat do
   t = [52, 48, 50].choose if rand < 0.1
 
-
-  in_thread do
-    sleep 2
-    4.times do
-      sleep [1, 2].choose
-      use_synth_defaults attack: 0, release: 0.3
-      with_synth :fm do
-        play t - 12
+  with_fx :reverb do
+    in_thread do
+      sleep 2
+      4.times do
+        sleep [1, 2].choose
+        use_synth_defaults attack: 0, release: 0.3
+        with_synth :fm do
+          play t - 12
+        end
       end
     end
   end
