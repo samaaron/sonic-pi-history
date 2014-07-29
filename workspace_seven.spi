@@ -7,7 +7,7 @@ define :pat do
 
   in_thread do
     4.times do
-      sleep 1
+      sleep 2
       use_synth_defaults attack: 0, release: 0.3
       with_synth :fm do
         play t - 12, amp: 2
