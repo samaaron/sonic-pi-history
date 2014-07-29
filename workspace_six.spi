@@ -17,3 +17,8 @@ in_thread do
     end
   end
 end
+
+loop do
+  play 50
+  sleep 0.25
+end
