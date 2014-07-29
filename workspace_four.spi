@@ -1,2 +1,0 @@
-use_synth :sound_in
-play sustain: 1
