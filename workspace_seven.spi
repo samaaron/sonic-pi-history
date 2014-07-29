@@ -29,7 +29,7 @@ define :pat do
       in_thread do
         use_synth :tb303
         use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
-        use_transpose 24
+        use_transpose 12
         sleep 1
 
         play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
