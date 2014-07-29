@@ -5,7 +5,7 @@ define :pat do
   t = 52
 
   in_thread do
-    sleep 2
+    sleep 1
     with_synth :fm do
       play t - 12
     end
