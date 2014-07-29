@@ -6,10 +6,12 @@
 
 
 define :my_music do
-  use_synth :dsaw
-  play 62
-  sleep 0.25
+  loop do
+    use_synth :dsaw
+    play 62
+    sleep 0.25
+  end
 end
 
 
-  my_music
+my_music
