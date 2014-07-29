@@ -1,8 +1,15 @@
 use_synth :dsaw
 use_bpm 240
 define :pat do
- #t = [52, 48, 50].choose
-      t = 52
+  #t = [52, 48, 50].choose
+  t = 52
+
+  in_thread do
+    sleep 2
+    with_synth :fm do
+      play t - 24
+    end
+  end
   in_thread do
     sample :drum_heavy_kick, amp: 2
     sleep 4
@@ -15,7 +22,7 @@ define :pat do
   with_fx :ixi_techno, rate: 7.5/240 do
     with_fx :echo, delay: 60.0/240, decay: 0.5 do
       use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}
-     
+
       in_thread do
         use_synth :beep
         use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
