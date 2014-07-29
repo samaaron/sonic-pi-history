@@ -2,7 +2,7 @@ use_synth :dsaw
 use_bpm 240
 t = [52, 48, 50].choose
 define :pat do
-  t = [52, 48, 50].choose if rand < 0.2
+  t = [52, 48, 50].choose if rand < 0.1
 
 
   in_thread do
@@ -43,4 +43,4 @@ define :pat do
   end
 end
 
-loop{pat}
+#loop{pat}
