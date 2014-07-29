@@ -1,6 +1,0 @@
- 
-use_synth :sound_in
-
-with_fx :echo do
-  play sustain: 10, input: 1
-end
