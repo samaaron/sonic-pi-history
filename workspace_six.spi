@@ -2,4 +2,4 @@
 
 #play [50, 57, 62].choose
 
-play rrand(50, 62)
+play rrand_i(50, 62)
