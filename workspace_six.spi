@@ -9,7 +9,7 @@ define :my_music do
 
     use_synth :dsaw
     play chord(:e3, :minor).choose, attack: 0.1, sustain: 0, release: 0.1, cutoff: rrand(60, 120)    
-    sleep 0.25
+    sleep 0.125
 
 end
 
