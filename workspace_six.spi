@@ -3,6 +3,7 @@
 #play [50, 57, 62].choose
 
 use_synth :prophet
+play 50 - 12 - 12
 play 50 - 12
 play 50
 sleep 1
