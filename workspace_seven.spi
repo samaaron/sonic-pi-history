@@ -5,9 +5,11 @@ define :pat do
   t = 52
 
   in_thread do
-    sleep 1
-    with_synth :fm do
-      play t - 12
+    2.times do
+      sleep 1
+      with_synth :fm do
+        play t - 12
+      end
     end
   end
   in_thread do
@@ -26,15 +28,15 @@ define :pat do
       in_thread do
         use_synth :beep
         use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
-        use_transpose 24 
+        use_transpose 24
         sleep 1
 
         play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
       end
 
       play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
-      
-      
+
+
     end
   end
 end
