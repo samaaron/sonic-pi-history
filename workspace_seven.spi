@@ -2,7 +2,7 @@ use_synth :dsaw
 use_bpm 240
 define :pat do
   #t = [52, 48, 50].choose
-  t = 48
+  t = 50
 
   in_thread do
     sleep 2
