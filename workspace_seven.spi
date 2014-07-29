@@ -1,0 +1,48 @@
+use_synth :dsaw
+use_bpm 240
+t = [52, 48, 50].choose
+define :pat do
+  t = [52, 48, 50].choose if rand < 0.1
+
+  with_fx :reverb do
+    in_thread do
+      sleep 2
+      4.times do
+        sleep [1, 2].choose
+        use_synth_defaults attack: 0, release: 0.3
+        with_synth :fm do
+          play t - 12
+        end
+      end
+    end
+  end
+  in_thread do
+    sample :drum_heavy_kick, amp: 2
+    sleep 4
+    sample :drum_heavy_kick
+  end
+
+  use_bpm 480
+  use_transpose 0
+  use_synth :zawa
+  with_fx :ixi_techno, rate: 60.0/240 do
+    with_fx :echo, delay: 30.0/240, decay: 0.5 do
+      use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
+
+      in_thread do
+        use_synth :prophet
+        use_synth_defaults release: 0.1, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
+        use_transpose 12
+        sleep 1
+
+        play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
+      end
+
+      play_pattern_timed [55, t, 55, t, 57, t, 59, t], [1]
+
+
+    end
+  end
+end
+
+#loop{pat}
