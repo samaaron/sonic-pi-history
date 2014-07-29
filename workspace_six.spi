@@ -1,4 +1,4 @@
 # Welcome to Sonic Pi v2.0
 use_synth :sound_in
 
-play sustain: 10, input: 5
+play sustain: 10, input: 1
