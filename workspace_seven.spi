@@ -28,7 +28,7 @@ define :pat do
 
       in_thread do
         use_synth :tb303
-        use_synth_defaults release: 0.05, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
+        use_synth_defaults release: 0.01, attack: 0, cutoff: lambda{rrand(60, 120)}, amp: 0.5
         use_transpose 12
         sleep 1
 
