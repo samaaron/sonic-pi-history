@@ -1,8 +1,10 @@
 use_synth :sound_in
 
-with_fx :distortion, distort: 0.9 do
-with_fx :reverb, room: 0.9 do
+with_fx :slicer do
+  with_fx :distortion, distort: 0.9 do
+    with_fx :reverb, room: 0.9 do
 
-  play attack: 10, sustain: 10, release: 1, input: 1
-end
+      play attack: 10, sustain: 10, release: 1, input: 1
+    end
+  end
 end
