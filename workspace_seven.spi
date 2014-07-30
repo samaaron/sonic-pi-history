@@ -2,7 +2,7 @@ load_samples(sample_names :drum)
 sd = sample_duration :loop_compus
 define :drums do
   sync :tick
-  #sample :loop_amen, rate: 1
+  sample :loop_compus, rate: 0.5
   with_fx :reverb, room: 0.9 do
     with_fx :echo, delay: sd / [4, 8, 2, 16].choose do
       sample sample_names(:drum).choose, start: 0, finish: 0.1, rate: 1, amp: 1
