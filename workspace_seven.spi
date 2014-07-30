@@ -26,7 +26,7 @@ end
 
 define :synths do
   wait :tick
-  use_synth :tb303
+  use_synth :prophet
   p = [52, 48, 50].choose
   use_transpose -12
   with_fx :reverb, room: 0.8 do
