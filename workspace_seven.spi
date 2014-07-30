@@ -24,11 +24,10 @@ define :synths do
   n = 2
   p = [52, 48, 50].choose
   in_thread do
-    4.times do
+    8.times do
       play p, release: sd
       sleep sd/ 4
     end
-    
   end
   use_transpose 0
   with_fx :reverb, room: 0.8 do
