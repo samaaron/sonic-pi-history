@@ -1,9 +1,4 @@
-define :sam do
-  sample :ambi_choir
-end
-in_thread do
 loop do
-  sam
+  play 50
   sleep 1
-end
 end
