@@ -19,7 +19,7 @@ define :synths do
     in_thread do
        use_transpose 24 + 7
        use_synth :beep
-        play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
+        play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 32]
       end
     n.times do
       use_synth :tb303
