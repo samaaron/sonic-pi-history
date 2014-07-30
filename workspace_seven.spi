@@ -10,7 +10,9 @@ end
 define :synths do
   wait :tick
   with_fx :slicer, rate: 8 do
+  with_fx :ixi_techno do
    sample :bass_drop_c,  rate: -1
+  end
   end
 end
 
