@@ -34,7 +34,7 @@ define :synths do
   p = [52, 48, 50].choose
   #  play p, release: sd
   use_transpose 0
-  with_fx :reverb, room: 0.3 do
+  with_fx :none, room: 0.3 do
     with_fx :none, rate: sd do
       n.times do
         use_synth :tb303
