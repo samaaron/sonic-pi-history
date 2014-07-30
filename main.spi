@@ -1,4 +1,4 @@
-in_thread do
+in_thread(name: :sam) do
   loop do
   play 53
   sleep 1
