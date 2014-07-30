@@ -15,7 +15,7 @@ define :synths do
   wait :tick
   with_fx :reverb, room: 0.9 do
     n = 2
-    p = [48, 50, 52].choose
+    p = [:c3, :d3, :e3].choose
     n.times do
       use_synth :tb303
       with_synth :fm do
@@ -23,7 +23,7 @@ define :synths do
       end
       in_thread do
         play_pattern_timed scale(p+24, :minor)* 2, [sd/32]
-        end
+      end
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
       #      play scale(:a, :minor_pentatonic, num_octaves: 4).choose, cutoff: rrand(60, 80), release: [0.125, 0.25, 0.5].choose, amp: 1
       #      sleep sd / n
