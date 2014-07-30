@@ -1,8 +1,4 @@
-define :foo do
-  wait :tick
-  sample :drum_heavy_kick
-end
-
 loop do
-  foo
+  sync :tick
+  sleep 1
 end
