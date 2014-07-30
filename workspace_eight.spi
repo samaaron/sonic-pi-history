@@ -1,3 +1,0 @@
-wait :tick
-use_synth :fm
-play 48, release: 10
