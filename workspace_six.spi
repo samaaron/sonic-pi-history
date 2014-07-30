@@ -22,7 +22,8 @@ wait :tick
   
 
   
-  sample :drum_snare_hard
+  sample :drum_snare_hard, pan: rrand(-1, 1)
+
 
 end
 
