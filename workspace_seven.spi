@@ -13,6 +13,8 @@ end
 
 define :synths do
   wait :tick
+  n = 2
+    p = [:c3, :d3, :e3].choose
   in_thread do
        use_transpose 24 + 12
        use_synth :beep
@@ -21,8 +23,7 @@ define :synths do
         end
       end
   with_fx :reverb, room: 0.9 do
-    n = 2
-    p = [:c3, :d3, :e3].choose
+    
     
     n.times do
       use_synth :tb303
