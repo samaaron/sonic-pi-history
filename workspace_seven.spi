@@ -12,10 +12,10 @@ define :synths do
   use_synth :dsaw
   use_transpose 0
   use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.13, cutoff: rrand(60, 120), pulse_width: 0.2, mod_rate: 4
-
+  
   play chord(:e3, :minor).choose
   sleep 0.125
-  play :e1, release: 1, detune: 0
+  play :e1, release: 1, detune: 5
   sleep 0.125
 end
 
