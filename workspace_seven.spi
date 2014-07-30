@@ -7,9 +7,9 @@ define :drums do
 end
 
 define :synths do
-wait :tick
+  wait :tick
   use_synth :fm
-  with_fx :reverb do
+  with_fx :reverb, room: 0.8 do
     use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.36, cutoff: 80, pulse_width: 0.2, mod_rate: 4
     play scale(:e, :minor_pentatonic, num_octaves: 4).choose
     use_synth :tb303
