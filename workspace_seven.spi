@@ -25,7 +25,7 @@ define :synths do
   p = [52, 48, 50].choose
 #  play :c2, release: sd
   use_transpose 0
-  with_fx :reverb, room: 0.3 do
+  with_fx :reverb, room: 0.8 do
     with_fx :ixi_techno, rate: sd/16 do
       n.times do
         use_synth :prophet
