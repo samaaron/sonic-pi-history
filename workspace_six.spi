@@ -18,6 +18,10 @@ end
 define :synths do
   n = 8
   use_synth :tb303
+  with_synth :fm do
+  play :e1
+  end
+
   n.times do
     with_fx :reverb, room: 0.8  do
       play chord(:e2, :minor).choose, amp: 0.5, cutoff: rrand(60, 120), release: 0.2
