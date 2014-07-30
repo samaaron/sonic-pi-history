@@ -23,7 +23,7 @@ define :synths do
   n = 2
   p = [52, 48, 50].choose
   in_thread do
-    2.times do
+    32.times do
       play p, release: sd/8, attack: 0
       sleep sd/ 4
     end
@@ -42,4 +42,4 @@ end
 
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
-in_thread(name: :bd){loop{bd}}3
+in_thread(name: :bd){loop{bd}}
