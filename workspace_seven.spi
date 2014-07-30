@@ -11,7 +11,7 @@ define :synths do
   wait :tick
 
   sample :bass_drop_c, start: 0, finish: 0.1
-  sleep 0.125
+
 end
 
 in_thread(name: :drums){loop{drums}}
