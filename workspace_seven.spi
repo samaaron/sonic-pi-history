@@ -35,7 +35,7 @@ define :synths do
   #  play p, release: sd
   use_transpose 0
   with_fx :reverb, room: 0.3 do
-    with_fx :ixi_techno, rate: sd do
+    with_fx :none, rate: sd do
       n.times do
         use_synth :tb303
         play chord(:c3, :minor).choose, release: 0.1, attack: 0
