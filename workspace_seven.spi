@@ -22,7 +22,7 @@ define :synths do
         play p, release: 4
       end
       in_thread do
-        play_pattern_timed scale(:c, :minor, :octave 3)* 2, [sd/32]
+        play_pattern_timed scale(:c, :minor, octave: 3)* 2, [sd/32]
       end
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
       #      play scale(:a, :minor_pentatonic, num_octaves: 4).choose, cutoff: rrand(60, 80), release: [0.125, 0.25, 0.5].choose, amp: 1
