@@ -16,15 +16,16 @@ define :synths do
   with_fx :reverb, room: 0.9 do
     n = 2
     p = [:c3, :d3, :e3].choose
+    in_thread do
+        use_synth :beep
+        play_pattern_timed scale(:c, :minor, octave: 3)* 2, [sd/16], amp: 2
+      end
     n.times do
       use_synth :tb303
       with_synth :fm do
         play p, release: 4
       end
-      in_thread do
-      use_synth :beep
-        play_pattern_timed scale(:c, :minor, octave: 3)* 2, [sd/16], amp: 2
-      end
+      
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
       #      play scale(:a, :minor_pentatonic, num_octaves: 4).choose, cutoff: rrand(60, 80), release: [0.125, 0.25, 0.5].choose, amp: 1
       #      sleep sd / n
