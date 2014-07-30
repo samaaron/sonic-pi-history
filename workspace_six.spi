@@ -21,7 +21,7 @@ wait :tick
   use_synth :prophet
   
 
-  end
+  
   p = 48
   4.times do
     with_fx :reverb, room: 0.8  do
