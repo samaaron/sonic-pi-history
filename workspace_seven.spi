@@ -17,7 +17,7 @@ define :synths do
     n = 16
     n.times do
       use_synth :prophet
-      play scale([:e].choose, :minor_pentatonic, num_octaves: 7).choose, cutoff: rrand(60, 120), release: 0.25, amp: 2 if rand< 0.8
+      play scale(:e :minor_pentatonic, num_octaves: 7).choose, cutoff: rrand(60, 120), release: 0.25, amp: 2 if rand< 0.8
       sleep sd / n
     end
   end
