@@ -11,8 +11,8 @@ end
 
 define :synths do
  wait :tick
- 
- play_pattern_timed [50, 48, 52], [sd/4]
+
+ play_pattern_timed [50, 48, 52], [sd/3]
 end
 
 in_thread(name: :drums){loop{drums}}
