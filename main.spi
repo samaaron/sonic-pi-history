@@ -1,8 +1,9 @@
 define :sam do
   sample :ambi_choir
 end
-
+in_thread do
 loop do
   sam
   sleep 1
+end
 end
