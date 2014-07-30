@@ -19,7 +19,9 @@ define :synths do
     in_thread do
        use_transpose 24 + 12
        use_synth :beep
+       with_fx :echo do
         play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 32]
+        end
       end
     n.times do
       use_synth :tb303
