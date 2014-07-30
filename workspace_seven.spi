@@ -30,6 +30,7 @@ end
 define :synths do
   wait :tick
   use_synth :fm
+  n = 2
   p = [52, 48, 50].choose
   #  play p, release: sd
   use_transpose 0
