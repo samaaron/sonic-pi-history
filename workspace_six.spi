@@ -1,3 +1,0 @@
-with_fx :reverb do
-  sample "/home/pi/my_music/crazy_sound.wav", rate: -1
-end
