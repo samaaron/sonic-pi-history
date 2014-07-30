@@ -17,7 +17,7 @@ define :synths do
     n = 2
     p = [:c3, :d3, :e3].choose
     in_thread do
-       use_transpose 24 + 7
+       use_transpose 24 + 9
        use_synth :beep
         play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 32]
       end
