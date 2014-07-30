@@ -13,6 +13,7 @@ define :synths do
   use_transpose 0
   use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.13, cutoff: rrand(60, 120), pulse_width: 0.2, mod_rate: 4
   sample :ambi_dark_woosh if rand < 0.1  
+  sample :ambi_lunar_land if rand < 0.1
   sample :ambi_choir, rate: 0.3
   sleep 0.5
   use_synth :fm
