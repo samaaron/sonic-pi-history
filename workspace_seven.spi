@@ -17,7 +17,8 @@ define :synths do
     n = 16
     n.times do
       use_synth :tb303
-      play_pattern [55, 55, 57, 59], [sd / n]
+      p = 50
+      play_pattern [55, p, 55, p, 57, p, 59, p], [sd / n]
 #      play scale(:a, :minor_pentatonic, num_octaves: 4).choose, cutoff: rrand(60, 80), release: [0.125, 0.25, 0.5].choose, amp: 1
 #      sleep sd / n
     end
