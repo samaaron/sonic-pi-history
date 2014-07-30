@@ -1,4 +1,4 @@
-lp = :loop_industrial
+lp = :loop_amen
 sd = sample_duration lp
 load_sample :drum_heavy_kick
 
