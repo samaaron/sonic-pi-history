@@ -26,7 +26,7 @@ define :synths do
 #  play :c2, release: sd
   use_transpose 0
   with_fx :reverb, room: 0.3 do
-    with_fx :ixi_techno, rate: sd do
+    with_fx :ixi_techno, rate: sd/8 do
       n.times do
         use_synth :prophet
         #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
