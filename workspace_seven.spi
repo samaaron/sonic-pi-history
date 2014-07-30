@@ -8,7 +8,7 @@ define :drums do
   sync :tick
 
 
-  sleep sd
+  sleep sd/2
 end
 
 define :bd do
