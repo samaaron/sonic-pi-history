@@ -33,7 +33,7 @@ define :synths do
   n = 8
   p = [52, 48, 50].choose
 #  play :c2, release: sd
-  use_transpose 0
+  use_transpose -12
   with_fx :reverb, room: 0.3 do
     with_fx :none, rate: sd do
       n.times do
