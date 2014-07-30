@@ -11,7 +11,7 @@ end
 
 define :synths do
  wait :tick
- n = 50
+ n = 38
  use_synth :dsaw
  play_pattern_timed [n, n, n], [sd/3]
 end
