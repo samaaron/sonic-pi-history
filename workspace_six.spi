@@ -8,7 +8,7 @@ define :drums do
   sample lp
   with_fx :reverb do
 
-      sample s,  amp: 0.125
+   sample s,  amp: 0.125, rate: 0.5
       sleep sd 
 
   end
