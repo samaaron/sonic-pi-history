@@ -1,1 +1,4 @@
-play 53
+loop do
+  play 53
+  sleep 1
+end
