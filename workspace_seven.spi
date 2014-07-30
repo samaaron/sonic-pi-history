@@ -1,13 +1,13 @@
 
 load_sample :drum_heavy_kick
 
-
+sd = sample_duration :loop_industrial
 
 define :drums do
   sync :tick
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
-  with_fx :echo, decay: 0.5 do
+  with_fx :echo, decay: sd/8 do
     sample(sample_names(:drum).choose)
   end
   end
