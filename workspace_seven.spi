@@ -4,7 +4,7 @@ load_sample :drum_heavy_kick
 define :drums do
   sample :drum_heavy_kick, rate: 0.75
   sleep 0.5
-  sample :drum_heavy_kick
+  sample :drum_bass_hard
   sleep 0.5
 end
 
