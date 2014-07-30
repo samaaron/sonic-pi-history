@@ -18,7 +18,7 @@ define :synths do
     p = [48, 50, 52].choose
     n.times do
       use_synth :tb303
-      with_synth :fm do
+      with_synth :fm, release: 4 do
         play p
       end
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
