@@ -2,10 +2,10 @@ load_samples(sample_names :drum)
 
 define :drums do
   sync :tick
-  with_fx :echo do
+
   sample sample_names(:drum).choose
   sleep 0.3
-  end
+
   
 end
 
