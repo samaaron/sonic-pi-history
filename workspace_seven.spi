@@ -16,7 +16,7 @@ define :synths do
   play chord(:e3, :minor).choose, release: 0.2
   sleep 0.125
   use_synth :fm
-  play :e2, release: 0.2
+  play :e2, release: 0.1
   sleep 0.125
 end
 
