@@ -1,4 +1,6 @@
-loop do
+in_thread do
+  loop do
   play 53
   sleep 1
+end
 end
