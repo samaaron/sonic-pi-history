@@ -16,7 +16,7 @@ define :synths do
   sample :ambi_lunar_land if rand < 0.1
 
   with_fx :echo, delay: 0.125 do
-    sample :ambi_choir, rate: 0.23, start: 0, finish: 0.1
+    sample :ambi_choir, rate: 0.23, start: 0, finish: 0.01
   end
 
   sleep 0.5
