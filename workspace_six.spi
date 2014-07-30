@@ -1,4 +1,5 @@
-
+lp = :loop_industrial
+sd = sample_duration lp
 load_sample :drum_heavy_kick
 
 define :drums do
