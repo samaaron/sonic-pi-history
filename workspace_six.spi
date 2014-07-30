@@ -28,7 +28,7 @@ define :synths do
 
   n.times do
     with_fx :reverb, room: 0.8  do
-      play_pattern_timed [55, 55, 57, 59], [sd / 8]
+      play_pattern_timed [55, 55, 57, 59], [sd / 4]
     end
     sleep sd/n
   end
