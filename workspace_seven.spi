@@ -1,7 +1,9 @@
 define :drums do
   sync :tick
+  with_fx :echo
   sample :drum_heavy_kick, rate: 1
   sleep 1
+  end
   
 end
 
