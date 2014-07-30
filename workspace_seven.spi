@@ -4,7 +4,7 @@ define :drums do
   sync :tick
   with_fx :echo do
   sample sample_names(:drum).choose
-  sleep 1
+  sleep 0.2
   end
   
 end
