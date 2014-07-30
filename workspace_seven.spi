@@ -20,7 +20,7 @@ define :synths do
     end
     n = n - 36
     use_synth :zawa
-    play_pattern_timed [n] * 2, [sd/6], release: 0.3, amp: 4
+    play_pattern_timed [n] * 2, [sd/6], release: 0.5, amp: 4
   end
 end
 
