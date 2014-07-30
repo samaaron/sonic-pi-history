@@ -13,8 +13,7 @@ define :synths do
   use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.3, cutoff: rrand(60, 120), pulse_width: 0.5, mod_rate: 4
   play 30
   sleep 0.25
-  play 38
-  sleep 0.25
+  
 end
 
 in_thread(name: :drums){loop{drums}}
