@@ -31,7 +31,7 @@ define :synths do
   play p, release: sd
   use_transpose 0
   with_fx :reverb, room: 0.3 do
-    with_fx :ixi_techno, rate: 2 do
+    with_fx :ixi_techno, rate: 1 do
       use_synth :tb303
       play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/16], attack: 0, release: 0.12, amp: 2, cutoff: rrand(80, 100)
     end
