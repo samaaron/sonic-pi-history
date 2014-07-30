@@ -27,7 +27,7 @@ end
 define :synths do
   wait :tick
   use_synth :tb303
-  p = 48
+  p = 50
   use_transpose -12
   with_fx :reverb, room: 0.8 do
     play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/16]
