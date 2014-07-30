@@ -12,7 +12,7 @@ end
 define :synths do
  wait :tick
  n = 30 - 12
- use_synth :dsaw
+ use_synth :prophet
  play_pattern_timed [n, n, n, n, n, n], [sd/6], release: 0.14
 end
 
