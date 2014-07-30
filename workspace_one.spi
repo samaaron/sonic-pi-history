@@ -2,7 +2,7 @@ define :foo do
   wait :tick
   sample :drum_heavy_kick
 end
-
-#loop do
-#  foo
-#end
+#hi
+loop do
+  foo
+end
