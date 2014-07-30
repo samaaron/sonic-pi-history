@@ -1,11 +1,12 @@
 
 load_sample :drum_heavy_kick
 
-sd = sample_duration :loop_compus
+lp = :loop_compus
+sd = sample_duration lp
 
 define :drums do
   sync :tick
-  #sample :loop_amen, rate: 1
+  sample lp, rate: 0.5
   sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/8, decay: sd * 2 do
