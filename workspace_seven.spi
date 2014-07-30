@@ -3,8 +3,8 @@ load_samples(sample_names :drum)
 define :drums do
   sync :tick
 
-  sample sample_names(:drum).choose
-  sleep 0.1, start: 0, finish: 0.2
+  sample sample_names(:drum).choose, start: 0, finish: 0.2
+  sleep 0.1
 
   
 end
