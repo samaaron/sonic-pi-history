@@ -30,9 +30,9 @@ end
 define :synths do
   wait :tick
   use_synth :fm
-  n = 16
+  n = 32
   p = [52, 48, 50].choose
-    play :c2, release: sd
+  play :c2, release: sd
   use_transpose 0
   with_fx :none, room: 0.3 do
     with_fx :none, rate: sd do
