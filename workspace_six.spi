@@ -5,7 +5,7 @@ load_sample :drum_heavy_kick
 define :drums do
   #  sample :drum_heavy_kick, rate: 0.75
   s =  choose sample_names :drum
-  sample lp, rate: 0.5
+  sample lp, rate: 1
   with_fx :reverb do
 
    sample s,  amp: 0.125, rate: 0.5
@@ -20,7 +20,7 @@ define :synths do
   use_synth :tb303
   n.times do
     with_fx :reverb, room: 0.8  do
-      play chord(:e3, :minor).choose, amp: 0.5, cutoff: rrand(60, 120), release: 0.2
+      play chord(:a3, :minor).choose, amp: 0.5, cutoff: rrand(60, 120), release: 0.2
     end
     sleep sd/n
   end
