@@ -25,14 +25,14 @@ end
 define :synths do
   wait :tick
 
-  n = 16
+  n = 8
   with_fx :reverb, room: 0.1 do
     n.times do
       p = :e
 
       use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.236, cutoff: 80, pulse_width: 0.2, mod_rate: 4
       use_synth :tb303
-      #play chord(:e3, :minor).choose, cutoff: rrand(60, 120)
+      play chord(:e3, :minor).choose, cutoff: rrand(60, 120)
 
       sleep sd / n
       use_synth :fm
