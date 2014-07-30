@@ -30,7 +30,7 @@ define :synths do
     play scale(p, :minor_pentatonic, num_octaves: 4).choose
     use_synth :tb303
     sleep sd / 2
-    play scale(p, :minor_pentatonic, num_octaves: 5).choose, cutoff: rrand(60, 120)
+    #play scale(p, :minor_pentatonic, num_octaves: 5).choose, cutoff: rrand(60, 120)
   end
 end
 
