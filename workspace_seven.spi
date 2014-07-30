@@ -35,7 +35,7 @@ define :synths do
       play chord(:e3, :minor).choose, cutoff: rrand(60, 120)
 
       sleep sd / n
-      #play scale(p, :minor_pentatonic, num_octaves: 5).choose, cutoff: rrand(60, 120)
+      play :e3
     end
   end
 end
