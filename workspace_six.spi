@@ -7,9 +7,9 @@ define :drums do
   s =  choose sample_names :drum
   sample lp
   with_fx :reverb do
-    with_fx :echo, delay: sd / [4, 8, 16].choose do
+
       sample s,  amp: 0.125
-      sleep sd / 4
+      sleep sd 
     end
   end
 
