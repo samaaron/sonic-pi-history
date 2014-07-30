@@ -9,9 +9,9 @@ end
 
 define :bd do
   wait :tick
-  sleep 0.2
+
   sample :drum_bass_hard
-  sleep 0.6
+
 end
 
 define :synths do
