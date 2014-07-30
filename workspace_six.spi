@@ -14,7 +14,7 @@ end
 define :synths do
   use_synth :fm
   with_fx :echo do 
-  sample :ambi_choir, rate: 0.4, start: 0.3, finish: rrand(0, 0.5)
+#  sample :ambi_choir, rate: 0.4, start: 0.3, finish: rrand(0, 0.5)
   end
   sleep sd
 
