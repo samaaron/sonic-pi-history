@@ -22,7 +22,7 @@ wait :tick
   
 
   
-  p = 52
+  p = 48
 
     with_fx :reverb, room: 0.8  do
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
