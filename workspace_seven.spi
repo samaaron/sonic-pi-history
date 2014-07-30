@@ -12,7 +12,7 @@ define :bd do
   sleep 0.2
   sample :drum_bass_hard
 
-sleep0.6
+sleep 0.6
 end
 
 define :synths do
