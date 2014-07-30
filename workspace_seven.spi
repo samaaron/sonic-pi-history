@@ -6,7 +6,7 @@ sd = sample_duration lp
 
 define :drums do
   sync :tick
-  sample lp, rate: 2
+  sample lp, rate: -1
   sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb, room: 0.8 do
     with_fx :echo, delay: sd/8, decay: sd * 2 do
