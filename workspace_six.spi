@@ -19,7 +19,11 @@ define :synths do
   n = 8
   use_synth :tb303
   with_synth :fm do
-  play :e1, release: 0.2
+    2.times do 
+    play :e1, release: 0.2
+    sleep sd / 4
+    end
+    
   end
 
   n.times do
