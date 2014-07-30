@@ -38,7 +38,7 @@ define :synths do
     with_fx :none, rate: sd do
       n.times do
         use_synth :tb303
-        play chord(:c3, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(60, 120)
+        play chord(:c3, :minor).choose, release: 0.3, attack: 0, cutoff: rrand(60, 120)
         #  play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/16], attack: 0, release: 0.12, amp: 2, cutoff: rrand(80, 100)
         sleep sd / n
       end
