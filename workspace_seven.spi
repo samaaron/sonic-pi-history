@@ -8,11 +8,10 @@ define :drums do
 end
 
 define :bd do
-  sync :tick
+  wait :tick
   sleep 0.2
   sample :drum_bass_hard
-
-sleep 0.6
+  sleep 0.6
 end
 
 define :synths do
