@@ -1,42 +1,22 @@
-load_samples(sample_names :ambi)
-sd = sample_duration :loop_compus
+
+load_sample :drum_heavy_kick
+
 define :drums do
-  sync :tick
-  sample :loop_compus, rate: 0.5, amp: 2
-  with_fx :reverb, room: 0.9 do
-    with_fx :echo, delay: sd / [4, 8, 2, 16].choose do
-      sample sample_names(:misc).choose, start: 0, finish: 1, rate: 1, amp: 1
-    end
-  end
-  sleep sd
+  sample :drum_heavy_kick, rate: 0.75
+  sleep 0.5
+  sample :drum_heavy_kick
+  sleep 0.5
 end
 
 define :synths do
-  wait :tick
-  n = 2
-  p = [:c3, :d3, :e3].choose
-  in_thread do
-    use_transpose 0 + 7 + [0, -12].choose
-    use_synth :dsaw
-    with_fx :ixi_techno do
-      #play_pattern_timed ([55, p, 55, p, 57, p, 59, p]* 16).shuffle, [sd / 64], attack: 0, release: 0.12
-    end
-  end
-  with_fx :reverb, room: 0.9 do
-
-
-    n.times do
-      use_synth :tb303
-      with_synth :fm do
-        play p, release: 4
-      end
-
-      play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
-      #      play scale(:a, :minor_pentatonic, num_octaves: 4).choose, cutoff: rrand(60, 80), release: [0.125, 0.25, 0.5].choose, amp: 1
-      #      sleep sd / n
-    end
-  end
+  use_synth :mod_pulse
+  use_synth_defaults amp: 1, mod_range: 15, attack: 0.03, release: 0.6, cutoff: 80, pulse_width: 0.2, mod_rate: 4
+  play 30
+  sleep 0.25
+  play 38
+  sleep 0.25
 end
 
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
+ 
