@@ -1,5 +1,5 @@
 loop do
   use_synth :dsaw
-  play 81 - 12, detune: 0.2
+  play 81 - 12, detune: 0.3
   sleep 0.5
 end
