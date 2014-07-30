@@ -1,5 +1,5 @@
 load_samples(sample_names :drum)
-sd = sample_duration :loop_industrial
+sd = sample_duration :loop_amen
 define :drums do
   sync :tick
   #sample :loop_industrial, rate: [0.5, 1, 1, 1, -1].choose
