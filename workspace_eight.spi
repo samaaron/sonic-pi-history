@@ -1,13 +1,13 @@
 load_sample :drum_heavy_kick
 
-lp = :loop_compus
+lp = :loop_industrial
 sd = sample_duration lp
 
 define :drums do
   sync :tick
-  sample lp, rate: 1
 
-  sleep sd
+
+  sleep sd/2
 end
 
 define :bd do
@@ -23,8 +23,8 @@ define :synths do
   n = 2
   p = [52, 48, 50].choose
   in_thread do
-    32.times do
-      play p, release: sd/4, attack: 0, amp: 2
+    2.times do
+      play p, release: sd/8, attack: 0
       sleep sd/ 4
     end
   end
