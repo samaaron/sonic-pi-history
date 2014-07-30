@@ -19,19 +19,22 @@ define :bd do
   wait :tick
   #  sample :drum_bass_hard, amp: 2
   sample :drum_heavy_kick, amp: 4
-  
+
 end
 
 define :synths do
   wait :tick
   use_synth :fm
+  n = 2
   with_fx :reverb, room: 0.8 do
-    p = :e
-    use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.36, cutoff: 80, pulse_width: 0.2, mod_rate: 4
-    play scale(p, :minor_pentatonic, num_octaves: 4).choose
-    use_synth :tb303
-    sleep sd / 2
-    #play scale(p, :minor_pentatonic, num_octaves: 5).choose, cutoff: rrand(60, 120)
+    n.times do
+      p = :e
+      use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.36, cutoff: 80, pulse_width: 0.2, mod_rate: 4
+      play scale(p, :minor_pentatonic, num_octaves: 4).choose
+      use_synth :tb303
+      sleep sd / n
+      #play scale(p, :minor_pentatonic, num_octaves: 5).choose, cutoff: rrand(60, 120)
+    end
   end
 end
 
