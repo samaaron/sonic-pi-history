@@ -1,31 +1,6 @@
-lp = :loop_industrial
-sd = sample_duration lp
-load_sample :drum_heavy_kick
-
-define :drums do
-  #  sample :drum_heavy_kick, rate: 0.75
-  s =  choose sample_names :drum
-#    sample lp, rate: 0.5
-  with_fx :reverb do
-
-#    sample s,  amp: 0.5, rate: 0.5
-    sleep sd
-
+loop do
+  foo
+  loop do
+    bar
   end
-  sync :tick
 end
-
-define :synths do
-wait :tick
-  n = 2
-  use_synth :prophet
-  
-  #sample :bass_dnb_f
-  
-#  sample :drum_snare_hard, pan: rrand(-1, 1), amp: 0.5
-
-
-end
-
-in_thread(name: :drums){loop{drums}}
-in_thread(name: :synths){loop{synths}}
