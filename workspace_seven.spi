@@ -19,7 +19,7 @@ define :synths do
     use_transpose 24 + 7
     use_synth :beep
     with_fx :echo, delay: sd/16 do
-      play_pattern_timed ([55, p, 55, p, 57, p, 59, p]* 2).shuffle, [sd / 32], release: 0.12
+      play_pattern_timed 4[55, p, 55, p, 57, p, 59, p]* 2).shuffle, [sd / 64], release: 0.12
     end
   end
   with_fx :reverb, room: 0.9 do
