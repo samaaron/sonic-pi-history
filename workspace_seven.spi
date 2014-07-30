@@ -5,16 +5,18 @@ load_sample :drum_heavy_kick
 
 define :drums do
   sync :tick
-#  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
+  #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
-  sample(sample_names(:drum).choose)
+  with_fx :echo, decay: 0.5 do
+    sample(sample_names(:drum).choose)
   end
-  sleep 0.2
+  end
+  sleep 1
 end
 
 define :bd do
   wait :tick
-#  sample :drum_bass_hard, amp: 2
+  #  sample :drum_bass_hard, amp: 2
   sample :drum_heavy_kick, amp: 4
   sleep 0.8
 end
