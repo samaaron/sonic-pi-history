@@ -1,5 +1,6 @@
 loop do
   use_synth :dsaw
-  play 81 - 12, detune: 0.6
+  sample :drum_heavy_kick
+
   sleep 0.5
 end
