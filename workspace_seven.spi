@@ -10,7 +10,7 @@ end
 define :synths do
   wait :tick
   use_transpose 0
-  sample :bass_thick_c, start: 0, finish: 0.7
+  sample :bass_thick_c, start: 0, finish: 0.9
   sleep 0.25
 end
 
