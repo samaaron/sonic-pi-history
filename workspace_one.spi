@@ -2,6 +2,6 @@ use_synth :sound_in
 
 with_fx :echo do
   with_fx :reverb do
-    play, amp: 0.5
+    play amp: 0.5
   end
 end
