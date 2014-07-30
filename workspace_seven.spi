@@ -12,9 +12,6 @@ wait :tick
   with_fx :reverb do
     use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.6, cutoff: 80, pulse_width: 0.2, mod_rate: 4
     play scale(:e, :minor_pentatonic, num_octaves: 4).choose
-    sleep 0.25
-
-    sleep 0.25
   end
 end
 
