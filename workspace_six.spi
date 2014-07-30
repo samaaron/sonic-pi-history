@@ -16,7 +16,7 @@ define :drums do
 end
 
 define :synths do
-  n = 8
+  n = 2
   use_synth :prophet
   with_synth :fm do
     2.times do 
