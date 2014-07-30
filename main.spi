@@ -3,4 +3,6 @@ define :foo do
   sample :drum_heavy_kick
 end
 
-loop{foo}
+loop do
+  foo
+end
