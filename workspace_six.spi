@@ -17,7 +17,7 @@ end
 
 define :synths do
   n = 8
-  use_synth :tb303
+  use_synth :prophet
   with_synth :fm do
     2.times do 
     play :e1, release: 0.12
