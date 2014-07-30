@@ -13,7 +13,7 @@ define :synths do
  wait :tick
  n = 30 - 12
  use_synth :prophet
- play_pattern_timed [n, n, n, n, n, n], [sd/6], release: 0.14
+ play_pattern_timed [n, n, n, n, n, n], [sd/3], release: 0.14
 end
 
 in_thread(name: :drums){loop{drums}}
