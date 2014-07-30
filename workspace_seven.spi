@@ -26,7 +26,7 @@ define :synths do
   wait :tick
 
   n = 16
-  with_fx :reverb, room: 0.9 do
+  with_fx :reverb, room: 0.5 do
     n.times do
       p = :e
 
