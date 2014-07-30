@@ -2,7 +2,7 @@ a = 0
 
 loop do
   a = a + 0.1
-  play 70, amp: a, release: 0.1, attack: 0
+  play 70, amp: a, release: 0.3, attack: 0
   sleep 0.1
  end
   
