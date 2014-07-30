@@ -17,7 +17,7 @@ define :synths do
     n = 16
     n.times do
       use_synth :prophet
-      play chord([:e2, :e3, :e4, :e5].choose, :minor).choose, cutoff: rrand(60, 120), release: 0.25, amp: 2 if rand< 0.8
+      play chord([:e2, :e3, :e4, :a5].choose, :minor).choose, cutoff: rrand(60, 120), release: 0.25, amp: 2 if rand< 0.8
       sleep sd / n
     end
   end
