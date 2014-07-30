@@ -26,7 +26,7 @@ end
 
 define :synths do
   wait :tick
-  use_synth :prophet
+  use_synth :zawa
   p = 50
   use_transpose -12
   with_fx :reverb, room: 0.8 do
