@@ -17,8 +17,9 @@ define :synths do
     n = 2
     p = [:c3, :d3, :e3].choose
     in_thread do
+    use_transpose 24
         use_synth :beep
-        play_pattern_timed scale(:c, :minor, octave: 4)* 2, [sd/4], amp: 2
+          play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
       end
     n.times do
       use_synth :tb303
