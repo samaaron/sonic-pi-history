@@ -15,7 +15,7 @@ define :drums do
       sample :drum_heavy_kick, amp: 4
   sleep sd/2
   sample :elec_blip, amp: 2, rate: 2
-#      sample :bass_voxy_c , rate: 0.5
+      sample :bass_voxy_c , rate: 0.5
       #      sample :ambi_choir, rate: 0.7
       #      sample(sample_names(:misc).choose, rate: 4)
     end
