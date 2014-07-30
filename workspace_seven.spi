@@ -5,7 +5,7 @@ sd = sample_duration :loop_industrial
 
 define :drums do
   sync :tick
-  sample :loop_industrial, rate: 1
+  sample :loop_industrial, rate: 0.5
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/[4, 2, 8, 1].choose, decay: sd * 2 do
