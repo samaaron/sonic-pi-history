@@ -5,7 +5,7 @@ define :drums do
   sample :loop_compus, rate: 1
   with_fx :reverb, room: 0.9 do
     with_fx :echo, delay: sd / [4, 8, 2, 16].choose do
-      sample sample_names(:ambi).choose, start: 0, finish: 0.1, rate: 1, amp: 1
+      sample sample_names(:ambi).choose, start: 0, finish: 0.5, rate: 1, amp: 1
     end
   end
   sleep sd
