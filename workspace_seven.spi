@@ -28,7 +28,7 @@ define :synths do
   wait :tick
   use_synth :dsaw
   p = [52, 48, 50].choose
-  use_transpose 0
+  use_transpose 12
   with_fx :reverb, room: 0.3 do
     play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/16], attack: 0, release: 0.12, amp: 2, cutoff: rrand(80, 100)
   end
