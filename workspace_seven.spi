@@ -35,6 +35,7 @@ define :synths do
       play chord(:e3, :minor).choose, cutoff: rrand(60, 120)
 
       sleep sd / n
+      use_synth :fm
       play :e3
     end
   end
