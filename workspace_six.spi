@@ -1,8 +1,1 @@
-a = 0
-
-loop do
-  a += 0.05
-  play 70, amp: a, release: 0.3, attack: 0
-  sleep 0.1
- end
-  
+play :e3
