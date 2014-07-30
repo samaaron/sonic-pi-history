@@ -4,9 +4,9 @@ load_sample :drum_heavy_kick
 
 define :drums do
 #  sample :drum_heavy_kick, rate: 0.75
-  s =  choose sample_names :ambi
-  sample s if rand < 0.5
-  sleep sd
+  s =  choose sample_names :drum
+  sample s 
+  sleep sd / 8
 
 
 end
