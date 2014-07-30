@@ -22,7 +22,7 @@ define :synths do
     use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.36, cutoff: 80, pulse_width: 0.2, mod_rate: 4
     play scale(p, :minor_pentatonic, num_octaves: 4).choose
     use_synth :tb303
-    sleep 0.4
+    sleep 0.8
     play scale(p, :minor_pentatonic, num_octaves: 5).choose, cutoff: rrand(60, 120)
   end
 end
