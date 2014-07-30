@@ -6,7 +6,9 @@ load_sample :drum_heavy_kick
 define :drums do
   sync :tick
 #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
+  with_fx :reverb do
   sample(sample_names(:drum).choose)
+  end
   sleep 0.2
 end
 
