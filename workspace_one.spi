@@ -1,1 +1,4 @@
-play :C3
+loop do
+play 50
+sleep 1
+end
