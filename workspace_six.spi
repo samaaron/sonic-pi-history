@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 
 define :drums do
   sample :drum_heavy_kick, rate: 0.75
-sleep 1
+  sleep 1
 
 
 end
@@ -11,7 +11,7 @@ end
 define :synths do
   use_synth :fm
 
-  sample :ambi_choir, rate: 0.4 
+  sample :ambi_choir, rate: 0.3
 
   sleep 0.5
 
