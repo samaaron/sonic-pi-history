@@ -4,7 +4,7 @@ define :drums do
   sync :tick
 
   sample sample_names(:drum).choose, start: 0, finish: 0.1, rate: 1
-  sleep 0.05
+  sleep 0.5
 
   
 end
