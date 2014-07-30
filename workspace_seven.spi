@@ -9,6 +9,7 @@ define :drums do
   sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/[4, 2, 8, 1].choose, decay: sd * 2 do
+      sample :ambi_choir, rate: 0.5
       #sample(sample_names(:ambi).choose)
     end
   end
@@ -25,9 +26,9 @@ end
 define :synths do
   wait :tick
 
-  n = 16
+
   with_fx :reverb, room: 0.5 do
-    sample :ambi_choir, rate: 0.5
+    
   end
 end
 
