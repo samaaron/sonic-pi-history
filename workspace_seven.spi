@@ -12,7 +12,7 @@ end
 define :synths do
  wait :tick
  n = 30
- use_transpose 0.2
+ use_transpose 0.3
  use_synth :prophet
  with_fx :reverb do
    play_pattern_timed [n, n + 24, n + 48, n+ 7, n + 36, n] * 2, [sd/12], release: 0.1, amp: 4
