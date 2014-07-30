@@ -7,7 +7,7 @@ define :drums do
   s =  choose sample_names :drum
   with_fx :reverb do
   with_fx :echo, delay: sd / [4, 8, 16].choose do   
-  sample s, finish: 0.1, amp: 0.25
+    sample s, finish: 0.1, amp: 0.25
   sleep sd / 4
   end
  end
@@ -16,8 +16,8 @@ end
 
 define :synths do
   use_synth :fm
-  with_fx :echo do 
-#  sample :ambi_choir, rate: 0.4, start: 0.3, finish: rrand(0, 0.5)
+  with_fx :reverb do 
+    play chord(:e3, :minor).choose
   end
   sleep sd
 
