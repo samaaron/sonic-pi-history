@@ -17,7 +17,7 @@ define :synths do
     n = 16
     n.times do
       use_synth :tb303
-      play chord(:e2, :minor).choose, cutoff: rrand(60, 120), release: 0.25
+      play chord(:a2, :minor).choose, cutoff: rrand(60, 120), release: 0.25
       sleep sd / n
     end
   end
