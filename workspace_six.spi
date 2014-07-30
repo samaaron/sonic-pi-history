@@ -17,7 +17,7 @@ end
 define :synths do
   use_synth :fm
   with_fx :reverb do 
-    play chord(:e3, :minor).choose
+    play chord(:e3, :minor).choose, amp: 0.5
   end
   sleep sd
 
