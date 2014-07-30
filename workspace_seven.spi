@@ -18,9 +18,9 @@ define :synths do
   in_thread do
     use_transpose 24 + 7 + [0, -12].choose
     use_synth :dsaw
-    with_fx :echo, delay: sd/4 do
+
       play_pattern_timed ([55, p, 55, p, 57, p, 59, p]* 4).shuffle, [sd / 64], attack: 0, release: 0.12
-    end
+
   end
   with_fx :reverb, room: 0.9 do
 
