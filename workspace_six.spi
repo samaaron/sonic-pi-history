@@ -5,9 +5,10 @@ load_sample :drum_heavy_kick
 define :drums do
   #  sample :drum_heavy_kick, rate: 0.75
   s =  choose sample_names :drum
+  sample lp
   with_fx :reverb do
     with_fx :echo, delay: sd / [4, 8, 16].choose do
-      sample s, finish: 0.1, amp: 0.25
+      sample s, finish: 0.1, amp: 0.125
       sleep sd / 4
     end
   end
@@ -15,7 +16,7 @@ define :drums do
 end
 
 define :synths do
-  n = 4
+  n = 8
   use_synth :tb303
   n.times do
     with_fx :reverb, room: 0.8  do
