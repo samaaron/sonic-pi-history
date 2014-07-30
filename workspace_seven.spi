@@ -17,7 +17,7 @@ define :synths do
     n = 16
     n.times do
       use_synth :tb303
-      play scale(:e, :minor_pentatonic, num_octaves: 6).choose, cutoff: rrand(60, 120), release: [0.25, 0.5].choose, amp: 2 if rand< 0.8
+      play scale(:e, :minor_pentatonic, num_octaves: 6).choose, cutoff: rrand(60, 120), release: [0.25, 0.5].choose, amp: 1
       sleep sd / n
     end
   end
