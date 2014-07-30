@@ -5,7 +5,7 @@ load_sample :drum_heavy_kick
 define :drums do
   #  sample :drum_heavy_kick, rate: 0.75
   s =  choose sample_names :drum
-  sample lp, rate: -1
+  sample lp, rate: [0.5, 1, -1].choose
   with_fx :reverb do
 
    sample s,  amp: 0.125, rate: 0.5
