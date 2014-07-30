@@ -36,7 +36,7 @@ define :synths do
 
       sleep sd / n
       use_synth :fm
-      play :e3
+      play :e3, release:0.1
     end
   end
 end
