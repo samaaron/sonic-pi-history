@@ -13,7 +13,7 @@ end
 
 define :synths do
   wait :tick
-  with_fx :reverb, room: 0.8 do
+  with_fx :reverb, room: 0.5 do
     n = 4
     n.times do
       use_synth :tb303
