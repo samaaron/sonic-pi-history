@@ -5,7 +5,7 @@ sd = sample_duration :loop_amen
 
 define :drums do
   sync :tick
-#  sample :loop_industrial, rate: 1
+  sample :loop_amen, rate: 1
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/[4, 2, 8, 1].choose, decay: sd * 2 do
@@ -25,12 +25,12 @@ end
 define :synths do
   wait :tick
 
-  n = 8
+  n = 16
   with_fx :reverb, room: 0.1 do
     n.times do
       p = :e
 
-      use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.36, cutoff: 80, pulse_width: 0.2, mod_rate: 4
+      use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.236, cutoff: 80, pulse_width: 0.2, mod_rate: 4
       use_synth :tb303
       play chord(:e3, :minor).choose, cutoff: rrand(60, 120)
 
