@@ -21,7 +21,7 @@ define :synths do
       #      play_pattern_timed [n, n + 24, n + 48, n+ 7, n + 36, n] * 2, [sd/12], release: 0.1, amp: 4
     end
     n = n - 25
-    use_synth :zawa
+    use_synth :prophet
     play_pattern_timed [n] * 2, [sd/6], release: 1, amp: 1
   end
 end
