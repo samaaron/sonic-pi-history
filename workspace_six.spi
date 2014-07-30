@@ -13,7 +13,7 @@ define :synths do
 
   sample :ambi_choir, rate: 0.5
 
-
+  sleep 0.5
 
 end
 
