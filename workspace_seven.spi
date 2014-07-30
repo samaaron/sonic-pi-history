@@ -6,14 +6,15 @@ sd = sample_duration lp
 
 define :drums do
   sync :tick
-#  sample lp, rate: [1, 1, 1].choose
-  sample :drum_heavy_kick, amp: 4
-  sleep sd/2
-  sample :elec_blip, amp: 2, rate: 2
+  sample lp, rate: [1, 1, 1].choose
+
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
 
   with_fx :reverb, room: 0.8 do
     with_fx :echo, delay: sd/8, decay: sd * 2 do
+      sample :drum_heavy_kick, amp: 4
+  sleep sd/2
+  sample :elec_blip, amp: 2, rate: 2
 #      sample :bass_voxy_c , rate: 0.5
       #      sample :ambi_choir, rate: 0.7
       #      sample(sample_names(:misc).choose, rate: 4)
