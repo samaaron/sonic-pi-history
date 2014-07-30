@@ -22,6 +22,7 @@ define :synths do
         play p, release: 4
       end
       in_thread do
+      use_synth :beep
         play_pattern_timed scale(:c, :minor, octave: 3)* 2, [sd/32], amp: 4
       end
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
