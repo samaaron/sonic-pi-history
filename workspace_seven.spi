@@ -2,7 +2,7 @@ load_samples(sample_names :ambi)
 sd = sample_duration :loop_compus
 define :drums do
   sync :tick
-  #sample :loop_compus, rate: 1
+  sample :loop_compus, rate: 1
   with_fx :reverb, room: 0.9 do
     with_fx :echo, delay: sd / [4, 8, 2, 16].choose do
       sample sample_names(:ambi).choose, start: 0, finish: 0.5, rate: 0.5, amp: 1
@@ -17,7 +17,7 @@ define :synths do
     n = 2
     n.times do
       use_synth :tb303
-      p = 48
+      p = 50
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 16]
 #      play scale(:a, :minor_pentatonic, num_octaves: 4).choose, cutoff: rrand(60, 80), release: [0.125, 0.25, 0.5].choose, amp: 1
 #      sleep sd / n
