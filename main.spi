@@ -1,0 +1,8 @@
+define :foo do
+  wait :tick
+  sample :drum_heavy_kick
+end
+#hi
+loop do
+  foo
+end
