@@ -10,7 +10,7 @@ define :drums do
 
       sample s,  amp: 0.125
       sleep sd 
-    end
+
   end
 
 end
