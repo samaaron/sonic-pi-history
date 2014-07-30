@@ -1,12 +1,12 @@
 
 load_sample :drum_heavy_kick
 
-sd = sample_duration :loop_amen
+sd = sample_duration :loop_compus
 
 define :drums do
   sync :tick
   #sample :loop_amen, rate: 1
-  #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
+  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/[4, 2, 8, 1].choose, decay: sd * 2 do
       #sample(sample_names(:ambi).choose)
