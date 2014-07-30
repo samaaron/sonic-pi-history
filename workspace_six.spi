@@ -27,7 +27,7 @@ wait :tick
 
   end
   p = 50
-  n.times do
+  4.times do
     with_fx :reverb, room: 0.8  do
       play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 8]
     end
