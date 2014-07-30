@@ -23,7 +23,7 @@ define :synths do
   use_synth :fm
   n = 2
   p = [52, 48, 50].choose
-#  play :c2, release: sd
+ play p, release: sd
   use_transpose 0
   with_fx :reverb, room: 0.8 do
     with_fx :ixi_techno, rate: sd/16 do
