@@ -25,7 +25,7 @@ end
 define :synths do
   wait :tick
   use_synth :fm
-  n = 8
+  n = 4
   with_fx :reverb, room: 0.8 do
     n.times do
       p = :e
