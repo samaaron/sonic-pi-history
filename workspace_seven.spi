@@ -8,6 +8,7 @@ define :drums do
   sync :tick
 #  sample lp, rate: [1, 1, 1].choose
   sample :drum_heavy_kick, amp: 4
+  sleep sd/2
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
 
   with_fx :reverb, room: 0.8 do
@@ -17,7 +18,7 @@ define :drums do
       #      sample(sample_names(:misc).choose, rate: 4)
     end
   end
-  sleep sd
+  sleep sd/2
 end
 
 define :bd do
