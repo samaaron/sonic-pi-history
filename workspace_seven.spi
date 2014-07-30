@@ -15,9 +15,12 @@ define :synths do
  use_transpose 12
  use_synth :prophet
  with_fx :reverb do
+ in_thread do
    play_pattern_timed [n, n + 24, n + 48, n+ 7, n + 36, n] * 2, [sd/12], release: 0.1, amp: 4
+   end
    use_transpose 0
-      play_pattern_timed [n, n + 24, n + 48, n+ 7, n + 36, n] * 2, [sd/12], release: 0.1, amp: 4
+   sleep 
+   play_pattern_timed [n, n + 24, n + 48, n+ 7, n + 36, n] * 2, [sd/12], release: 0.1, amp: 4
  end
 end
 
