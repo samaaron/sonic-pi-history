@@ -14,10 +14,10 @@ end
 define :synths do
   wait :tick
   with_fx :reverb, room: 0.5 do
-    n = 8
+    n = 16
     n.times do
       use_synth :tb303
-      play chord(:e2, :minor).choose, cutoff: rrand(60, 120), release: 0.5
+      play chord(:e2, :minor).choose, cutoff: rrand(60, 120), release: 0.25
       sleep sd / n
     end
   end
