@@ -28,7 +28,7 @@ define :synths do
   wait :tick
   use_synth :fm
   p = [52, 48, 50].choose
-  play p
+  play p, release: sd
   use_transpose 0
   with_fx :reverb, room: 0.3 do
   use_synth :tb303
