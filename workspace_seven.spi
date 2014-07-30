@@ -20,7 +20,7 @@ define :synths do
        use_transpose 24 + 12
        use_synth :beep
        with_fx :echo do
-        play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 32], release: 0.2
+        play_pattern_timed [55, p, 55, p, 57, p, 59, p], [sd / 32], release: 0.12
         end
       end
     n.times do
