@@ -9,7 +9,7 @@ end
 
 define :bd do
   sync :tick
-  sleep 0.4
+  sleep 0.8
   sample :drum_bass_hard
 
 
