@@ -11,7 +11,7 @@ define :bd do
   wait :tick
 
   sample :drum_bass_hard
-
+sleep 0.5
 end
 
 define :synths do
