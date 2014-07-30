@@ -20,7 +20,7 @@ wait :tick
   n = 2
   use_synth :prophet
   
-
+sample :bass_
   
 #  sample :drum_snare_hard, pan: rrand(-1, 1), amp: 0.5
 
