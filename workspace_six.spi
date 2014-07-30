@@ -19,11 +19,7 @@ define :synths do
 wait :tick
   n = 2
   use_synth :prophet
-  with_synth :fm do
-    2.times do
-      play :e1, release: 0.12
-      sleep sd / 4
-    end
+  
 
   end
   p = 48
