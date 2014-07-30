@@ -10,7 +10,7 @@ define :drums do
   with_fx :reverb do
     with_fx :echo, delay: sd/8, decay: sd * 2 do
       sample :ambi_choir, rate: 0.28
-      #sample(sample_names(:ambi).choose)
+      sample(sample_names(:ambi).choose)
     end
   end
   sleep sd
