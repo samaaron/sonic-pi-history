@@ -2,13 +2,12 @@
 load_sample :drum_heavy_kick
 
 define :drums do
-
+  sync :tick
   sleep 0.5
-
-
 end
 
 define :synths do
+wait :tick
   use_synth :fm
   with_fx :reverb do
     use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.6, cutoff: 80, pulse_width: 0.2, mod_rate: 4
