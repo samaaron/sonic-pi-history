@@ -1,3 +1,4 @@
+load_samples :drums
 define :drums do
   sync :tick
   with_fx :echo do
