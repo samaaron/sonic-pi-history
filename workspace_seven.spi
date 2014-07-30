@@ -16,7 +16,7 @@ define :synths do
   n = 2
   p = [:c3, :d3, :e3].choose
   in_thread do
-    use_transpose 24 + 7 + [0, -12].choose
+    use_transpose 0 + 7 + [0, -12].choose
     use_synth :dsaw
     with_fx :ixi_techno do
       play_pattern_timed ([55, p, 55, p, 57, p, 59, p]* 16).shuffle, [sd / 64], attack: 0, release: 0.12
