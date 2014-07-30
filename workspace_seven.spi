@@ -7,9 +7,9 @@ define :drums do
   sync :tick
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
-  with_fx :echo, delay: sd/4, decay: sd do
-    sample(sample_names(:drum).choose)
-  end
+    with_fx :echo, delay: sd/[4, 2, 8].choose, decay: sd do
+      sample(sample_names(:drum).choose)
+    end
   end
   sleep sd
 end
