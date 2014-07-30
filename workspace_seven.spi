@@ -6,7 +6,7 @@ sd = sample_duration lp
 
 define :drums do
   sync :tick
-#  sample lp, rate: [1, 1, 1].choose
+  sample lp, rate: [1, 1, 1].choose
   sample :drum_heavy_kick, amp: 4
   sleep sd/2
   sample :elec_blip, amp: 2, rate: 2
