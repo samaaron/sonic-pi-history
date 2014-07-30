@@ -15,7 +15,7 @@ define :drums do
 end
 
 define :synths do
-  n = 2
+  n = 4
   use_synth :tb303
   n.times do
     with_fx :reverb do
