@@ -17,7 +17,7 @@ define :synths do
     n = 4
     n.times do
       use_synth :tb303
-      play chord(:e3, :minor).choose, cutoff: 60
+      play chord(:e3, :minor).choose, cutoff: 70
       sleep sd / n
     end
   end
