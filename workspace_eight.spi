@@ -44,5 +44,4 @@ end
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
 in_thread(name: :bd){loop{bd}}
-
-˜ 
+ 
