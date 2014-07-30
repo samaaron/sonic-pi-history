@@ -8,7 +8,7 @@ define :drums do
   with_fx :echo, delay: sd / 8 do   
   sample s, finish: 0.1
   sleep sd / 4
-
+end
 
 end
 
