@@ -24,7 +24,7 @@ define :synths do
   n = 2
   p = [52, 48, 50].choose
   in_thread do
-    32.times do
+    2.times do
       play p, release: sd/8, attack: 0
       sleep sd/ 4
     end
