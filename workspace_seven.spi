@@ -10,7 +10,7 @@ end
 define :bd do
   wait :tick
 
-  sample :drum_bass_hard
+  sample :drum_bass_hard, amp: 4
   sleep 0.4
 end
 
