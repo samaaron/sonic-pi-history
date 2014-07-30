@@ -11,7 +11,7 @@ end
 define :synths do
   use_synth :fm
 
-  sample :ambi_choir, rate: 0.2
+  sample :ambi_choir, rate: 0.3
 
   sleep 1
 
