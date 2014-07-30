@@ -5,7 +5,7 @@ load_sample :drum_heavy_kick
 define :drums do
 #  sample :drum_heavy_kick, rate: 0.75
   s =  choose sample_names :drum
-  with_fx :echo, delay: sd / 8  
+  with_fx :echo, delay: sd / 8 do   
   sample s, finish: 0.1
   sleep sd / 4
 
