@@ -1,4 +1,4 @@
-load_samples(sample_names :drum)
+load_samples(sample_names :ambi)
 sd = sample_duration :loop_compus
 define :drums do
   sync :tick
