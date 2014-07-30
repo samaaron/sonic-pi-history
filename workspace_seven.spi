@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 
 define :drums do
   sync :tick
-  sleep 0.5
+  sleep 0.2
 end
 
 define :synths do
