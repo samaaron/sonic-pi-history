@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 
 define :drums do
   sync :tick
-  sample :drum_cymbal_closed
+  sample :drum_cymbal_closed, amp: rrand(0.2, 1)
   sleep 0.2
 end
 
