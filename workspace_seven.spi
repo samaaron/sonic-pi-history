@@ -9,18 +9,10 @@ define :drums do
 end
 
 define :synths do
-  use_synth :dsaw
   use_transpose 0
-  use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.13, cutoff: rrand(60, 120), pulse_width: 0.2, mod_rate: 4
   sample :ambi_dark_woosh if rand < 0.1  
   sample :ambi_lunar_land if rand < 0.1
-
   sample :ambi_glass_hum, rate: 0.3, start: 0.5, finish: 0
-
-  sleep 0.5
-  use_synth :fm
-  play :e2, release: 0.1
-  sleep 0.5
 end
 
 in_thread(name: :drums){loop{drums}}
