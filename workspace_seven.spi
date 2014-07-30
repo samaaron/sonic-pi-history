@@ -3,10 +3,10 @@ load_samples(sample_names :drum)
 define :drums do
   sync :tick
   sample :loop_industrial
+  with_fx :reverb, room: 0.9 do
   sample sample_names(:drum).choose, start: 0, finish: 0.1, rate: 1
+  end
   sleep sample_duration :loop_industrial
-
-  
 end
 
 define :synths do
