@@ -15,7 +15,7 @@ define :synths do
 
   play chord(:e3, :minor).choose
   sleep 0.125
-  play :e4
+  play :e2
   sleep 0.125
 end
 
