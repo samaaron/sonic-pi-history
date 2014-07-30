@@ -3,6 +3,7 @@ load_sample :drum_heavy_kick
 
 define :drums do
   sync :tick
+  sample :drum_cymbal_closed
   sleep 0.2
 end
 
