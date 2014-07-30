@@ -18,7 +18,7 @@ define :synths do
   n = 4
   use_synth :tb303
   n.times do
-    with_fx :reverb do
+    with_fx :reverb, room: 0.8  do
       play chord(:e3, :minor).choose, amp: 0.5, cutoff: rrand(60, 120), release: 0.2
     end
     sleep sd/n
