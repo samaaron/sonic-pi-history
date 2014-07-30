@@ -8,7 +8,7 @@ define :drums do
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/[4, 2, 8, 1].choose, decay: sd * 2 do
-      sample(sample_names(:drum).choose)
+      sample(sample_names(:perc).choose)
     end
   end
   sleep sd
