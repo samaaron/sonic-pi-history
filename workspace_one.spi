@@ -1,1 +1,6 @@
-play 53
+in_thread(name: :sam) do
+  loop do
+  play 53
+  sleep 1
+end
+end
