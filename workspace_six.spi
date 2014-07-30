@@ -1,4 +1,4 @@
-lp = :loop_amen
+lp = :loop_compus
 sd = sample_duration lp
 load_sample :drum_heavy_kick
 
