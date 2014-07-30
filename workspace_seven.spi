@@ -10,7 +10,7 @@ define :drums do
   sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/8, decay: sd * 2 do
-      sample :ambi_choir, rate: 0.28
+      sample :ambi_choir, rate: 0.3
       sample(sample_names(:ambi).choose)
     end
   end
