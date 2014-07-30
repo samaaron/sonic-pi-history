@@ -1,6 +1,1 @@
-loop do
-  foo
-  loop do
-    bar
-  end
-end
+play :e3
