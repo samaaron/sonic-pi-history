@@ -32,7 +32,7 @@ define :synths do
 
       use_synth_defaults amp: 1, mod_range: 15, attack: 0, release: 0.236, cutoff: 80, pulse_width: 0.2, mod_rate: 4
       use_synth :tb303
-      play chord([:e3, :e2].choose, :minor).choose, cutoff: rrand(60, 120), release: 0.4
+      play chord([:e3, :e2, :e4].choose, :minor).choose, cutoff: rrand(60, 120), release: 0.4
 
       sleep sd / n
       use_synth :fm
