@@ -29,7 +29,7 @@ define :synths do
   use_synth :fm
   p = [52, 48, 50].choose
   play p
-  use_transpose 12
+  use_transpose 0
   with_fx :reverb, room: 0.3 do
   use_synth :tb303
     play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/16], attack: 0, release: 0.12, amp: 2, cutoff: rrand(80, 100)
