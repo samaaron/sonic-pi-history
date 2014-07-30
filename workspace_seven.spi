@@ -14,7 +14,7 @@ wait :tick
     play scale(:e, :minor_pentatonic, num_octaves: 4).choose
     use_synth :tb303
     sleep 0.2
-    play scale(:e, :minor_pentatonic, num_octaves: 5).choose
+    play scale(:e, :minor_pentatonic, num_octaves: 5).choose, cutoff: rrand(60, 120)
   end
 end
 
