@@ -9,7 +9,7 @@ define :drums do
   #  sample :drum_cymbal_closed, amp: rrand(0.2, 1.5)
   with_fx :reverb do
     with_fx :echo, delay: sd/[4, 2, 8, 1].choose, decay: sd * 2 do
-      sample(sample_names(:ambi).choose)
+      #sample(sample_names(:ambi).choose)
     end
   end
   sleep sd
@@ -36,7 +36,7 @@ define :synths do
 
       sleep sd / n
       use_synth :fm
-      play :e2, release: 0.1
+      #play :e2, release: 0.1
     end
   end
 end
