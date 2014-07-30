@@ -11,7 +11,7 @@ define :drums do
     sample(sample_names(:drum).choose)
   end
   end
-  sleep 1
+  sleep sd
 end
 
 define :bd do
