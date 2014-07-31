@@ -23,4 +23,4 @@ in_thread(name: :v) do
   end
 end
 
-control voice, amp: 0.9
+control voice, amp: 0.3
