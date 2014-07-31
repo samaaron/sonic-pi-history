@@ -1,7 +1,7 @@
 with_fx :ixi_techno do |r|
-define :rrr do
-r
-end
-use_synth :dsaw
-play 50, sustain: 100
+  define :rrr do
+    r
+  end
+  use_synth :dsaw
+  play 50, sustain: 100
 end
