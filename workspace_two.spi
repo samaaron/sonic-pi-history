@@ -1,4 +1,4 @@
-with_fx :ixi_techno do |r|
+with_fx :ixi_techno, rate_slide: 1 do |r|
   define :rrr do
     r
   end
