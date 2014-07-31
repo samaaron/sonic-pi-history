@@ -16,7 +16,7 @@ in_thread(name: :v) do
       r
     end
     use_synth :sound_in
-    p = play sustain: 100, amp: 0.1
+    p = play sustain: 100, amp: 0
     define :voice do
       p
     end
