@@ -2,6 +2,6 @@ with_fx :reverb do |r|
 define :rrr do
 r
 end
-with_synth :dsaw
+use_synth :dsaw
 play 50, sustain: 100
 end
