@@ -6,6 +6,7 @@ in_thread(name: drums) do
       sample :drum_cymbal_closed
     end
   end
+  end
 
   with_fx :ixi_techno, rate_slide: 1 do |r|
 
