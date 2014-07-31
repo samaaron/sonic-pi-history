@@ -1,4 +1,4 @@
-in_thread(name: drums) do
+in_thread(name: :drums) do
   with_fx :reverb do
     loop do
       sample :drum_heavy_kick
@@ -6,13 +6,13 @@ in_thread(name: drums) do
       sample :drum_cymbal_closed
     end
   end
-  end
+end
 
-  with_fx :ixi_techno, rate_slide: 1 do |r|
+with_fx :ixi_techno, rate_slide: 1 do |r|
 
-    define :rrr3 do
-      r
-    end
-    use_synth :sound_in
-    play sustain: 100
+  define :rrr3 do
+    r
   end
+  use_synth :sound_in
+  play sustain: 100
+end
