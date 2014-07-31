@@ -4,6 +4,7 @@ in_thread(name: :drums) do
       sample :drum_heavy_kick
       sleep 1
       sample :drum_cymbal_closed
+      sleep 1
     end
   end
 end
@@ -14,5 +15,5 @@ with_fx :ixi_techno, rate_slide: 1 do |r|
     r
   end
   use_synth :sound_in
-  play sustain: 100, amp: 0.1
+  play sustain: 100, amp: 0.3
 end
