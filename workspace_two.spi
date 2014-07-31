@@ -22,3 +22,5 @@ in_thread(name: :v) do
     end
   end
 end
+
+control p, amp: 0.1
