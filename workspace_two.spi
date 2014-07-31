@@ -12,13 +12,16 @@ end
 in_thread(name: :v) do
   with_fx :ixi_techno, rate_slide: 1 do |r|
 
-    define :rrr3 do
-      r
-    end
+    
     use_synth :sound_in
-    p = play sustain: 100, amp: 0
+    p = play sustain: 1000, amp: 0
+    
     define :voice do
       p
+    end
+    
+    define :rrr3 do
+      r
     end
   end
 end
