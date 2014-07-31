@@ -1,7 +1,17 @@
-with_fx :ixi_techno, rate_slide: 1 do |r|
-  define :rrr3 do
-    r
+in_thread(name: drums) do
+  with_fx :reverb do
+    loop do
+      sample :drum_heavy_kick
+      sleep 1
+      sample :drum_cymbal_closed
+    end
   end
-  use_synth :dsaw
-  play 50.1 - 12, sustain: 100
-end
+
+  with_fx :ixi_techno, rate_slide: 1 do |r|
+
+    define :rrr3 do
+      r
+    end
+    use_synth :sound_in
+    play sustain: 100
+  end
