@@ -8,7 +8,8 @@ in_thread(name: :drums) do
     end
   end
 end
-if false
+if true
+
 with_fx :ixi_techno, rate_slide: 1 do |r|
 
   define :rrr3 do
