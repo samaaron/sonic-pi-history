@@ -8,7 +8,7 @@ in_thread(name: :drums) do
     end
   end
 end
-
+if false
 with_fx :ixi_techno, rate_slide: 1 do |r|
 
   define :rrr3 do
@@ -16,4 +16,5 @@ with_fx :ixi_techno, rate_slide: 1 do |r|
   end
   use_synth :sound_in
   play sustain: 100, amp: 0.3
+end
 end
