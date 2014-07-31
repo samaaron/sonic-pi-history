@@ -1,4 +1,1 @@
-loop do
-  sync :tick
-  sleep 0.5
-end
+play 50
