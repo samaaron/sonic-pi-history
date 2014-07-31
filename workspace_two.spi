@@ -14,5 +14,5 @@ with_fx :ixi_techno, rate_slide: 1 do |r|
     r
   end
   use_synth :sound_in
-  play sustain: 100
+  play sustain: 100, amp: 0.1
 end
