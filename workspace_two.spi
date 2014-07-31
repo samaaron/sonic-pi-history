@@ -1,7 +1,7 @@
 with_fx :ixi_techno, rate_slide: 1 do |r|
-  define :rrr2 do
+  define :rrr3 do
     r
   end
   use_synth :dsaw
-  play 50.1, sustain: 100
+  play 50.1 - 12, sustain: 100
 end
