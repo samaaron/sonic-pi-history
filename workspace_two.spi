@@ -1,4 +1,4 @@
-with_fx :reverb do |r|
+with_fx :ixi_techno do |r|
 define :rrr do
 r
 end
