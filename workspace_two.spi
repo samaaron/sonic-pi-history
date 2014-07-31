@@ -1,1 +1,6 @@
-play 50
+with_fx :reverb do |r|
+define :rrr do
+r
+end
+play 50, sustain: 100
+end
