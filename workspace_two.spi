@@ -24,3 +24,4 @@ in_thread(name: :v) do
 end
 
 control voice, amp: 0.3
+control rrr3, rate: 3
