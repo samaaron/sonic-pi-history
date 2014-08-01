@@ -11,7 +11,7 @@ end
 
 in_thread(name: :v) do
   with_fx :ixi_techno, rate_slide: 1 do |r|
-
+  
     
     use_synth :sound_in
     p = play sustain: 1000, amp: 0
