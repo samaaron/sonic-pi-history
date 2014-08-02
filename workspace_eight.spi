@@ -7,7 +7,7 @@ define :drums do
   sync :tick
   sample lp, rate: 2, amp: 0.5, amp: 2
 
-  sleep sd
+  sleep sd / 2
 end
 
 define :bd do
