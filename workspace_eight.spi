@@ -29,6 +29,9 @@ define :synths do
   use_synth :fm
   n = 1
   p = [52, 48, 50].choose
+  
+  use_transpose 0
+  with_fx :reverb, room: 0.8 do
   in_thread do
     16.times do
       use_synth :prophet
@@ -38,8 +41,6 @@ define :synths do
       sleep sd/ 8
     end
   end
-  use_transpose 0
-  with_fx :reverb, room: 0.8 do
     with_fx :ixi_techno, rate: sd/16 do
       n.times do
         use_synth :prophet
