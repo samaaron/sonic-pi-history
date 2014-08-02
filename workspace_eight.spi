@@ -64,7 +64,7 @@ define :synths do
     with_fx :ixi_techno, rate: sd/16 do
       16.times do
         use_synth :prophet
-        play chord([:c4, :c2, :c3, :c1].choose, :minor).choose, release: 0.25, attack: 0, cutoff: rrand(60, 120)
+        play chord([:c4, :c2, :c3, :c1].choose, :minor).choose, release: 0.25, attack: 0, cutoff: rrand(60, 120), amp: 2
         sleep sd / 16
         #   play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/8], attack: 0, release: 0.131, amp: 2, cutoff: rrand(80, 100)
       end
