@@ -64,7 +64,7 @@ define :synths do
   in_thread do
     with_fx :reverb, room: 0.2 do
       with_fx :ixi_techno, rate: sd/16 do
-        16.times do
+        1.times do
           use_synth :prophet
           use_transpose 12
           #play chord([:c4, :c2, :c3, :c1, :c5].choose, :minor).choose, release: 0.1q5, attack: 0, cutoff: rrand(60, 70) + 30, amp: 2
