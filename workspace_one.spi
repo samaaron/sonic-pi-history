@@ -3,7 +3,7 @@ use_synth :fm
 #use_synth_defaults sustain: 10
 set_volume! 0.3
 
-play 69.2, depth: 1, sustain: 10, amp: 0.5
+play 69.1, depth: 1, sustain: 10, amp: 0.5
 if false
   loop do
     sample :drum_bass_hard
