@@ -42,7 +42,7 @@ define :synths do
       use_synth :prophet
       #      play p, release: sd/8, attack: 0, amp: 5, release: 0.505, cutoff: rrand(100, 120)
       use_synth :mod_saw
-      play p + 12, release: sd/8, attack: 0, amp: 1, release: 0.8, rate: sd, cutoff: rrand(60, 120), detune: 12
+      play p + 12, release: sd/8, attack: 0, amp: 1, release: 1, rate: sd, cutoff: rrand(60, 120), detune: 12
       sleep sd/ 1
     end
   end
