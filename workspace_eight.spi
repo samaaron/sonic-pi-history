@@ -16,7 +16,7 @@ define :bd do
     with_fx :reverb, room: 20 do
       with_fx :compressor do
         16.times do
-   #       sample :drum_bass_hard, amp: 10
+          sample :drum_bass_hard, amp: 10
     #      sample :drum_bass_soft, amp: 10
       #    sample :elec_blip2, rate: [0.5, 1, 2, 4, 8, 16].choose, amp: 0.5
           #sample :bass_hit_c, amp: 5
