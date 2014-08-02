@@ -1,5 +1,5 @@
 use_synth :fm
-use_transpose -12.6
+use_transpose -12.7
 use_synth_defaults sustain: 10
 #play :Fs5
 
