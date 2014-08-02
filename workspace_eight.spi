@@ -51,13 +51,13 @@ define :synths do
   n = 1
   p = [52, 48, 50].choose
   in_thread do
-    4.times do
+    8.times do
       sample :drum_heavy_kick, amp: 2
       use_synth :supersaw
       # play p, release: sd/8, attack: 0, amp: 1, release: 0.505, cutoff: rrand(100, 120)
       use_synth :mod_saw
       # play p + 0, release: sd/8, attack: 0, amp: 0.7, release: 1, mod_rate: sd * 4, mod_range: 12, cutoff: rrand(100, 120), detune: 12
-      sleep sd/ 1
+      sleep sd/ 2
     end
   end
   use_transpose 0
