@@ -4,7 +4,7 @@ use_synth :fm
 set_volume! 0.3
 
 with_fx :slicer, rate: 16 do
-  play 52, depth: 2, sustain: 10, amp: 0.5
+  play 50, depth: 2, sustain: 10, amp: 0.5
 end
 if false
   loop do
