@@ -14,13 +14,13 @@ define :bd do
   wait :tick
   with_fx :echo, delay: sd * 1 do
 #    sample :bass_woodsy_c, amp: 1, rate: 1, release: 0.4, sustain: 0, attack: 0
-    2.times do
+    4.times do
 #      sample :elec_blip2, rate: [1, 2, 4, 8, 16, 32].choose * (7.0 / 12), amp: 2
 #      sample :elec_bell, rate: [1, 0.5, 2, 4].choose * 16 if rand < 0.9
       use_synth :prophet
       use_transpose 0
       play scale(:e, :minor_pentatonic, num_octaves: 6).choose, attack: 0, release: rrand(0.1, 0.223), amp: 3
-      sleep sd / 2
+      sleep sd / 4
     end
 
   end
