@@ -2,5 +2,5 @@ loop do
 wait :foo
 
 sample :drum_bass_hard
-sleep 1
+sleep 0.5
 end
