@@ -60,7 +60,7 @@ define :synths do
     end
   end
   use_transpose 0
-  with_fx :reverb, room: 0.1 do
+  with_fx :reverb, room: 0.2 do
     with_fx :ixi_techno, rate: sd/16 do
       16.times do
         use_synth :prophet
