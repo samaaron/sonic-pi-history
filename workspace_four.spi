@@ -15,9 +15,9 @@ end
 define :cccc do
 wait :foo
 
-      play :drum_heavy_kick
+      sample :drum_heavy_kick
       sleep 1
 end
 
 #loop{bbbb}
-loop{cccc}
+#loop{cccc}
