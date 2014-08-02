@@ -7,7 +7,7 @@ define :bbbb do
 
   use_transpose -12
   sync :foo
-  play chord([[:a3, :minor]].choose), attack: 0, release: 0.3,  cutoff: rrand(60, 120)
+  play chord([[:a3, :minor]].choose), attack: 0, release: 0.2,  cutoff: rrand(60, 120)
   sleep 0.125
   #  end
 end
