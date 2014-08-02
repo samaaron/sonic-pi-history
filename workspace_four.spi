@@ -17,7 +17,7 @@ define :eeee do
     wait :foo
 
     #with_fx :reverb, room: 0.4 do
-    sample :elec_filt_snare, attack: 0, release: 0.1, sustain: 0, amp: 0.51
+    sample :elec_filt_snare, attack: 0, release: 0.1, sustain: 0, amp: 0.51, rate: 2
     #end
 
 #  end
@@ -28,7 +28,7 @@ define :cccc do
   with_fx :compressor, clamp_time: 0.1, releax_time: 0.1 do
 
       sample :drum_heavy_kick
-      #sample :drum_bass_hard
+      #esample :drum_bass_hard
       #sample :bass_hit_c
       sample :bass_thick_c, rate: 0.5, start: 0, finish: 0.15
 
