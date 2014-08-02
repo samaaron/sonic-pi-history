@@ -12,14 +12,16 @@ end
 
 define :bd do
   wait :tick
-  with_fx :reverb do
-    with_fx :compressor do
-      2.times do
-        sample :drum_bass_hard, amp: 2
-        sample :bass_hit_c, amp: 5
-        sample :bass_voxy_hit_c, amp: 20
-        #      sample :bass_voxy_c
-        sleep sd / 16
+  with_fx :echo, decay: sd / 8 do
+    with_fx :reverb do
+      with_fx :compressor do
+        2.times do
+          sample :drum_bass_hard, amp: 2
+          sample :bass_hit_c, amp: 5
+          sample :bass_voxy_hit_c, amp: 20
+          #      sample :bass_voxy_c
+          sleep sd / 16
+        end
       end
     end
   end
