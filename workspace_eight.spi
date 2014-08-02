@@ -57,7 +57,7 @@ define :synths do
       # play p, release: sd/8, attack: 0, amp: 1, release: 0.505, cutoff: rrand(100, 120)
       use_synth :mod_saw
       # play p + 0, release: sd/8, attack: 0, amp: 0.7, release: 1, mod_rate: sd * 4, mod_range: 12, cutoff: rrand(100, 120), detune: 12
-      sleep sd/ 2
+      sleep sd/ 4
     end
   end
   use_transpose 0
