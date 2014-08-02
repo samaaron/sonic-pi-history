@@ -17,7 +17,7 @@ define :bd do
     2.times do
 #      sample :elec_blip2, rate: [1, 2, 4, 8, 16, 32].choose * (7.0 / 12), amp: 2
 #      sample :elec_bell, rate: [1, 0.5, 2, 4].choose * 16 if rand < 0.9
-      use_synth :fm
+      use_synth :tb303
       play [:e3, :e2, :c5].choose, attack: 0, release: rrand(0.1, 0.3), cutoff: rrand(70, 129)
       sleep sd / 2
     end
