@@ -6,7 +6,7 @@ set_volume! 0.3
 with_fx :slicer do
 play 60, depth: 2, sustain: 10, amp: 0.5
 end
-if true
+if false
   loop do
     sample :drum_bass_hard
     in_thread do
