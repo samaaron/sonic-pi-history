@@ -13,17 +13,17 @@ end
 define :bd do
   wait :tick
   with_fx :compressor do
-  sample :drum_bass_hard, amp: 2
-  sample :bass_hit_c, amp: 5
+    sample :drum_bass_hard, amp: 2
+    sample :bass_hit_c, amp: 5
   end
 
   with_fx :echo, delay: sd * 1 do
     4.times do
       sleep sd / 8
 
-#      sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
+            sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
       sample :elec_blip2, rate: [1, 2, 4, 8, 16, 0.5, 0.25].choose, amp: 2
-#      sample :elec_blup, rate: 2
+      #      sample :elec_blup, rate: 2
       sample :elec_flip, rate: [20, 40, 10].choose
     end
 
@@ -40,7 +40,7 @@ define :synths do
   in_thread do
     16.times do
       use_synth :prophet
-#      play p, release: sd/8, attack: 0, amp: 5, release: 0.505, cutoff: rrand(100, 120)
+      #      play p, release: sd/8, attack: 0, amp: 5, release: 0.505, cutoff: rrand(100, 120)
       use_synth :dsaw
       #play p + 24, release: sd/8, attack: 0, amp: 3, release: 0.12, cutoff: rrand(60, 120), detune: 0.01
       sleep sd/ 4
@@ -52,7 +52,7 @@ define :synths do
       2.times do
         use_synth :prophet
         #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
-     #   play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/8], attack: 0, release: 0.131, amp: 2, cutoff: rrand(80, 100)
+        #   play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/8], attack: 0, release: 0.131, amp: 2, cutoff: rrand(80, 100)
       end
     end
   end
