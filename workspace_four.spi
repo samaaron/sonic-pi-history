@@ -17,7 +17,7 @@ define :eeee do
   wait :foo
 
 
-    sample :elec_filt_snare, attack: 0, release: 0.1, sustain: 0, amp: 0.51, rate: 2
+    #sample :elec_filt_snare, attack: 0, release: 0.1, sustain: 0, amp: 0.51, rate: 2
 
 
   #  end
