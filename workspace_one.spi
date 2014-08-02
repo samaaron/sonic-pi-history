@@ -4,19 +4,19 @@ use_synth :fm
 
 
 #play :Fs5, depth: 1
-
-loop do
-  sample :drum_bass_hard
-  in_thread do
-    2.times do
-      with_synth :beep do
-
-        play 30, attack: 0, release: 0.3
+if false
+  loop do
+    sample :drum_bass_hard
+    in_thread do
+      2.times do
+        with_synth :beep do
+          play 30, attack: 0, release: 0.3
+        end
+        sleep 0.5
       end
-      sleep 0.5
     end
+    sleep 1
   end
-  sleep 1
 end
 
 
