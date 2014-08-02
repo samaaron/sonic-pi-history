@@ -69,7 +69,7 @@ define :synths do
           use_transpose -24
           #play chord([:c4, :c2, :c3, :c1, :c5].choose, :minor).choose, release: 0.1q5, attack: 0, cutoff: rrand(60, 70) + 30, amp: 2
           
-          play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/16], attack: 0, release: 0.1, amp: 5, cutoff: 100
+          play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/8], attack: 0, release: 0.1, amp: 5, cutoff: 100
 #        end
       end
     end
