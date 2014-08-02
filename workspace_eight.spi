@@ -38,12 +38,12 @@ define :synths do
   n = 1
   p = [52, 48, 50].choose
   in_thread do
-    8.times do
+    4.times do
       use_synth :prophet
       #      play p, release: sd/8, attack: 0, amp: 5, release: 0.505, cutoff: rrand(100, 120)
       use_synth :mod_saw
-      play p + 12, release: sd/8, attack: 0, amp: 3, release: 0.8, rate: sd, cutoff: rrand(60, 120), detune: 12
-      sleep sd/ 2
+      play p + 12, release: sd/8, attack: 0, amp: 1, release: 0.8, rate: sd, cutoff: rrand(60, 120), detune: 12
+      sleep sd/ 1
     end
   end
   use_transpose 0
