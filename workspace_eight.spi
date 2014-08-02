@@ -19,7 +19,7 @@ define :bd do
       4.times do
         sleep sd / 8
 
-        sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
+        #sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
       end
     end
   end
