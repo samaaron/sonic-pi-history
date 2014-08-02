@@ -2,8 +2,8 @@ use_synth :dsaw
 use_synth_defaults detune: 24.1
 
 with_fx :reverb do
-loop do
-  play chord([[:e3, :minor], [:a3, :minor]].choose), attack: 0, release: 0.2
-  sleep 0.5
+  loop do
+    play chord([[:e3, :minor], [:a3, :minor]].choose).choose, attack: 0, release: 0.2
+    sleep 0.125
   end
 end
