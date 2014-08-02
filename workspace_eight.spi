@@ -13,7 +13,7 @@ end
 define :bd do
   wait :tick
   with_fx :none, decay: sd * 0.7, delay: sd / 16 do
-    with_fx :reverb, room: 0.9 do
+    with_fx :reverb, room: 10 do
       with_fx :compressor do
         16.times do
           sample :drum_bass_hard, amp: 10
