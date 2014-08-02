@@ -1,2 +1,2 @@
 use_synth :dsaw
-play chord([[:e3, :minor], [:a3, :minor]].choose.choose), attack: 1
+play chord([[:e3, :minor], [:a3, :minor]].choose).choose, attack: 1
