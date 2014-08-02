@@ -13,10 +13,10 @@ define :bbbb do
 end
 
 define :cccc do
-wait :foo
+   wait :foo
 
       sample :drum_heavy_kick
-      sample :drum_bass_hard
+#      sample :drum_bass_hard
       sleep 0.5
 end
 
