@@ -2,10 +2,10 @@ load_sample :drum_heavy_kick
 
 lp = :loop_compus
 sd = sample_duration lp
-#sample :ambi_lunar_land, rate: 0.6
+sample :ambi_lunar_land, rate: 0.6
 define :drums do
   sync :tick
-  sample lp, rate: 0.5, amp: 0.5, amp: 5
+  sample lp, rate: 1, amp: 0.5, amp: 5
 
   sleep sd / 2
 end
@@ -19,7 +19,7 @@ define :bd do
           sample :drum_bass_hard, amp: 2
           sample :bass_hit_c, amp: 5
           sample :bass_voxy_hit_c, amp: 20
-                sample :bass_voxy_c
+          sample :bass_voxy_
           sleep sd / 16
         end
       end
