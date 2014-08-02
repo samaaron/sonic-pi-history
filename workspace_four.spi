@@ -3,6 +3,7 @@ use_synth_defaults detune: 24.1
 
 with_fx :reverb do
   loop do
+    sync :foo
     play chord([[:e3, :minor], [:a3, :minor]].choose).choose, attack: 0, release: 0.2
     sleep 0.125
   end
