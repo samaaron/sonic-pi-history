@@ -12,30 +12,13 @@ end
 
 define :bd do
   wait :tick
-  with_fx :none, decay: sd * 0.7, delay: sd / 4 do
-    with_fx :none, room: 20 do
-      with_fx :none do
-        16.times do
-          #          sample :drum_bass_hard, amp: 1
-          #      sample :drum_bass_soft, amp: 10
-          #    sample :elec_blip2, rate: [0.5, 1, 2, 4, 8, 16].choose, amp: 0.5
-          #sample :bass_hit_c, amp: 5
-          # sample :bass_voxy_hit_c, amp: 20
-          # sample :bass_voxy_c
-          sleep sd / 4
-        end
-      end
-    end
-  end
+  
 
   with_fx :echo, delay: sd * 0.5 do
     16.times do
       sleep sd / 8
-    
-
-        sample :elec_blip2, rate: [1, 2, 4, 8, 16].choose, amp: 2
-
-       sample :elec_flip, rate: [20, 40, 10, 80].choose
+      sample :elec_blip2, rate: [1, 2, 4, 8, 16].choose, amp: 2
+      sample :elec_flip, rate: [20, 40, 10, 80].choose
     end
 
   end
