@@ -27,10 +27,10 @@ define :cccc do
   wait :foo
   with_fx :compressor, clamp_time: 0.1, releax_time: 0.1 do
 
- #   sample :drum_heavy_kick
-    #esample :drum_bass_hard
+    sample :drum_heavy_kick
+    sample :drum_bass_hard
     #sample :bass_hit_c
-    sample :bass_thick_c, rate: 0.5, start: 0, finish: 0.15
+    #sample :bass_thick_c, rate: 0.5, start: 0, finish: 0.15
 
   end
 
