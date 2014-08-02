@@ -12,7 +12,7 @@ end
 
 define :bd do
   wait :tick
-  with_fx :echo, decay: sd * 0.7, delay: sd / 4 do
+  with_fx :none, decay: sd * 0.7, delay: sd / 4 do
     with_fx :none, room: 20 do
       with_fx :none do
         16.times do
