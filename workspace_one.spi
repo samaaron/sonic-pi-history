@@ -3,7 +3,7 @@ use_transpose -26
 use_synth_defaults sustain: 10
 
 
-play :Fs5, 
+play :Fs5, depth: 2
 
 
 
