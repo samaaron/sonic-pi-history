@@ -1,5 +1,5 @@
 use_synth :dsaw
-use_synth_defaults detune: 12
+use_synth_defaults detune: 24
 
 with_fx :reverb do
   play chord([[:e3, :minor], [:a3, :minor]].choose), attack: 0, release: 0.2
