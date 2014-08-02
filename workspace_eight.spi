@@ -18,7 +18,7 @@ define :bd do
         16.times do
    #       sample :drum_bass_hard, amp: 10
     #      sample :drum_bass_soft, amp: 10
-          sample :elec_blip2, rate: [0.5, 1, 2, 4, 8, 16].choose, amp: 30
+          sample :elec_blip2, rate: [0.5, 1, 2, 4, 8, 16].choose, amp: 20
           #sample :bass_hit_c, amp: 5
          # sample :bass_voxy_hit_c, amp: 20
          # sample :bass_voxy_c
