@@ -13,10 +13,11 @@ end
 define :bd do
   wait :tick
   with_fx :compressor do
-  2.times do
-    sample :drum_bass_hard, amp: 2
-    sample :bass_hit_c, amp: 5
-    sleep sd / 4
+    2.times do
+      sample :drum_bass_hard, amp: 2
+      sample :bass_hit_c, amp: 5
+      sleep sd / 4
+    end
   end
 
   with_fx :echo, delay: sd * 1 do
@@ -24,9 +25,9 @@ define :bd do
       sleep sd / 8
 
       #      sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
-    #  sample :elec_blip2, rate: [1, 2, 4, 8, 16, 0.5, 0.25].choose, amp: 2
+      #  sample :elec_blip2, rate: [1, 2, 4, 8, 16, 0.5, 0.25].choose, amp: 2
       #      sample :elec_blup, rate: 2
-     # sample :elec_flip, rate: [20, 40, 10].choose
+      # sample :elec_flip, rate: [20, 40, 10].choose
     end
 
   end
@@ -42,9 +43,9 @@ define :synths do
   in_thread do
     4.times do
       use_synth :supersaw
-     # play p, release: sd/8, attack: 0, amp: 1, release: 0.505, cutoff: rrand(100, 120)
+      # play p, release: sd/8, attack: 0, amp: 1, release: 0.505, cutoff: rrand(100, 120)
       use_synth :mod_saw
-     # play p + 0, release: sd/8, attack: 0, amp: 0.7, release: 1, mod_rate: sd * 4, mod_range: 12, cutoff: rrand(100, 120), detune: 12
+      # play p + 0, release: sd/8, attack: 0, amp: 0.7, release: 1, mod_rate: sd * 4, mod_range: 12, cutoff: rrand(100, 120), detune: 12
       sleep sd/ 1
     end
   end
