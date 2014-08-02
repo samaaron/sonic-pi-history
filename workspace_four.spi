@@ -15,7 +15,7 @@ end
 define :cccc do
    wait :foo
 
-      sample :drum_heavy_kick
+#      sample :drum_heavy_kick
 #      sample :drum_bass_hard
       sleep 0.5
 end
