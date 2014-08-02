@@ -19,6 +19,7 @@ define :bd do
       sleep sd / 8
 
       sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
+      sample :elec_blip2
     end
 
   end
