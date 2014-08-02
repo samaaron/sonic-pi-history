@@ -16,6 +16,7 @@ define :bd do
     2.times do
       sample :drum_bass_hard, amp: 2
       sample :bass_hit_c, amp: 5
+      sample :bass_voxy_hit_c
       sleep sd / 16
     end
   end
