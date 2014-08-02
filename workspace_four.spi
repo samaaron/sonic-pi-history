@@ -6,7 +6,7 @@ define :bbbb do
   with_fx :reverb do
 
     sync :foo
-    play chord([[:e3, :minor], [:e2, :minor]].choose).choose, attack: 0, release: 0.1,  cutoff: rrand(90, 120)
+    play chord([[:e3, :minor], [:e2, :minor]].choose).choose, attack: 0, release: 0.1,  cutoff: rrand(100, 120)
     sleep 0.125
   end
 end
