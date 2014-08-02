@@ -22,7 +22,7 @@ define :bd do
           #sample :bass_hit_c, amp: 5
          # sample :bass_voxy_hit_c, amp: 20
          # sample :bass_voxy_c
-          sleep sd / 8
+          sleep sd / 4
         end
       end
     end
