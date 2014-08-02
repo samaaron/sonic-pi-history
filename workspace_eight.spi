@@ -13,7 +13,7 @@ end
 define :bd do
   wait :tick
   sample :drum_bass_hard, amp: 2
-  with_fx :ixi_techno, rate: sd * 8 do
+  with_fx :ixi_techno, rate: sd * 16 do
     4.times do
       sleep sd / 8
 
