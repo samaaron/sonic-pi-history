@@ -16,9 +16,9 @@ define :eeee do
   with_fx :level, amp: 1 do
     wait :foo
 
-    with_fx :reverb, room: 0.4 do
+    #with_fx :reverb, room: 0.4 do
       sample :drum_cymbal_closed, rate: rrand(4, 2.2)
-    end
+    #end
 
   end
 end
