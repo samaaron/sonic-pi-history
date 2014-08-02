@@ -35,9 +35,9 @@ define :bd do
         #play :C2, attack: 0, release: 0.2, amp: 2
       end
       #      sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
-      #  sample :elec_blip2, rate: [1, 2, 4, 8, 16, 0.5, 0.25].choose, amp: 2
+        sample :elec_blip2, rate: [1, 2, 4, 8, 16, 0.5, 0.25].choose, amp: 2
       #      sample :elec_blup, rate: 2
-      # sample :elec_flip, rate: [20, 40, 10].choose
+       sample :elec_flip, rate: [20, 40, 10].choose
     end
 
   end
@@ -69,7 +69,7 @@ define :synths do
           use_transpose -24
           #play chord([:c4, :c2, :c3, :c1, :c5].choose, :minor).choose, release: 0.1q5, attack: 0, cutoff: rrand(60, 70) + 30, amp: 2
           
-          play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/8], attack: 0, release: 0.1, amp: 5, cutoff: 100
+#          play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/8], attack: 0, release: 0.1, amp: 5, cutoff: 100
 #        end
       end
     end
