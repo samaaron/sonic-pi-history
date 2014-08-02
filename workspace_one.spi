@@ -3,4 +3,4 @@ use_transpose -12
 use_synth_defaults sustain: 10
 #play :Fs5
 
-play_pattern [55, 55, 57, 59], divisor: 20, depth: 1
+play_pattern [55, 55, 57, 59], divisor: 200, depth: 1
