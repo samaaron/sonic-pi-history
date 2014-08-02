@@ -38,5 +38,5 @@ define :cccc do
 end
 
 #loop{bbbb}
-#loop{eeee}
+loop{eeee}
 #loop{cccc}
