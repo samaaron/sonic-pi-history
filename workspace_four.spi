@@ -1,1 +1,1 @@
-play chord([:e3, :minor]), attack: 1
+play chord([:e4, :minor]), attack: 1
