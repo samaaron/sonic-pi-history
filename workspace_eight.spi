@@ -20,7 +20,7 @@ end
 define :synths do
   wait :tick
   use_synth :fm
-  n = 4
+  n = 8
   p = [52, 48, 50].choose
   in_thread do
     2.times do
