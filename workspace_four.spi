@@ -1,4 +1,4 @@
-use_synth :beep
+use_synth :saw
 
 with_fx :reverb do
   play chord([[:e3, :minor], [:a3, :minor]].choose), attack: 0, release: 0.2
