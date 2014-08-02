@@ -17,7 +17,7 @@ define :eeee do
     wait :foo
 
     #with_fx :reverb, room: 0.4 do
-    sample :elec_ping, rate: rand(4)
+    sample :elec_filt_snare
     #end
 
   end
@@ -38,5 +38,5 @@ define :cccc do
 end
 
 #loop{bbbb}
-loop{eeee}
+#loop{eeee}
 #loop{cccc}
