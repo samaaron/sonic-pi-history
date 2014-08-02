@@ -12,7 +12,7 @@ end
 
 define :bd do
   wait :tick
-  with_fx :echo, decay: sd, delay: sd/ 8 do
+  with_fx :echo, decay: sd, delay: sd / 8 do
     with_fx :reverb do
       with_fx :compressor do
         2.times do
