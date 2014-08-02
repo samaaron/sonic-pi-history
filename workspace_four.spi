@@ -35,7 +35,7 @@ define :cccc do
 
   end
 
-  sleep 0.5
+  sleep 0.5 - 1.25
 end
 
 #loop{bbbb}
