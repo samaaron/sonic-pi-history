@@ -51,7 +51,7 @@ define :synths do
   n = 1
   p = [52, 48, 50].choose
   in_thread do
-    8.times do
+    4.times do
       sample :drum_heavy_kick, amp: 2
       use_synth :supersaw
       # play p, release: sd/8, attack: 0, amp: 1, release: 0.505, cutoff: rrand(100, 120)
