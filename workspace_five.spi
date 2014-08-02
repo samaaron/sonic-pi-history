@@ -1,6 +1,0 @@
-loop do
-  wait :foo
-
-  sample :ambi_lunar_land
-  sleep 4
-end
