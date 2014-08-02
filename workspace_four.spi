@@ -17,7 +17,7 @@ define :eeee do
     wait :foo
 
     #with_fx :reverb, room: 0.4 do
-    sample :elec_ping
+    sample :elec_ping, rate: 2
     #end
 
   end
