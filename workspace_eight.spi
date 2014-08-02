@@ -19,7 +19,7 @@ define :bd do
 #      sample :elec_bell, rate: [1, 0.5, 2, 4].choose * 16 if rand < 0.9
       use_synth :prophet
       use_transpose -12 + 7
-      play [:e3, :e2, :e5], attack: 0, release: rrand(0.1, 0.123)
+      play [:e3, :e2, :e5], attack: 0, release: rrand(0.1, 0.123), amp: 3
       sleep sd / 2
     end
 
