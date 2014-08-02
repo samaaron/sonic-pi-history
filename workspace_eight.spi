@@ -34,7 +34,7 @@ define :synths do
       use_synth :prophet
       play p, release: sd/8, attack: 0, amp: 3, release: 0.205
 
-      play p + 7, release: sd/8, attack: 0, amp: 3, release: 0.25
+      play p + 7, release: sd/8, attack: 0, amp: 3, release: 0.2
       sleep sd/ 8
     end
   end
