@@ -1,4 +1,4 @@
-use_synth :saw
+use_synth :dsaw
 use_synth_defaults detune: 1
 
 with_fx :reverb do
