@@ -4,6 +4,7 @@ use_transpose 24
 
 define :bbbb do
   with_fx :reverb do
+    
     use_transpose -12
     sync :foo
     play chord([[:e3, :minor]].choose).choose, attack: 0, release: 0.1,  cutoff: rrand(110, 120)
@@ -11,4 +12,12 @@ define :bbbb do
   end
 end
 
-loop{bbbb}
+define :cccc do
+wait :foo
+
+      play :drum_heavy_kick
+      sleep 1
+end
+
+#loop{bbbb}
+loop{cccc}
