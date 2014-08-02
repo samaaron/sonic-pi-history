@@ -1,1 +1,1 @@
-play chord([:e3, :minor]), release: 0.5
+play chord([:e3, :minor]), release: 1
