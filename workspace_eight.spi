@@ -43,7 +43,7 @@ define :synths do
   end
   use_transpose 0
   with_fx :reverb, room: 0.8 do
-    with_fx :ixi_techno, rate: sd/0.5 do
+    with_fx :ixi_techno, rate: sd/0.25 do
       n.times do
         use_synth :prophet
         #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
