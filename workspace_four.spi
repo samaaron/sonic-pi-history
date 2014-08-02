@@ -13,14 +13,14 @@ define :bbbb do
 end
 
 define :eeee do
-  with_fx :level, amp: 1 do
+#  with_fx :level, amp: 1 do
     wait :foo
 
     #with_fx :reverb, room: 0.4 do
     sample :elec_filt_snare, attack: 0, decay: 0.1
     #end
 
-  end
+#  end
 end
 
 define :cccc do
