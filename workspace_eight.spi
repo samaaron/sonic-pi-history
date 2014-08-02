@@ -21,7 +21,7 @@ define :bd do
     4.times do
       sleep sd / 8
 
-            sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
+      #      sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
       sample :elec_blip2, rate: [1, 2, 4, 8, 16, 0.5, 0.25].choose, amp: 2
       #      sample :elec_blup, rate: 2
       sample :elec_flip, rate: [20, 40, 10].choose
