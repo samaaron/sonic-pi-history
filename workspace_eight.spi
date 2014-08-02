@@ -19,7 +19,7 @@ define :bd do
           sample :drum_bass_hard, amp: 2
           sample :bass_hit_c, amp: 5
           sample :bass_voxy_hit_c, amp: 20
-          sample :bass_voxy_c
+         # sample :bass_voxy_c
           sleep sd / 8
         end
       end
