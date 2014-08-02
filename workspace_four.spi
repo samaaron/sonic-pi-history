@@ -12,15 +12,24 @@ define :bbbb do
   end
 end
 
+define :eeee do
+
+wait :foo
+sleep 0.25
+sample :drum_cymbal_closed
+end
+
 define :cccc do
    wait :foo
 
 #      sample :drum_heavy_kick
       sample :drum_bass_hard
       sample :bass_hit_c
-#      sample :bass_thick_c
+      sample :bass_thick_c
       sleep 0.5
 end
+
+loop{eeee}
 
 #loop{bbbb}
 #loop{cccc}
