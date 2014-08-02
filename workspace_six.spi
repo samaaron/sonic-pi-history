@@ -1,5 +1,5 @@
 sample :ambi_glass_hum, rate: -0.9, amp: 2
-with_fx :echo do
+with_fx :echo, delay :10 do
 
 sample :ambi_piano
 end
