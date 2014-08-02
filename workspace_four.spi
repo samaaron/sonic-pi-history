@@ -19,7 +19,7 @@ define :eeee do
     with_fx :reverb, room: 0.2 do
       sample :drum_cymbal_closed, rate: rrand(2, 2.2)
     end
-    sleep 0.2
+
   end
 end
 
