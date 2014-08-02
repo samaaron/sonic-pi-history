@@ -15,7 +15,7 @@ define :bd do
   with_fx :echo, delay: sd * 0.25 do
 #    sample :bass_woodsy_c, amp: 1, rate: 1, release: 0.4, sustain: 0, attack: 0
     8.times do
-#      sample :elec_blip2, rate: [1, 2, 4, 8, 16].choose, amp: 2
+      sample :elec_blip2, rate: [1, 2, 4, 8, 16].choose, amp: 2
       sample :elec_bell, rate: [1, 0.5, 2, 4].choose * 16 if rand < 0.9
       sleep sd / 8
     end
