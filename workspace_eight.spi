@@ -42,7 +42,7 @@ define :synths do
       use_synth :prophet
       #      play p, release: sd/8, attack: 0, amp: 5, release: 0.505, cutoff: rrand(100, 120)
       use_synth :dsaw
-      play p + 12, release: sd/8, attack: 0, amp: 3, release: 0.2, cutoff: rrand(60, 120), detune: 12
+      play p + 12, release: sd/8, attack: 0, amp: 3, release: 0.12, cutoff: rrand(60, 120), detune: 12
       sleep sd/ 4
     end
   end
