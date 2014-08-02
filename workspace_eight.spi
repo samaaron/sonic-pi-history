@@ -7,7 +7,7 @@ define :drums do
   sync :tick
   sample :loop_industrial, rate: 1
 
-  sleep sd
+  sleep sd/2
 end
 
 define :bd do
