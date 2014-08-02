@@ -5,6 +5,6 @@ with_fx :reverb do
   loop do
     sync :foo
     play chord([[:e3, :minor], [:e2, :minor]].choose).choose, attack: 0, release: 0.12
-    sleep 0.125
+    sleep 0.25
   end
 end
