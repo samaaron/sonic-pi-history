@@ -17,7 +17,7 @@ define :cccc do
 
 #      sample :drum_heavy_kick
       sample :drum_bass_hard
-#      sample :bass_hit_c
+      sample :bass_hit_c
       sleep 0.5
 end
 
