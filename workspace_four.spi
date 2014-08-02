@@ -26,7 +26,7 @@ end
 define :cccc do
   wait :foo
 
-  #      sample :drum_heavy_kick
+       sample :drum_heavy_kick
   sample :drum_bass_hard
   sample :bass_hit_c
   #      sample :bass_thick_c
