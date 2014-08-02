@@ -2,5 +2,5 @@
 with_fx :echo, delay: 1.1* 0.25 * 3, decay: 10 do
 
 
-sample :ambi_piano, rate: 0.8, release: 0.1
+sample :ambi_piano, rate: 1, release: 0.1
 end
