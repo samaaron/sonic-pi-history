@@ -36,6 +36,6 @@ define :cccc do
 
   sleep 0.5
 end
-loop{bbbb}
-#loop{eeee}
+#loop{bbbb}
+loop{eeee}
 #loop{cccc}
