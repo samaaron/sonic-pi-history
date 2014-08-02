@@ -37,7 +37,7 @@ define :synths do
   in_thread do
     16.times do
       use_synth :prophet
-      play p, release: sd/8, attack: 0, amp: 5, release: 0.505, cutoff: rrand(100, 120)
+#      play p, release: sd/8, attack: 0, amp: 5, release: 0.505, cutoff: rrand(100, 120)
       use_synth :dsaw
       #play p + 24, release: sd/8, attack: 0, amp: 3, release: 0.12, cutoff: rrand(60, 120), detune: 0.01
       sleep sd/ 4
