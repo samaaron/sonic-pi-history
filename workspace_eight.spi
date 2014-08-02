@@ -31,9 +31,7 @@ define :bd do
   with_fx :echo, delay: sd * 0.5 do
     8.times do
       sleep sd / 8
-      with_synth :fm do
-        #play :C2, attack: 0, release: 0.2, amp: 2
-      end
+    
       #      sample :drum_cymbal_hard, amp: rrand(0.8, 1.5), amp: 0.8
         sample :elec_blip2, rate: [1, 2, 4, 8, 16, 0.5, 0.25].choose, amp: 2
       #      sample :elec_blup, rate: 2
