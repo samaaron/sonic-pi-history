@@ -34,7 +34,7 @@ define :synths do
   p = [52, 48, 50].choose
   in_thread do
     32.times do
-      use_synth :tb303
+      use_synth :prophet
       play p, release: sd/8, attack: 0, amp: 2, release: 0.1205, cutoff: rrand(100, 120)
 
       #play p + 7, release: sd/8, attack: 0, amp: 1, release: 0.12, cutoff: 80
