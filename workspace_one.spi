@@ -3,7 +3,7 @@ use_transpose -24
 use_synth_defaults sustain: 10
 
 
-play :Fs5, depth: 2
+play :Fs5, depth: 12
 
 #loop do
 #sample :drum_bass_hard
