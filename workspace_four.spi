@@ -5,7 +5,7 @@ use_transpose 24
 define :bbbb do
   #with_fx :reverb do
 
-  use_transpose -12
+  use_transpose -12 + 7
   sync :foo
   play chord([[:a2, :minor]].choose), attack: 0, release: 0.1,  cutoff: rrand(60, 120)
   sleep 0.125
