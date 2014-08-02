@@ -2,7 +2,7 @@ load_sample :drum_heavy_kick
 
 lp = :loop_compus
 sd = sample_duration lp
-sample :ambi_lunar_land
+sample :ambi_lunar_land, rate: 0.9
 define :drums do
   sync :tick
 #  sample :loop_industrial, rate: 1, amp: 2
