@@ -12,7 +12,7 @@ end
 
 define :bd do
   wait :tick
-  #  sample :drum_bass_hard, amp: 2
+  sample :drum_bass_hard, amp: 2
   #sample :drum_heavy_kick, amp: 2
 
 end
