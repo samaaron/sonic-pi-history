@@ -17,7 +17,7 @@ define :eeee do
     wait :foo
 
     #with_fx :reverb, room: 0.4 do
-    sample :elec_filt_snare, rate: 0.6
+    sample :elec_filt_snare, rate: 0.3
     #end
 
   end
