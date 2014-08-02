@@ -26,7 +26,7 @@ end
 define :cccc do
   wait :foo
   with_fx :compressor do
-    with_fx :level, amp: 1 do
+    with_fx :level, amp: 2 do
       sample :drum_heavy_kick
       sample :drum_bass_hard
       sample :bass_hit_c
