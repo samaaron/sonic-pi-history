@@ -16,7 +16,7 @@ define :eeee do
   with_fx :level, amp: 0.9 do
     wait :foo
     sleep 0.25
-    with_fx :reverb do
+    with_fx :reverb, room: 0.2 do
     sample :drum_cymbal_closed, rate: 2
     end
     sleep 0.2
