@@ -1,1 +1,2 @@
+use_synth :dsaw
 play chord([:e4, :minor]), attack: 1
