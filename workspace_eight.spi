@@ -19,7 +19,7 @@ define :bd do
 #      sample :elec_bell, rate: [1, 0.5, 2, 4].choose * 16 if rand < 0.9
       use_synth :prophet
       use_transpose 0
-      play scale(:e, :minor_pentatonic, num_octaves: 5).choose, attack: 0, release: rrand(0.1, 0.223), amp: 3
+      play scale(:e, :minor_pentatonic, num_octaves: 6).choose, attack: 0, release: rrand(0.1, 0.223), amp: 3
       sleep sd / 2
     end
 
