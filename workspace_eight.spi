@@ -32,9 +32,9 @@ define :synths do
   in_thread do
     16.times do
       use_synth :tb303
-      play p, release: sd/8, attack: 0, amp: 3, release: 0.205
+      play p, release: sd/8, attack: 0, amp: 3, release: 0.205, cutoff: 69
 
-      play p + 7, release: sd/8, attack: 0, amp: 3, release: 0.2
+      play p + 7, release: sd/8, attack: 0, amp: 3, release: 0.2, cutoff: 69
       sleep sd/ 8
     end
   end
