@@ -13,7 +13,7 @@ define :bbbb do
 end
 
 define :eeee do
-  with_fx :level, amp: 0.9 do
+  with_fx :level, amp: 3 do
     wait :foo
     sleep 0.25
     with_fx :reverb, room: 0.2 do
