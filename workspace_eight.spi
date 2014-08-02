@@ -31,7 +31,7 @@ define :synths do
   p = [52, 48, 50].choose
   in_thread do
     16.times do
-      play p, release: sd/8, attack: 0, amp: 2, release: 0.05
+      play p, release: sd/8, attack: 0, amp: 2, release: 0.205
 
       play p + 7, release: sd/8, attack: 0, amp: 2, release: 0.15
       sleep sd/ 8
