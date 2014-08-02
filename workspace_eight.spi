@@ -13,7 +13,7 @@ end
 define :bd do
   wait :tick
   with_fx :echo, delay: sd * 0.25 do
-    sample :bass_woodsy_c, amp: 1, rate: 4, release: 0.4, sustain: 0, attack: 0
+    sample :bass_woodsy_c, amp: 1, rate: 8, release: 0.4, sustain: 0, attack: 0
     8.times do
       sample :elec_blip2, rate: [1, 2, 4, 8, 16].choose, amp: 2
       sample :elec_flip, rate: [20, 40, 10, 80].choose
