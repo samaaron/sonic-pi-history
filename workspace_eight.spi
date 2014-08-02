@@ -42,12 +42,12 @@ define :synths do
     end
   end
   use_transpose 0
-  with_fx :reverb, room: 0.9 do
-    with_fx :ixi_techno, rate: sd/0.125 do
+  with_fx :reverb, room: 0.1 do
+    with_fx :ixi_techno, rate: sd/16 do
       n.times do
         use_synth :prophet
         #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
-        play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/4], attack: 0, release: 1, amp: 2, cutoff: rrand(80, 100)
+        play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/4], attack: 0, release: 0.51, amp: 2, cutoff: rrand(80, 100)
       end
     end
   end
