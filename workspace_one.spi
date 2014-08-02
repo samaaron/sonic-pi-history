@@ -8,7 +8,7 @@ use_synth :fm
 loop do
   sample :drum_bass_hard
   with_synth :beep do
-    play 30, attack: 0, release: 1
+    play 30, attack: 0, release: 0.3
   end
   sleep 1
 end
