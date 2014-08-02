@@ -1,6 +1,6 @@
 loop do
-wait :foo
+  wait :foo
 
-sample :drum_bass_hard
-sleep 0.5
+  sample :ambi_dark_woosh
+  sleep 4
 end
