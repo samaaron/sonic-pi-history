@@ -11,4 +11,4 @@ define :bbbb do
   end
 end
 
-#loop{bbbb}
+loop{bbbb}
