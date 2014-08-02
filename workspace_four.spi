@@ -30,13 +30,13 @@ define :cccc do
       sample :drum_heavy_kick
       sample :drum_bass_hard
       sample :bass_hit_c
-      sample :bass_thick_c
+#      sample :bass_thick_c
     end
   end
 
   sleep 0.5
 end
 
-loop{bbbb}
-#loop{eeee}
+#loop{bbbb}
+loop{eeee}
 #loop{cccc}
