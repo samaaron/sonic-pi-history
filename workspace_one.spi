@@ -1,2 +1,3 @@
 use_synth :fm
+use_transpose -24
 play :Fs5
