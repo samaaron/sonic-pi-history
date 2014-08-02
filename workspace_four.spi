@@ -2,10 +2,13 @@ use_synth :dsaw
 use_synth_defaults detune: 12
 use_transpose 24
 
-with_fx :reverb do
-  loop do
+define :bbbb do
+  with_fx :reverb do
+
     sync :foo
     play chord([[:e3, :minor], [:e2, :minor]].choose).choose, attack: 0, release: 0.1,  cutoff: rrand(60, 120)
     sleep 0.125
   end
 end
+
+loop{bbbb}
