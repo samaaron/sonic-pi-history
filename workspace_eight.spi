@@ -15,7 +15,7 @@ define :bd do
   sample :drum_bass_hard, amp: 2
 
   with_fx :echo, delay: sd * 1 do
-    with_fx :lpf, cutoff: rrand(100, 120) do
+    with_fx :lpf, cutoff: rrand(110, 120) do
       4.times do
         sleep sd / 8
 
