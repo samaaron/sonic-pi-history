@@ -5,7 +5,7 @@ sd = sample_duration lp
 #sample :ambi_lunar_land, rate: 0.6
 define :drums do
   sync :tick
-  sample lp, rate: -1, amp: 0.5, amp: 5
+  sample lp, rate: 1, amp: 0.5, amp: 5
 
   sleep sd / 2
 end
