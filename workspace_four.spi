@@ -1,1 +1,1 @@
-puts chord(:e3, :minor)
+puts chord([:e3, :minor])
