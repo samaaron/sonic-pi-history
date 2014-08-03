@@ -1,1 +1,6 @@
-play :e3
+sample :ambi_glass_hum, rate: 1.003, amp: 2, release: 0.1
+with_fx :echo, delay: 1.1* 0.25 * 3, decay: 10 do
+
+
+sample :ambi_piano, rate: 1 , release: 0.1
+end
