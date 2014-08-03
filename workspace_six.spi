@@ -1,5 +1,5 @@
 # Welcome to Sonic Pi v2 in Vienna
 use_bpm 120
 use_synth :pretty_bell
-play_pattern_timed [60, 64, 67,67],[1,1,1,2]
+play_pattern_timed [60, 60, 64, 67,67],[0.5, 0.5, 1,1,2]
 play_pattern_timed [[76,79],[76,79], [72,76],[72,76]],[1,2,1,2]
