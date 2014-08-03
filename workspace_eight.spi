@@ -47,6 +47,7 @@ define :synths do
   in_thread do
     with_fx :reverb, room: 0.8 do
 #      with_fx :ixi_techno, rate: sd/16 do
+with_fx :echo, 
         1.times do
           use_synth :prophet
           use_transpose 12
