@@ -1,1 +1,26 @@
-play 53
+use_synth :fm
+#use_transpose -24
+#use_synth_defaults sustain: 10
+set_volume! 0.3
+
+with_fx :slicer, rate: 5 do
+  play 48, depth: 2, sustain: 10, amp: 0.5
+end
+if false
+  loop do
+    sample :drum_bass_hard
+    in_thread do
+      2.times do
+        with_synth :beep do
+          play 30, attack: 0, release: 0.3
+        end
+        sleep 0.5
+      end
+    end
+    sleep 1
+  end
+end
+
+
+
+#play_pattern [55, 55, 57, 59], divisor: 2, depth: 1
