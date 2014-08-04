@@ -15,5 +15,5 @@ puts r
 my_e.control delay:  r, decay: 2
 
 with_fx :reverb
-sample :drum_cymbal_hard, amp: 0.3
+sample :drum_cymbal_hard, amp: 0.7
 end
