@@ -14,11 +14,11 @@ r  =[0.25, 0.5, 0.125].choose
 puts r
 my_e.control delay:  r, decay: 2
 
-with_fx :reverb, room: 0.9 do
-  with_fx :echo, delay: 0.25 do
+#with_fx :reverb, room: 0.9 do
+#  with_fx :echo, delay: 0.25 do
    # sample :drum_cymbal_hard, amp: 0.2, attack: 0, sustain: 0.1, release: 0.01
-  end
-end
+#  end
+#end
 
 0.times do
   use_synth_defaults amp: 0.1
