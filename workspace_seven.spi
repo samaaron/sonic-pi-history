@@ -24,7 +24,7 @@ my_e.control delay:  r, decay: 2
 with_fx :ixi_techno, rate: 0.1 do
 200.times do
   use_synth :prophet
-  play 40  + 7 , amp: 0.3, attack: 0, release: 1.351, cutoff: rrand(60, 120)
-  sleep 1.5
+  play 40 , amp: 0.3, attack: 0, release: 0.351, cutoff: rrand(60, 120)
+  sleep 0.5
 end
 end
