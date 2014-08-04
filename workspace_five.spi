@@ -1,0 +1,39 @@
+use_synth :dsaw
+use_synth_defaults detune: 12
+use_transpose 24
+
+define :bbbb do
+  #with_fx :reverb do
+
+  use_transpose -12 
+  sync :foo
+  play chord([[:c2, :minor]].choose), attack: 0, release: 0.1,  cutoff: rrand(60, 120) 
+  sleep 0.125
+  #  end
+end
+
+define :eeee do
+  #  with_fx :level, amp: 1 do
+  wait :foo
+
+
+    #sample :elec_filt_snare, attack: 0, release: 0.1, sustain: 0, amp: 0.51, rate: 2
+
+
+  #  end
+end
+
+define :cccc do
+  wait :foo
+  with_fx :compressor, clamp_time: 0.0000001, relax_time: 0.1 do
+    use_synth_defaults amp: 20
+    sample :drum_heavy_kick
+    sample :drum_bass_hard
+    sample :bass_hit_c
+    sleep 0.125
+    sample :bass_thick_c, rate: 0.5, start: 0, finish: 0.15
+
+  end
+
+  sleep 0.5 - 1.25
+end
