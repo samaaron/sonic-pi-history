@@ -1,1 +1,3 @@
-play :e3
+use_synth :mod_saw
+
+play 50, release: 0.1, attack: 0, sustain: 0
