@@ -1,4 +1,5 @@
 use_transpose 12
+use_bpm 120
 with_fx :reverb do
   in_thread do
   use_synth :dull_bell
