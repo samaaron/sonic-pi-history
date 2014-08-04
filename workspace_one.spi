@@ -1,4 +1,4 @@
 use_transpose 12
 with_fx :reverb do
-play_pattern_timed [50, 62, 59]* 4, [0.25, 0.3, 0.25 0.25]
+play_pattern_timed [50, 62, 59]* 4, [0.25, 0.3, 0.25, 0.25]
 end
