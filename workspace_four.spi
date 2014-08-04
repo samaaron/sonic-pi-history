@@ -1,5 +1,5 @@
 
-use_synth :tb303
+use_synth :prophet
 
 rate = 0.7
 rate_mul = 1.0 / rate
