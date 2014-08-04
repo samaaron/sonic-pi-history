@@ -12,9 +12,9 @@ e
 r = rand
 puts r
 n = 0
-10.times do
+20.times do
 n = n+1
   my_e.control delay: [0.25, 0.5, 0.125].choose
-  sleep 0.25
+  sleep 0.5
   puts "hi:#{n}"
 end
