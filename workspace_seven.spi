@@ -9,4 +9,6 @@
 #  end
 #end
 
-my_e.control delay: rand
+r = rand
+puts r
+my_e.control delay: r
