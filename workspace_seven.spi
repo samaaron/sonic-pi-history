@@ -23,8 +23,8 @@ my_e.control delay:  r, decay: 2
 
 
 
-105.times do
-  use_synth :dsaw
+505.times do
+  use_synth :prophet
   play 40 -12 + 3 + 24, amp: 0.3, attack: 0, release: 0.1351, cutoff: rrand(105, 125)
   sleep 0.25
 
