@@ -25,7 +25,7 @@ with_fx :ixi_techno, rate: 1 do
 
 15.times do
   use_synth :dsaw
-  play 40  + 3 + 24, amp: 0.3, attack: 0, release: 0.051351, cutoff: rrand(60, 120)
+  play 40  + 3 + 24, amp: 0.3, attack: 0, release: 0.051351, cutoff: 70
   sleep 0.125
 end
 end
