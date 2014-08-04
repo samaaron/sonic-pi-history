@@ -22,7 +22,7 @@ end
 
 300.times do
   use_synth_defaults amp: 0.1
-  sample :drum_cymbal_pedal
-  sleep 0.25
+  sample :drum_cymbal_soft
+  sleep 0.125
 
 end
