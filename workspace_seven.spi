@@ -9,6 +9,7 @@ e
 #  end
 #end
 
-r = rand
+
+r  =[0.25, 0.5, 0.125].choose
 puts r
-my_e.control delay: [0.25, 0.5, 0.125].choose
+my_e.control delay:  r
