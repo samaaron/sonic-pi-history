@@ -29,5 +29,5 @@ end
 
 10.times do
   play 43, amp: 0.1, attack: 0, release: 0.1
-  sleep 0.3
+  sleep 0.333333
 end
