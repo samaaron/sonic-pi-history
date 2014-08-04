@@ -28,6 +28,6 @@ my_e.control delay:  r, decay: 2
 end
 
 10.times do
-  play 44, amp: 0.1, attack: 0, release: 0.1
+  play 43, amp: 0.1, attack: 0, release: 0.1
   sleep 0.5
 end
