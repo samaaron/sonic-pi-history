@@ -15,14 +15,14 @@ puts r
 my_e.control delay:  r, decay: 2
 
 with_fx :reverb, room: 0.9 do
-with_fx :echo, delay: 0.25 do
-sample :drum_cymbal_hard, amp: 0.2, attack: 0, sustain: 0.1, release: 0.01
-end
+  with_fx :echo, delay: 0.25 do
+    sample :drum_cymbal_hard, amp: 0.2, attack: 0, sustain: 0.1, release: 0.01
+  end
 end
 
 3.times do
-use_synth_defaults amp: 0.1
-sample :bass_hit_c
-sleep 1
+  use_synth_defaults amp: 0.1
+  sample :bass_hit_c
+  sleep 1
 
 end
