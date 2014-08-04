@@ -16,7 +16,7 @@ my_e.control delay:  r, decay: 2
 
 with_fx :reverb, room: 0.9 do
   with_fx :echo, delay: 0.25 do
-    sample :drum_cymbal_hard, amp: 0.2, attack: 0, sustain: 0.1, release: 0.01
+   # sample :drum_cymbal_hard, amp: 0.2, attack: 0, sustain: 0.1, release: 0.01
   end
 end
 
