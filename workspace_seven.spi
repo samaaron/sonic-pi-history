@@ -20,9 +20,9 @@ with_fx :reverb, room: 0.9 do
   end
 end
 
-0.times do
+300.times do
   use_synth_defaults amp: 0.1
   sample :drum_bass_soft
-  sleep 1.5
+  sleep 0.25
 
 end
