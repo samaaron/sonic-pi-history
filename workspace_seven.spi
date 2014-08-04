@@ -11,4 +11,4 @@
 
 r = rand
 puts r
-my_e.control delay: 0.25
+my_e.control delay: 1
