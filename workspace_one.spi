@@ -1,1 +1,1 @@
-play 50
+play_pattern_timed [50, 53, 59], [0.25, 0.3]
