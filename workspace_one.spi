@@ -4,7 +4,7 @@ with_fx :reverb do
 
     play_pattern_timed [50, 62, 59]* 4, [0.25, 0.5, 0.25, 0.25]
   end
-sleep 0.2
+sleep 0.5
     play_pattern_timed [50, 62, 59]* 4, [0.25, 0.5, 0.25, 0.25]
 
 end
