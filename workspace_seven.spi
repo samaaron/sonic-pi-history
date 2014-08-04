@@ -28,6 +28,7 @@ my_e.control delay:  r, decay: 2
 end
 
 10.times do
+use_synth :tb303
   play 43, amp: 0.3, attack: 0, release: 0.2, cutoff: rrand(60, 120)
   sleep 0.333333
 end
