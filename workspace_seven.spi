@@ -1,7 +1,7 @@
 use_synth :sound_in
 
 with_fx :echo do |e|
-  e.control delay: 0.5
+  e.control delay: 0.25
   with_fx :reverb do
     play sustain: 100000
   end
