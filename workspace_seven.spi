@@ -9,4 +9,4 @@
 #  end
 #end
 
-my_e.control delay: 0.5
+my_e.control delay: rand
