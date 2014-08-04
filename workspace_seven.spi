@@ -28,6 +28,6 @@ end
 end
 
 10.times do
-  play 50, amp: 0.1
+  play 30, amp: 0.1
   sleep 0.5
 end
