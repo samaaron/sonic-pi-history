@@ -1,7 +1,7 @@
 use_transpose 12
 with_fx :reverb do
   in_thread do
-
+  use_synth :pretty_bell
     play_pattern_timed [53, 76, 79]* 4, [0.25, 0.5, 0.25, 0.25]
   end
 sleep 0.5
