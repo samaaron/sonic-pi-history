@@ -23,9 +23,9 @@ my_e.control delay:  r, decay: 2
 
 
 
-505.times do
+5.times do
   use_synth :fm
-  play :e1, amp: 0.5, attack: 0, release: 0.1351, cutoff: rrand(105, 125)
-  sleep 0.125
+  play :a3, amp: 0.5, attack: 0, release: 0.1351, cutoff: rrand(105, 125)
+  sleep 0.5
 
 end
