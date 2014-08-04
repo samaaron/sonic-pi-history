@@ -1,3 +1,5 @@
 use_synth :sound_in
 
-play
+with_fx :reverb do
+  play, sustain: 100000
+end
