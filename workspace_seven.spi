@@ -9,4 +9,4 @@
 #  end
 #end
 
-my_e.control rate: 2
+my_e.control rate: 0.2
