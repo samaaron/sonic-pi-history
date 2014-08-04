@@ -22,10 +22,11 @@ my_e.control delay:  r, decay: 2
 
 
 
+with_fx :reverb do
+  5.times do
+    use_synth :fm
+    play :b3, amp: 0.5, attack: 0, release: 0.1351, cutoff: rrand(105, 125)
+    sleep 0.5
 
-5.times do
-  use_synth :fm
-  play :b3, amp: 0.5, attack: 0, release: 0.1351, cutoff: rrand(105, 125)
-  sleep 0.5
-
+  end
 end
