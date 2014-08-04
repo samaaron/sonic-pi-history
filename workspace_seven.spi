@@ -1,12 +1,12 @@
-use_synth :sound_in
+#use_synth :sound_in
 
-with_fx :echo do |e|
-  define :my_e do
+#with_fx :echo do |e|
+ # define :my_e do
    e
-  end
-  with_fx :reverb do
-    play sustain: 100000
-  end
-end
+#  end
+#  with_fx :reverb do
+#    play sustain: 100000
+#  end
+#end
 
-#my_e.control rate: 2
+my_e.control rate: 2
