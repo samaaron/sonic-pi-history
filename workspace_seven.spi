@@ -21,10 +21,10 @@ my_e.control delay:  r, decay: 2
 #end
 
 
-with_fx :ixi_techno, rate: 2 do
+with_fx :ixi_techno, rate: 1 do
 200.times do
   use_synth :zawa
-  play 40  + 12 , amp: 0.3, attack: 0, release: 0.1351, cutoff: rrand(60, 120)
+  play 40  + 7 , amp: 0.3, attack: 0, release: 0.1351, cutoff: rrand(60, 120)
   sleep 0.25
 end
 end
