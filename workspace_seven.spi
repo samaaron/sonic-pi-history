@@ -20,9 +20,14 @@ with_fx :reverb, room: 0.9 do
   end
 end
 
-1000.times do
+0.times do
   use_synth_defaults amp: 0.1
   sample :drum_cymbal_soft, amp: 0.05, rate: rrand(1, 6), sustain: 0, release: 0.1, attack: 0
   sleep 0.125/ 2
 
+end
+
+10.times do
+  play 50
+  sleep 0.5
 end
