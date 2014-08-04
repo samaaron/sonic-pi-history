@@ -24,8 +24,8 @@ my_e.control delay:  r, decay: 2
 
 
 505.times do
-  use_synth :prophet
-  play chord(:e3, :minor), amp: 0.3, attack: 0, release: 1.1351, cutoff: rrand(105, 125)
+  use_synth :fm
+  play :e2, amp: 0.5, attack: 0, release: 0.1351, cutoff: rrand(105, 125)
   sleep 0.25
 
 end
