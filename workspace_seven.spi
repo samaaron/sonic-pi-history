@@ -14,5 +14,6 @@ puts r
 
 10.times do
   my_e.control delay: [0.25, 0.5, 0.125, 1].choose
-  sleep 4
+  sleep 1
+  puts "hi"
 end
