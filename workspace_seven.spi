@@ -13,3 +13,5 @@ e
 r  =[0.25, 0.5, 0.125].choose
 puts r
 my_e.control delay:  r, decay: 2
+
+sample :drum_heavy_kick
