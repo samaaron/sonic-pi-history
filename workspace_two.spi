@@ -9,7 +9,8 @@ with_fx :reverb, room: 0.4 do
   loop do
     in_thread do
       play_pattern_timed [30, 45, 78, 90, 73], [0.25, 0.5, 0.333]
-    enduse_bpm 120.5
+    end
+    use_bpm 120.5
     play_pattern_timed [30, 45, 78, 90, 73], [0.25, 0.5, 0.333]
   end
 end
