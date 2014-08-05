@@ -11,7 +11,7 @@ in_thread do
   loop do
     sample :drum_bass_hard
     sleep 0.5
-    sample :drum_bass_hard, rate: 0.5
+    sample :drum_bass_hard, rate: 0.1
     sleep 0.5
   end
 end
