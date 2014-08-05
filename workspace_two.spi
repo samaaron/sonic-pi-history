@@ -12,7 +12,7 @@ with_fx :reverb, room: 0.6 do
   3.times do
     in_thread do
       with_transpose -24 do
-        use_synth :tb303
+        use_synth :prophet
         play_pattern_timed [78, 45, 78, 90], [0.33333]
       end
     end
