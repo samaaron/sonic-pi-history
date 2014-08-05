@@ -3,7 +3,7 @@ use_synth :dsaw
 use_bpm 120
 
 
-with_fx :reverb, room: 074 do
+with_fx :reverb, room: 00.6 do
 
   with_synth :zawa do
     play 30 + 12, release: 10, amp: 0.05, cutoff: 90
