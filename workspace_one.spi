@@ -2,7 +2,7 @@ use_synth :prophet
 use_transpose 5
 use_synth_defaults release: 0.2, cutoff: lambda{rrand(60, 120)}
 use_bpm 60
-use_volume 0.5
+
 
 with_fx :echo, delay: 0.25 do
   with_fx :reverb do
