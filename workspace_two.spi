@@ -1,5 +1,4 @@
 use_synth_defaults amp: 0.1, attack: 0.02, sustain: 0, release: 0.12
-use_transpose -12
 use_synth :dsaw
 use_bpm 120
 
@@ -17,7 +16,7 @@ with_fx :reverb, room: 0.4 do
 
   loop do
     in_thread do
-      use_transpose [12, 0, 7].choose
+      use_transpose [12, 0, 7].choose - 12
       if rand < 0.25
         in_thread do
           play_pattern_timed [78, 45, 78, 90], [0.5]
