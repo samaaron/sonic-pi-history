@@ -9,7 +9,7 @@ with_fx :reverb, room: 0.6 do
     play 30 + 12, release: 10, amp: 0.05, cutoff: 90
   end
 
-  3.times do
+  10.times do
     in_thread do
       with_transpose -24 do
         use_synth :beep
