@@ -7,7 +7,7 @@ with_fx :reverb, room: 0.4 do
     play 30 + 12, release: 10, amp: 0.1, cutoff: 90
   end
   loop do
-    use_bpm bpm += 10
+
     play_pattern_timed [30, 45, 78, 90], [0.25, 0.5]
   end
 end
