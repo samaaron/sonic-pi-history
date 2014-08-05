@@ -11,7 +11,7 @@ with_fx :reverb, room: 0.4 do
   end
 
   2.times do
-    play_pattern_timed [78, 45, 78, 90], [0.25]
+    play_pattern_timed [78, 45, 78, 90], [0.33333]
     sleep 0.5
   end
 
