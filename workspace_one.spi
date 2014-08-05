@@ -8,7 +8,7 @@ use_bpm 60
 with_fx :echo, delay: 0.25 do
   with_fx :reverb do
 
-      chord(:e3, :major)
+      play chord(:e3, :major)
 
   end
 end
