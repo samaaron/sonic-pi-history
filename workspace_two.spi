@@ -1,8 +1,8 @@
 use_synth_defaults amp: 0.3, attack: 0.2, sustain: 0, release: 0.2
-use_transpose -12
+use_transpose 0
 use_synth :tb303
 bpm = 80
-with_fx :reverb do
+with_fx :reverb, room: 0.4 do
   loop do
     use_bpm bpm += 10
     play_pattern_timed [30, 45, 78, 90], [0.25, 0.5]
