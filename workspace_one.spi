@@ -2,13 +2,13 @@ use_synth :prophet
 use_transpose 5
 use_synth_defaults release: 0.2, cutoff: lambda{rrand(60, 120)}
 use_bpm 60
-use_bpm 70
+
 
 with_fx :echo, delay: 0.25 do
   with_fx :reverb do
-  use_bpm 90
+
     in_thread do
-      use_bpm 100
+      use_bpm 65
       play_pattern_timed [53, 76, 79]* 4, [0.25, 0.5, 0.25, 0.25]
     end
     sleep 0.5
