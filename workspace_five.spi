@@ -1,9 +1,9 @@
 with_fx :reverb, room: 0, damp: 0.9 do
   loop do
 
-    sample :elec_tick, rate: 1.5, finish: 0.1, start: 0
+    sample :elec_tick, rate: 1.5, finish: 0.15, start: 0
     sleep 0.25
-    sample :elec_tick, rate: 1.1, finish: 0.1, start: 0
+    sample :elec_tick, rate: 1.1, finish: 0.15, start: 0
     sleep 0.25
   end
 end
