@@ -8,7 +8,7 @@ with_fx :echo, delay: 0.25 do
   with_fx :reverb do
 
     in_thread do
-      use_bpm 65
+      use_bpm 90
       play_pattern_timed [53, 76, 79]* 4, [0.25, 0.5, 0.25, 0.25]
     end
     sleep 0.5
