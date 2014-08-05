@@ -12,7 +12,7 @@ with_fx :echo, delay: 0.25 do
       play_pattern_timed chord(:C3, :major)* 4, [0.25, 0.5, 0.25, 0.25]
     end
     sleep 0.25
-    play_pattern_timed chord(:G1, :major)* 4, [0.25, 0.5, 0.25, 0.25]
+    play_pattern_timed chord(:G2, :major)* 4, [0.25, 0.5, 0.25, 0.25]
 
 
   end
