@@ -26,7 +26,7 @@ with_fx :reverb, room: 0.4 do
   loop do
     in_thread do
       use_transpose 12
-      play_pattern_timed [30, 45, 78, 90, 73], [0.25, 0.25, 0.25]
+      play_pattern_timed [30, 45, 78, 90], [0.25, 0.25, 0.25]
     end
     sleep 0.05
     use_transpose -12
