@@ -1,5 +1,5 @@
-use_synth_defaults amp: 0.3, attack: 0.2, sustain: 0, release: 0.2
-use_transpose 0
+use_synth_defaults amp: 0.3, attack: 0.2, sustain: 0, release: 0.12
+use_transpose -5
 use_synth :tb303
 bpm = 80
 with_fx :reverb, room: 0.4 do
