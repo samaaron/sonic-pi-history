@@ -1,4 +1,4 @@
-with_fx :reverb do
+with_fx :reverb, room: 0.2 do
   loop do
     sample :elec_tick, rate: 2
     sleep 0.5
