@@ -1,1 +1,5 @@
-play :e3
+use_synth :sound_in
+
+
+
+    play sustain: 100000
