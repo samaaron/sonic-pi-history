@@ -10,7 +10,7 @@ with_fx :reverb, room: 0.4 do
     play 30 + 12, release: 10, amp: 0.1, cutoff: 90
   end
 
-  6.times do
+  1.times do
     play_pattern_timed [78, 45, 78, 90], [0.33333]
     sleep 0.5
   end
