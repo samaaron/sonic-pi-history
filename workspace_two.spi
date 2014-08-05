@@ -4,7 +4,7 @@ use_synth :tb303
 bpm = 80
 with_fx :reverb, room: 0.4 do
 with_synth :zawa do
-  play 30
+  play 30, release: 10
 end
   loop do
     use_bpm bpm += 10
