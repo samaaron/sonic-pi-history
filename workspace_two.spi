@@ -3,6 +3,9 @@ use_transpose -5
 use_synth :tb303
 bpm = 80
 with_fx :reverb, room: 0.4 do
+with_synth :zawa
+  play 30
+end
   loop do
     use_bpm bpm += 10
     play_pattern_timed [30, 45, 78, 90], [0.25, 0.5]
