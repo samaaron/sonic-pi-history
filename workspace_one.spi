@@ -1,7 +1,7 @@
-use_volume! 0.5
+
 use_synth :prophet
 use_transpose 5
-use_synth_defaults release: 0.2, cutoff: lambda{rrand(60, 120)}
+use_synth_defaults release: 0.2, cutoff: lambda{rrand(60, 120)}, amp: 0.2
 use_bpm 60
 
 
