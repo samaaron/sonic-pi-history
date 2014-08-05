@@ -1,1 +1,1 @@
-play_pattern_timed [30, 45, 78, 90], [0.25]
+play_pattern_timed [30, 45, 78, 90], [0.25, 0.5]
