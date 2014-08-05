@@ -1,11 +1,11 @@
-use_synth_defaults amp: 0.3, attack: 0.02, sustain: 0, release: 0.12
+use_synth_defaults amp: 0.8, attack: 0.02, sustain: 0, release: 0.12
 use_transpose -5
 use_synth :dsaw
 bpm = 80
 with_fx :reverb, room: 0.4 do
-with_synth :zawa do
-  play 30 + 12, release: 10, amp: 0.1, cutoff: 90
-end
+  with_synth :zawa do
+    play 30 + 12, release: 10, amp: 0.1, cutoff: 90
+  end
   loop do
     use_bpm bpm += 10
     play_pattern_timed [30, 45, 78, 90], [0.25, 0.5]
