@@ -3,9 +3,11 @@ use_transpose -12
 use_synth :dsaw
 use_bpm 120
 
-2.times do
-  sample :drum_bass_hard
-  sleep 1
+4.times do
+  sample :drum_bass_hard, rate: 0.7
+    sleep 0.5
+    sample :drum_snare_hard, rate: 0.5
+    sleep 0.5
 end
 in_thread do
   loop do
