@@ -3,7 +3,7 @@ with_fx :reverb, room: 0, damp: 0.9 do
 
     sample :elec_tick, rate: 2
     sleep 0.25
-    sample :elec_tick, rate: 1
+    sample :elec_tick, rate: 1.7
     sleep 0.25
   end
 end
