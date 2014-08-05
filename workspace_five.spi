@@ -1,6 +1,6 @@
 with_fx :reverb, room: 0, damp: 0.9 do
   loop do
-    sample :elec_tick, rate: 2
+    sample :elec_tick, rate: 1
     sleep 0.5
     sample :elec_tick, rate: 1
     sleep 0.5
