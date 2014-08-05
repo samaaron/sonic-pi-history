@@ -25,8 +25,8 @@ my_e.control delay:  r, decay: 2
 with_fx :reverb do
   50.times do
     use_synth :fm
-    play :a5, amp: 0.9, attack: 0, release: 0.1351, cutoff: rrand(15, 125)
-    sleep 0.5
+    play :e5, amp: 0.9, attack: 0, release: 0.1351, cutoff: rrand(15, 125)
+    sleep 0.25
 
   end
 end
