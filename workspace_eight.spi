@@ -1,41 +1,60 @@
-
 load_sample :drum_heavy_kick
 
 lp = :loop_industrial
 sd = sample_duration lp
-
+#sample :ambi_lunar_land, rate: 0.6
 define :drums do
   sync :tick
-
-
-  sleep sd/2
+#  sample lp, rate: 0.5, amp: 0.5, amp: 2
+  #sample :drum_tom_mid_soft
+  sleep sd
 end
 
 define :bd do
   wait :tick
-  #  sample :drum_bass_hard, amp: 2
-  #sample :drum_heavy_kick, amp: 2
+  with_fx :echo, delay: sd * 1 do
+#    sample :bass_woodsy_c, amp: 1, rate: 1, release: 0.4, sustain: 0, attack: 0
+    4.times do
+#      sample :elec_blip2, rate: [1, 2, 4, 8, 16, 32].choose * (7.0 / 12), amp: 2
+#      sample :elec_bell, rate: [1, 0.5, 2, 4].choose * 16 if rand < 0.9
+      use_synth :prophet
+      use_transpose 0
+      #play scale(:e, :minor_pentatonic, num_octaves: 6).choose, attack: 0, release: rrand(0, 0.123), amp: 3, cutoff: 120
+      sleep sd / 4
+    end
+
+  end
+
 
 end
 
 define :synths do
   wait :tick
   use_synth :fm
-  n = 2
+  n = 1
   p = [52, 48, 50].choose
   in_thread do
     2.times do
-      play p, release: sd/8, attack: 0
-      sleep sd/ 4
+       #sample :drum_heavy_kick, amp: 3
+      use_synth :supersaw
+      # play p, release: sd/8, attack: 0, amp: 1, release: 0.505, cutoff: rrand(100, 120)
+      use_synth :mod_saw
+     # play p + 0, release: sd/8, attack: 0, amp: 0.7, release: 1, mod_rate: sd * 4, mod_range: 12, cutoff: rrand(100, 120), detune: 12
+      sleep sd/ 2
     end
   end
   use_transpose 0
-  with_fx :reverb, room: 0.8 do
-    with_fx :ixi_techno, rate: sd/16 do
-      n.times do
-        use_synth :prophet
-        #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
-        play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/4], attack: 0, release: 1, amp: 2, cutoff: rrand(80, 100)
+  in_thread do
+    with_fx :reverb, room: 0.8 do
+#      with_fx :ixi_techno, rate: sd/16 do
+with_fx :echo, 
+        1.times do
+          use_synth :prophet
+          use_transpose 12
+          play chord([:c4, :c2, :c3, :c5].choose, :minor), release: 0.15, attack: 0, cutoff: rrand(60, 70) + 30, amp: 2
+          
+#          play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/8], attack: 0, release: 0.1, amp: 5, cutoff: 100
+#        end
       end
     end
   end
@@ -44,4 +63,3 @@ end
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
 in_thread(name: :bd){loop{bd}}
- 
