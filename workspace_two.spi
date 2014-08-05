@@ -9,6 +9,10 @@ use_bpm 120
 end
 
 with_fx :reverb, room: 0.4 do
+loop do
+  sample :drum_bass_hard
+  sleep 1
+end
   with_synth :zawa do
     play 30 + 12, release: 10, amp: 0.1, cutoff: 90
   end
