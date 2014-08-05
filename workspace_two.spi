@@ -9,7 +9,7 @@ use_bpm 120
 end
 in_thread do
   loop do
-    sample :drum_tom_hi_soft, rate: 0.7
+    sample :drum_bass_hard, rate: 0.7
     sleep 0.5
     sample :drum_snare_hard, rate: 0.5
     sleep 0.5
