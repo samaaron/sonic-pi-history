@@ -5,10 +5,14 @@ use_synth_defaults release: 0.2, cutoff: lambda{rrand(60, 120)}, amp: 0.3
 use_bpm 60
 
 
-with_fx :echo, delay: 0.25 do
-  with_fx :reverb do
 
-      play chord(:e3, :major)
+with_fx :reverb do
 
-  end
+
+  play chord(:e3, :major)
+sleep 0.25  
+    play chord(:e3, :major)
+sleep 1    
+      play chord(:a3, :major)
+
 end
