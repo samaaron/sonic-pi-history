@@ -1,1 +1,8 @@
-sample :elec_tick, rate: 2
+loop do
+  sample :elec_tick, rate: 2
+  sleep 0.5
+    sample :elec_tick, rate: 1
+    sleep 0.5
+    end
+    
+    
