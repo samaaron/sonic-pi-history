@@ -10,8 +10,10 @@ with_fx :reverb, room: 0.6 do
   end
 
   3.times do
-    with_transpose -24 do
-    play_pattern_timed [78, 45, 78, 90], [0.33333]
+    in_thread do
+      with_transpose -24 do
+        play_pattern_timed [78, 45, 78, 90], [0.33333]
+      end
     end
     play_pattern_timed [78, 45, 78, 90], [0.33333]
     sleep 0.666
