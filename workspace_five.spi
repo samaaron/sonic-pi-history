@@ -1,1 +1,1 @@
-sample :elec_tick
+sample :elec_tick, rate: 2
