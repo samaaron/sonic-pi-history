@@ -8,17 +8,17 @@ use_bpm 60
 
 
 2.times do
-play chord(:e3, :major)
-sleep 0.25
-play chord(:e3, :major)
-sleep 0.25
+  play chord(:e3, :major)
+  sleep 0.25
+  play chord(:e3, :major)
+  sleep 0.25
 
-with_fx :reverb do
-  with_fx :echo, delay: 0.25 do
-    play chord(:a3, :major)
+  with_fx :reverb do
+    with_fx :echo, delay: 0.25 do
+      play chord(:a3, :major)
 
+    end
   end
-end
 
-sleep 1
+  sleep 1
 end
