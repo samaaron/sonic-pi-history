@@ -4,7 +4,7 @@ use_synth :dsaw
 bpm = 80
 with_fx :reverb, room: 0.4 do
 with_synth :zawa do
-  play 30 + 12, release: 10, amp: 0.1, cutoff: 100
+  play 30 + 12, release: 10, amp: 0.1, cutoff: 80
 end
   loop do
     use_bpm bpm += 10
