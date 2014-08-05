@@ -10,6 +10,11 @@ with_fx :reverb, room: 0.4 do
     play 30 + 12, release: 10, amp: 0.1, cutoff: 90
   end
 
+  4.times do
+    play_pattern_timed [78, 45, 78, 90], [0.5]
+    sleep 0.5
+  end
+
   loop do
     in_thread do
       use_transpose [12, 0, 7].choose
@@ -19,7 +24,7 @@ with_fx :reverb, room: 0.4 do
         end
       end
       sleep [0, 0.25].choose
-            play_pattern_timed [78, 45, 78, 90], [0.5]  
+      play_pattern_timed [78, 45, 78, 90], [0.5]
 
     end
     sleep 0.5
