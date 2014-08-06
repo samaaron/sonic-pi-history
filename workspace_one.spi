@@ -1,11 +1,7 @@
-
 use_synth :prophet
 use_transpose 5
 use_synth_defaults release: 0.2, cutoff: lambda{rrand(60, 120)}, amp: 0.3
 use_bpm 60
-
-
-
 
 2.times do
   play chord(:e3, :major)
@@ -16,7 +12,6 @@ use_bpm 60
   with_fx :reverb do
     with_fx :echo, delay: 0.25 do
       play chord(:a3, :major)
-
     end
   end
 
