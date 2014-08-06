@@ -4,6 +4,7 @@ with_fx :reverb do
   play sustain: 100
 end
 
+use_synth :tb303
 [1,2,3,4,5].each do |el|
   play 50 + el
   sleep 0.5
