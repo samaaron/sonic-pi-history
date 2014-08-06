@@ -3,11 +3,3 @@ use_synth :sound_in
 with_fx :reverb,room: 0.9 do
   play sustain: 100
 end
-
-use_synth :tb303
-[1,2,3,4,5].each do |el|
-  play 50 + el, release: 0.1, attack: 0
-  sleep 0.5
-end
-  
-  
