@@ -1,6 +1,12 @@
 use_synth :sound_in
-with_fx :echo do
-  with_fx :reverb do
-    play sustain: 100
-  end
+
+with_fx :reverb do
+  play sustain: 100
 end
+
+[1,2,3,4,5].each do |el|
+  play 50 + el
+  sleep 0.5
+  end
+  
+  
