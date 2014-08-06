@@ -1,6 +1,6 @@
 use_synth :sound_in
 
-with_fx :reverb do
+with_fx :reverb,room: 0.9 do
   play sustain: 100
 end
 
