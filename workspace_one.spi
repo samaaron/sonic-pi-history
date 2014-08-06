@@ -15,5 +15,5 @@ use_bpm 60
     end
   end
 
-  sleep 1
+  sleep 0.2
 end
