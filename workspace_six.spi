@@ -11,7 +11,7 @@ end
 define :synths do
   use_synth :dsaw
   use_synth_defaults amp: 1, mod_range: 12, attack: 0.03, release: 0.26, cutoff: 70, pulse_width: 0.02, mod_rate: 4
-  play chord(:e3, :minor)
+  play chord(:e3, :minor).choose
   sleep 0.25
 end
 
