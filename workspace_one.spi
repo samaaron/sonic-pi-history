@@ -15,5 +15,5 @@ use_bpm 60
     end
   end
 
-  sleep 0.25
+  sleep [0.25, 0.5].choose
 end
