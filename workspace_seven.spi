@@ -1,5 +1,5 @@
 use_synth :sound_in
-with_fx :slicer, rate: 5 do
+with_fx :slicer, rate: 10 do
   with_fx :reverb,room: 0.29 do
     play sustain: 100
   end
