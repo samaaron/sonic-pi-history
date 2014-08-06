@@ -1,4 +1,3 @@
 use_synth :mod_dsaw
-run do
+
   play 50, mod_phase: 2, release: 0.2
-end
