@@ -1,0 +1,41 @@
+use_synth_defaults amp: 0.1, attack: 0.02, sustain: 0, release: 0.12
+use_synth :dsaw
+use_bpm 120
+
+
+with_fx :reverb, room: 0.6 do
+
+  with_synth :zawa do
+    play 30 + 12, release: 10, amp: 0.05, cutoff: 90
+  end
+
+  8.times do
+    in_thread do
+      with_transpose -24 do
+        use_synth :beep
+        play_pattern_timed [78, 45, 78, 90], [0.33333]
+      end
+    end
+    play_pattern_timed [78, 45, 78, 90], [0.33333]
+    sleep 0.666
+  end
+
+  loop do
+    in_thread do
+      use_transpose [12, 0, 7].choose - 12
+      if rand < 0.5
+        in_thread do
+          use_merged_synth_defaults release: 0.1
+          use_synth :beep
+          play_pattern_timed [78, 45, 78, 90], [0.5]
+        end
+      end
+      sleep [0, 0.25].choose
+      play_pattern_timed [78, 45, 78, 90], [0.5]
+
+    end
+    sleep 0.5
+
+
+  end
+end
