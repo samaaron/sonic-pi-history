@@ -1,1 +1,3 @@
-play 50
+use_synth :sound_in
+
+play 
