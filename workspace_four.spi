@@ -1,4 +1,4 @@
 with_fx :echo do
   sample :loop_amen
-  sleep 0.2
+
 end
