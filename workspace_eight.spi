@@ -1,4 +1,5 @@
 loop do
+  sample :bass_dnb_f
   sample :loop_amen, rate: [1, 0.5, -1].choose
   sleep sample_duration :loop_amen
 end
