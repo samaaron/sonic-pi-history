@@ -1,1 +1,1 @@
-play 50, attack: 0, attack_level: 2
+play 50, attack: 0, attack_level: 2, decay: 0.5
