@@ -2,7 +2,7 @@ use_synth :prophet
 use_transpose 5
 use_synth_defaults release: 0.2, cutoff: lambda{rrand(60, 120)}, amp: 0.3
 use_bpm 60
-with_fx :ixi_techno do
+with_fx :reverb do
   3.times do
     play chord(:e3, :major)
     sleep 0.25
