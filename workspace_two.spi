@@ -1,1 +1,3 @@
-control rr, rate: 0.2
+define :rr do
+0.2
+end
