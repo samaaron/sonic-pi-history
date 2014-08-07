@@ -1,4 +1,5 @@
 loop do
   control $s, rate: -1
+  $s = nil
   sleep 0.33333333
 end
