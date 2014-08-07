@@ -1,1 +1,1 @@
-play_pattern_timed scale(48, :major), [0.1]
+play_pattern_timed scale(48, :major), [0.2]
