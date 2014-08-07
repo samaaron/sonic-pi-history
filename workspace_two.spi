@@ -1,3 +1,5 @@
 define :rr do
 0.10
 end
+
+control comp, clamp_time: 1
