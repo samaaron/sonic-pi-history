@@ -1,6 +1,8 @@
 use_synth :mod_fm
-
-play 50 + 0, mod_phase: 0.25, release: 1, mod_range: [24, 27].choose
-sleep 0.5
-use_synth :mod_dsaw
-play 50 + 0, mod_phase: 0.25, release: 1, mod_range: [24, 27].choose, attack: 0.5
+loop do
+  play 50 + 0, mod_phase: 0.25, release: 1, mod_range: [24, 27].choose
+  sleep 0.5
+  use_synth :mod_dsaw
+  play 50 + 0, mod_phase: 0.25, release: 1, mod_range: [24, 27].choose, attack: 0.5
+  sleep 1.5
+end
