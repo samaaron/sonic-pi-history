@@ -1,1 +1,1 @@
-control bc, bits_slide: 10
+control bc, bits: 16
