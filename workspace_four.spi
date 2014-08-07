@@ -1,5 +1,6 @@
 loop do
   control $s, rate: -8
+  sleep 0.1
   $s = BlankNode.new
   sleep 0.5
 end
