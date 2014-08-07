@@ -1,7 +1,7 @@
 with_fx :compressor do
   with_fx :level, amp: 5 do
     loop do
-         sample :bass_hard_c, rate: 0.4
+         sample :bass_hard_c, rate: 0.2
 
 
 
