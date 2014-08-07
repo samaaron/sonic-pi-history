@@ -1,3 +1,3 @@
-with_fx :bitcrusher, bits: 4, sample_rate: 20000 do
+with_fx :bitcrusher, bits: 1, sample_rate: 20000 do
 sample :bass_dnb_f
 end
