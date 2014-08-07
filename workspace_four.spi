@@ -1,3 +1,0 @@
-use_synth :fm
-
-play 50, attack: 0, attack_level: 0.25, decay: 2.5, sustain: 1, sustain_level: 3
