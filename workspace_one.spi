@@ -1,9 +1,10 @@
 with_fx :compressor do
   loop do
     with_fx :bitcrusher, bits: 8, sample_rate: rrand(100, 10000) do
-#      sample :drum_bass_hard, amp: 8
+      sample :drum_heavy_kick
+      sample :drum_snare_hard
       sample :elec_beep
     end
-    sleep 0.125
+    sleep 0.5
   end
 end
