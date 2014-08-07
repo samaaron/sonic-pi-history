@@ -1,4 +1,3 @@
-OPENING (start at 0 s)
 
 use_synth :prophet
 use_transpose 5
