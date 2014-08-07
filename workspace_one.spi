@@ -1,3 +1,6 @@
+loop do
 with_fx :bitcrusher, bits: 8, sample_rate: rrand(100, 1000) do
 sample :drum_bass_hard
+end
+sleep 0.25
 end
