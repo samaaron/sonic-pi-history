@@ -4,7 +4,7 @@ control bc, bits: 20
 with_fx :compressor do
 loop do
 use_synth :fm
-play 38
+play 38, attack: 0, release: 0.3, amp: 3
 sleep 0.5 
 end
 end
