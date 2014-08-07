@@ -1,4 +1,4 @@
 loop do
   control $s, rate: 16
-  sleep rrand(0.2, 0.4) * 0.6666666
+  sleep 0.33333333
 end
