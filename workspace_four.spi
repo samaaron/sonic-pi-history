@@ -1,1 +1,1 @@
-play chord(60, :minor)
+play scale :C3, :major
