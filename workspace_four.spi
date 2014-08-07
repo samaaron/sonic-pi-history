@@ -1,1 +1,1 @@
-puts note(:C4)
+play chord(60, :minor)
