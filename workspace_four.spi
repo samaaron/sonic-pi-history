@@ -1,4 +1,4 @@
 loop do
-  control $s, rate: -0.25
-  sleep 0.3333
+  control $s, rate: 0.1
+  sleep 5
 end
