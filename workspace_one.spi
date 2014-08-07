@@ -1,10 +1,10 @@
 with_fx :compressor do
   with_fx :level, amp: 5 do
     loop do
-
-        sample :drum_heavy_kick
-        sample :drum_snare_hard
-        sample :elec_beep
+sample :bass_hard_c
+#        sample :drum_heavy_kick
+#        sample :drum_snare_hard
+#        sample :elec_beep
 
       sleep 0.5
     end
