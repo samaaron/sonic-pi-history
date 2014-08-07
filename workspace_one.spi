@@ -1,4 +1,4 @@
-with_fx :compressor do
+with_fx :none do
 
   loop do
     sample :bass_voxy_hit_c, rate: 0.1
