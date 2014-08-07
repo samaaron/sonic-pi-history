@@ -1,4 +1,4 @@
-control bc, bits: 1
+control bc, bits: 20
 
 
 with_fx :compressor do
