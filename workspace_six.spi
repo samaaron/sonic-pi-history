@@ -4,7 +4,7 @@ loop do
 
 
 
-sample :drum_bass_hard
+sample :drum_bass_hard, amp: 5
 #  play 50 + 0, mod_phase: 0.25, release: 1.5, mod_range: [24, 27].choose, attack: 0.5
-  sleep 1
+  sleep 0.5
 end
