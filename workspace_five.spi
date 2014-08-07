@@ -10,7 +10,7 @@ end
 
 define :synths do
   use_synth :mod_fm
-  use_synth_defaults amp: 1, mod_rate: 0.1,  mod_range: 19, attack: 0.03, release: 2, cutoff: 100, pulse_width: 0.5, mod_rate: 4
+  use_synth_defaults amp: 1, mod_rate: 0.1,  mod_range: 20, attack: 0.03, release: 2, cutoff: 100, pulse_width: 0.5, mod_rate: 4
   play 38 + 12
   sleep 0.25
   play 38
