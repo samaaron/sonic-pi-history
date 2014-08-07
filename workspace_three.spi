@@ -1,0 +1,10 @@
+with_fx :compressor do
+  loop do
+    use_synth_defaults amp: 0.3
+    sample :elec_tick, rate: 2.1
+    sleep 0.25
+    sample :elec_tick, rate: 1.3
+    sleep 0.25
+
+  end
+end
