@@ -3,3 +3,4 @@ with_fx :lpf, cutoff: 120 do
   with_fx :reverb,room: 0.8 do
     play sustain: 100
   end
+end
