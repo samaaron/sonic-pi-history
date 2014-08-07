@@ -1,12 +1,12 @@
 with_fx :compressor do
-  with_fx :level, amp: 5
-  loop do
-    with_fx :bitcrusher, bits: 8, sample_rate: rrand(100, 10000) do
-      sample :drum_heavy_kick
-      sample :drum_snare_hard
-      sample :elec_beep
+  with_fx :level, amp: 5 do
+    loop do
+      with_fx :bitcrusher, bits: 8, sample_rate: rrand(100, 10000) do
+        sample :drum_heavy_kick
+        sample :drum_snare_hard
+        sample :elec_beep
+      end
+      sleep 0.5
     end
-    sleep 0.5
   end
-end
 end
