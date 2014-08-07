@@ -1,5 +1,7 @@
-with_fx :bitcrusher, bits: 8, sample_rate: 10000 do
-
+with_fx :bitcrusher, bits: 8, sample_rate: 10000 do |b|
+  define :bc do
+    b
+  end
 
   loop do
 
