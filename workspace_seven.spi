@@ -3,7 +3,8 @@ control bc, bits: 1
 
 with_fx :compressor do
 loop do
-sample :drum_heavy_kick, amp: 5
+use_synth :fm
+play 38
 sleep 0.5 
 end
 end
