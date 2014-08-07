@@ -1,12 +1,12 @@
 with_fx :compressor do
   with_fx :level, amp: 5 do
     loop do
-         sample :bass_hard_c, rate: 1./2, attack: 0, sustain: 0, release: 0.3
+         sample :bass_hard_c, rate: 1.0/2, attack: 0, sustain: 0, release: 0.3
 
 
 
 
-      sleep 0.5
+      sleep 1
     end
   end
 end
