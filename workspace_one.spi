@@ -1,9 +1,9 @@
 with_fx :compressor do
   with_fx :level, amp: 1 do
     loop do
-          $s = sample :bass_voxy_hit_c, rate: 8
+          $s = sample :bass_voxy_hit_c, rate: 16
 
-      sleep 0.666666
+      sleep 0.25
     end
   end
 end
