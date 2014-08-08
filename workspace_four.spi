@@ -1,1 +1,1 @@
-puts SynthInfo.get_info(:fx_reverb).class
+puts SynthInfo.get_info(:fx_reverb)
