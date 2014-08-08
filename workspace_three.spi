@@ -1,8 +1,8 @@
-with_arg_bpm_scaling false do
-use_bpm 240
-play 50, release: 1
-sleep 1
-play 62
-sleep rt(1)
-play 70
+with_arg_bpm_scaling true do
+  use_bpm 240
+  play 50, release: 1
+  sleep 1
+  play 62
+  sleep rt(1)
+  play 70
 end
