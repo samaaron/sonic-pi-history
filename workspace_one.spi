@@ -9,7 +9,7 @@ in_thread do
     use_synth :tb303
     use_transpose 0
 
-    play_pattern_timed [52, 54, 56, 59, 59, 64] * 4, [0.65, 0.35, 0.5, 0.25, 0.65, 0.35], amp: 1, release: 1
+    play_pattern_timed [52, 54, 56, 59, 59, 64] * 4, [0.65, 0.35, 0.5, 0.25, 0.65, 0.5], amp: 1, release: 1
   end
 end
 8.times do
