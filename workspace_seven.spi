@@ -1,5 +1,4 @@
-use_synth :dsaw
-
+use_synth :fm
 play 42
 sleep 0.5
 play 43
