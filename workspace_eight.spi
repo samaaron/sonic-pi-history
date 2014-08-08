@@ -10,7 +10,7 @@ end
 
 define :synths do
   use_synth :mod_dsaw
-  use_synth_defaults amp: 1, mod_range: 5, attack: 0.03, release: 0.6, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
+  use_synth_defaults amp: 1, mod_range: 7, attack: 0.03, release: 0.6, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
   with_fx :none do
     with_fx :none, bits: rrand(5, 16), sample_rate: rrand(10000, 44100) do
       play chord(:e3, :minor).choose
