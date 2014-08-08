@@ -1,1 +1,1 @@
-puts SynthInfo.get_info(:fx_echo).info[:phase][:bpm_scale]
+puts SynthInfo.get_info(:fx_echo).bpm_scale_args
