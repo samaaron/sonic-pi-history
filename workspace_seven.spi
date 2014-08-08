@@ -1,9 +1,9 @@
 use_synth :pretty_bell
 
-play 42
+play 62
 sleep 0.5
-play 43
+play 63
 sleep 1
-play 46
+play 66
 sleep 0.5
-play 46
+play 66
