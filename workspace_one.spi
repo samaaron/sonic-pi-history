@@ -1,1 +1,1 @@
-puts Note.resolve_midi_note(:fs)
+puts Note.resolve_midi_note(:FS)
