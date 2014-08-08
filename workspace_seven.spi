@@ -3,7 +3,7 @@ use_synth_defaults mod_range: 24, mod_phase: 0.125, cutoff: 120
 
 
 play 92
-sleep 0.25
+sleep 0.5
 play 92
 sleep 0.5
 play 98
