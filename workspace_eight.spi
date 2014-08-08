@@ -21,10 +21,9 @@ define :drums do
 #end
 
 define :synths do
-  in_thread do
-    sleep 0
+
     play chord(:e3, :minor).choose + 12
-  end
+
   use_synth :tb303
   use_synth_defaults amp: 1, mod_range: [0].choose, attack: 0.03, release: 0.6, cutoff: rrand(60, 100), pulse_width: 0.2, mod_phase: 0.25
 #  with_fx :reverb do
