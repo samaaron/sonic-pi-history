@@ -6,7 +6,7 @@ define :drums do
     use_synth :fm
 
     4.times do
-      play :e2, attack: 0, release: 0.13, amp: 1
+      #play :e2, attack: 0, release: 0.13, amp: 1
       sleep 0.25
     end
   end
