@@ -1,1 +1,1 @@
-puts "hey"
+puts SynthInfo.get_info(:fx_reverb)
