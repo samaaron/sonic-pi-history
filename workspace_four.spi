@@ -1,2 +1,4 @@
+
+puts "cheese"
 print SynthInfo.get_info(:fx_reverb)
 puts "hey"
