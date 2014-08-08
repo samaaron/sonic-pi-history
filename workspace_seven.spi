@@ -1,5 +1,5 @@
 use_synth :prophet
-use_synth_defaults mod_range: 24, mod_phase: 0.125, cutoff: 70
+use_synth_defaults mod_range: 24, mod_phase: 0.125, cutoff: 120
 
 
 play 42
