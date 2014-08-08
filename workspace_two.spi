@@ -2,6 +2,7 @@
 use_synth_defaults amp: 0.1, attack: 0.02, sustain: 0, release: 0.12
 use_synth :dsaw
 use_bpm 120
+use_arg_bpm_scaling false
 
 with_fx :reverb, room: 0.6 do
 
