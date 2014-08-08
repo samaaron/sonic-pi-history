@@ -1,47 +1,101 @@
-
-load_sample :drum_heavy_kick
-
-lp = :loop_industrial
-sd = sample_duration lp
-
-define :drums do
-  sync :tick
+use_synth_defaults amp: 0.1, attack: 0.02, sustain: 0, release: 0.12
+use_synth :dsaw
+use_bpm 120
+with_fx :bitcrusher, bits: 8, sample_rate: rrand(100, 10000) do
 
 
-  sleep sd/2
-end
+  with_fx :reverb, room: 0.6 do
 
-define :bd do
-  wait :tick
-  #  sample :drum_bass_hard, amp: 2
-  #sample :drum_heavy_kick, amp: 2
-
-end
-
-define :synths do
-  wait :tick
-  use_synth :fm
-  n = 2
-  p = [52, 48, 50].choose
-  in_thread do
-    2.times do
-      play p, release: sd/8, attack: 0
-      sleep sd/ 4
+    with_synth :zawa do
+      play 30 + 12, release: 15, amp: 0.05, cutoff: 90
     end
-  end
-  use_transpose 0
-  with_fx :reverb, room: 0.8 do
-    with_fx :ixi_techno, rate: sd/16 do
-      n.times do
-        use_synth :prophet
-        #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
-        play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/4], attack: 0, release: 1, amp: 2, cutoff: rrand(80, 100)
+
+    8.times do
+      in_thread do
+        with_transpose -24 do
+          use_synth :beep
+          play_pattern_timed [78, 45, 78, 90], [0.33333]
+        end
+      end
+      play_pattern_timed [78, 45, 78, 90], [0.33333]
+      sleep 0.666
+    end
+
+
+    define :beep do
+      with_fx :level, amp: 0.4 do
+        64.times do
+          in_thread do
+            use_transpose [12, 0, 7].choose - 12
+            if rand < 0.5
+              in_thread do
+                use_merged_synth_defaults release: 0.1
+                use_synth :beep
+                play_pattern_timed [78, 45, 78, 90], [0.5]
+              end
+            end
+            sleep [0, 0.25].choose
+            play_pattern_timed [78, 45, 78, 90], [0.5]
+
+          end
+          sleep 0.5
+        end
       end
     end
+    use_synth_defaults amp: 0.1, attack: 0.02, sustain: 0, release: 0.12
+    use_synth :dsaw
+    use_bpm 60
+
+    define :drums do
+      sleep 15
+      with_fx :level, amp: 1 do
+        with_fx :hpf, cutoff: 20 do
+          18.times do
+            if rand <0.8 then
+              sample :drum_heavy_kick, rate: 0.95, amp: 1
+              sample :drum_cymbal_soft, rate: [0.95, 0.75, 0.55].choose, amp: 0.05
+              sleep 0.25
+              sample :drum_heavy_kick, rate: 0.95, amp: 0.3
+              sleep 0.25
+            else
+              sample :drum_heavy_kick, rate: 0.95, amp: 1
+              sleep 0.33333
+              sample :drum_heavy_kick, rate: 0.95, amp: 0.3
+              sleep 0.16667
+            end
+            sample :drum_bass_soft, rate: 0.65, amp: 0.6
+            sleep 0.25
+            sample :drum_heavy_kick, rate: 0.95, amp: 0.5
+            sleep 0.125
+            sample :drum_heavy_kick, rate: 1.15 + rrand(0, 0.2), amp: 0.5 if rand <0.15
+            sleep 0.125
+          end
+        end
+      end
+    end
+
+    define :snare do
+      sleep 24
+      with_fx :level, amp: 3 do
+        with_fx :reverb, mix: 0.9 do
+          with_fx :echo, delay: 0.5 do
+            sample :elec_filt_snare, rate: 0.55
+            sleep 1
+            sample :elec_filt_snare, rate: 0.75
+            sleep 1
+            sample :elec_filt_snare, rate: 0.95
+            sleep 0.5
+            sample :elec_filt_snare, rate: 1.5
+            sleep 0.5
+            sample :elec_filt_snare, rate: 2.5
+          end
+        end
+      end
+    end
+
   end
 end
 
-in_thread(name: :drums){loop{drums}}
-in_thread(name: :synths){loop{synths}}
-in_thread(name: :bd){loop{bd}}
- 
+in_thread(name: :beep){beep}
+in_thread(name: :drums){drums}
+in_thread(name: :snare){snare}
