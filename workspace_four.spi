@@ -1,1 +1,3 @@
-puts SynthInfo.get_info(:fx_echo).bpm_scale_args
+with_fx :echo do
+play 50
+end
