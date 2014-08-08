@@ -1,4 +1,4 @@
 use_bpm 120
 play 50
-sleep 1
+sleep rt(1)
 play 62
