@@ -18,7 +18,7 @@ define :drums do
     sample :drum_heavy_kick, rate: 2
     sleep 0.125
   end
-end
+#end
 
 define :synths do
   use_synth :mod_dsaw
