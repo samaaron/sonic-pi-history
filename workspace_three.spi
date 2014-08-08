@@ -1,5 +1,5 @@
 use_synth :dsaw
 use_bpm 70
 use_transpose 12
-use_synth_defaults attack: 0.1
+use_synth_defaults attack: 0.051
 play_pattern_timed [:F3,:F3, :G3, :Gs3, :G3], [0.25, 0.25, 0.3, 0.45]
