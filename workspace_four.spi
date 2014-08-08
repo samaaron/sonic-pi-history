@@ -2,5 +2,5 @@ use_bpm 70
 with_fx :echo do
   play 50
   sleep 1
-  play 60
+  play 62
 end
