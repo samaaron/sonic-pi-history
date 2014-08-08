@@ -1,0 +1,5 @@
+play 50
+sleep 1
+play 62
+sleep rt(1)
+play 70
