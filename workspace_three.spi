@@ -6,7 +6,7 @@ with_fx :reverb do
       sleep 1
       play 62
       sleep rt(1)
-      play 65
+      play 64
     end
   end
 end
