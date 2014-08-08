@@ -22,7 +22,7 @@ define :drums do
 
 define :synths do
   in_thread do
-  sleep 0.1
+    sleep 0.1
     play chord(:e3, :minor).choose + 24
   end
   use_synth :tb303
@@ -30,7 +30,7 @@ define :synths do
 #  with_fx :reverb do
 use_transpose -12
     with_fx :bitcrusher, bits: rrand(5, 10), sample_rate: rrand(10000, 4100) do
-      play chord(:e3, :minor).choose
+  #    play chord(:e3, :minor).choose
       sleep 0.125
     end
 #  end
