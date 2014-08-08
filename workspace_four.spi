@@ -1,5 +1,5 @@
 use_synth :dsaw
-use_bpm 60
+use_bpm 60 * 5
 with_fx :ixi_techno do
   play 50, release: 10
 end
