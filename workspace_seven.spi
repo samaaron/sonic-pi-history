@@ -1,4 +1,4 @@
-use_synth :mod_pulse
+use_synth :pulse
 
 play 42
 sleep 0.25
