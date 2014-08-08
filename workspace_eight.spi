@@ -1,1 +1,2 @@
-play 50
+use_synth :dsaw
+play 50, 
