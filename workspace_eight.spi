@@ -4,7 +4,7 @@ load_sample :drum_heavy_kick
 define :drums do
   in_thread do
     use_synth :fm
-    with_fx :bitcrusher, bits: 6, sample_rate: 1000000 do
+    with_fx :bitcrusher, bits: 5.5, sample_rate: 1000000 do
 
     4.times do
       play :e2, attack: 0, release: 0.3, amp: 1
