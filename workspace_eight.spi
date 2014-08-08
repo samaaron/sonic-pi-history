@@ -22,7 +22,7 @@ define :drums do
 
 define :synths do
   in_thread do
-#    play scale(:e3, :minor).choose + 24
+    play chord(:e3, :minor).choose + 24
   end
   use_synth :tb303
   use_synth_defaults amp: 1, mod_range: [0].choose, attack: 0.03, release: 0.6, cutoff: rrand(60, 100), pulse_width: 0.2, mod_phase: 0.25
