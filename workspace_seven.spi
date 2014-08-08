@@ -1,4 +1,5 @@
-use_synth :tb303
+use_synth :mod_tri
+
 play 42
 sleep 0.5
 play 43
