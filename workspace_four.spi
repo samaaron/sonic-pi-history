@@ -1,3 +1,0 @@
-with_fx :echo do
-play 50
-end
