@@ -1,1 +1,1 @@
-puts SynthInfo.get_info(:fx_echo).bpm_scale_args
+puts SynthInfo.get_info(:fx_reverb).bpm_scale_args
