@@ -4,19 +4,20 @@ load_sample :drum_heavy_kick
 define :drums do
   in_thread do
     use_synth :fm
-    with_fx :bitcrusher, bits: 5.5, sample_rate: 1000000 do
 
     4.times do
       play :e2, attack: 0, release: 0.13, amp: 1
       sleep 0.125
-    end
 end
   end
+      with_fx :bitcrusher, bits: 5.5, sample_rate: 1000000 do
+
   sample :drum_heavy_kick, rate: 0.75
   sample :drum_bass_soft
   sleep 0.5
   sample :drum_heavy_kick
   sleep 0.5
+  end
 end
 
 define :synths do
