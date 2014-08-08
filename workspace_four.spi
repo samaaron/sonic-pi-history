@@ -1,4 +1,4 @@
-use_synth :tb303
+use_synth :prophet
 
 with_fx(:echo, phase: 2, decay: 4) do
   loop do
