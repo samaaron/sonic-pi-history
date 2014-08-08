@@ -13,7 +13,7 @@ define :drums do
   with_fx :bitcrusher, bits: 2.5, sample_rate: 1000000 do
 
     sample :drum_heavy_kick, rate: 0.75
-    sample :drum_bass_soft
+#    sample :drum_bass_soft
     sleep 0.5
     sample :drum_heavy_kick
     sleep 0.5
