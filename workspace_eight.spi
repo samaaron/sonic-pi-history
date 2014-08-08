@@ -15,7 +15,7 @@ define :drums do
     sample :drum_heavy_kick, rate: 2.75
 #    sample :drum_bass_soft
     sleep 0.125
-    sample :drum_heavy_kick, rate: 1.5
+    sample :drum_heavy_kick, rate: 10
     sleep 0.125
   end
 end
