@@ -1,4 +1,4 @@
-use_synth :mod_tri
+use_synth :pretty_bell
 
 play 42
 sleep 0.5
