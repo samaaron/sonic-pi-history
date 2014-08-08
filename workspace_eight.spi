@@ -29,7 +29,7 @@ define :synths do
 #  with_fx :reverb do
 #    with_fx :bitcrusher, bits: rrand(5, 16), sample_rate: rrand(10000, 44100) do
       #play chord(:e3, :minor).choose
-      sleep 0.125
+      sleep 0.25
 #    end
 #  end
 end
