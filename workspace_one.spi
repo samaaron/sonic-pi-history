@@ -7,7 +7,8 @@ use_transpose 12
 in_thread do
   with_fx :compressor, decay: 0.25, phase: 0.25 do
     use_synth :tb303
-    use_transpose 0
+    use_transpose 5
+
     play_pattern_timed [52, 54, 56, 59, 59, 64] * 4, [0.5, 0.3333, 0.5, 0.5], amp: 1
 
 
