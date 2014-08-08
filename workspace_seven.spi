@@ -1,4 +1,4 @@
-use_synth :zawa
+use_synth :tb303
 play 42
 sleep 0.5
 play 43
