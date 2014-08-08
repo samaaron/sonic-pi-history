@@ -1,6 +1,6 @@
 
 use_synth :prophet
-use_bpm 45
+use_bpm 40
 
 with_fx :reverb do
   with_fx(:echo, delay: 0.5, decay: 4) do
