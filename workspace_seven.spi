@@ -1,1 +1,1 @@
-synth :fm, {note: 50}
+synth :fmsdf, {note: 50}
