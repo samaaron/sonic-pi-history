@@ -1,1 +1,1 @@
-puts note(:c4)
+puts note(:FS)
