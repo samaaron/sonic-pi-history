@@ -1,3 +1,5 @@
+use_synth :dsaw
+
 play 42
 sleep 0.5
 play 43
