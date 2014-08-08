@@ -1,7 +1,7 @@
 use_synth :pretty_bell
 use_synth_defaults mod_range: 24, mod_phase: 0.125, cutoff: 120
 
-with_fx :bitcrusher, bits: 8 do
+with_fx :bitcrusher, bits: 6 do
   play 92
   sleep 0.5
   play 92
