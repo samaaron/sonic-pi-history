@@ -5,7 +5,7 @@ define :drums do
   in_thread do
     use_synth :fm
     4.times do
-      play :e1, attack: 0, release: 0.3
+      play :e2, attack: 0, release: 0.3
       sleep 0.25
     end
 
