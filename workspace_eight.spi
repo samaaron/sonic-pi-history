@@ -27,6 +27,7 @@ define :synths do
   use_synth :tb303
   use_synth_defaults amp: 1, mod_range: [0].choose, attack: 0.03, release: 0.6, cutoff: rrand(60, 100), pulse_width: 0.2, mod_phase: 0.25
 #  with_fx :reverb do
+use_transpose -12
     with_fx :bitcrusher, bits: rrand(5, 16), sample_rate: rrand(10000, 44100) do
       play chord(:e3, :minor).choose
       sleep 0.25
