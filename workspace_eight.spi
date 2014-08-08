@@ -1,2 +1,2 @@
 use_synth :dsaw
-play 50, cutoff: 60
+play 50, cutoff: lambda{rrand(60, 120)}
