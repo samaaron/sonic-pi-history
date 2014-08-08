@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 
 define :drums do
   in_thread do
-    use_synth :fm
+    use_synth :beep
     4.times do
       play :e2, attack: 0, release: 0.3
       sleep 0.25
