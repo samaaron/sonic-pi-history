@@ -1,4 +1,4 @@
-use_synth :prophet
+use_synth :zawa
 use_bpm 245 / 2
 use_transpose 24
 with_fx :none do
