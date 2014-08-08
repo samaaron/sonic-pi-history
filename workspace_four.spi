@@ -1,1 +1,1 @@
-puts SynthInfo.get_info(:fx_echo).info.keys
+puts SynthInfo.get_info(:fx_echo).info[:note]
