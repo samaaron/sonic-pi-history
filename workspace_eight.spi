@@ -16,3 +16,7 @@ define :synths do
   play 38
   sleep 0.25
 end
+
+in_thread(name: :drums){loop{drums}}
+in_thread(name: :synths){loop{synths}}
+ 
