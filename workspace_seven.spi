@@ -1,4 +1,4 @@
-use_synth :fm
+use_synth :zawa
 play 42
 sleep 0.5
 play 43
