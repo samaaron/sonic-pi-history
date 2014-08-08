@@ -1,4 +1,4 @@
-with_arg_bpm_scaling true do
+with_arg_bpm_scaling  false do
   use_bpm 240
   play 50, release: 1
   sleep 1
