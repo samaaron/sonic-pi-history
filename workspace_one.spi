@@ -1,10 +1,10 @@
 use_synth :prophet
 use_transpose 5
 use_synth_defaults release: 0.2, cutoff: lambda{rrand(80, 120)}, amp: 0.3
-use_bpm 240
+use_bpm 120
 
 use_transpose 24
-48.times do
+8.times do
   play chord(:e3, :major)
   sleep 0.25
   play chord(:e3, :major)
