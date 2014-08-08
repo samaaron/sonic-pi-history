@@ -1,5 +1,5 @@
 
 puts "cheese"
-puts SynthInfo.get_info(:fx_reverb)
+puts SynthInfo.get_info(:fx_reverb).arg_info
 puts "hey"
 play 50
