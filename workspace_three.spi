@@ -1,4 +1,4 @@
 use_synth :dsaw
 use_bpm 70
 use_transpose 12
-play_pattern_timed [:F3,:F3, :G3, :Gs3, :G3], [0.25, 0.333333, 0.25, 0.5]
+play_pattern_timed [:F3,:F3, :G3, :Gs3, :G3], [0.25, 0.25, 0.25, 0.5]
