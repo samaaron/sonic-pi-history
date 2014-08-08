@@ -5,7 +5,7 @@ use_bpm 120
 
 use_transpose 12
 in_thread do
-  with_fx :echo, decay: 0.5, phase: 0.25 do
+  with_fx :echo, decay: 0.25, phase: 0.25 do
     use_synth :tb303
     use_transpose 0
     32.times do
