@@ -5,11 +5,13 @@ use_bpm 120
 
 use_transpose 12
 in_thread do
-  use_synth :tb303
-  use_transpose 0
-  32.times do
-    play chord(:e3, :major).choose, amp: 1
-    sleep [0.25, 0.25, 0.5].choose
+  with_fx :echo do
+    use_synth :tb303
+    use_transpose 0
+    32.times do
+      play chord(:e3, :major).choose, amp: 1
+      sleep [0.25, 0.25, 0.5].choose
+    end
   end
 end
 8.times do
@@ -25,6 +27,6 @@ end
 
     end
   end
- 
+
   sleep 1
 end
