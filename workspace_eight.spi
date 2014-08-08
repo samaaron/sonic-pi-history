@@ -1,39 +1,12 @@
 
-load_sample :drum_heavy_kick
+use_synth :prophet
+use_bpm 45
 
-define :drums do
-  in_thread do
-    use_synth :fm
-
-    4.times do
-      #play :e2, attack: 0, release: 0.13, amp: 1
-      sleep 0.25
+with_fx :reverb do
+  with_fx(:echo, delay: 0.5, decay: 4) do
+    loop do
+      play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5, attack: 0, release: 2
+      sleep [0.25, 0.5, 0.5, 0.5, 1, 1].choose
     end
   end
-#  with_fx :bitcrusher, bits: 2.5, sample_rate: 1000000 do
-
-#    sample :drum_heavy_kick, rate: 0.75
-#    sample :drum_bass_soft
-    sleep 0.5
-
-    sleep 0.5
-  end
-#end
-
-define :synths do
-
-#    play chord(:e3, :minor).choose + 12
-
-  use_synth :tb303
-  use_synth_defaults amp: 1, mod_range: [0].choose, attack: 0.03, release: 0.6, cutoff: rrand(60, 100), pulse_width: 0.2, mod_phase: 0.25
-#  with_fx :reverb do
-use_transpose -12
-    with_fx :bitcrusher, bits: rrand(5, 10), sample_rate: rrand(10000, 4100) do
-  #    play chord(:e3, :minor).choose
-      sleep 0.125
-    end
-#  end
 end
-
-in_thread(name: :drums){loop{drums}}
-in_thread(name: :synths){loop{synths}}
