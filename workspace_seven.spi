@@ -1,5 +1,5 @@
 use_synth :mod_pulse
-use_synth_defaults mod_range: 2
+use_synth_defaults mod_range: 24
 
 
 play 42
