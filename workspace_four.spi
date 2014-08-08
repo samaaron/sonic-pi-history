@@ -1,5 +1,0 @@
-
-ˆputs "cheese"
-puts SynthInfo.get_info(:fx_reverb)
-puts "hey"
-play 50
