@@ -1,4 +1,4 @@
-use_arg_bpm_scaling rue
+use_arg_bpm_scaling true
 use_bpm 240
 play 50, release: rt(2)
 sleep 1
