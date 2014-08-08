@@ -1,5 +1,5 @@
 with_fx :echo do
-  with_fx :reverb do
+  with_fx :none do
     with_arg_bpm_scaling  false do
       use_bpm 240
       play 50, release: 1
