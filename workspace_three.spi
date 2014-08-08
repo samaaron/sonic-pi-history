@@ -1,2 +1,2 @@
 use_synth :dsaw
-play_pattern_timed [:F3,:F3, :G3, :Gs3, :G3], [0.25]
+play_pattern_timed [:F3,:F3, :G3, :Gs3, :G3], [0.25, 0.25, 0.5, 0.5]
