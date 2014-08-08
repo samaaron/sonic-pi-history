@@ -11,11 +11,13 @@ define :drums do
 end
 
 define :synths do
-use_bpm 60
+
   use_synth :fm
   use_synth_defaults amp: 1, mod_range: 12, attack: 0.03, release: 0.26, cutoff: 60, pulse_width: 0.2, mod_phase: 0.25
   play 30
-  sleep 0.5
+  sleep 0.25
+  play 38
+  sleep 0.25
 
 
 end
