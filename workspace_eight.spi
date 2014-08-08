@@ -1,2 +1,2 @@
-use_synth :dsaw
-synth :dsaw, {note: lambda{rrand(60, 120)}}
+use_synth :pulse
+play 50
