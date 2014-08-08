@@ -2,6 +2,14 @@
 load_sample :drum_heavy_kick
 
 define :drums do
+  in_thread do
+    use_synth :fm
+    4.times do
+      play :e2, attack: 0, release: 0.3
+      sleep 0.25
+    end
+
+  end
   sample :drum_heavy_kick, rate: 0.75
   sample :drum_bass_soft
   sleep 0.5
