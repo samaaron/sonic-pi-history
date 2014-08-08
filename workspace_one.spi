@@ -4,7 +4,7 @@ use_synth_defaults release: 0.2, cutoff: lambda{rrand(80, 120)}, amp: 0.3
 use_bpm 240
 
 use_transpose 24
-4.times do
+48.times do
   play chord(:e3, :major)
   sleep 0.25
   play chord(:e3, :major)
