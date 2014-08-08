@@ -1,5 +1,5 @@
 use_bpm 120
-play 50
+play 50, release: 2
 sleep 1
 play 62
 sleep rt(1)
