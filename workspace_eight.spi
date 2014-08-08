@@ -7,7 +7,7 @@ define :drums do
        with_fx :distortion, bits: 5, sample_rate: 1000000 do
 
     4.times do
-      play :e2, attack: 0, release: 0.3, amp: 1
+      play :a2, attack: 0, release: 0.3, amp: 1
       sleep 0.25
     end
 end
