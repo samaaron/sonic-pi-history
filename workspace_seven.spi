@@ -1,1 +1,1 @@
-synth :beep, {note: 50}
+synth :fm, {note: 50}
