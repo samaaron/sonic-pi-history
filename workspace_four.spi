@@ -1,5 +1,5 @@
 use_synth :prophet
-use_bpm 50
+use_bpm 30
 
 with_fx(:echo, phase: 0.5, decay: 4) do
   loop do
