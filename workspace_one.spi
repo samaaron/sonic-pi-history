@@ -5,7 +5,7 @@ use_bpm 120
 
 use_transpose 24
 8.times do
-   sample :drum_bass_hard
+  sample :drum_bass_hard
   play chord(:e3, :major)
   sleep 0.25
   play chord(:e3, :major)
@@ -13,7 +13,7 @@ use_transpose 24
 
   with_fx :reverb do
     with_fx :echo, phase: 0.25 do
-      play chord(:b2, :m9)
+      play chord(:b2, :maj9)
 
     end
   end
