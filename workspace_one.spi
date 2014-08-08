@@ -12,7 +12,7 @@ use_bpm 60
 
   with_fx :reverb do
     with_fx :echo, phase: 0.25 do
-      play chord(:a1, :major)
+      play chord(:a3, :major)
 
     end
   end
