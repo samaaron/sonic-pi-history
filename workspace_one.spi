@@ -13,7 +13,7 @@ use_transpose 24
 
   with_fx :reverb do
     with_fx :echo, phase: 0.25 do
-      play chord(:b2, :maj9)
+      play chord(:b2, :m9)
 
     end
   end
