@@ -8,4 +8,4 @@ play 92
 sleep 0.5
 play 98
 sleep 0.1
-play :c4
+play :cs5
