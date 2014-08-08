@@ -22,6 +22,7 @@ define :drums do
 
 define :synths do
   in_thread do
+  sleep 0.1
     play chord(:e3, :minor).choose + 24
   end
   use_synth :tb303
