@@ -1,1 +1,3 @@
-play 50
+with_fx :ixi_techno do
+  play 50
+end
