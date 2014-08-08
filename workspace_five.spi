@@ -1,0 +1,6 @@
+use_bpm 120  # modifies all time to be half
+play 50
+sleep 1      # actually sleeps for half of a second
+play 62
+sleep rt(1)  # bypasses bpm scaling and sleeps for a second
+play 72
