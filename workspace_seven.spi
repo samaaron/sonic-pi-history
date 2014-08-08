@@ -1,1 +1,1 @@
-synth :fm, {note: 50}
+play 3
