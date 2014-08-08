@@ -11,8 +11,8 @@ in_thread do
     play_pattern_timed [52, 56, 59], [0.25, 0.5]
 
 
-    end
   end
+
 end
 8.times do
   sample :drum_bass_hard
