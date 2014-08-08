@@ -1,2 +1,2 @@
 use_synth :pulse
-play 50, cutoff: rrand(90, 110)
+play 50, cutoff: rrand(95, 105)
