@@ -1,5 +1,5 @@
 use_synth :mod_saw
-use_synth_defaults mod_range: 24, mod_phase: 0.125
+use_synth_defaults mod_range: 24, mod_phase: 0.125, cutoff: 60
 
 
 play 42
