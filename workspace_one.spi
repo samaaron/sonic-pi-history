@@ -8,7 +8,7 @@ in_thread do
   with_fx :echo, decay: 0.25, phase: 0.25 do
     use_synth :tb303
     use_transpose 0
-    play_pattern_timed [52, 54, 56, 59, 59, 64], [0.25, 1, 0.25]
+    play_pattern_timed [52, 54, 56, 59, 59, 64] * 2, [0.25, 1, 0.25]
 
 
   end
