@@ -2,7 +2,7 @@
 load_sample :drum_heavy_kick
 
 define :drums do
-use_bpm 60.1
+use_bpm 60.5
   with_fx :slicer, phase: 0.125 / 2 do
     #    sample :bass_hard_c, rate: 1
   end
