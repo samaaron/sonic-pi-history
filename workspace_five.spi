@@ -5,7 +5,7 @@ define :drums do
 with_fx :echo, phase: 0.25 do
   sample :drum_heavy_kick, rate: 0.75
   sleep 0.5
-  sample :drum_heavy_kick
+ # sample :drum_heavy_kick
   sample :elec_bong
   sleep 0.5
   end
