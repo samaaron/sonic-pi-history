@@ -14,7 +14,9 @@ define :drums do
       # sample :drum_heavy_kick, rate: 0.75, amp: 5
       sleep 0.25
       #sample :drum_heavy_kick
+      with_fx :echo, phase: 0.5 do
       sample :elec_plip, rate: [0.5, 2, 1, 4].choose * 1, amp: 0.6
+      end
       sleep 0.25
     end
   end
