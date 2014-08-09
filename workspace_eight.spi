@@ -1,5 +1,5 @@
 use_synth :pulse
 loop do
   play chord(:e2, :minor).choose, cutoff: rrand(100, 110)
-  sleep 0.125
+  sleep 0.25
 end
