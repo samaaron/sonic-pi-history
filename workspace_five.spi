@@ -1,4 +1,4 @@
-
+use_bpm 30
 load_sample :drum_heavy_kick
 
 define :drums do
