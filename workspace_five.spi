@@ -12,14 +12,16 @@ define :drums do
 end
 
 define :synths do
-  with_fx :echo, phase: 0.125, decay: 0.5 do
-    use_synth :tb303
-    use_transpose 12
-    use_synth_defaults amp: 2, mod_range: 12, attack: 0.03, release: 0.36, cutoff: rrand(100, 120), pulse_width: 0.1, mod_phase: 0.25
-    play 30
-    sleep 0.25
-    play 38
-    sleep 0.125
+  with_fx :reverb do
+    with_fx :echo, phase: 0.125, decay: 0.5 do
+      use_synth :tb303
+      use_transpose 12
+      use_synth_defaults amp: 2, mod_range: 12, attack: 0.03, release: 0.36, cutoff: rrand(100, 120), pulse_width: 0.1, mod_phase: 0.25
+      play 30
+      sleep 0.25
+      play 38
+      sleep 0.125
+    end
   end
 end
 
