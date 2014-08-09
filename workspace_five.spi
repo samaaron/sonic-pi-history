@@ -4,8 +4,8 @@ load_sample :drum_heavy_kick
 define :drums do
       sample :drum_heavy_kick, rate: 0.75, amp: 0.7
 use_bpm 60
-  with_fx :slicer, phase: 0.125 / 2 do
-    #    sample :bass_hard_c, rate: 1
+  with_fx :slicer, phase: 0.25 do
+  sample :ambi_glass_hum
   end
   with_fx :reverb do
     with_fx :echo, phase: 0.125, amp: 0.3, mix: 0.25 do
