@@ -1,2 +1,5 @@
 use_synth :pulse
-play 50, cutoff: rrand(95, 105)
+loop do
+  play 50, cutoff: rrand(95, 105)
+  sleep 0.125
+end
