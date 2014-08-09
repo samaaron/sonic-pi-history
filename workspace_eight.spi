@@ -1,5 +1,5 @@
 use_synth :pulse
-with_fx :bitcrusher, bits: 6, sample_rate: 1000, mix: 1, amp: 0.1 do
+with_fx :bitcrusher, bits: 6, sample_rate: 1000, mix: 1, amp: 1 do
   loop do
     play chord(:e4, :minor).choose, cutoff: rrand(100, 110), release: 1
     sleep 0.5
