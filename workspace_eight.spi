@@ -1,5 +1,5 @@
 use_synth :dsaw
 loop do
-  play 50, cutoff: rrand(95, 105), attack: 0
+  play 50, cutoff: rrand(90, 100), attack: 0
   sleep 0.125
 end
