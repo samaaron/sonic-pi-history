@@ -8,7 +8,7 @@ use_bpm 60
   end
   with_fx :reverb do
     with_fx :echo, phase: 0.125, amp: 0.2, mix: 0.25 do
-      #sample :elec_flip, rate: 0.5
+      sample :elec_flip, rate: 0.5
       with_synth :fm do
         play 30, attack: 0, release: 0.2, amp: 5
       end
