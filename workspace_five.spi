@@ -14,11 +14,11 @@ end
 define :synths do
   use_synth :mod_fm
   use_transpose 0
-  use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.36, cutoff: rrand(60, 120), pulse_width: 0.1, mod_phase: 0.25
+  use_synth_defaults amp: 3, mod_range: 14, attack: 0.03, release: 0.36, cutoff: rrand(60, 120), pulse_width: 0.1, mod_phase: 0.25
   play 30
-  sleep 0.125
+  sleep 0.25
   play 38
-  sleep 0.125
+  sleep 0.25
 end
 
 in_thread(name: :drums){loop{drums}}
