@@ -17,9 +17,7 @@ define :synths do
       use_synth :dsaw
       use_transpose -12
       use_synth_defaults amp: 2, mod_range: 12, attack: 0.03, release: 0.136, cutoff: rrand(100, 120), pulse_width: 0.1, mod_phase: 0.25
-      play 30
-      sleep 0.25
-      play 38
+      play chord(:e3, :minor).choose      
       sleep 0.25
     end
   end
