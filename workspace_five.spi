@@ -1,6 +1,6 @@
 
 load_sample :drum_heavy_kick
-
+sample :ambi_lunar_land
 define :drums do
   use_bpm 120
  # with_fx :none, phase: 0.333333333, mix: 0.6 do
