@@ -14,7 +14,7 @@ end
 define :synths do
   with_fx :none do
     with_fx :echo, phase: 0.125, decay: 0.5 do
-      use_synth :dsaw
+      use_synth :prophet
       use_transpose -12
       use_synth_defaults amp: 2, mod_range: 12, attack: 0.03, release: 0.136, cutoff: rrand(100, 120), pulse_width: 0.1, mod_phase: 0.25
       play chord(:e4, :minor).choose      
