@@ -1,4 +1,4 @@
-with_fx :slicer, mix: 0.9, amp: 1, phase: sample_duration(:loop_amen) / 16 do
+with_fx :slicer, mix: 1, amp: 1, phase: sample_duration(:loop_amen) / 16 do
   use_synth :dsaw
   sample :loop_amen
 end
