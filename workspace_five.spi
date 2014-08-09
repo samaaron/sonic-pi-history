@@ -9,8 +9,8 @@ define :drums do
   with_fx :reverb do
     with_fx [:echo, :none].choose, room: 0.8, phase: 0.25, amp: 0.3, mix: 0.5 do
       sample :elec_flip, rate: 0.5, amp: 1
-      with_synth :tb303 do
-        play chord(:a2, :minor).choose, attack: 0, release: 0.15, amp: 0.25
+      with_synth :prophet do
+        play chord(:a3, :minor).choose, attack: 0, release: 0.15, amp: 0.25
       end
 
       sleep 0.5
