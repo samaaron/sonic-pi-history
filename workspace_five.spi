@@ -6,7 +6,7 @@ define :drums do
     #    sample :bass_hard_c, rate: 1
   end
   with_fx :reverb do
-    with_fx :echo, phase: 0.125, amp: 2, mix: 0.125 do
+    with_fx :echo, phase: 0.3333333, amp: 2, mix: 0.125 do
       sample :elec_flip, rate: 0.5
       with_synth :fm do
         play 30, attack: 0, release: 0.12, amp: 2
