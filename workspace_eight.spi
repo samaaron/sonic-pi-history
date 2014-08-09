@@ -1,4 +1,4 @@
-use_synth :pulse
+use_synth :dsaw
 loop do
   play 50, cutoff: rrand(95, 105)
   sleep 0.125
