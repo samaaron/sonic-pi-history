@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 
 define :drums do
 with_fx :echo, phase: 0.125, amp: 0.5, mix: 0.25 do
-  sample :drum_heavy_kick, rate: 0.75, amp: 2
+  sample :drum_heavy_kick, rate: 0.75, amp: 5
   sleep 0.5
  # sample :drum_heavy_kick
   sample :elec_chime, rate: [0.5, 2, 1].choose * 1, amp: 0.5
