@@ -13,14 +13,14 @@ end
 
 define :synths do
   with_synth :fm do
-    #play :e2, attack: 0, release: 0.24
+    play :e2, attack: 0, release: 0.24
   end
   with_fx :none do
     with_fx :echo, phase: 0.125, decay: 0.5 do
       use_synth :prophet
       use_transpose [12, 0, -12].choose
       use_synth_defaults amp: 2, mod_range: 12, attack: 0, release: 0.136, cutoff: rrand(90, 120), pulse_width: 0.1, mod_phase: 0.25
-      play chord(:e3, :minor).choose
+      #play chord(:e3, :minor).choose
       sleep 0.25
     end
   end
