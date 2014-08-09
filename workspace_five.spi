@@ -5,7 +5,7 @@ define :drums do
 #      sample :drum_heavy_kick, rate: 0.75, amp: 0.4
 use_bpm 120
   with_fx :slicer, phase: 0.25, mix: 0.5 do
-    sample :ambi_glass_hum, rate: [0.5, 1, 2].choose * 0.25, amp: 0.5
+    sample :ambi_glass_hum, rate: [0.5, 1, 2].choose * 0.5, amp: 0.5
   end
   with_fx :reverb do
     with_fx :echo, phase: 0.25, amp: 0.3, mix: 0.5 do
