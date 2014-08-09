@@ -6,7 +6,7 @@ with_fx :echo, phase: 0.125, amp: 0.25 do
   sample :drum_heavy_kick, rate: 0.75
   sleep 0.5
  # sample :drum_heavy_kick
-  sample :elec_chime, rate: [0.5, 2, 1].choose * 2
+  sample :elec_chime, rate: [0.5, 2, 1].choose * 1
   sleep 0.5
   end
 end
