@@ -15,7 +15,7 @@ use_bpm 60
       sample :drum_heavy_kick, rate: 0.75, amp: 5
       sleep 0.5
       #sample :drum_heavy_kick
-      sample :elec_plip, rate: [0.5, 2, 1, 4].choose * 1.5, amp: 0.6
+#      sample :elec_plip, rate: [0.5, 2, 1, 4].choose * 1.5, amp: 0.6
       sample :elec_blip, rate: 0.5
       sleep 0.5
     end
