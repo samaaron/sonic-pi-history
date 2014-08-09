@@ -13,7 +13,7 @@ end
 
 define :synths do
   with_synth :fm do
-    play :e2, attack: 0, release: 0.4
+    play :e2, attack: 0, release: 0.24
   end
   with_fx :none do
     with_fx :echo, phase: 0.125, decay: 0.5 do
