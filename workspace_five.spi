@@ -10,7 +10,7 @@ use_bpm 60
     with_fx :echo, phase: 0.25, amp: 0.3, mix: 0.25 do
       sample :elec_flip, rate: 0.5
       with_synth :fm do
-        play 30, attack: 0, release: 0.2, amp: 5
+        play 30, attack: 0, release: 0.1, amp: 5
       end
 #      sample :drum_heavy_kick, rate: 0.75, amp: 5
       sleep 0.5
