@@ -1,5 +1,7 @@
 use_synth :pulse
-loop do
-  play chord(:e3, :minor).choose, cutoff: rrand(100, 110)
-  sleep 0.125
+with_fx :reverb do
+  loop do
+    play chord(:e3, :minor).choose, cutoff: rrand(100, 110)
+    sleep 0.25
+  end
 end
