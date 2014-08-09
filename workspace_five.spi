@@ -3,7 +3,13 @@ load_sample :drum_heavy_kick
 
 define :drums do
 with_fx :echo, mix: 0.125 do
-      sample :drum_heavy_kick, rate: 0.75, amp: 3
+in_thread do
+2.times do 
+     sample :drum_heavy_kick, rate: 0.75, amp: 3
+     sleep 0.25
+     end
+
+      
       end
 use_bpm 120
   with_fx :slicer, phase: 0.333333333, mix: 0.6 do
