@@ -12,10 +12,7 @@ define :drums do
 end
 
 define :synths do
-  with_synth :fm do
-    play :e2, attack: 0, release: 0.124
-  end
-  with_fx :none do
+   with_fx :none do
     with_fx :echo, phase: 0.125, decay: 0.5 do
       use_synth :prophet
       use_transpose [12, 0, -12].choose
