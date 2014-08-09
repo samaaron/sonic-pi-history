@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 
 define :drums do
   with_fx :slicer, phase: 0.125 / 2 do
-    sample :bass_hard_c, rate: 1
+#    sample :bass_hard_c, rate: 1
   end
   with_fx :echo, phase: 0.125/ 2, amp: 0.5, mix: 0.125 do
 
