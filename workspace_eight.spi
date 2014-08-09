@@ -1,4 +1,4 @@
 use_synth :pulse
-with_fx :bitcrusher, bits: 8, sample_rate: 5000, mix: 1, amp: 1 do
+with_fx :bitcrusher, bits: 8, sample_rate: 10000, mix: 1, amp: 1 do
  sample :loop_amen
 end
