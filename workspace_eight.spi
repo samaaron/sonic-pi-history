@@ -1,4 +1,4 @@
 with_fx :wobble, wave: 3, phase: 0.25 do
   use_synth :fm
-  play 30, release: 5
+  play 50, release: 5
 end
