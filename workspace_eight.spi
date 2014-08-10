@@ -6,7 +6,7 @@ with_fx :wobble, mix: 0.5, phase: sd, wave: 0, invert_wave: 1, cutoff_min: 15, c
   loop do
     use_synth :dsaw
     with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
-      play :a1, attack: 0, release: sd
+      play :e1, attack: 0, release: sd
     end
 
     sample :loop_amen, rate: 1.5
