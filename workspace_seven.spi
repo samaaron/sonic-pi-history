@@ -1,1 +1,1 @@
-scale(:Eb4, :major)
+puts scale(:Eb4, :major)
