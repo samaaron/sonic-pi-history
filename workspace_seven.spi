@@ -1,4 +1,6 @@
 use_synth :sound_in
-with_fx :reverb do
-play sustain: 10000
+with_fx :wobble do
+  with_fx :reverb do
+    play sustain: 10000
+  end
 end
