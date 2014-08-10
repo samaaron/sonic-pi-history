@@ -2,7 +2,7 @@ use_synth :dsaw
 sd = sample_duration :loop_amen
 
 
-with_fx :wobble, phase: sd / 8, wave: 0 do
+with_fx :wobble, phase: sd / 4, wave: 0 do
   loop do
     sample :loop_amen
     sleep sd
