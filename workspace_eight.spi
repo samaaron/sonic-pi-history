@@ -8,7 +8,12 @@ with_fx :wobble, mix: 0.5, phase: sd, wave: 0, invert_wave: 1, cutoff_min: 15, c
     with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
       play chord(:e1, :minor).choose, attack: 0, release: sd
     end
-
+    in_thread do
+      4.times do
+        sample :drum_cymbal_closed
+        sleep sd / 4
+      end
+    end
     sample :loop_amen, rate: 1.5
     sleep sd
   end
