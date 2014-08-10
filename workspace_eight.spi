@@ -1,4 +1,7 @@
 
 with_fx :reverb, mix: 0.3  do
-sample :loop_amen
+  loop do
+    sample :loop_amen
+    sleep sample_duration(:loop_amen) / 4
+  end
 end
