@@ -3,5 +3,8 @@ sd = sample_duration :loop_amen
 
 
 with_fx :wobble, phase: sd / 8, wave: 0 do
-  sample :loop_amen
+  loop do
+    sample :loop_amen
+    sleep sd
+  end
 end
