@@ -1,1 +1,1 @@
- scale(:Fs,:major,number_octaves: 2) 
+puts scale(:Fs,:major,number_octaves: 2) 
