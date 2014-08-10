@@ -5,8 +5,8 @@ sd = sample_duration :loop_amen, rate: 1.5
 with_fx :wobble, mix: 0.5, phase: sd, wave: 0, invert_wave: 1, cutoff_min: 15, cutoff_max: 129 do
   loop do
     use_synth :dsaw
-    with_fx :wobble, phase: sd / 2 do
-      play :e1, attack: 0, release: sd, cutoff_max: 90
+    with_fx :wobble, phase: sd / 2, cutoff_max: 90 do
+      play :e1, attack: 0, release: sd
     end
 
     sample :loop_amen, rate: 1.5
