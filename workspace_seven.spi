@@ -1,4 +1,4 @@
 scale(:Eb2, :major, num_octaves: 2).each do |s|
   play s
-  sleep 0.25
+  sleep 0.125
 end
