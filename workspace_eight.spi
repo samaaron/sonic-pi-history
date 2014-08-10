@@ -7,7 +7,7 @@ in_thread do
 end
 
 
-with_fx :normaliser do
+with_fx :normaliser, level: 0.5 do
 with_fx :compressor, pre_amp: 100, amp: 1 do
 
   loop do
