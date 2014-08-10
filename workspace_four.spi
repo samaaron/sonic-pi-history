@@ -1,0 +1,22 @@
+4.times do
+  play 50, attack: 0.5, release: 0.25 # attack is 0.5s and release is 0.25s
+  sleep 1 # sleep for 1 second
+end
+
+sleep 2  # sleep for 2 seconds
+
+# Let's make it go faster...
+use_bpm 120  # double the bpm is double
+4.times do
+  play 62, attack: 0.5, release: 0.25 # attack is scaled to 0.25s and release is now 0.125s
+  sleep 1 # actually sleeps for 0.5 seconds
+end
+
+sleep 2 # sleep for 1 second
+
+# Let's make it go even faster...
+use_bpm 120  # double the bpm is x4!
+8.times do
+  play 62, attack: 0.5, release: 0.25 # attack is scaled to 0.25s and release is now 0.125s
+  sleep 1 # actually sleeps for 0.5 seconds
+end
