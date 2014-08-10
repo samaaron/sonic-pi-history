@@ -1,7 +1,8 @@
+sd = sample_duration :loop_amen
 in_thread do
   loop do
     play 80
-    sleep 1
+    sleep sd/2
   end
 end
 
