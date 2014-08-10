@@ -1,4 +1,4 @@
-with_fx :wobble, wave: 1, phase_offset: 0.5, invert_wave: 1, phase: 0.25, cutoff_max: 130, res: 1 do
+with_fx :wobble, wave: 1, phase_offset: 0.5, invert_wave: 1, phase: 0.25, cutoff_max: 129, res: 1 do
   use_synth :dsaw
   loop do
     play chord(:e3, :minor).choose
