@@ -1,6 +1,11 @@
 use_synth :dsaw
 sd = sample_duration :loop_amen, rate: 1.5
 
+define :mmm do
+  1
+end
+
+
 with_fx :reverb do
   in_thread do
     loop do
@@ -14,7 +19,7 @@ with_fx :reverb do
   end
 end
 
-with_fx :wobble, mix: 1, phase: sd, wave: 0, invert_wave: 1, cutoff_min: 15, cutoff_max: 129 do
+with_fx :wobble, mix: mmm, phase: sd, wave: 0, invert_wave: 1, cutoff_min: 15, cutoff_max: 129 do
   loop do
     use_synth :dsaw
     with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
