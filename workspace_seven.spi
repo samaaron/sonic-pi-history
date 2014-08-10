@@ -1,4 +1,4 @@
-scale(:Eb5, :major).each do |s|
+scale(:Eb2, :major).each do |s|
   play s
   sleep 0.25
 end
