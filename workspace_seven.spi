@@ -1,4 +1,4 @@
-chord(59, :major, num_octaves: 2).each do |s|
+scale(:e3, :major, num_octaves: 2).each do |s|
   play s
   sleep 0.125
 end
