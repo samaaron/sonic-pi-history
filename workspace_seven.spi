@@ -1,4 +1,4 @@
-chord(:Eb5, :major, num_octaves: 2).each do |s|
+chord(:Eb7, :major, num_octaves: 2).each do |s|
   play s
   sleep 0.125
 end
