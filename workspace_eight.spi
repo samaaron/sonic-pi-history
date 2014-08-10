@@ -1,4 +1,4 @@
 with_fx :reverb do
 use_synth :fm
-play 60, release: 5
+play 30, release: 5
 end
