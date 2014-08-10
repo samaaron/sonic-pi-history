@@ -1,6 +1,6 @@
 in_thread do
   loop do
-    play 60
+    play 80
     sleep 1
   end
 end
