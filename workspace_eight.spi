@@ -1,21 +1,4 @@
-sd = sample_duration :loop_amen
-in_thread do
-  loop do
-    play 80
-    sleep sd/2
-  end
-end
-
-
-with_fx :normaliser, level: 0.5 do
-with_fx :compressor, pre_amp: 1000000, amp: 1 do
-
-  loop do
-    sample :loop_amen, rate: 1
-    sleep sample_duration(:loop_amen) 
-
-
-
-  end
-end
+with_fx :wobble do
+use_synth :fm
+play 30, release: 5
 end
