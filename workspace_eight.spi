@@ -1,4 +1,4 @@
 
-with_fx :reverb, mix: 0.7  do
+with_fx :reverb, mix: 0.3  do
 sample :loop_amen
 end
