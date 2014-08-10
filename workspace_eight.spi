@@ -1,7 +1,7 @@
 
 with_fx :reverb, mix: 0.3  do
   loop do
-    sample :loop_amen
+    sample :loop_amen, rate: [1, 0.5, 0.25].choose
     sleep sample_duration(:loop_amen) / [1, 2, 4, 0.5].choose
     
     
