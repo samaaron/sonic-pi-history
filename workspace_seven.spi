@@ -1,5 +1,5 @@
 use_synth :sound_in
-with_fx :lpf, cutoff: 80 do
+with_fx :lpf, cutoff: 120 do
 with_fx :none, rate: 1 do
   with_fx :reverb do
     with_fx :echo do
