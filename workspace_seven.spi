@@ -1,1 +1,4 @@
-puts scale(:Eb4, :major)
+scale(:Eb4, :major).each do |s|
+play s
+sleep 0.25
+end
