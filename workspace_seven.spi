@@ -1,6 +1,4 @@
-puts note_info(:fs5)
-puts note_info(:fs5).pitch_class
-puts note_info(:fs5).octave
-puts note_info(:fs5).interval
-puts note_info(:fs5).midi_note
-puts note_info(:fs5).midi_string
+
+define :mmm do
+  0.9
+end
