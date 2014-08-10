@@ -10,8 +10,8 @@ end
 with_fx :compressor, pre_amp: 1, amp: 1 do
 
   loop do
-    sample :loop_amen, rate: [1, 0.5, 0.25].choose
-    sleep sample_duration(:loop_amen) / [1, 2, 4, 0.5].choose
+    sample :loop_amen, rate: 1
+    sleep sample_duration(:loop_amen) 1
 
 
 
