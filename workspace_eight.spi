@@ -1,4 +1,4 @@
-with_fx :wobble do
+with_fx :none do
   use_synth :fm
   play 80, release: 5
 end
