@@ -1,12 +1,1 @@
-use_synth :pretty_bell
-use_synth_defaults mod_range: 24, mod_phase: 0.125, cutoff: 120
-
-with_fx :bitcrusher, bits: 1, sample_rate: 10000 do
-  play 92
-  sleep 0.5
-  play 92
-  sleep 0.5
-  play 98
-  sleep 0.1
-  play :cs5
-end
+play 50
