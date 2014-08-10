@@ -1,4 +1,1 @@
-scale(50.5, :major, num_octaves: 2).each do |s|
-  play s
-  sleep 0.125
-end
+ scale(:Fs,:major,number_octaves: 2) 
