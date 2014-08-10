@@ -1,1 +1,3 @@
-control wbb, mix: 0.5, invert_wave: 1, wave: 2
+sd = sample_duration :loop_amen, rate: 1.5
+
+control wbb, mix: 0.5, invert_wave: 1, wave: 2, phase: sd/ 16
