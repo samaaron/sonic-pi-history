@@ -1,4 +1,1 @@
-
-define :mmm do
-  0.5
-end
+control wb, mix: 0.9
