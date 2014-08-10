@@ -1,5 +1,5 @@
 use_synth :dsaw
 
 with_fx :wobble, phase: 1, wave: 1 do
-  play 30, detune: 0.1, release: 3
+  sample :loop_amen
 end
