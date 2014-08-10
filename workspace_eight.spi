@@ -1,3 +1,4 @@
 
-
-play 50
+with_fx :reverb do
+sample :loop_amen
+end
