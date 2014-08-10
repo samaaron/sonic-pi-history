@@ -1,6 +1,8 @@
 use_synth :sound_in
-with_fx :ixi_techno, rate: 1 do
+with_fx :none, rate: 1 do
   with_fx :reverb do
-    play sustain: 10000
+    with_fx :echo do
+      play sustain: 10000
+    end
   end
 end
