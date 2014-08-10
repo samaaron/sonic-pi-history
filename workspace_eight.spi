@@ -9,9 +9,9 @@ with_fx :wobble, mix: 0.5, phase: sd, wave: 0, invert_wave: 1, cutoff_min: 15, c
       play chord(:e1, :minor).choose, attack: 0, release: sd
     end
     in_thread do
-      4.times do
+      8.times do
         sample :elec_beep
-        sleep sd / 4
+        sleep sd / 8
       end
     end
     sample :loop_amen, rate: 1.5
