@@ -1,1 +1,3 @@
-play 50
+sd = sample_duration :loop_amen, rate: 1.5
+
+control wbb, mix: 0.5, invert_wave: 0, wave: 0, phase: sd/2
