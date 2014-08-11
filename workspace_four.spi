@@ -1,4 +1,4 @@
-with_fx :wobble, wave: 2 do
+with_fx :wobble, wave: 3 do
   use_synth :dsaw
   play 40, release: 5
 end
