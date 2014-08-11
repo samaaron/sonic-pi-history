@@ -3,6 +3,6 @@ defonc e :val2 do
 end
 
 loop do
-  puts val2.read("/z")
+  puts val2.read("/1/fader2")
   sleep 1
 end
