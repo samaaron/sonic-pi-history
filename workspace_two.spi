@@ -1,7 +1,7 @@
 foo.stop if foo
 
 defonce :foo, override: true do
-  OSC::Server.new(4569)
+  OSC::Server.new(4560)
 end
 
 Thread.new do
