@@ -1,15 +1,15 @@
-foo.stop
+#$foo.stop
 
-defonce :foo, override: true do
-  OSC::Server.new(4560)
-end
+
+$foo = OSC::Server.new(4560)
+
 
 Thread.new do
-  foo.run
+  $foo.run
 end
 
-foo.add_method '**' do |m|
+$foo.add_method '**' do |m|
   puts m
 end
 
-puts foo
+puts $foo
