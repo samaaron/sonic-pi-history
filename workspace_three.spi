@@ -3,6 +3,6 @@ defonce :val2 do
 end
 
 loop do
-  puts val.read("/foo")
+  puts val2.read("/foo")
   sleep 1
 end
