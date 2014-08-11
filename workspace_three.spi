@@ -3,6 +3,7 @@ defonce :val2 do
 end
 
 loop do
-  puts val2.read("/1/fader2")
-  sleep 1
+  v = val2.read("/1/fader2")
+  play 30, amp: v
+  sleep 0.25
 end
