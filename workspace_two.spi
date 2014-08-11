@@ -4,7 +4,9 @@ defonce :foo, override: true do
   OSC::Server.new(4569)
 end
 
-foo.run
+Thread.new do
+  foo.run
+end
 
 foo.add_method '**' do |m|
   puts m
