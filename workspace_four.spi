@@ -1,4 +1,4 @@
-use_bpm 120
-play 50
+#use_bpm 120
+play 50, release: 1
 sleep 1
-play 72
+play 72, release: 2
