@@ -2,4 +2,4 @@ defonce :foo do
   OSC::Server.new(0)
 end
 
-puts foo.port
+puts foo.port_number
