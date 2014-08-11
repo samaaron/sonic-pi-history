@@ -1,11 +1,11 @@
 defonce :val2 do
   OSCVal.new(8000)
 end
-use_synth :dsaw, attack: 0, release: 0.1
+use_synth :dsaw
 loop do
   v = val2.read("/1/fader2")
   v2 = val2.read("/1/fader1")
     
-  play 30 + (v2 * 80), release: v 
+  play 30 + (v2 * 80), release: v, attack: 0
   sleep 0.25
 end
