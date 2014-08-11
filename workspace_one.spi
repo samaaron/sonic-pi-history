@@ -14,6 +14,7 @@ in_thread do
     play_pattern_timed [[52, 52-12], 54, 56, 59, 59, 64] * 2, [0.65, 0.35, 0.5, 0.25, 0.75, 0.5], amp: 1, release: 1
   end
 end
+
 8.times do
   sample :drum_bass_hard
   play chord(:e3, :major)
