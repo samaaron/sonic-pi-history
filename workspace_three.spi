@@ -1,5 +1,5 @@
-defonce :val do
-  OSCVal.new(4560)
+defonce :val2 do
+  OSCVal.new(8000)
 end
 
 loop do
