@@ -1,18 +1,1 @@
-with_fx :level, amp: 0.3 do
-  with_fx :bitcrusher, bits: 8, sample_rate: 10000 do |b|
-    define :bc do
-      b
-    end
-
-    loop do
-      
-      use_synth :mod_fm
-
-      play 50 + 0, mod_phase: 0.25, release: 1, mod_range: [24, 27, 12].choose
-      sleep 0.5
-      use_synth :mod_dsaw
-      play 50 + 0, mod_phase: 0.25, release: 1.5, mod_range: [24, 27].choose, attack: 0.5
-      sleep 1.5
-    end
-  end
-end
+play :e3
