@@ -1,4 +1,4 @@
-#foo.stop if foo
+foo.stop
 
 defonce :foo, override: true do
   OSC::Server.new(4560)
