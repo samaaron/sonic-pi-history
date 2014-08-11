@@ -1,4 +1,4 @@
-#$foo.stop
+$foo.stop
 
 
 $foo = OSC::Server.new(4560)
