@@ -12,4 +12,7 @@ foo.add_method '*' do |m|
   Kernel.puts m
 end
 
+foo.add_method '/foo' do |m|
+  Kernel.puts "hey: #{m}"
+end
 puts foo
