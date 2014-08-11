@@ -1,5 +1,3 @@
-defonce :foo do
-  OSC::Server.new(0)
+defonce :foo, override: true do
+  OSC::Server.new(4569)
 end
-
-puts foo
