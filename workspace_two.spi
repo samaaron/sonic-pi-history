@@ -8,7 +8,7 @@ Thread.new do
   foo.run
 end
 
-foo.add_method '/foo' do |m|
+foo.add_method '*' do |m|
   q <<  m
 end
 
