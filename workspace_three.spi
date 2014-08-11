@@ -4,6 +4,8 @@ end
 
 loop do
   v = val2.read("/1/fader2")
-  play 80, amp: v
+  v2 = val2.read("/1/fader1")
+  
+  play v2 * 100, amp: v
   sleep 0.25
 end
