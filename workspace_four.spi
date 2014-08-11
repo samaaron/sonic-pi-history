@@ -1,10 +1,1 @@
-with_fx :wobble, wave: 0, invert_wave: 0, phase: 0.25, res: 0.5  do |w|
-  
-  
-  use_synth :dsaw
-  play 40, release: 5
-  sleep 1
-  control w, phase: 0.5
-  sleep 0.5
-  control w, res: 0.001
-end
+OSC::Server
