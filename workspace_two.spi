@@ -8,8 +8,8 @@ Thread.new do
   foo.run
 end
 
-foo.add_method '**' do |m|
-  puts m
+foo.add_method '*' do |m|
+  Kernel.puts m
 end
 
 puts foo
