@@ -1,13 +1,11 @@
-defonce :val2 do
+defonce :val do
   OSCVal.new(8000)
 end
 
-use_synth :dsaw
-
 loop do
-  v = val2.read("/foo")
-
-    
+  v = val.read("/foo")
   puts v
   sleep 1
 end
+
+osc_val "/foo", port: 8000
