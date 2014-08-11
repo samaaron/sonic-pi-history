@@ -1,4 +1,4 @@
-
+q = Queue.new
 
 
 foo = OSC::Server.new(4560)
@@ -8,11 +8,13 @@ Thread.new do
   foo.run
 end
 
-foo.add_method '*' do |m|
-  Kernel.puts m
+foo.add_method '/foo' do |m|
+  q <<  m
 end
 
-foo.add_method '/foo' do |m|
-  Kernel.puts "hey: #{m}"
+
+loop do
+  m = q.pop
+  puts m
+  sleep 2
 end
-puts foo
