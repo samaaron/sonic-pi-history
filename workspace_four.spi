@@ -1,3 +1,6 @@
-defonce :foo, override: true do
+defonce :foo, override: false do
   OSC::Server.new(4569)
 end
+
+
+puts foo
