@@ -1,0 +1,8 @@
+defonce :val do
+  OSCVal.new(4560)
+end
+
+loop do
+  puts val.read("/foo")
+  sleep 1
+end
