@@ -15,6 +15,7 @@ end
 
 loop do
   m = q.pop
-  puts m
+  puts m.address
+  puts m.to_a
   sleep 10
 end
