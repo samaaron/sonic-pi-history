@@ -1,4 +1,4 @@
-with_fx :wobble, wave: 0, invert_wave: 0, phase: 0.25, res: 0.1  do
+with_fx :wobble, wave: 0, invert_wave: 0, phase: 0.25, res: 0.5  do
   use_synth :dsaw
   play 40, release: 5
 end
