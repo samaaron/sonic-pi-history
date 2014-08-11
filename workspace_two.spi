@@ -16,5 +16,5 @@ end
 loop do
   m = q.pop
   puts m
-  sleep 2
+  sleep 10
 end
