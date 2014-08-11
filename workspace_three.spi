@@ -6,6 +6,6 @@ loop do
   v = val2.read("/1/fader2")
   v2 = val2.read("/1/fader1")
     
-  play (30 + (v2 * 80)).to_i, release: v, attack: 0
+  play 30, release: v, attack: 0, detune v2
   sleep v + 0.01
 end
