@@ -1,4 +1,4 @@
-defonc e :val2 do
+defonce :val2 do
   OSCVal.new(8000)
 end
 
