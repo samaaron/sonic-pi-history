@@ -1,4 +1,4 @@
 with_fx :wobble do
   use_synth :dsaw
-  play 40
+  play 40, release: 5
 end
