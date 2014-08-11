@@ -2,4 +2,4 @@ defonce :foo do
   OSC::Server.new(0)
 end
 
-puts foo.instance_variable_get("@socket")
+puts foo.instance_variable_get("@socket").port
