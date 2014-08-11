@@ -1,1 +1,1 @@
-OSC::Server
+puts OSC::Server
