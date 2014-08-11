@@ -1,0 +1,5 @@
+#sample :ambi_lunar_land, rate: 2
+sd = sample_duration :loop_compus
+
+loop do
+  sample :loop_compus, rate: 
