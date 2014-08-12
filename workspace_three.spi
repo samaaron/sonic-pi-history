@@ -1,0 +1,9 @@
+defonce :val do
+  OSCVal.new(8112)
+end
+
+loop do
+  v = val.read("/amp")
+  puts v
+  sleep 1
+end
