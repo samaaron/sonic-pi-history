@@ -1,4 +1,4 @@
-in_thread do
+in_thread(name: :foo) do
   with_fx :echo, phase: 0.4 do |e|
     define :ee do
       e
