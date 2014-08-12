@@ -1,0 +1,11 @@
+defonce :val do
+  OSCVal.new(8000)
+end
+
+loop do
+  v = val.read("/foo")
+  puts v
+  sleep 1
+end
+
+osc_val "/foo", port: 8000
