@@ -1,1 +1,4 @@
-puts sample_duration :loop_amen, rate: -1
+loop do
+  sample :loop_amen, rate: -1 # Works for negative rates too
+  sleep sample_duration :rate -1
+end 
