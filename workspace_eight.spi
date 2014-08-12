@@ -17,7 +17,7 @@ with_fx :reverb do
   end
 end
 
-with_fx :wobble, mix: 1, phase: sd, wave: 1, invert_wave: 1, cutoff_min: 50, cutoff_max: 129 do |wb|
+with_fx :wobble, mix: 1, phase: sd, wave: 1, invert_wave: 1, cutoff_min: 80, cutoff_max: 100 do |wb|
   define :wbb do
     wb
   end
