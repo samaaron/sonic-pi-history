@@ -18,7 +18,7 @@ loop do
   start = beat % 4
   size = start == 0 ? 0.8 : 0.5
   out.send(OSC::Message.new("/beat", size))
-  puts "sent: #{a}"
+  puts "sent: #{size}"
   sleep 0.5
   sample :drum_heavy_kick, amp: size
   beat += 1
