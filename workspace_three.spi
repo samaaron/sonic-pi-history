@@ -7,7 +7,7 @@ defonce :out do
 
 end
 
-out.send(OSC::Message.new("/beat", 0.5))
+out.send(OSC::Message.new("/beat", 0.2))
 
 comment do
   loop do
