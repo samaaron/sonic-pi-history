@@ -1,3 +1,10 @@
+in_thread do
+  loop do
+    sample :drum_bass_hard
+    sleep 0.5
+  end
+end
+
 with_fx :wobble, wave: 2, filter: 1, res: 0.2, cutoff_min: 30, cutoff_max: 100, phase: 0.333333 do
   with_fx :wobble, wave: 0, filter: 0, res: 0.2, cutoff_min: 50, cutoff_max: 120, phase: 0.5 do
     use_synth :dsaw
