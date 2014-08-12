@@ -1,4 +1,4 @@
-with_fx :wobble, wave: 2, filter: 0, res: 0.001, cutoff_min: 30, cutoff_max: 100, phase: 0.3 do
+with_fx :wobble, wave: 2, filter: 0, res: 0.001, cutoff_min: 30, cutoff_max: 120, phase: 0.3 do
   use_synth :dsaw
   play 80, sustain: 3
 end
