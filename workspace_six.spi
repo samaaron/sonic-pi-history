@@ -1,4 +1,4 @@
-with_fx :slicer, phase: 0.25, wave: 1 do
+with_fx :slicer, phase: 0.25, wave: 0 do
   use_synth :dsaw
   play 50, sustain: 3
 end
