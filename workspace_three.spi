@@ -12,7 +12,10 @@ defonce :out3 do
   OSC::Client.new("localhost", 8119)
 end
 
+with_fx :wobble do |w|
 
+use_synth :dsaw
+play 40
 beat = 0
 loop do
   start = beat % 4
@@ -23,9 +26,10 @@ loop do
   end
   puts "sent: #{size}"
   v = val.read("/palimpsest/left")
-  sleep v + 0.1
-  sample :drum_heavy_kick, amp: size
+  sleep 0.1
+  control w, phase: v * 2
   beat += 1
+end
 end
 
 
