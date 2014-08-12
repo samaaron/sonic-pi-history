@@ -8,7 +8,8 @@ comment do
   end
 end
 
-out.send(OSC::Message.new("/beat", rand()))
+a = rand
+out.send(OSC::Message.new("/beat", a))
 
 comment do
   loop do
