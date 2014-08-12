@@ -1,10 +1,11 @@
-defonce :val do
-  OSCVal.new(8112)
-end
+comment do
+  defonce :val do
+    OSCVal.new(8112)
+  end
 
-defonce :out do
-  OSC::Client.new("192.168.15.14", 8112)
-
+  defonce :out do
+    OSC::Client.new("192.168.15.14", 8112)
+  end
 end
 
 out.send(OSC::Message.new("/beat", rand()))
