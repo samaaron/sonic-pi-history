@@ -2,8 +2,8 @@ defonce :val do
   OSCVal.new(8112)
 end
 
-defonce :out do
-  OSC::Client("192.168.15.14", 8112)
+defonce :out, override: true do
+  OSC::Client.new("192.168.15.14", 8112)
   
 end
 
