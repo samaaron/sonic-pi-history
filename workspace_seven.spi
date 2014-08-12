@@ -1,7 +1,10 @@
 in_thread do
-  loop do
-    sample :drum_heavy_kick, amp: 5
-    sleep 0.5
+  with_fx :echo do
+    loop do
+
+      sample :drum_heavy_kick, amp: 5
+      sleep 0.5
+    end
   end
 end
 
