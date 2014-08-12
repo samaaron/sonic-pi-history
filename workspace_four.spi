@@ -1,1 +1,1 @@
-control wbb, mix: 1, cutoff_min: 40, cutoff_max: 120, revert_wave: 0
+control wbb, mix: 1, cutoff_min: 40, cutoff_max: 120, revert_wave: 0, wave: 1
