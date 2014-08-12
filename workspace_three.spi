@@ -2,13 +2,18 @@ defonce :val do
   OSCVal.new(8112)
 end
 
-defonce :out, override: true do
+defonce :out do
   OSC::Client.new("192.168.15.14", 8112)
-  
+
 end
 
-loop do
-  v = val.read("/palimpsest/left")
-  puts v
-  sleep 0.125
+out.send(OSC::Message.new("/beat", 0.5))
+
+comment do
+  loop do
+    v = val.read("/palimpsest/left")
+    puts v
+    sleep 0.125
+
+  end
 end
