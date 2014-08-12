@@ -1,2 +1,2 @@
 sd = sample_duration :loop_amen
-control wbb, mix: 0.2, cutoff_min: 40, cutoff_max: 120, revert_wave: 0, wave: 2, phase: sd
+control wbb, mix: 0.1, cutoff_min: 40, cutoff_max: 120, revert_wave: 0, wave: 2, phase: sd
