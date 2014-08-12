@@ -10,3 +10,5 @@ in_thread(name: :foo) do
     end
   end
 end
+
+control ee, phase: 0.4
