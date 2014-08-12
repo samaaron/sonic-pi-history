@@ -1,4 +1,6 @@
-with_fx :slicer, phase: 0.25, wave: 0,invert_wave: 0, amp: 1 do
-  use_synth :dsaw
-  play 50, sustain: 3
+sd = sample_duration :loop_amen
+with_fx :slicer, phase: sd / 4, wave: 0,invert_wave: 0, amp: 1 do
+  sample :sample_duration
+  sleep sd
+
 end
