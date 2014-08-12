@@ -10,7 +10,7 @@ end
 
 a = rand
 out.send(OSC::Message.new("/beat", a))
-puts a
+puts "sent: #{a}"
 
 comment do
   loop do
