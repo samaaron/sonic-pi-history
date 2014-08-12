@@ -4,7 +4,7 @@ in_thread do
   with_fx :reverb do
     loop do
       sample :elec_blip2, rate: [2, 4, 8].choose, pan: rrand(-1, 1)
-      sleep 0.25
+      sleep 0.125
     end
   end
 end
