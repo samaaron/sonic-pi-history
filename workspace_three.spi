@@ -18,6 +18,7 @@ loop do
   out.send(OSC::Message.new("/beat", a))
   puts "sent: #{a}"
   sleep 0.1
+  sample :elec_blip2
 end
 
 
