@@ -4,13 +4,15 @@ comment do
   end
 
   defonce :out do
-   # OSC::Client.new("192.168.15.14", 8112)
+    OSC::Client.new("192.168.15.14", 8112)
+  end
+  
+  defonce :out2 do
+    OSC::Client.new("localhost", 8112)
   end
 end
 
-defonce :out2 do
-    OSC::Client.new("localhost", 8112)
-  end
+
 
 a = rand
 out2.send(OSC::Message.new("/beat", a))
