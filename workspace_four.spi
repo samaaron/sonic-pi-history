@@ -1,5 +1,5 @@
 load_sample :drum_heavy_kick
-use_bpm 120
+use_bpm 60
 
 with_fx :reverb do
   loop do
