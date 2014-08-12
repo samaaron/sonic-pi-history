@@ -15,7 +15,7 @@ end
 with_fx :wobble do |w|
 
 use_synth :dsaw
-play 40
+play 40, sustain: 1000000
 beat = 0
 loop do
   start = beat % 4
