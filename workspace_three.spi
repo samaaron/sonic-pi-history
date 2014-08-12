@@ -1,23 +1,23 @@
 
-  defonce :val do
-    OSCVal.new(8112)
-  end
+defonce :val do
+  OSCVal.new(8112)
+end
 
-  defonce :out do
-    OSC::Client.new("192.168.15.14", 8112)
-  end
-  
-  defonce :out3 do
-    OSC::Client.new("localhost", 8119)
-  end
+defonce :out do
+  OSC::Client.new("192.168.15.14", 8112)
+end
+
+defonce :out3 do
+  OSC::Client.new("localhost", 8119)
+end
 
 
 
 loop do
-a = rand
-out.send(OSC::Message.new("/beat", a))
-puts "sent: #{a}"
-sleep 0.5
+  a = rand
+  out.send(OSC::Message.new("/beat", a))
+  puts "sent: #{a}"
+  sleep 0.1
 end
 
 
