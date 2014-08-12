@@ -1,1 +1,1 @@
-control wbb, mix: 0.5, cutoff_min: 50, cutoff_max: 70
+control wbb, mix: 0.5, cutoff_min: 30, cutoff_max: 70
