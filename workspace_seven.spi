@@ -1,1 +1,1 @@
-puts sample_duration :loop_amen, rate: 1
+puts sample_duration :loop_amen, rate: -1
