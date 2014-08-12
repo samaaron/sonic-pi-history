@@ -1,12 +1,15 @@
 use_synth :prophet
+
 in_thread do
 
-loop do
-  sample :elec_blip, rate: 4
-  sleep 0.25
-end
+  loop do
+    sample :elec_blip, rate: 4
+    sleep 0.25
+  end
 
 end
+
+
 with_fx :slicer, wave: 1, phase: 0.125 do
   loop do
     with_synth :beep do
