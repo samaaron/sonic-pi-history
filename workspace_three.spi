@@ -3,7 +3,7 @@ defonce :val do
 end
 
 loop do
-  v = val.read("/palimpsest/amp")
+  v = val.read("/palimpsest/left")
   puts v
-  sleep 1
+  sleep 0.125
 end
