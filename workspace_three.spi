@@ -18,7 +18,7 @@ loop do
   start = beat % 4
   size = start == 0 ? 0.8 : 0.5
   Thread.new do
-    Kernel.sleep 0.1
+    Kernel.sleep 0.5
     out.send(OSC::Message.new("/beat", size))
   end
   puts "sent: #{size}"
