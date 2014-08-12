@@ -1,5 +1,5 @@
 in_thread do
-  with_fx :echo, phase: 0.45 do
+  with_fx :echo, phase: 0.4 do
     loop do
 
       sample :drum_heavy_kick, amp: 5
