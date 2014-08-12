@@ -22,7 +22,7 @@ loop do
   size = start == 0 ? 0.8 : 0.5
   Thread.new do
     Kernel.sleep 0.5
-    out.send(OSC::Message.new("/beat", 0.1)
+    out.send(OSC::Message.new("/beat", 0.1))
   end
   puts "sent: #{size}"
   v = val.read("/palimpsest/amp")
