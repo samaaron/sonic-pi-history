@@ -25,9 +25,9 @@ loop do
     out.send(OSC::Message.new("/beat",(beat % 40) * 0.1))
   end
   puts "sent: #{size}"
-  v = val.read("/palimpsest/left")
+  v = val.read("/palimpsest/amp")
   sleep 0.1
-  control w, phase: v * 2 + 0.1
+  control w, amp v
   beat += 1
 end
 end
