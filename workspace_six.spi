@@ -1,6 +1,7 @@
 sd = sample_duration :loop_amen
 with_fx :slicer, phase: sd / 4, wave: 0,invert_wave: 0, amp: 1 do
-  sample :sample_duration
-  sleep sd
-
+  loop do
+    sample :loop_amen
+    sleep sd
+  end
 end
