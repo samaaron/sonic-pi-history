@@ -9,7 +9,8 @@ end
 with_fx :echo, phase: sd/16, decay: sd * 2 do
   with_fx :reverb do
     with_fx :slicer, phase: sd / 16, wave: 0,invert_wave: 1, amp: 1, mix: 1 do |s|
-      loop dosample :bass_dnb_f
+      loop do
+
       sample :loop_amen
       sleep sd
       control s, phase: sd / [4, 8, 16].choose, wave: [0, 1, 2].choose, invert_wave: [0,1].choose
