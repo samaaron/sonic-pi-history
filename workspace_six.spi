@@ -1,6 +1,6 @@
 with_fx :level, amp: 0.3 do
   with_fx :bitcrusher, bits: 2, sample_rate: 10000 do |b|
-    define :bc, {b}
+    define :bc {b}
 
     loop do
       
