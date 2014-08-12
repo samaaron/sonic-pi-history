@@ -1,3 +1,4 @@
 use_synth :prophet
-
+with_fx :slicer, wave: 1 do
 play 40, res: 0.3
+end
