@@ -1,15 +1,4 @@
-in_thread(name: :foo) do
-  with_fx :echo, phase: 0.4 do |e|
-    define :ee do
-      e
-    end
-    loop do
-
-      sample :drum_heavy_kick, amp: 5
-      sleep 0.5
-    end
-  end
+with_fx :wobble do
+use_synth :dsaw
+play 40, sustain: 3
 end
-
-sleep 0.1
-control ee, phase: 0.5333, mix: 0.1
