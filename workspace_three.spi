@@ -22,7 +22,8 @@ loop do
     out.send(OSC::Message.new("/beat", size))
   end
   puts "sent: #{size}"
-  sleep 0.5
+  v = val.read("/palimpsest/left")
+  sleep v + 0.1
   sample :drum_heavy_kick, amp: size
   beat += 1
 end
