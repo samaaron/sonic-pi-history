@@ -18,8 +18,8 @@ loop do
   a = rand
   out.send(OSC::Message.new("/beat", a))
   puts "sent: #{a}"
-  sleep 0.1
-  sample :elec_blip2
+  sleep 0.5
+  sample :drum_heavy_kick
 end
 
 
