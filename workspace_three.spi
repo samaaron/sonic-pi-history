@@ -1,4 +1,4 @@
-comment do
+
   defonce :val do
     OSCVal.new(8112)
   end
@@ -10,12 +10,12 @@ comment do
   defonce :out3 do
     OSC::Client.new("localhost", 8119)
   end
-end
+
 
 
 
 a = rand
-out3.send(OSC::Message.new("/beat", a))
+out.send(OSC::Message.new("/beat", a))
 puts "sent: #{a}"
 
 comment do
