@@ -1,4 +1,7 @@
 use_synth :prophet
 with_fx :slicer, wave: 1, phase: 0.125 do
+  with_synth :beep
+  play 30
+  end
   play 42, res: 0.3
 end
