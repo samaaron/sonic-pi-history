@@ -2,6 +2,11 @@ defonce :val do
   OSCVal.new(8112)
 end
 
+defonce :out do
+  OSC::Client("192.168.15.14", 8112)
+  
+end
+
 loop do
   v = val.read("/palimpsest/left")
   puts v
