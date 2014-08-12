@@ -15,7 +15,7 @@
 
 loop do
 a = rand
-out3.send(OSC::Message.new("/beat", a))
+out.send(OSC::Message.new("/beat", a))
 puts "sent: #{a}"
 sleep 0.125
 end
