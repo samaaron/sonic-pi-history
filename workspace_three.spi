@@ -13,13 +13,15 @@ defonce :out3 do
 end
 
 
-
+beat = 0
 loop do
-  a = rand
-  out.send(OSC::Message.new("/beat", a))
+  start = beat % 4
+  size = start == 0 ? 0.8 : 0.5
+  out.send(OSC::Message.new("/beat", size))
   puts "sent: #{a}"
   sleep 0.5
-  sample :drum_heavy_kick
+  sample :drum_heavy_kick, amp: size
+  beat += 1
 end
 
 
