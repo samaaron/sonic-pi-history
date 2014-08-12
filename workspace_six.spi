@@ -9,6 +9,13 @@ in_thread do
   end
 end
 
+in_thread do
+ loop do
+    sample :drum_heavy_kick
+    sleep 1
+ end
+end
+
 
 with_fx :slicer, wave: 1, phase: 0.125 do
   loop do
