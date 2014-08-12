@@ -7,7 +7,7 @@ define :drums do
   with_fx :distortion, phase: 0.333333333, mix: 0.6 do
     sample :ambi_glass_hum, rate: [0.5, 1, 2].choose * 0.125, amp: 0.5
   end
-  with_fx :reverb do
+  with_fx :none do
     with_fx [:echo, :none].choose, room: 0.8, phase: 0.25, amp: 0.3, mix: 0.8 do
       sample :elec_flip, rate: 0.5, amp: 1
       with_synth :prophet do
