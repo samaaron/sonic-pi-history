@@ -1,1 +1,2 @@
-load_samples ["/Users/sam/Desktop/sam.wav"]
+#load_samples ["/Users/sam/Desktop/sam.wav"]
+sample :sam
