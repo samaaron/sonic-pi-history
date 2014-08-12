@@ -1,4 +1,4 @@
-load_sample :drum_heavy_kick
+load_samples [:drum_heavy_kick, :elec_plip, :elec_blip]
 use_bpm 100
 
 with_fx :reverb do
