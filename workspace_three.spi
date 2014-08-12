@@ -15,7 +15,7 @@
 
 
 a = rand
-out.send(OSC::Message.new("/beat", a))
+out3.send(OSC::Message.new("/beat", a))
 puts "sent: #{a}"
 
 comment do
