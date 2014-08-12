@@ -1,4 +1,4 @@
-with_fx :slicer do
+with_fx :none do
   use_synth :dsaw
   play 50, sustain: 3
 end
