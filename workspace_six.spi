@@ -2,7 +2,7 @@ use_synth :prophet
 in_thread do
 
 loop do
-  sample :elec_blip
+  sample :elec_blip, rate: 5
   sleep 0.5
 end
 
