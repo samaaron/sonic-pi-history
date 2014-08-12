@@ -4,7 +4,7 @@ load_sample :drum_heavy_kick
 define :drums do
   sample :drum_tom_hi_hard, amp: 0.2, rate: rand
   use_bpm 120
-  with_fx :distortion, phase: 0.333333333, mix: 0.6 do
+  with_fx :none, phase: 0.333333333, mix: 0.6 do
     sample :ambi_glass_hum, rate: [0.5, 1, 2].choose * 0.125, amp: 0.5
   end
   with_fx :none do
