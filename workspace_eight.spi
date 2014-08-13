@@ -24,7 +24,7 @@ in_thread do
       use_synth :tb303
       n = [5, 4, 8, 16].choose
       n.times do
-        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120)
+        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120), amp: 0.5
         sleep sd / n
       end
     end
