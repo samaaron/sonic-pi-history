@@ -1,5 +1,5 @@
 define :foobar do
-  with_fx :bitcrusher, bits: 2 do
+  with_fx :bitcrusher, bits: 16 do
     with_fx :echo, mix: 0.5 do
       sample :drum_heavy_kick, amp: 2
       sample :elec_blip2
