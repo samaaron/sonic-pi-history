@@ -1,5 +1,5 @@
 use_synth :dsaw
 
 with_fx :wobble, phase: 0.25, invert_wave: 1, wave: 1 do 
-  play 30, sustain: 3
+  play 35, sustain: 3
 end
