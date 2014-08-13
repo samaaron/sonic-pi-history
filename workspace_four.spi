@@ -1,2 +1,1 @@
-play hz_to_midi(440)
-play :A4
+puts rand(0.4)
