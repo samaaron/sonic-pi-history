@@ -1,3 +1,4 @@
+use_bpm 120
 play 50, release: 2
 sleep 1
 play 62, release: 1
