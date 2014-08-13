@@ -8,7 +8,7 @@ define :foobar do
 #      sample :elec_blip2
       use_synth :tb303
 #      sample :loop_amen, amp: 2
-      play chord(:e1, :minor).choose, attack: 0, release: sd
+      play chord(:e2, :minor).choose, attack: 0, release: sd
       sleep sd
     end
   end
