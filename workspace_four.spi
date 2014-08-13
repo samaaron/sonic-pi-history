@@ -1,3 +1,5 @@
 use_synth :dsaw
 
-play 30, sustain: 2
+with_fx :slicer do
+  play 30, sustain: 2
+end
