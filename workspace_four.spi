@@ -1,5 +1,4 @@
 use_synth :dsaw
 use_bpm 240
-with_fx :wobble, phase: 1, invert_wave: 0, wave: 1 do 
-  play 30, sustain: 3
-end
+use_synth_defaults cutoff: 90
+play 50
