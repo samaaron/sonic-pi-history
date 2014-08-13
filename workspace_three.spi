@@ -11,7 +11,7 @@ end
 with_fx :wobble do |w|
 
   use_synth :dsaw
-  play 40, sustain: 1000000
+  s = play 40, sustain: 1000000
   beat = 0
   
   loop do
@@ -28,6 +28,7 @@ with_fx :wobble do |w|
     r = val.read("/palimpsest/right")
     
     sleep 0.1
+    control s, note: l * 100
     control w, amp: v, phase: l * 10 + 0.1, cutoff_max: (r * 50) + 65
     beat += 1
   end
