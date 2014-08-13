@@ -1,1 +1,1 @@
-puts rand_i / 3
+puts Kernel.rand(5)
