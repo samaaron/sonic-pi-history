@@ -1,0 +1,46 @@
+
+defonce :val do
+  OSCVal.new(8112)
+end
+
+defonce :out do
+  #OSC::Client.new("192.168.15.14", 8112)
+  OSC::Client.new("192.168.15.14", 8112)
+end
+
+with_fx :wobble do |w|
+
+  use_synth :dsaw
+  s = play 40, sustain: 1000000
+  beat = 0
+  
+  loop do
+    start = beat % 4
+    size = start == 0 ? 0.8 : 0.5
+    
+    Thread.new do
+      Kernel.sleep 0.5
+      out.send(OSC::Message.new("/beat", 0.1))
+    end
+    
+    v = val.read("/palimpsest/amp")
+    l = val.read("/palimpsest/left")
+    r = val.read("/palimpsest/right")
+
+
+    sleep 0.1
+    control s, note: l * 100
+    control w, amp: v, phase: l * 10 + 0.1, cutoff_max: (r * 50) + 65
+    beat += 1
+  end
+end
+
+
+comment do
+  loop do
+    v = val.read("/palimpsest/left")
+    puts v
+    sleep 0.125
+
+  end
+end
