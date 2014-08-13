@@ -3,7 +3,7 @@ define :foobar do
     with_fx :none, mix: 0.5 do
       #sample :drum_heavy_kick, amp: 2
       sample :elec_blip2
-      sleep 0.25
+      sleep 0.125
     end
   end
 end
