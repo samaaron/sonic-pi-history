@@ -1,3 +1,6 @@
 define :foo do
   puts "hi"
 end
+
+
+foo
