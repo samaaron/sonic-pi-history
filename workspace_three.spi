@@ -28,7 +28,7 @@ with_fx :wobble do |w|
     r = val.read("/palimpsest/right")
     
     sleep 0.1
-    control w, amp: v, phase: l * 10, cutoff_max: (r * 50) + 65
+    control w, amp: v, phase: l * 10 + 0.1, cutoff_max: (r * 50) + 65
     beat += 1
   end
 end
