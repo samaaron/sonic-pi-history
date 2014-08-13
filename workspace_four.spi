@@ -1,2 +1,1 @@
-puts rand(1 - 0.8)
-puts Random.rand(1 - 0.8)
+puts rand(0.2)
