@@ -1,1 +1,1 @@
-puts rand(1 - 10)
+puts 1 - 1.2
