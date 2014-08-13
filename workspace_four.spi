@@ -1,5 +1,5 @@
 use_synth :dsaw
 
-with_fx :slicer do
+with_fx :slicer, phase: 0.5 do
   play 30, sustain: 2
 end
