@@ -5,7 +5,7 @@ define :foobar do
 #      sample :elec_blip2
       use_synth :tb303
       play chord(:e1, :minor).choose, attack: 0, release: 0.1
-      sleep 0.125
+      sleep 1
     end
   end
 end
