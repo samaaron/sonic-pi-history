@@ -1,1 +1,1 @@
-puts rand
+puts rand_i
