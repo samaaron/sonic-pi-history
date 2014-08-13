@@ -1,5 +1,1 @@
-p = play 50, sustain: 5, note_slide: 0.5
-sleep 1
-control p, note: 55
-sleep 0.5
-control p, note: 50
+puts s = rand(1 - size
