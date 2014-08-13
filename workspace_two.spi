@@ -4,7 +4,7 @@ define :foobar do
 #  sample :loop_amen, amp: 2
   with_fx :bitcrusher, bits: 5, sample_rate: 2000, amp: 1  do
     with_fx :none, bits: rrand_i(2, 16), sample_rate: rrand(1000, 10000) do
-      with_fx :none, mix: 0.125 do
+      with_fx :reverb, mix: 0.125 do
              sample :drum_heavy_kick, amp: 2
               sample :elec_blip2
         use_synth :tb303
