@@ -6,6 +6,7 @@ define :foobar do
 #      sample :drum_heavy_kick, amp: 2
 #      sample :elec_blip2
       use_synth :tb303
+      sample :loop_amen, amp: 0.1
       play chord(:e1, :minor).choose, attack: 0, release: sd
       sleep sd
     end
