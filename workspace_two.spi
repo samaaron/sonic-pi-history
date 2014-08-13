@@ -1,5 +1,5 @@
 define :foobar do
-  sample :drum_heavy_kick
+  sample :drum_heavy_kick, amp: 2
   sleep 0.5
 end
 
