@@ -1,1 +1,3 @@
-puts rand(5)/4
+define :foo do
+  puts "hi"
+end
