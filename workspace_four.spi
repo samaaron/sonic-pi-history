@@ -1,4 +1,4 @@
 use_synth :dsaw
 use_bpm 240
-use_synth_defaults cutoff: 90
+use_synth_defaults cutoff: 70
 play 50
