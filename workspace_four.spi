@@ -1,3 +1,5 @@
 p = play 50, sustain: 5
 sleep 1
 control p, note: 55
+sleep 0.5
+control p, note: 50
