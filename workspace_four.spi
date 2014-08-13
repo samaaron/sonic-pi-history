@@ -1,1 +1,1 @@
-puts s = rand(1 - size
+puts rand(1 - 10)
