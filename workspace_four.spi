@@ -1,1 +1,1 @@
-    c = val.read_all("/palimpsest/colour")
+puts val.read_all("/palimpsest/colour")
