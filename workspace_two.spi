@@ -1,8 +1,10 @@
 define :foobar do
-  with_fx :echo, mix: 0.5 do
-    sample :drum_heavy_kick, amp: 2
-    sample :elec_blip2
-    sleep 0.5
+  with_fx :bitcrusher do
+    with_fx :echo, mix: 0.5 do
+      sample :drum_heavy_kick, amp: 2
+      sample :elec_blip2
+      sleep 0.5
+    end
   end
 end
 
