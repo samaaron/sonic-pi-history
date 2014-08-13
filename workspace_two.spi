@@ -3,6 +3,8 @@ define :foobar do
     with_fx :echo, mix: 0.125 do
       sample :drum_heavy_kick, amp: 2
       sample :elec_blip2
+      use_synth :tb303
+      play chord(:e3, :minor).choose, attack: 0, release: 0.1
       sleep 0.5
     end
   end
