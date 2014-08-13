@@ -1,5 +1,5 @@
 
-with_fx :wobble, phase: 0.25, wave: 1, invert_wave: 0, cutoff_min: 30, cutoff_max: 120 do
+with_fx :wobble, phase: 0.25, wave: 1, invert_wave: 0, cutoff_min: 30, cutoff_max: 80 do
 use_synth :dsaw
   play 30, sustain: 2
   sleep 1
