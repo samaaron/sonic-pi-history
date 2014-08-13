@@ -1,1 +1,2 @@
 play hz_to_midi(440)
+play :A4
