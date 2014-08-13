@@ -1,3 +1,3 @@
 use_synth :dsaw
 
-play 30
+play 30, sustain: 2
