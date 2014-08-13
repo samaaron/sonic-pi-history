@@ -1,5 +1,5 @@
 define :foobar do
-  with_fx :none, bits: rrand_i(2, 16), sample_rate: rrand(1000, 10000) do
+  with_fx :bitcrusher, bits: rrand_i(2, 16), sample_rate: rrand(1000, 10000) do
     with_fx :reverb, mix: 0.125 do
 #      sample :drum_heavy_kick, amp: 2
 #      sample :elec_blip2
