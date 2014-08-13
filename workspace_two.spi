@@ -1,6 +1,7 @@
 sd = sample_duration :loop_amen 
 
 define :foobar do
+      sample :loop_amen, amp: 2
   with_fx :bitcrusher, bits: rrand_i(2, 16), sample_rate: rrand(1000, 10000) do
     with_fx :none, mix: 0.125 do
 #      sample :drum_heavy_kick, amp: 2
