@@ -1,6 +1,6 @@
 define :foobar do
   sample :drum_heavy_kick
-  sleep 0.8
+  sleep 0.5
 end
 
 in_thread(name: :sam) do
