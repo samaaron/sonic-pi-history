@@ -16,7 +16,10 @@ with_fx :reverb do
     end
   end
 
-  in_thread do
+
+end
+
+in_thread do
     loop do
       use_synth :tb303
       n = [5, 4, 8, 16].choose
@@ -26,7 +29,6 @@ with_fx :reverb do
       end
     end
   end
-end
 
 with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
   define :wbb do
