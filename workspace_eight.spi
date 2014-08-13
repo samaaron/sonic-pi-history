@@ -15,6 +15,16 @@ with_fx :reverb do
       sleep sd
     end
   end
+
+  in_thread do
+    use_synth :tb303
+    n = [5, 4, 8, 16].choose
+    n.times do
+      play chord(:e3, :minor).choose, attack: 0, release: sd / n
+      sleep sd / n
+    end
+  end
+
 end
 
 with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
@@ -23,16 +33,8 @@ with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, 
   end
   loop do
     use_synth :dsaw
-    with_fx :none do
-    in_thread do
-    use_synth :tb303
-     n = [5, 4, 8, 16].choose
-      n.times do
-      play chord(:e3, :minor).choose, attack: 0, release: sd / n
-      sleep sd / n
-      end
-    end
-    end
+
+
     with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
       play chord(:e1, :minor).choose, attack: 0, release: sd
     end
