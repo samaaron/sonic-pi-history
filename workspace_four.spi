@@ -1,1 +1,1 @@
-puts rrand(0.2)
+play hz_to_midi(440)
