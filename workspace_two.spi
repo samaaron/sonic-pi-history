@@ -1,0 +1,10 @@
+define :foobar do
+  sample :drum_heavy_kick
+  sleep 1
+end
+
+in_thread(name: :sam) do
+  loop do
+    foobar
+  end
+end
