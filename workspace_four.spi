@@ -1,1 +1,1 @@
-puts Kernel.rand(5.0)/4
+puts rand(5)/4
