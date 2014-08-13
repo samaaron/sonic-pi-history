@@ -4,7 +4,7 @@ define :foobar do
 #      sample :drum_heavy_kick, amp: 2
 #      sample :elec_blip2
       use_synth :tb303
-      play chord(:e3, :minor).choose, attack: 0, release: 0.1
+      play chord(:e1, :minor).choose, attack: 0, release: 0.1
       sleep 0.125
     end
   end
