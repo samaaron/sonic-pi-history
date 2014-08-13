@@ -1,4 +1,6 @@
-use_bpm 360
-play 50, release: 2
-sleep 1
-play 62, release: 1
+
+use_synth :dsaw
+with_fx :wobble, phase: 0.5 do
+  play 30, sustain: 2
+  sleep 1
+end
