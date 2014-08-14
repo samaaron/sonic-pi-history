@@ -1,9 +1,6 @@
 use_synth :dsaw
 sd = sample_duration :loop_amen, rate: 1.5
 
-
-
-
 with_fx :reverb do
   in_thread do
     loop do
@@ -15,9 +12,9 @@ with_fx :reverb do
       sleep sd
     end
   end
-
-
 end
+
+
 
 in_thread do
     loop do
