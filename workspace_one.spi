@@ -1,4 +1,4 @@
-with_fx :wobble, phase: 2, mix: 1, wave: 1 do
+with_fx :wobble, phase: 2, mix: 1, invert_wave: 1 do
   with_fx :echo do
     loop do
       sample :drum_heavy_kick
