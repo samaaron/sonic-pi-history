@@ -1,1 +1,5 @@
 play 80
+sleep 1
+play 85
+sleep 0.5
+play 92
