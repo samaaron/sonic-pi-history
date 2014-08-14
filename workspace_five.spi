@@ -27,7 +27,7 @@ end
 
 define :synths do
   sample :bass_hit_c
-  sleep 1
+  sleep 0.5
 end
 
 in_thread(name: :drums){loop{drums}}
