@@ -9,7 +9,7 @@ define :drums do
    # sample :ambi_glass_hum, rate: [1].choose * 1, amp: 0.5
   end
   with_fx :reverb do
-    with_fx [:none, :none].choose, room: 0.8, phase: 0.125, amp: 0.3, mix: 0.8 do
+    with_fx [:echo, :none].choose, room: 0.8, phase: 0.25, amp: 0.3, mix: 0.8 do
       #sample :elec_flip, rate: 0.5, amp: 1
       with_synth :prophet do
        play chord(:a3, :minor).choose, attack: 0, release: 0.25, amp: 1.5, cutoff: rrand(90, 120)
