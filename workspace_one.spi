@@ -1,4 +1,5 @@
 use_synth :zawa
+use_bpm 120
 
 loop do
   play 50
