@@ -107,7 +107,7 @@ end
 define :melody do
   wait :tick
   use_synth :fm
-  play chord(:a3, :minor).choose, attack: 0, amp: 3, release: 0.12, cutoff: 50 + val.read_all("/palimpsest/colour")[0] * 70
+  play chord(:a3, :minor).choose, attack: 0, amp: 2, release: 0.12, cutoff: 50 + val.read_all("/palimpsest/colour")[0] * 70
 end
 
 
