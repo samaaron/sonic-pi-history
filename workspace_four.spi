@@ -1,2 +1,2 @@
 use_synth :tb303
-p = play 60,amp: 1,sustain: 1, attack: 0.2
+p = play 60,amp: 1,sustain: 0, attack: 0.2
