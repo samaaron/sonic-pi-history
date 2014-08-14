@@ -74,7 +74,7 @@ define :drumit do
 
   sleep 0.2
 
-  with_fx :bitcrusher, bits: 6, sample_rate: 1000, phase: 0.125, mix: 0.2 do
+  with_fx :echoe, bits: 6, sample_rate: 1000, phase: 0.125, mix: 0.2 do
 
     use_synth :tb303
     play chord(:e3, :minor).choose, release: 0.2, cutoff: 30 + val.read_all("/palimpsest/colour")[0] * 89
