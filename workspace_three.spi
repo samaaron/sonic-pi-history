@@ -67,7 +67,7 @@ end
 define :drumit do
   wait :tick
   with_fx :reverb, phase: 0.2, mix: 0.9 do
-    sample :elec_bong, amp: 1, rate: - 1,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
+    sample :elec_bong, amp: 1, rate: -1,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
 
   end
   sample :bass_hit_c, amp: 3
