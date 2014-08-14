@@ -1,5 +1,5 @@
-use_bpm 120
+use_bpm 60
 
-play 50, sustain: 0.2
+play 50, sustain: 1
 sleep 1
-play 62, sustain: 0.2
+play 62, sustain: 1
