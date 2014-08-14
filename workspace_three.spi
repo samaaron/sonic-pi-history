@@ -97,7 +97,7 @@ end
 
 define :drumit2 do
   wait :tick
-  sleep 0.4
+
 sample :drum_heavy_kick, amp: 3
 sleep 0.4
 end
