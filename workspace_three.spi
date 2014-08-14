@@ -72,7 +72,7 @@ define :drumit do
   with_fx :echo, phase: 0.25, mix: 0.2 do
   sample :elec_filt_snare, rate: 43
   use_synth :tb303
-  play 30, release: 0.2, cutoff: val.read_all("/palimpsest/colour").second * 120
+  play 30, release: 0.2, cutoff: val.read_all("/palimpsest/colour")[1] * 120
   end
   sleep 0.25
 end
