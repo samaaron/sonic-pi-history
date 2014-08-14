@@ -1,4 +1,5 @@
 use_synth :dsaw
 with_fx :wobble, phase: 1 do
+  sample :drum_heavy_kick
   play 40, sustain: 3
 end
