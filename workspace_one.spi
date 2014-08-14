@@ -1,9 +1,9 @@
-with_fx :wobble, phase: 2, mix: 1 do
+with_fx :wobble, phase: 1, mix: 1 do
   in_thread do
     loop do
      # sample :drum_heavy_kick
       sample :bass_hit_c, rate: 0.8
-      sleep 0.5
+      sleep 0.25
     end
   end
 end
