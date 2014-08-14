@@ -1,6 +1,6 @@
 use_synth :prophet
-play 80
+play 50
 sleep 1
-play 85
+play 55
 sleep 0.5
-play 92
+play 62
