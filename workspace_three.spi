@@ -68,16 +68,16 @@ define :drumit do
   wait :tick
   with_fx :echo, phase: 0.125, mix: 0.2 do
     sample :elec_pop, rate: 0.4 + (val.read_all("/palimpsest/colour")[1] * 8) ,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
-    
+
   end
   sample :bass_hit_c, amp: 3
-  
+
   sleep 0.2
 
   with_fx :bitcrusher, bits: 6, sample_rate: 1000, phase: 0.125, mix: 0.2 do
 
     use_synth :tb303
-    play 30, release: 0.2, cutoff: 30 + val.read_all("/palimpsest/colour")[0] * 89
+    play chord(:e3, :minor).choose, release: 0.2, cutoff: 30 + val.read_all("/palimpsest/colour")[0] * 89
   end
   sleep 0.2
 end
@@ -98,8 +98,8 @@ end
 define :drumit2 do
   wait :tick
 
-sample :drum_heavy_kick, amp: 3
-sleep 0.8
+  sample :drum_heavy_kick, amp: 3
+  sleep 0.8
 end
 
 
