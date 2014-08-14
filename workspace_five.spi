@@ -31,7 +31,7 @@ define :synths do
   sleep 0.125
   sample :elec_filt_snare, rate: [8].choose
   sleep 0.125
-  sync :tick
+ # sync :tick
 end
 
 in_thread(name: :drums){loop{drums}}
