@@ -1,6 +1,4 @@
 
-loop do
   use_synth :fm
   play 30, attack: 0, decay: 0.3, amp: 3
   sleep 0.5
-end
