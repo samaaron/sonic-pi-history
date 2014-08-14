@@ -9,7 +9,9 @@ defonce :out do
 end
 
 with_fx :wobble do |w|
-
+  defonce :w, override: true do
+     w
+  end
   use_synth :dsaw
   defonce :s, override: false do
     play 40, sustain: 1000000
