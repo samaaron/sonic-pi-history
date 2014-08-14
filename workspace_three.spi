@@ -65,7 +65,7 @@ end
 
 define :drumit do
 wait :tick
-sample :elec_tick
+sample :elec_blip
 sleep 1
 end
 
