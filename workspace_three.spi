@@ -66,7 +66,7 @@ end
 
 define :drumit do
   wait :tick
-  with_fx :reverb, phase: 0.25, mix: 0.2 do
+  with_fx :echo, phase: 0.25, mix: 0.2 do
     sample :elec_blip, pan: rrand(-1, 1)
   end
   sample :bass_hit_c, amp: 3
