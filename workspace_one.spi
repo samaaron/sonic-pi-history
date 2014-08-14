@@ -4,6 +4,7 @@ with_fx :reverb do
       r = [0.5, 1.0/3, 3.0/5].choose
       8.times do
         sample :ambi_choir, rate: r, pan: rrand(-1, 1)  
+        sample :ambi_choir, rate: r * 3.0/5
         sleep 0.5
       end
     end
