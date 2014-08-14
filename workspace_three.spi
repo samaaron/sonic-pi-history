@@ -29,6 +29,7 @@ with_fx :wobble do |w|
     l = val.read("/palimpsest/left")
     r = val.read("/palimpsest/right")
     c = val.read_all("/palimpsest/colour")
+    l = 0.9
     puts c
     sleep 0.1
     control s, note: l * 100
