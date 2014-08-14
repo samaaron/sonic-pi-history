@@ -111,7 +111,7 @@ define :melody do
       out.send(OSC::Message.new("/beat", n.to_f / 120))
     end
   play n, attack: 0, amp: 1, release: 0.12, cutoff: 50 + val.read_all("/palimpsest/colour")[0] * 70
-  sleep 0.2
+  sleep 0.4
 end
 
 
