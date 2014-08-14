@@ -1,9 +1,10 @@
 use_synth :prophet
+
 loop do
-  play 50
+  play 50.4
   sleep 1
-  play 55
+  play 55.7
   sleep 0.5
-  play 62
+  play 62.2
   sleep 0.25
 end
