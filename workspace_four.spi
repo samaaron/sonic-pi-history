@@ -1,2 +1,2 @@
-use_synth :tb303
+use_synth :dsaw
 p = play 60,amp: 1,sustain: 0, attack: 0.2, cutoff: 120, cutoff_slide: 1
