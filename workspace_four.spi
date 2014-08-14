@@ -1,1 +1,1 @@
-puts rand
+puts rand(0.2)
