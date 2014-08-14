@@ -47,7 +47,7 @@ with_fx :wobble do |w|
     sleep 0.1
     tonic = chord(:e1, :minor).choose
     range = 90
-    co = 70
+    co = 80
     control s, note: tonic + c.first * range, cutoff: co
     control s1, note: tonic + c[1] * range, cutoff: co
 
