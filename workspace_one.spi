@@ -1,11 +1,13 @@
 use_synth :zawa
 use_bpm 320
 
-loop do
-  play 50
-  sleep 1
-  play 55
-  sleep 0.5
-  play 62
-  sleep 0.25
+with_fx :reverb do
+  loop do
+    play 50
+    sleep 1
+    play 55
+    sleep 0.5
+    play 62
+    sleep 0.25
+  end
 end
