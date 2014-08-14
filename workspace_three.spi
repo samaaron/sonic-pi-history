@@ -44,10 +44,11 @@ with_fx :wobble do |w|
    l = 0.001
     puts c
     sleep 0.1
-    control s, note: 30 + c.first * 100
-        control s1, note: 30 + c[1] * 100
+    tonic = 30
+    control s, note: tonic + c.first * 100
+        control s1, note: tonic + c[1] * 100
 
-            control s2, note: 30 + c[2] * 100
+            control s2, note: tonic + c[2] * 100
 
     control wob, amp_slide: 0.3, amp: 0.3, phase: 0.2, cutoff_max: 100, cutoff_min: 70, wave: 0
     beat += 1
