@@ -1,6 +1,6 @@
 in_thread do
   loop do
-    r = [0.5, 0.33333, 0.666666].choose
+    r = [0.5, 1.0/3, 3.0/5].choose
 #    r = 0.66666
     8.times do
       sample :ambi_choir, rate: r
