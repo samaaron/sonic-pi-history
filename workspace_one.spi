@@ -1,4 +1,4 @@
-with_fx :wobble do
+with_fx :wobble, phase: 1 do
   in_thread do
     loop do
       sample :drum_heavy_kick
