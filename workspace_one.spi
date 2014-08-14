@@ -12,6 +12,6 @@ end
 
 loop do
   use_synth :fm
-  play :e2, attack: 0, release: 0.3, amp: 1
+  play :e2, attack: 0, release: 0.5, amp: 1
   sleep 0.5
 end
