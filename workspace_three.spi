@@ -109,6 +109,7 @@ define :melody do
   wait :tick
   use_synth :tb303
   play chord([:a2, :a3, :a4].choose, :minor).choose, attack: 0, amp: 1, release: 0.12, cutoff: 50 + val.read_all("/palimpsest/colour")[0] * 70
+  sleep 0.2
 end
 
 
