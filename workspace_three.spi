@@ -26,8 +26,8 @@ with_fx :wobble do |w|
     v = val.read("/palimpsest/amp")
     l = val.read("/palimpsest/left")
     r = val.read("/palimpsest/right")
-
-
+    c = val.read_all("/palimpsest/colour")
+    puts c
     sleep 0.1
     control s, note: l * 100
     control w, amp: v, phase: l * 10 + 0.1, cutoff_max: (r * 50) + 65
