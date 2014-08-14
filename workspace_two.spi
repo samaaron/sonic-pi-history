@@ -1,0 +1,33 @@
+use_synth :prophet
+use_transpose 5
+use_synth_defaults release: 0.2, cutoff: lambda{rrand(80, 120)}, amp: 0.3
+use_bpm 120
+
+use_transpose 12
+in_thread do
+  with_fx :echo, decay: 1.5, phase: 0.25 do
+    use_synth :tb303
+    use_transpose 0
+
+    play_pattern_timed [[52, 52-12], 54, 56, 59, 59, 64] * 2, [0.65, 0.35, 0.5, 0.25, 0.75, 0.5], amp: 1, release: 1
+    use_transpose 7
+    play_pattern_timed [[52, 52-12], 54, 56, 59, 59, 64] * 2, [0.65, 0.35, 0.5, 0.25, 0.75, 0.5], amp: 1, release: 1
+  end
+end
+
+8.times do
+  sample :drum_bass_hard
+  play chord(:e3, :major)
+  sleep 0.25
+  play chord(:e3, :major)
+  sleep 0.25
+
+  with_fx :reverb do
+    with_fx :echo, phase: 0.25 do
+      play chord(:b2, :m9)
+
+    end
+  end
+
+  sleep 1
+end
