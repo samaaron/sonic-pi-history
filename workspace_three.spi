@@ -63,7 +63,10 @@ with_fx :wobble do |w|
   end
 end
 
-
+in_thread(name: :drums) do
+wait :tick
+sample :elec_tick
+end
 
 
 comment do
