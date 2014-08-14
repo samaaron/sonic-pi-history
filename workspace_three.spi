@@ -9,11 +9,11 @@ defonce :out do
 end
 
 with_fx :wobble do |w|
-  defonce :w, override: false do
+  defonce :wob, override: true do
      w
   end
   use_synth :dsaw
-  defonce :s, override: false do
+  defonce :s, override: true do
     play 40, sustain: 1000000
   end 
   beat = 0
@@ -37,7 +37,7 @@ with_fx :wobble do |w|
     puts c
     sleep 0.1
     control s, note: 50
-    control w, amp: 0.7, phase: 0.2, cutoff_max: 100, cutoff_min: 70, wave: 0
+    control wob, amp: 0.7, phase: 0.2, cutoff_max: 100, cutoff_min: 70, wave: 0
     beat += 1
   end
   
