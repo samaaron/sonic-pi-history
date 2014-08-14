@@ -30,7 +30,7 @@ with_fx :wobble do |w|
     puts c
     sleep 0.1
     control s, note: l * 100
-    control w, amp: v, phase: l * 10 + 0.1, cutoff_max: (r * 50) + 65
+    control w, amp: 0.5, phase: l * 10 + 0.1, cutoff_max: (r * 50) + 65
     beat += 1
   end
   
