@@ -1,5 +1,5 @@
 with_fx :wobble, phase: 2, mix: 1 do
-  with_fx :echo, phase: 0.33333 do
+  with_fx :echo do
     loop do
       sample :drum_heavy_kick
       sample :bass_hit_c, rate: 0.8, amp: 0.4
