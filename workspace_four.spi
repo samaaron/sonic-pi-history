@@ -1,2 +1,2 @@
 use_synth :beep
-p = play 60,amp: 0.01,sustain: 4
+p = play 60,amp: 1,sustain: 4
