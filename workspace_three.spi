@@ -52,7 +52,7 @@ with_fx :wobble do |w|
 
     control s2, note: tonic + c[2] * range
 
-    control wob, amp_slide: 0.3, amp: 0.3, phase: 1, cutoff_max: 120, cutoff_min: 40, wave: 1
+    control wob, amp_slide: 0.3, amp: 0.3, phase: 0.25, cutoff_max: 120, cutoff_min: 40, wave: 1
     beat += 1
   end
 
