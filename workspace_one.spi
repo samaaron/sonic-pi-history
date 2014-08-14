@@ -13,4 +13,5 @@ end
 loop do
   use_synth :fm
   play 30, attack: 0, decay: 0.3
+  sleep 0.125
 end
