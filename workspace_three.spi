@@ -8,12 +8,20 @@ defonce :out do
   OSC::Client.new("10.0.0.8", 8112)
 end
 
+o = true
+
 with_fx :wobble do |w|
-  defonce :wob, override: false do
+  defonce :wob, override: o do
      w
   end
   use_synth :dsaw
-  defonce :s, override: false do
+  defonce :s, override: o do
+    play 40, sustain: 1000000
+  end 
+  defonce :s1, override: o do
+    play 40, sustain: 1000000
+  end 
+  defonce :s2, override: o do
     play 40, sustain: 1000000
   end 
   beat = 0
