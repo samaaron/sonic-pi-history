@@ -31,10 +31,7 @@ with_fx :wobble do |w|
     start = beat % 4
     size = start == 0 ? 0.8 : 0.5
 
-    Thread.new do
-      Kernel.sleep 0.5
-      out.send(OSC::Message.new("/beat", 0.1))
-    end
+   
 
     v = val.read("/palimpsest/amp")
     l = val.read("/palimpsest/left")
@@ -109,6 +106,10 @@ define :melody do
   wait :tick
   use_synth :tb303
   n = chord([:a2, :a3, :a4].choose, :minor).choose
+  Thread.new do
+      Kernel.sleep 0.5
+      out.send(OSC::Message.new("/note", n))
+    end
   play n, attack: 0, amp: 1, release: 0.12, cutoff: 50 + val.read_all("/palimpsest/colour")[0] * 70
   sleep 0.2
 end
