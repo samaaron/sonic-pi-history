@@ -11,7 +11,9 @@ end
 with_fx :wobble do |w|
 
   use_synth :dsaw
-  s = play 40, sustain: 1000000
+  defonce :s do
+    play 40, sustain: 1000000
+  end 
   beat = 0
   
   define :live do
