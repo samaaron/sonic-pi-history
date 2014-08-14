@@ -28,7 +28,7 @@ end
 define :synths do
   sample :bass_hit_c, rate: 1, amp: 2
   sample :drum_heavy_kick
-  sleep 0.125
+  sleep 0.25
   sample :elec_filt_snare, rate: [8].choose
   sleep 0.25
  # sync :tick
