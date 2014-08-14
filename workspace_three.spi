@@ -31,7 +31,7 @@ with_fx :wobble do |w|
     c = val.read_all("/palimpsest/colour")
     l = 0.9
     r = 0.8
-     l = 0.07
+     l = 0.01
     puts c
     sleep 0.1
     control s, note: l * 100
