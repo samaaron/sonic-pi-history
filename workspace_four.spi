@@ -1,3 +1,4 @@
 use_synth :dsaw
-
-play 40, sustain: 1
+with_fx :wobble do
+  play 40, sustain: 1
+end
