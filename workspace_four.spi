@@ -1,2 +1,2 @@
 use_synth :dsaw
-p = play 60, cutoff: 120
+p = play 60, cutoff: 120, sustain: 2
