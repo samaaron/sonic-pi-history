@@ -6,9 +6,3 @@ with_fx :wobble, phase: 2 do
     end
   end
 end
-
-loop do
-  use_synth :fm
-  play :e2, attack: 0, release: 1, amp: 1
-  sleep 0.5
-end
