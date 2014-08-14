@@ -45,7 +45,7 @@ with_fx :wobble do |w|
     l = 0.001
     puts c
     sleep 0.1
-    tonic = chord(:e1, :minor).choose
+    tonic = chord(:e3, :minor).choose
     range = 24
     co = 50
     control s, note: tonic + c.first * range, cutoff: co
