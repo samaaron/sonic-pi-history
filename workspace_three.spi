@@ -108,7 +108,7 @@ define :melody do
   n = chord([:a2, :a3, :a4].choose, :minor).choose
   Thread.new do
       Kernel.sleep 0.5
-      out.send(OSC::Message.new("/beat", n.to_f / 100))
+      out.send(OSC::Message.new("/beat", n.to_f / 80))
     end
   play n, attack: 0, amp: 1, release: 0.2, cutoff: rrand(30, 70)
   sleep 0.2
