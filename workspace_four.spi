@@ -1,7 +1,7 @@
 use_synth :dsaw
 use_bpm 120
 with_fx :bitcrusher, bits: 16, sample_rate: 2000 do
-  with_fx :wobble, phase: 0.5, wave: 0, invert_wave: 1  do
+  with_fx :wobble, phase: 1, wave: 0, invert_wave: 1  do
     play 40, sustain: 1
     sleep 1
     play 45, sustain: 1
