@@ -69,7 +69,9 @@ define :drumit do
   sample :bass_hit_c, amp: 3
   
   sleep 0.25
+  with_fx :reverb do
   sample :elec_filt_snare, rate: 43
+  end
   sleep 0.25
 end
 
