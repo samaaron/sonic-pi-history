@@ -1,4 +1,17 @@
+use_synth :dsaw
+with_fx :wobble, phase: 1 do
+  in_thread do
+    loop do
+      sample :drum_heavy_kick
+      sleep 0.25
+    end
+  end
 
+  
+end
+
+loop do
   use_synth :fm
   play :e2, attack: 0, decay: 0.3, amp: 3
   sleep 0.5
+end
