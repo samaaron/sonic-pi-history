@@ -1,1 +1,1 @@
-control wbb, revert_wave: 0
+control wbb, wave: 1
