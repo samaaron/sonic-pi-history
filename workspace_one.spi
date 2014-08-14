@@ -1,10 +1,10 @@
 use_synth :prophet
 
 loop do
-  play 50.4
+  play :c3
   sleep 1
-  play 55.7
+  play :Cs3
   sleep 0.5
-  play 62.2
+  play :D3
   sleep 0.25
 end
