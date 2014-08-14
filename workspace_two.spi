@@ -1,24 +1,10 @@
-sd = sample_duration :loop_amen
-
-define :foobar do
-#  sample :loop_amen, amp: 2
-with_fx :echo, decay: 0.5, phase: 1 do
-  with_fx :bitcrusher, bits: 17, sample_rate: 10000, amp: 1  do
-    with_fx :none, bits: rrand_i(2, 16), sample_rate: rrand(1000, 10000) do
-      with_fx :none, mix: 0.125 do
-             sample :drum_heavy_kick, amp: 2
-              sample :elec_blip2
-        use_synth :tb303
-              sample :loop_amen, amp: 2
-        play chord(:e2, :minor).choose, attack: 0, release: sd
-        sleep sd
-      end
-    end
-  end
-end
-end
-in_thread(name: :sam) do
+with_fx :bitcrusher do |b|
   loop do
-    foobar
+    use_synth :mod_fm
+    play 50 + [5, 0].choose, mod_phase: 0.25, release: 1, mod_range: [24, 27, 12].choose
+    sleep 0.5
+    use_synth :mod_dsaw
+    play 50, mod_phase: 0.25, release: 1.5, mod_range: [24, 27].choose, attack: 0.5
+    sleep 1.5
   end
 end
