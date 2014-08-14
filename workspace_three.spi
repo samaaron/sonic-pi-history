@@ -44,7 +44,7 @@ with_fx :wobble do |w|
    l = 0.001
     puts c
     sleep 0.1
-    tonic = 30
+    tonic = 35
     control s, note: tonic + c.first * 100
         control s1, note: tonic + c[1] * 100
 
