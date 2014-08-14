@@ -1,5 +1,2 @@
 use_synth :beep
 p = play 60,amp: 0.01,sustain: 4
-control p,amp: 1 #does not appear to change the amplitude
-control p,amp:1, amp_slide: 2 #likewise no effect
-control p,note: 72,note_slide: 2 #does work
