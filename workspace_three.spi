@@ -37,7 +37,7 @@ with_fx :wobble do |w|
     puts c
     sleep 0.1
     control s, note: 50
-    control wob, amp_slide: 0.3, amp: 0.1, phase: 0.2, cutoff_max: 100, cutoff_min: 70, wave: 0
+    control wob, amp_slide: 0.3, amp: 0.8, phase: 0.2, cutoff_max: 100, cutoff_min: 70, wave: 0
     beat += 1
   end
   
