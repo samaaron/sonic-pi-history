@@ -7,5 +7,10 @@ with_fx :wobble, phase: 1 do
     end
   end
 
-  #play 40, sustain: 3
+  
+end
+
+loop do
+  use_synth :fm
+  play 30, attack: 0, decay: 0.3
 end
