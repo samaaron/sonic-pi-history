@@ -111,7 +111,7 @@ define :melody do
       out.send(OSC::Message.new("/beat", n.to_f / 80))
     end
   play n, attack: 0, amp: 1, release: 0.2, cutoff: rrand(30, 70)
-  sleep 0.1
+  sleep 1
 end
 
 
