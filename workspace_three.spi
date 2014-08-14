@@ -108,10 +108,10 @@ define :melody do
   n = chord([:a2, :a3, :a4].choose, :minor).choose
   Thread.new do
       Kernel.sleep 0.5
-      out.send(OSC::Message.new("/beat", -1 * (n.to_f / 60) - 0.6))
+      out.send(OSC::Message.new("/beat", 1 * (n.to_f / 60) - 0.6))
     end
-    with_fx :echo, phase: 0.5 do
-  play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
+  with_fx :echo, phase: 0.5 do
+    play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
   end
   sleep 1
 end
