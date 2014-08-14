@@ -1,7 +1,7 @@
 use_synth :prophet
 
 loop do
-  play hz_to_midi(440)
+  play hz_to_midi(220)
   sleep 1
  
 end
