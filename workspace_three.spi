@@ -14,7 +14,7 @@ with_fx :wobble do |w|
   s = play 40, sustain: 1000000
   beat = 0
   
-  loop do
+  define :live do
     start = beat % 4
     size = start == 0 ? 0.8 : 0.5
     
@@ -32,6 +32,12 @@ with_fx :wobble do |w|
     control s, note: l * 100
     control w, amp: v, phase: l * 10 + 0.1, cutoff_max: (r * 50) + 65
     beat += 1
+  end
+  
+  in_thread(name: :live_loop) do
+    loop do
+      live
+    end       
   end
 end
 
