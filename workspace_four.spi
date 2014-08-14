@@ -1,6 +1,3 @@
-use_bpm 120
-use_transpose 2.25
+use_synth :dsaw
 
-play 50, sustain: 1
-sleep 1
-play 62, sustain: 1
+play 50
