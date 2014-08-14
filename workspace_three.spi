@@ -113,7 +113,7 @@ define :melody do
   with_fx :echo, phase: 0.5 do
     play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
   end
-  sleep 0.5
+  sleep 0.4
 end
 
 
