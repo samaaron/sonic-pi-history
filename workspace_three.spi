@@ -12,61 +12,69 @@ o = false
 
 with_fx :wobble do |w|
   defonce :wob, override: o do
-     w
+    w
   end
   use_synth :dsaw
   defonce :s, override: o do
     play 40, sustain: 1000000
-  end 
+  end
   defonce :s1, override: o do
     play 40, sustain: 1000000
-  end 
+  end
   defonce :s2, override: o do
     play 40, sustain: 1000000
-  end 
+  end
   beat = 0
-  
+
   define :live do
     sync :tick
     start = beat % 4
     size = start == 0 ? 0.8 : 0.5
-    
+
     Thread.new do
       Kernel.sleep 0.5
       out.send(OSC::Message.new("/beat", 0.1))
     end
-    
+
     v = val.read("/palimpsest/amp")
     l = val.read("/palimpsest/left")
     r = val.read("/palimpsest/right")
     c = val.read_all("/palimpsest/colour")
     l = 0.9
     r = 0.8
-   l = 0.001
+    l = 0.001
     puts c
     sleep 0.1
     tonic = 30
     range = 70
     control s, note: tonic + c.first * range
-        control s1, note: tonic + c[1] * range
+    control s1, note: tonic + c[1] * range
 
-            control s2, note: tonic + c[2] * range
+    control s2, note: tonic + c[2] * range
 
     control wob, amp_slide: 0.3, amp: 0.3, phase: 1, cutoff_max: 100, cutoff_min: 70, wave: 0
     beat += 1
   end
-  
+
   in_thread(name: :live_loop) do
     loop do
       live
-    end       
+    end
   end
 end
 
-in_thread(name: :drums) do
+define :drumit do
 wait :tick
 sample :elec_tick
 end
+
+in_thread(name: :drums) do
+  loop do
+    drumit
+  end
+end
+
+
 
 
 comment do
