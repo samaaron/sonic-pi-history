@@ -11,7 +11,7 @@ end
 with_fx :wobble do |w|
 
   use_synth :dsaw
-  defonce :s do
+  defonce :s, override: true do
     play 40, sustain: 1000000
   end 
   beat = 0
