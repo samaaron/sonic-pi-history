@@ -74,7 +74,7 @@ define :drumit do
   sleep 0.25
   with_fx :bitcrusher, bits: 6, phase: 0.125, mix: 0.2 do
     sample :elec_filt_snare, rate: 43
-    use_synth :prophet
+    use_synth :tb303
     play 30, release: 0.2, cutoff: 30 + val.read_all("/palimpsest/colour")[0] * 89
   end
   sleep 0.25
