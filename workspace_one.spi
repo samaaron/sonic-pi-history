@@ -1,3 +1,11 @@
+in_thread do
+  loop do
+    sample :ambi_choir, rate: [0.5, 1].choose
+    sleep 1
+  end
+end
+
+
 with_fx :wobble, phase: 2 do
   with_fx :echo, mix: 0.6 do
     loop do
