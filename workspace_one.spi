@@ -1,5 +1,5 @@
 use_synth :zawa
-use_bpm 320
+use_bpm 60
 
 with_fx :reverb do
   loop do
