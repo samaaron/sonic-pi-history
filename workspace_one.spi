@@ -1,7 +1,9 @@
 in_thread do
   loop do
-    sample :ambi_choir, rate: [0.5, 1].choose
-    sleep 1
+    8.times do
+      sample :ambi_choir, rate: [0.5, 0.333].choose
+      sleep 1
+    end
   end
 end
 
