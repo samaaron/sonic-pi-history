@@ -11,7 +11,7 @@ with_fx :wobble, phase: 1 do
 end
 
 loop do
-  use_synth :fm
+  use_synth :dsaw
   play :e2, attack: 0, release: 1, amp: 1
   sleep 0.5
 end
