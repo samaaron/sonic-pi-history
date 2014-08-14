@@ -1,3 +1,3 @@
 use_synth :dsaw
 p = play 60, cutoff: 120, sustain: 2
-control p, cutoff_slide: 1, cutoff: 40
+control p, cutoff_slide: 2, cutoff: 40
