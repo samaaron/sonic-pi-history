@@ -1,3 +1,4 @@
+use_synth :prophet
 play 80
 sleep 1
 play 85
