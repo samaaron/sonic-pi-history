@@ -27,6 +27,7 @@ with_fx :wobble do |w|
   beat = 0
   
   define :live do
+    sync :tick
     start = beat % 4
     size = start == 0 ? 0.8 : 0.5
     
@@ -61,6 +62,8 @@ with_fx :wobble do |w|
     end       
   end
 end
+
+
 
 
 comment do
