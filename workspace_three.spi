@@ -8,7 +8,7 @@ defonce :out do
   OSC::Client.new("10.0.0.8", 8112)
 end
 
-o = true
+o = f
 
 with_fx :wobble do |w|
   defonce :wob, override: o do
@@ -45,6 +45,10 @@ with_fx :wobble do |w|
     puts c
     sleep 0.1
     control s, note: 30 + c.first * 40
+        control s1, note: 30 + c[1] * 40
+
+            control s2, note: 30 + c[2] * 40
+
     control wob, amp_slide: 0.3, amp: 0.3, phase: 0.2, cutoff_max: 100, cutoff_min: 70, wave: 0
     beat += 1
   end
