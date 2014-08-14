@@ -1,0 +1,10 @@
+define :foo do
+  puts "hi"
+end
+
+defonce :bar do
+3
+end
+
+
+foo
