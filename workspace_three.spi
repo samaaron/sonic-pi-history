@@ -110,7 +110,7 @@ define :melody do
       Kernel.sleep 0.5
       out.send(OSC::Message.new("/beat", -1 * (n.to_f / 60) - 0.6))
     end
-  play n, attack: 0, amp: 1, release: 0.2, cutoff: rrand(30, 70)
+  play n, attack: 0, amp: 1, release: 1, cutoff: rrand(30, 70)
   sleep 1
 end
 
