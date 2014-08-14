@@ -1,12 +1,14 @@
 with_fx :reverb do
-  in_thread do
-    loop do
-      r = [0.5, 1.0/3, 3.0/5].choose
-      8.times do
-        sample :ambi_choir, rate: r, pan: rrand(-1, 1)  
-        sample :ambi_choir, rate: r * 3.0/5
-        sample :ambi_choir, rate: r * 2
-        sleep 0.5
+  with_fx :bitcrusher do
+    in_thread do
+      loop do
+        r = [0.5, 1.0/3, 3.0/5].choose
+        8.times do
+          sample :ambi_choir, rate: r, pan: rrand(-1, 1)
+          sample :ambi_choir, rate: r * 3.0/5
+          sample :ambi_choir, rate: r * 2
+          sleep 0.5
+        end
       end
     end
   end
