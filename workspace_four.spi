@@ -1,1 +1,3 @@
-control wbb, mix: 0
+play 50
+sleep 1
+play 62
