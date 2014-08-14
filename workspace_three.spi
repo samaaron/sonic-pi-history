@@ -65,7 +65,7 @@ end
 
 define :drumit do
   wait :tick
-  sample :elec_blip
+#  sample :elec_blip
   sample :bass_hit_c, amp: 3
   sleep 0.25
 end
