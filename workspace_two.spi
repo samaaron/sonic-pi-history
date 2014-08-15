@@ -5,7 +5,7 @@ define :drums do
   with_fx :bitcrusher do
     sample :drum_heavy_kick, rate: rrand(0.5, 2)
     sleep 0.125
-    sample :drum_heavy_kick
+    sample :elec_blip
     sleep 0.125
   end
 end
