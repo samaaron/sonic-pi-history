@@ -1,3 +1,3 @@
-with_fx :echo, phase: 1 do
+with_fx :echo, phase: .5 do
   sample "/Users/sam/Desktop/chris.wav", start: 0.3, rate: 1
   end
