@@ -6,7 +6,7 @@ define :drums do
       2.times do
         sample :drum_heavy_kick, rate: 2, amp: 15
         sample :elec_blip, rate: 2, amp: 3 if rand < 0.5
-        sleep 0.25 
+        sleep 0.125 
       end
     end
   end
