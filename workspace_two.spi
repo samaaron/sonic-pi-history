@@ -8,9 +8,8 @@ define :drums do
   end
   
 
-  with_fx :bitcrusher do
+  with_fx :bitcrusher, bits: 4 do
     sample :drum_snare_soft, amp: 1
-
   end
 
 
