@@ -1,19 +1,15 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
-  with_fx :wobble, amp: 0.5, bits: 12, sample_rate: 10000, phase: 0.125, wave: 3 do
-  #  sample :drum_heavy_kick, rate: 1, amp: 19
-    sample :elec_chime, rate: [0.25, 0.5, 1].choose, amp: 0.6 if rand < 0.5
+  with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.125 / 1 do
+    sample :drum_heavy_kick, rate: 1, amp: 19
+    sample :elec_plip, rate: 2, amp: 3 if rand < 0.5
     sleep 0.25
   end
-  
-
-  with_fx :bitcrusher, bits: 5 do
-    sample :drum_snare_soft, amp: 1
+  sample :ambi_,  rate: 0.5/5
+  with_fx :echo, decay: 1, phase: 0.125, mix: 0.5 do
+    sample :elec_filt_snare, rate: 16
   end
-
-
-
   sleep 0.25
 end
 
@@ -21,11 +17,11 @@ define :synths do
   with_fx :none, phase: 1 do
     with_fx :none, sample_rate: 10000, bits: 8 do
       use_synth :fm
-      use_transpose 0
+      use_transpose 12
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
- #     play 33
+      play 33
       sleep 0.25
-      #        play chord(33 + 24, :minor).choose, amp: 1
+#        play chord(33 + 24, :minor).choose, amp: 1
       sleep 0.25
     end
   end
