@@ -1,4 +1,4 @@
 with_fx :echo, phase: 0.9 do
   #sample "/Users/sam/Desktop/chris.wav", start: 0.3, rate: 1
-  sample :bass_thick_c, rate: 0.9
+  sample :bass_thick_c, rate: 0.8
   end
