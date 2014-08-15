@@ -15,10 +15,10 @@ define :drums do
     end
   end
 #      sample :ambi_lunar_land,  rate: 5.0/5
-  with_fx :echo, decay: 2, phase: 0.125, mix: 0.8 do
+  #with_fx :echo, decay: 2, phase: 0.125, mix: 0.8 do
     #sample :elec_filt_snare, rate: 10
     #   sample :elec_bell
-  end
+#  end
   sleep 0.25
 end
 
