@@ -10,7 +10,7 @@ define :drums do
     #sample :ambi_haunted_hum,  rate: 4.0/5
 #  end
   with_fx :echo, decay: 1, phase: 0.25, mix: 0.5 do
-    sample :elec_filt_snare, rate: 16
+    #sample :elec_filt_snare, rate: 16
   end
   sleep 0.125
 end
