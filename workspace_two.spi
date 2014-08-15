@@ -21,7 +21,7 @@ define :synths do
       play chord(33, :minor).choose, amp: 3
       sleep 0.125
       play chord(33 + 12, :minor).choose, amp: 3
-#      sleep 0.5
+      sleep 0.5
     end
   end
 end
