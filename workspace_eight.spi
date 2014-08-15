@@ -1,47 +1,168 @@
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
 
-load_sample :drum_heavy_kick
-
-lp = :loop_industrial
-sd = sample_duration lp
-
-define :drums do
-  sync :tick
 
 
-  sleep sd/2
-end
 
-define :bd do
-  wait :tick
-  #  sample :drum_bass_hard, amp: 2
-  #sample :drum_heavy_kick, amp: 2
 
-end
 
-define :synths do
-  wait :tick
-  use_synth :fm
-  n = 2
-  p = [52, 48, 50].choose
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use_synth :dsaw
+sd = sample_duration :loop_amen, rate: 1.5
+
+with_fx :reverb do
   in_thread do
-    2.times do
-      play p, release: sd/8, attack: 0
-      sleep sd/ 4
+    loop do
+      a = [1, 4, 2].choose
+      8.times do
+        sample :elec_beep, rate: 0.75 * a, amp: 0.7
+        sleep sd / 8
+      end
+      sleep sd
     end
   end
-  use_transpose 0
-  with_fx :reverb, room: 0.8 do
-    with_fx :ixi_techno, rate: sd/16 do
+end
+
+
+
+in_thread do
+    loop do
+      use_synth :tb303
+      n = [5, 4, 8, 16].choose
       n.times do
-        use_synth :prophet
-        #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
-        play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/4], attack: 0, release: 1, amp: 2, cutoff: rrand(80, 100)
+        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120), amp: 0.5
+        sleep sd / n
       end
     end
   end
-end
 
-in_thread(name: :drums){loop{drums}}
-in_thread(name: :synths){loop{synths}}
-in_thread(name: :bd){loop{bd}}
- 
+with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
+  define :wbb do
+    wb
+  end
+  loop do
+    use_synth :dsaw
+
+
+    with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
+      play chord(:e1, :minor).choose, attack: 0, release: sd
+    end
+
+    sample :loop_amen, rate: 1.5
+    sleep sd
+  end
+end
