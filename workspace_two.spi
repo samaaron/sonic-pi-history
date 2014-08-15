@@ -6,7 +6,9 @@ define :drums do
     sample :elec_plip, rate: 2, amp: 3 if rand < 0.5
     sleep 0.25
   end
-  sample :ambi_haunted_hum,  rate: 5.0/5
+  with_fx :wobble do
+    sample :ambi_haunted_hum,  rate: 5.0/5
+  end
   with_fx :echo, decay: 1, phase: 0.125, mix: 0.5 do
     sample :elec_filt_snare, rate: 16
   end
@@ -21,7 +23,7 @@ define :synths do
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
       play 33
       sleep 0.25
-#        play chord(33 + 24, :minor).choose, amp: 1
+      #        play chord(33 + 24, :minor).choose, amp: 1
       sleep 0.25
     end
   end
