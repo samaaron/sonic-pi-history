@@ -2,7 +2,7 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
-  sample :drum_heavy_kick, rate: 0.5
+  sample :drum_heavy_kick, rate: 0.65
   sleep 0.125
   sample :drum_heavy_kick
   sleep 0.125
