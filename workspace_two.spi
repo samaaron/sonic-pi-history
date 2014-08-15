@@ -6,8 +6,10 @@ define :drums do
     sample :elec_chime, rate: [0.25, 0.5, 1].choose, amp: 0.6 if rand < 0.5
     sleep 0.25
   end
-  sample :drum_snare_soft, amp: 1
+  
+
   with_fx :bitcrusher, phase: 0.25, wave: 0 do
+    sample :drum_snare_soft, amp: 1
     #sample :ambi_haunted_hum,  rate: 4.0/5
   end
   with_fx :echo, decay: 1, phase: 0.25, mix: 0.5 do
