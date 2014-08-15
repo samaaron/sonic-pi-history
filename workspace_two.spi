@@ -5,7 +5,7 @@ define :drums do
     with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.5 / 1 do
 
       1.times do
-#        sample :drum_heavy_kick, rate: 2, amp: 30
+        #        sample :drum_heavy_kick, rate: 2, amp: 30
         sample :elec_blip, rate: 2, amp: 3 if rand < 0.5
         sleep 0.25
       end
@@ -13,12 +13,13 @@ define :drums do
     end
   end
   #    sample :ambi_glass_hum,  rate: 1
-
-  with_fx :wobble, decay: 2, phase: 0.125, mix: 1, wave: 1 do
-    sample :elec_filt_snare, rate: 1, amp: 2
-    sample :elec_pop, rate: 0.5
+  with_fx :echo do
+    with_fx :wobble, decay: 2, phase: 0.125, mix: 1, wave: 1 do
+      sample :elec_filt_snare, rate: 1, amp: 2
+      sample :elec_pop, rate: 0.5
+    end
+    sleep 0.25
   end
-  sleep 0.25
 end
 
 define :synths do
@@ -29,11 +30,11 @@ define :synths do
       use_synth_defaults amp: 1, mod_range: 14, attack: 0, release: 0.25, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
 
       sleep 0.125
-#      play 33 + 12
-#      play 33
+      #      play 33 + 12
+      #      play 33
 
       use_synth :tb303
-     # play chord(33 + 0 + 12, :minor).choose, detune: 12, amp: 0.2, release: [1, 2, 4, 8].choose, cutoff: 90 if rand < 0.25
+      # play chord(33 + 0 + 12, :minor).choose, detune: 12, amp: 0.2, release: [1, 2, 4, 8].choose, cutoff: 90 if rand < 0.25
       sleep 0.125
     end
   end
