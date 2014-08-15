@@ -8,7 +8,9 @@ define :drums do
     sleep 0.25
   end
   sample :ambi_drone,  rate: 2.0/5
+  with_fx :echo do
   sample :elec_filt_snare, rate: 8
+  end
   sleep 0.25
 end
 
