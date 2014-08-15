@@ -10,7 +10,7 @@ define :drums do
 
   with_fx :reverb, mix: rand do
     with_fx :bitcrusher, bits: 3, sample_rate: 1000, phase: 0.125 do
-      sample :elec_pop, rate: 1, amp: 3 if rand < 0.5
+      sample :elec_pop, rate: 0.8, amp: 3 if rand < 0.5
       sleep 0.5
     end
   end
