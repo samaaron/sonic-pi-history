@@ -7,3 +7,5 @@ define :testing do
                                      # (you should hear a tiny click as this happens)
   sleep 2
 end
+
+testing
