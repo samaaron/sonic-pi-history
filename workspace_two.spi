@@ -7,7 +7,7 @@ define :drums do
     sample :elec_blip, rate: 0.5 if rand < 0.5
     sleep 0.5
   end
-  sample :ambi_glass_rub, rate: 0.125
+  sample :ambi_glass_rub, rate: 0.4
 end
 
 define :synths do
