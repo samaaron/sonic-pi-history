@@ -3,7 +3,7 @@ use_synth :prophet
 use_bpm 45
 
 define :play_my_note do
-  play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: 100, amp: 0.5, attack: 0, release: 2
+  play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: 60, amp: 0.5, attack: 0, release: 2
   sleep [0.25, 0.5, 0.5, 0.5, 1, 1].choose
 end
 
