@@ -6,6 +6,7 @@ define :drums do
     sample :elec_bong, rate: 1, amp: 3 if rand < 0.5
     sleep 0.125
   end
+  sample :drum_heavy_kick, amp: 2
 #  with_fx :bitcrusher, phase: 0.25, wave: 0 do
     #sample :ambi_haunted_hum,  rate: 4.0/5
 #  end
