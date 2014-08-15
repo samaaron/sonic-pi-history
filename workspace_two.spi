@@ -14,7 +14,7 @@ define :drums do
 end
 
 define :synths do
-  with_fx :none, phase: 1 do
+  with_fx :wobble, phase: 1 do
     with_fx :none, sample_rate: 10000, bits: 8 do
       use_synth :fm
       use_transpose 12
@@ -23,6 +23,7 @@ define :synths do
       sleep 0.125
       use_synth :dsaw
       n = 1
+
       in_thread do
         n.times do
           play chord(33 , :minor).choose, attack: 0, release: 0.3, amp: 1, cutoff: rrand(60, 100)
