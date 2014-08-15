@@ -8,7 +8,7 @@ define :drums do
   end
   sample :drum_heavy_kick, amp: 1
   with_fx :bitcrusher, phase: 0.25, wave: 0 do
-    sample :ambi_haunted_hum,  rate: 4.0/5
+    #sample :ambi_haunted_hum,  rate: 4.0/5
   end
   with_fx :echo, decay: 1, phase: 0.25, mix: 0.5 do
     #sample :elec_filt_snare, rate: 16
