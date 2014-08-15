@@ -26,7 +26,7 @@ define :synths do
 
       in_thread do
         n.times do
-          play chord(33 , :minor).choose, attack: 0, release: 0.3, amp: 1, cutoff: rrand(60, 100)
+          play chord(33 , :minor).choose, attack: 0, release: 0.3, amp: 1, cutoff: rrand(70, 100)
           sleep 0.125 / n
         end
       end
