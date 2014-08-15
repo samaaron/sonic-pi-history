@@ -22,7 +22,7 @@ define :synths do
       use_transpose 12
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
       #play 33
-      with_fx :bitcrusher, sample_rate: 2000 do
+      with_fx :bitcrusher, sample_rate: 20000 do
         use_synth :tb303
         play chord([33].choose, :minor).choose, attack: 0, amp: 0.25, release: 0.1, cutoff: rrand(80, 120)
         sleep 0.125
