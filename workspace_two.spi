@@ -1,40 +1,29 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
-  in_thread do
-    2.times do
- #     sample :drum_heavy_kick, rate: 1, amp: 3
-      sleep 0.5
-    end
+  with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.125 / 1 do
+    sample :drum_heavy_kick, rate: 1, amp: 5
+    sample :elec_plip, rate: 2, amp: 3 if rand < 0.5
+    sleep 0.25
   end
-
-  with_fx :reverb, mix: rand do
-    with_fx :bitcrusher, bits: 5, sample_rate: 10000, phase: 0.125 do
-      sample :elec_pop, rate: 0.2, amp: 3 if rand < 0.5
-      sleep 0.25
-    end
+#  sample :ambi_lunar_land,  rate: 1.0/5
+  with_fx :echo, decay: 1, phase: 0.25, mix: 0.5 do
+    sample :elec_filt_snare, rate: 16
   end
-#      sample :ambi_lunar_land,  rate: 5.0/5
-  #with_fx :echo, decay: 2, phase: 0.125, mix: 0.8 do
-    #sample :elec_filt_snare, rate: 10
-    #   sample :elec_bell
-#  end
   sleep 0.25
 end
 
 define :synths do
-  with_fx :echo, phase: 0.5, room: 0,mix: 0.5, wave: 0, invert_wave: 0 do
+  with_fx :none, phase: 1 do
     with_fx :none, sample_rate: 10000, bits: 8 do
-      use_synth :tb303
+      use_synth :fm
       use_transpose 12
-      use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
-    #  play 33
-      sleep 0.125
-
-
-
-
-
+      use_synth_defaults amp: 1, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
+      play 33
+      sleep 0.25
+      use_synth :saw
+      play chord(33 + 12, :minor), amp: 0.2, release: [1, 2, 4].choose, cutoff: 80 if rand < 0.25
+      sleep 0.25
     end
   end
 end
