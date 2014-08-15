@@ -14,7 +14,7 @@ define :drums do
       sleep 0.5
     end
   end
-      sample :ambi_lunar_land,  rate: 3.0/5
+      sample :ambi_lunar_land,  rate: 2.0/5
   with_fx :echo, decay: 2, phase: 0.125, mix: 0.8 do
    # sample :elec_filt_snare, rate: 16
     #   sample :elec_bell
