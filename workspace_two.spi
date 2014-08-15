@@ -3,7 +3,7 @@ use_bpm 60
 define :drums do
   with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.125 / 1 do
 
-      2.times do
+      1.times do
         sample :drum_heavy_kick, rate: 2, amp: 15
         sample :elec_blip, rate: 2, amp: 3 if rand < 0.5
         sleep 0.25 
@@ -11,10 +11,10 @@ define :drums do
 
   end
 #    sample :ambi_glass_hum,  rate: 1
-#  with_fx :echo, decay: 2, phase: 0.125, mix: 0.5 do
+  with_fx :echo, decay: 2, phase: 0.125, mix: 0.5 do
     sample :elec_filt_snare, rate: 8, amp: 2
     sample :elec_pop
-#  end
+  end
   sleep 0.25
 end
 
