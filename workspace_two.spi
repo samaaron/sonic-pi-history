@@ -3,7 +3,7 @@ use_bpm 60
 define :drums do
   in_thread do
     2.times do
-      sample :drum_heavy_kick, rate: 1, amp: 3
+ #     sample :drum_heavy_kick, rate: 1, amp: 3
       sleep 0.5
     end
   end
