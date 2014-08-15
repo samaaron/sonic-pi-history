@@ -22,7 +22,7 @@ define :synths do
       play 33
       sleep 0.125
       use_synth :dsaw
-      n = 2
+      n = 1
       in_thread do
         n.times do
           play chord(33 + 12, :minor).choose, attack: 0, release: 0.3, amp: 0.5, cutoff: rrand(60, 120)
