@@ -1,7 +1,7 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
-  with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.125 / 1 do
+  with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.25 / 1 do
     sample :drum_heavy_kick, rate: 1, amp: 19
     sample :elec_plip, rate: 2, amp: 3 if rand < 0.5
     sleep 0.25
