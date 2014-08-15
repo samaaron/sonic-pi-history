@@ -2,11 +2,11 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
-with_fx :reverb do
-  sample :drum_heavy_kick, rate: rand
-  sleep 0.125
-  sample :drum_heavy_kick
-  sleep 0.125
+  with_fx :bitcrusher do
+    sample :drum_heavy_kick, rate: rand
+    sleep 0.125
+    sample :drum_heavy_kick
+    sleep 0.125
   end
 end
 
@@ -21,4 +21,3 @@ end
 
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
- 
