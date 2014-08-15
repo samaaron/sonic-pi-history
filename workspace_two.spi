@@ -3,7 +3,7 @@ use_bpm 60
 define :drums do
   with_fx :bitcrusher, bits: 12, sample_rate: 8000, phase: 0.25 / 1 do
     sample :drum_heavy_kick, rate: 1, amp: 3
-    sample :elec_bong, rate: 1.8, amp: 3 if rand < 0.5
+    sample :elec_bong, rate: 1.4, amp: 3 if rand < 0.5
     sleep 0.25
   end
 # sample :ambi_lunar_land,  rate: 1.0/5
