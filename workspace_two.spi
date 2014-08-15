@@ -10,7 +10,7 @@ define :drums do
       end
 
   end
-  #  sample :ambi_lunar_land,  rate: 5.0/5
+    sample :ambi_lunar_land,  rate: 5.0/5
   with_fx :echo, decay: 2, phase: 0.125, mix: 0.9 do
     sample :elec_filt_snare, rate: 8
   end
