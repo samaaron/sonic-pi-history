@@ -1,3 +1,126 @@
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+
+
+
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+
+#````
+#define :testing do
+#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+#  control p, amp: 1                  # then immediately shift it up to audible 
+#  sleep 2
+#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+#  control q,amp: 0.01                # Then immediately shift it to silent 
+#                                     # (you should hear a tiny click as this happens)
+#  sleep 2
+#end
+# 
+#loop{testing}
+#````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 use_synth :dsaw
 sd = sample_duration :loop_amen, rate: 1.5
 
