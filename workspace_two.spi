@@ -3,7 +3,7 @@ use_bpm 60
 define :drums do
   with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.125 / 1 do
     sample :drum_heavy_kick, rate: 1, amp: 15
-    sample :elec_pop, rate: 2, amp: 3 if rand < 0.5
+#    sample :elec_pop, rate: 2, amp: 3 if rand < 0.5
     sleep 0.25
   end
 #    sample :ambi_lunar_land,  rate: 1.0/5
@@ -27,7 +27,7 @@ define :synths do
 
       in_thread do
         n.times do
-          play chord([33, 33 + 12].choose, :m).choose, attack: 0, release: 0.3, amp: 0.7, cutoff: rrand(90, 120)
+      #    play chord([33, 33 + 12].choose, :m).choose, attack: 0, release: 0.3, amp: 0.7, cutoff: rrand(90, 120)
           sleep 0.125 / n
         end
       end
