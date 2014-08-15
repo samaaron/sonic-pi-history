@@ -3,7 +3,7 @@ use_bpm 60
 define :drums do
   with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.25, wave: 2 do
   #  sample :drum_heavy_kick, rate: 1, amp: 19
-    sample :elec_chime, rate: [0.25, 0.5, 1].choose, amp: 1 if rand < 0.5
+    sample :elec_chime, rate: [0.25, 0.5, 1].choose, amp: 0.6 if rand < 0.5
     sleep 0.25
   end
   sample :drum_heavy_kick, amp: 1
