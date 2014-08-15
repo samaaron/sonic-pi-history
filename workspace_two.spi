@@ -22,7 +22,7 @@ define :synths do
       play 33
       sleep 0.25
       use_synth :zawa
-      play chord(33 + 12, :minor).choose, amp: 1, release: 2, cutoff: 80 if rand < 0.125
+      play chord(33 + 12, :minor).choose, amp: 1, release: 2, cutoff: 80 if rand < 0.25
       sleep 0.25
     end
   end
