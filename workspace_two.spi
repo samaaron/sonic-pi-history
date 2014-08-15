@@ -22,7 +22,7 @@ define :synths do
       use_synth :tb303
       use_transpose 12
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.15, cutoff: rrand(30, 120), pulse_width: 0.2, mod_phase: 0.25
-      play 38
+      play 33
       sleep 0.125
       use_synth :dsaw
       n = 1
