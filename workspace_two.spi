@@ -14,7 +14,7 @@ define :drums do
   end
   #    sample :ambi_glass_hum,  rate: 1
 
-  with_fx :wobble, decay: 2, phase: 0.25, mix: 0.5, wave: 1 do
+  with_fx :wobble, decay: 2, phase: 0.125, mix: 0.5, wave: 1 do
     sample :elec_filt_snare, rate: 8, amp: 2
     sample :elec_pop
   end
