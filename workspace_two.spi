@@ -24,7 +24,7 @@ define :synths do
       #play 33
       sleep 0.125
       use_synth :saw
-      play chord(33 + 12, :minor).choose, attack: 0, amp: 0.2, release: 0.2, cutoff: rrand(60, 120)
+      play chord(33 + 12, :minor).choose, attack: 0, amp: 0.2, release: 0.2, cutoff: rrand(70, 120)
       sleep 0.125
     end
   end
