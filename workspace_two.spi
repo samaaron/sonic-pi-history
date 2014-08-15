@@ -1,11 +1,11 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
-in_thread do
-2.times do
-  sample :drum_heavy_kick, rate: 1, amp: 3
-  sleep 0.25
-  end
+  in_thread do
+    2.times do
+      sample :drum_heavy_kick, rate: 1, amp: 3
+      sleep 0.5
+    end
   end
 
   with_fx :reverb, mix: rand do
@@ -17,7 +17,7 @@ in_thread do
   #    sample :ambi_lunar_land,  rate: 1.0/5
   with_fx :echo, decay: 2, phase: 0.125, mix: 0.8 do
     sample :elec_filt_snare, rate: 16
- #   sample :elec_bell
+    #   sample :elec_bell
   end
   sleep 0.5
 end
@@ -30,10 +30,10 @@ define :synths do
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.125, cutoff: rrand(30, 120), pulse_width: 0.2, mod_phase: 0.25
       play 33
       sleep 0.125
-    
-    
 
-    
+
+
+
 
     end
   end
