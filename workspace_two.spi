@@ -20,7 +20,7 @@ define :synths do
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
       play chord(33, :minor).choose, amp: 3
       sleep 0.125
-      play chord(33 + 12, :minor).choose, amp: 3
+      play chord(33 + 24, :minor).choose, amp: 3
       sleep 0.125
     end
   end
