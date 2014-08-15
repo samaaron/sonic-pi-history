@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
   with_fx :bitcrusher do
-    sample :drum_heavy_kick, rate: rrand(0.5, 2)
+    sample :drum_heavy_kick, rate: rrand(0.5, 5)
     sleep 0.125
     sample :drum_heavy_kick
     sleep 0.125
