@@ -29,7 +29,7 @@ define :synths do
       use_synth_defaults amp: 1, mod_range: 14, attack: 0, release: 0.25, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
 
       sleep 0.125
-      play 33 + 12
+#      play 33 + 12
       play 33
 
       use_synth :tb303
