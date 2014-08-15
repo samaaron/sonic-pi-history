@@ -1,4 +1,4 @@
-use_bpm 120
+use_bpm 60
 with_fx :reverb do
   in_thread do
     loop do
