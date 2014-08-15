@@ -22,7 +22,7 @@ define :synths do
       #play 33
       sleep 0.25
       use_synth :dsaw
-      play chord(33 + 12, :minor), detune: 12, amp: 0.2, release: [1, 2, 4, 8].choose, cutoff: 90 if rand < 0.25
+      play chord(33 + 12, :minor).choose, detune: 12, amp: 0.2, release: [1, 2, 4, 8].choose, cutoff: 90 if rand < 0.25
       sleep 0.25
     end
   end
