@@ -13,6 +13,7 @@ define :drums do
 #    sample :ambi_glass_hum,  rate: 0.5
   with_fx :echo, decay: 2, phase: 0.125, mix: 0.5 do
     sample :elec_filt_snare, rate: 8, amp: 2
+    sample :elec_pop
   end
   sleep 0.25
 end
