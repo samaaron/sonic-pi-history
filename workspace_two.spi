@@ -1,7 +1,7 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 define :drums do
-  with_fx :reverb do
+  with_fx :reverb, mix: rand do
     with_fx :bitcrusher, bits: 3, sample_rate: 10000, phase: 0.125 do
       sample :drum_heavy_kick, rate: 1, amp: 15
       sample :elec_pop, rate: 1, amp: 3 if rand < 0.5
