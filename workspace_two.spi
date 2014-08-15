@@ -21,7 +21,7 @@ define :synths do
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
       play 33
       sleep 0.25
-      use_synth :dsaw
+      use_synth :saw
       play chord(33 + 12, :minor), amp: 0.8, release: [1, 2, 4].choose, cutoff: 80 if rand < 0.25
       sleep 0.25
     end
