@@ -1,5 +1,5 @@
 with_fx :reverb do
   #sample "/Users/sam/Desktop/chris.wav", start: 0.3, rate: 1
-  sample :bass_thick_c, rate: 1
+  sample :bass_thick_c, rate: 1.2
   sample :drum_heavy_kick
   end
