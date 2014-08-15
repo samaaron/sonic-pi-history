@@ -11,7 +11,7 @@ with_fx :reverb do
   end
 end
 
-with_fx :wobble, phase: 1 do
+with_fx :wobble, phase: 0.5 do
   with_fx :echo, mix: 0.6 do
     loop do
       sample :drum_heavy_kick
