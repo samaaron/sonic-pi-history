@@ -13,7 +13,7 @@ define :drums do
 end
 
 define :synths do
-  with_fx :wobble, phase: 1 do
+  with_fx :none, phase: 1 do
     with_fx :none, sample_rate: 2000, bits: 7 do
       use_synth :tb303
       use_transpose 12
