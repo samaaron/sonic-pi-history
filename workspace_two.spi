@@ -16,7 +16,7 @@ define :synths do
   with_fx :wobble, phase: 1 do
     with_fx :bitcrusher, sample_rate: 5000, bits: 16 do
       use_synth :fm
-      use_transpose 12
+      use_transpose 0
       use_synth_defaults amp: 1, mod_range: 14, attack: 0.03, release: 0.36, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
       play 33, amp: 3
       sleep 0.5
