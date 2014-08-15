@@ -1,5 +1,4 @@
 with_fx :reverb do
-
   in_thread do
     loop do
       r = [0.5, 1.0/3, 3.0/5].choose
