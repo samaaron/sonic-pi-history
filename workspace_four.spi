@@ -3,11 +3,7 @@ with_fx :reverb do
   with_fx :echo, phase: 2, wave: 2 do
     synth :sound_in, amp: 8
   end
-  
-  loop do
-  sample :drum_heavy_kick
-  sleep 1
-  end
+
 end
 
 
