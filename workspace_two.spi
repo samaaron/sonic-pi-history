@@ -7,7 +7,7 @@ define :play_bb do |n|
       sample :elec_snare, rate: 16, amp: 0.8
     end
   end
-  with_fx :echo, phase: sd / 6, mix: 0.1 do
+  with_fx :echo, phase: sd / 6, mix: 0.05 do
     with_fx :wobble, phase: sd / 16 do
 
       sample :drum_heavy_kick, rate: 1
