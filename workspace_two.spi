@@ -2,13 +2,14 @@
 load_sample :drum_heavy_kick
 
 define :drums do
+wait :tick
   sample :drum_heavy_kick, rate: 0.85
   sleep 0.5
   sample :drum_heavy_kick
-  sleep 0.5
 end
 
 define :synths do
+  sync :tick
   use_synth :mod_pulse
   use_synth_defaults amp: 1, mod_range: 15, attack: 0.03, release: 0.6, cutoff: 80, pulse_width: 0.2, mod_phase: 0.25
   play 30
