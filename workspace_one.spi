@@ -1,17 +1,19 @@
-with_fx :reverb do
-loop do
-  with_synth :dsaw do
-    with_fx(:slicer, phase: [0.25,0.125].choose) do
-      with_fx(:reverb, room: 0.5, mix: 0.3) do
-        n1 = chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose
-        n2 = chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose
 
-        p = play n1, amp: 2, release: rrand(6, 9), note_slide: 4, cutoff: 30, cutoff_slide: 4, detune: rrand(0, 0.2)
-        control p, note: n2, cutoff: rrand(80, 120)
-      end
-    end
-  end
+sd = sample_duration :loop_compus
 
-  sleep rrand(5, 8)
+define :loopr do
+  sample :loop_compus, rate: [0.5, 1, 1, 1, 1, 2].choose if rand < 0.9
+  sleep sd
 end
- end
+
+define :bass do
+  sample :bass_voxy_c, amp: rrand(0.1, 0.2), rate: [0.5, 0.5, 1, 1,2,4].choose if rand < 0.25
+  use_synth :mod_pulse
+  play :C1, mod_range: 12, amp: rrand(0.5, 1), mod_phase: [1.0/8, 1.0/16, 1.0/32].choose / sd, release: 1, cutoff: rrand(50, 90)
+  play :C2, mod_range: [24, 36, 34].choose, amp: 0.35, mod_phase: sd/16, release: 2, cutoff: 60, pulse_width: rand
+  sleep sd / 4
+end
+
+in_thread(name: :t1){loop{loopr}}
+in_thread(name: :t2){loop{bass}}
+ 
