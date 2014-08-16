@@ -1,21 +1,15 @@
 
-sd = sample_duration :loop_compus
+use_synth :tb303
+use_bpm 45
 
-define :loopr do
-  sample :loop_compus, rate: [0.5, 1, 1, 1, 1, 2].choose if rand < 0.9
-  sleep sd
+define :foobar do
+ play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5, attack: 0, release: 2
+ sleep [0.25, 0.5, 0.5, 0.5, 1, 1].choose
 end
 
-define :bass do
-  with_fx :echo, phase: 0.5 do
-    sample :bass_voxy_c, amp: rrand(0.1, 0.2), rate: [0.5, 0.5, 1, 1,2,4].choose if rand < 0.25
-    use_synth :mod_pulse
-
-    play :C1, mod_range: 12, amp: rrand(0.5, 1), mod_phase: [8, 16, 32].choose / sd, release: 0.5, cutoff: rrand(50, 90)
-    play note(:C2) + -12, mod_range: [24, 36, 34].choose, amp: 0.4, mod_phase: sd/16, release: 1, cutoff: 120, pulse_width: rand
+with_fx(:echo, delay: 0.5, decay: 4) do
+  loop do
+    foobar
   end
-  sleep sd * 0.125
 end
-
-in_thread(name: :t1){loop{loopr}}
-in_thread(name: :t2){loop{bass}}
+ 
