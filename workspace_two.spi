@@ -8,7 +8,7 @@ define :play_bb do |n|
 
     sample :elec_blip2, amp: 0.3, rate: [1, 2, 4, 8, 0.5].choose
     with_fx :lpf, cutoff: rrand(50, 70) do
-      sample :elec_twip, rate: 0.3, amp: 0.5
+      sample :elec_twip, rate: 0.3, amp: 0.4
       sample :elec_snare, rate: 16, amp: 0.8
     end
   end
