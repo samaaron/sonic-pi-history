@@ -1,5 +1,8 @@
 
+
+
 define :play_bb do |n|
+  sample :elec_twip
   sd = sample_duration :loop_amen
   with_fx :echo, phase: sd / 8, mix: 0.6 do
     sample :elec_blip2, amp: 0.3, rate: [1, 2, 4, 8, 0.5].choose
