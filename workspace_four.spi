@@ -1,11 +1,13 @@
 use_bpm 60
-with_fx :reverb do
-  with_fx :echo, phase: 2, wave: 2 do
-    synth :sound_in, amp: 3
+in_thread(name: :c9) do
+  with_fx :reverb do
+    with_fx :echo, phase: 2, wave: 2 do
+      synth :sound_in, amp: 3
+    end
+
   end
 
 end
-
 
 load_sample :drum_heavy_kick
 
@@ -27,4 +29,3 @@ end
 
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
- 
