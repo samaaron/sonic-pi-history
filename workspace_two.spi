@@ -7,8 +7,8 @@ define :play_bb do |n|
       sample :elec_snare, rate: 16, amp: 0.8
     end
   end
-  with_fx :wobble do
-  sample :drum_heavy_kick
+  with_fx :wobble, phase: 0.1 do
+   sample :drum_heavy_kick
   end
 
 #  sample :ambi_drone, amp: 0.2, rate: 0.5
