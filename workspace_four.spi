@@ -2,7 +2,7 @@ use_bpm 60
 in_thread(name: :c9) do
   with_fx :reverb do
     with_fx :echo, phase: 2, wave: 2 do
-      synth :sound_in, amp: 3
+      synth :sound_in, amp: 0.5
     end
 
   end
