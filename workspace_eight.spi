@@ -12,7 +12,7 @@ define :bass do
     use_synth :mod_dsaw
 
     play :C1, mod_range: 12, amp: rrand(0.5, 1), mod_phase: [8, 16, 32].choose / sd, release: 1, cutoff: rrand(50, 90)
-    play note(:C2) + 12, mod_range: [24, 36, 34].choose, amp: 0.4, mod_phase: sd/16, release: 4, cutoff: 120, pulse_width: rand
+    play note(:C2) + 0, mod_range: [24, 36, 34].choose, amp: 0.4, mod_phase: sd/16, release: 4, cutoff: 120, pulse_width: rand
   end
   sleep sd / 2
 end
