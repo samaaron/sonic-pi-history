@@ -1,1 +1,1 @@
-synth :sound_in, amp: 4
+synth :sound_in, amp: 8
