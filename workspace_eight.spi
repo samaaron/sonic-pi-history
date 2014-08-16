@@ -159,7 +159,7 @@ with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, 
 
 
     with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
-      play chord(:e1, :minor).choose, attack: 0, release: sd
+     # play chord(:e1, :minor).choose, attack: 0, release: sd
     end
 
     sample :loop_amen, rate: 1.5
