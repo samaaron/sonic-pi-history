@@ -1,1 +1,2 @@
-p = synth :sound_in, input: 1
+#p = synth :sound_in, input: 1
+synth :beep
