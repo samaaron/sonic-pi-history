@@ -1,1 +1,1 @@
-p = synth :sound_in
+p = synth :sound_in, input: 1
