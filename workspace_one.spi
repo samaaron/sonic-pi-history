@@ -1,5 +1,7 @@
-with_fx :reverb do
-  with_fx :echo do
-    synth :sound_in
+with_fx :lpf, cutoff: 60 do
+  with_fx :reverb do
+    with_fx :echo do
+      synth :sound_in
+    end
   end
 end
