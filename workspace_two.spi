@@ -1,18 +1,17 @@
 
 define :play_bb do |n|
-sd = sample_duration :loop_amen
-with_fx :echo, phase:  do
-sample :elec_snare, rate: s / 16
-end
+  sd = sample_duration :loop_amen
+  with_fx :echo, phase: sd / 8 do
+    sample :elec_snare, rate: 16
+      end
   sample :drum_heavy_kick
   sample :bass_dnb_f, rate: 1, amp: 0.25
   sample :ambi_drone, rate: [0.25, 0.5, 0.125, 1].choose, amp: 0.25 if rand < 0.125
   sample :ambi_lunar_land, rate: [0.5, 0.125, 1, -1, -0.5].choose, amp: 0.25 if rand < 0.125
-#  sample :loop_amen, attack: 0, release: 0.05, start: 1 - (1.0 / n), rate: [1,1,1,1,1,1,-1].choose
+  #  sample :loop_amen, attack: 0, release: 0.05, start: 1 - (1.0 / n), rate: [1,1,1,1,1,1,-1].choose
   sleep sample_duration(:loop_amen) / 4
 end
 
 in_thread(name: :beats) do
   loop {play_bb([1,2,4,8,16].choose)}
 end
- 
