@@ -1,2 +1,2 @@
-p = synth :beep, input: 0
+p = synth "sonic-pi-sound_in", input: 0
 #synth :beep
