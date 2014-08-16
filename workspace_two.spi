@@ -8,10 +8,10 @@ define :play_bb do |n|
     end
   end
   with_fx :echo, phase: sd / 8, mix: 0.04 do
-    with_fx :wobble, phase: sd / 16 do
+
 
       sample :drum_heavy_kick, rate: 1
-    end
+
   end
 
   #  sample :ambi_drone, amp: 0.2, rate: 0.5
