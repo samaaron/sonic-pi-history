@@ -27,7 +27,7 @@ define :synths do
       use_synth :prophet
       4.times do
         play chord(30 + 12, :m7).choose, amp: 1, release: 0.3, attack: 0
-        sleep 0.125
+        sleep 0.5
 end
     end
   end
