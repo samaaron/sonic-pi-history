@@ -1,45 +1,31 @@
-use_synth :dsaw
-sd = sample_duration :loop_amen, rate: 1.5
+load_sample :drum_heavy_kick
+use_bpm 60
+define :drums do
+  with_fx :wobble, bits: 12, sample_rate: 10000, phase: 0.125 / 1 do
+    sample :drum_heavy_kick, rate: 1, amp: 19
+    sample :elec_plip, rate: 2, amp: 3 if rand < 0.5
+    sleep 0.25
+  end
+  sample :ambi_,  rate: 0.5/5
+  with_fx :echo, decay: 1, phase: 0.125, mix: 0.5 do
+    sample :elec_filt_snare, rate: 16
+  end
+  sleep 0.25
+end
 
-with_fx :reverb do
-  in_thread do
-    loop do
-      a = [1, 4, 2].choose
-      8.times do
-        sample :elec_beep, rate: 0.75 * a, amp: 0.7
-        sleep sd / 8
-      end
-      sleep sd
+define :synths do
+  with_fx :none, phase: 1 do
+    with_fx :none, sample_rate: 10000, bits: 8 do
+      use_synth :fm
+      use_transpose 12
+      use_synth_defaults amp: 1, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(60, 120), pulse_width: 0.2, mod_phase: 0.25
+      play 33
+      sleep 0.25
+#        play chord(33 + 24, :minor).choose, amp: 1
+      sleep 0.25
     end
   end
 end
 
-
-
-in_thread do
-    loop do
-      use_synth :tb303
-      n = [5, 4, 8, 16].choose
-      n.times do
-        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120), amp: 0.5
-        sleep sd / n
-      end
-    end
-  end
-
-with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
-  define :wbb do
-    wb
-  end
-  loop do
-    use_synth :dsaw
-
-
-    with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
-      play chord(:e1, :minor).choose, attack: 0, release: sd
-    end
-
-    sample :loop_amen, rate: 1.5
-    sleep sd
-  end
-end
+in_thread(name: :drums){loop{drums}}
+in_thread(name: :synths){loop{synths}}
