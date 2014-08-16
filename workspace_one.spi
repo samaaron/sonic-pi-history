@@ -1,4 +1,4 @@
-with_fx :reverb do
+with_fx :wobble do
   synth :sound_in
 end
   #synth :beep
