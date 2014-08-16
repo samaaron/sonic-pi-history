@@ -1,168 +1,19 @@
-#````
-#define :testing do
-#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
-#  control p, amp: 1                  # then immediately shift it up to audible 
-#  sleep 2
-#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
-#  control q,amp: 0.01                # Then immediately shift it to silent 
-#                                     # (you should hear a tiny click as this happens)
-#  sleep 2
-#end
-# 
-#loop{testing}
-#````
 
+sd = sample_duration :loop_compus
 
-
-
-
-
-
-#````
-#define :testing do
-#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
-#  control p, amp: 1                  # then immediately shift it up to audible 
-#  sleep 2
-#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
-#  control q,amp: 0.01                # Then immediately shift it to silent 
-#                                     # (you should hear a tiny click as this happens)
-#  sleep 2
-#end
-# 
-#loop{testing}
-#````
-
-
-
-#````
-#define :testing do
-#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
-#  control p, amp: 1                  # then immediately shift it up to audible 
-#  sleep 2
-#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
-#  control q,amp: 0.01                # Then immediately shift it to silent 
-#                                     # (you should hear a tiny click as this happens)
-#  sleep 2
-#end
-# 
-#loop{testing}
-#````
-
-#````
-#define :testing do
-#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
-#  control p, amp: 1                  # then immediately shift it up to audible 
-#  sleep 2
-#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
-#  control q,amp: 0.01                # Then immediately shift it to silent 
-#                                     # (you should hear a tiny click as this happens)
-#  sleep 2
-#end
-# 
-#loop{testing}
-#````
-
-
-
-
-
-#````
-#define :testing do
-#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
-#  control p, amp: 1                  # then immediately shift it up to audible 
-#  sleep 2
-#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
-#  control q,amp: 0.01                # Then immediately shift it to silent 
-#                                     # (you should hear a tiny click as this happens)
-#  sleep 2
-#end
-# 
-#loop{testing}
-#````
-
-
-
-
-#````
-#define :testing do
-#  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
-#  control p, amp: 1                  # then immediately shift it up to audible 
-#  sleep 2
-#  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
-#  control q,amp: 0.01                # Then immediately shift it to silent 
-#                                     # (you should hear a tiny click as this happens)
-#  sleep 2
-#end
-# 
-#loop{testing}
-#````
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-use_synth :dsaw
-sd = sample_duration :loop_amen, rate: 1.5
-
-with_fx :reverb do
-  in_thread do
-    loop do
-      a = [1, 4, 2].choose
-      8.times do
-        sample :elec_beep, rate: 0.75 * a, amp: 0.7
-        sleep sd / 8
-      end
-      sleep sd
-    end
-  end
+define :loopr do
+  sample :loop_compus, rate: [0.5, 1, 1, 1, 1, 2].choose if rand < 0.9
+  sleep sd
 end
 
-
-
-in_thread do
-    loop do
-      use_synth :tb303
-      n = [5, 4, 8, 16].choose
-      n.times do
-        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120), amp: 0.5
-        sleep sd / n
-      end
-    end
-  end
-
-with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
-  define :wbb do
-    wb
-  end
-  loop do
-    use_synth :dsaw
-
-
-    with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
-     # play chord(:e1, :minor).choose, attack: 0, release: sd
-    end
-
-    sample :loop_amen, rate: 1.5
-    sleep sd
-  end
+define :bass do
+  sample :bass_voxy_c, amp: rrand(0.1, 0.2), rate: [0.5, 0.5, 1, 1,2,4].choose if rand < 0.25
+  use_synth :mod_pulse
+  play :C1, mod_range: 12, amp: rrand(0.5, 1), mod_phase: [1.0/8, 1.0/16, 1.0/32].choose / sd, release: 1, cutoff: rrand(50, 90)
+  play :C2, mod_range: [24, 36, 34].choose, amp: 0.35, mod_phase: sd/16, release: 2, cutoff: 60, pulse_width: rand
+  sleep sd / 4
 end
+
+in_thread(name: :t1){loop{loopr}}
+in_thread(name: :t2){loop{bass}}
+ 
