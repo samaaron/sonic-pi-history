@@ -1,0 +1,15 @@
+use_synth :dsaw
+
+define :testing do
+  p=play 60,amp: 0.01, sustain: 2    # Play a note at almost 0 volume
+sleep 1
+  control p, amp: 1                  # then immediately shift it up to audible 
+  sleep 2
+  q=play 72,amp: 1,sustain: 2        # Play a note at normal volume
+  sleep 0.5
+  control q,amp: 1               # Then immediately shift it to silent 
+                                     # (you should hear a tiny click as this happens)
+  sleep 2
+end
+
+testing
