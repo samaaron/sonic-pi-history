@@ -1,7 +1,8 @@
 
 define :play_bb do |n|
-with_fx :echo do
-sample :elec_snare, rate: 16
+sd = sample_duration :loop_amen
+with_fx :echo, phase:  do
+sample :elec_snare, rate: s / 16
 end
   sample :drum_heavy_kick
   sample :bass_dnb_f, rate: 1, amp: 0.25
