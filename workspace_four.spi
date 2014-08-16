@@ -1,4 +1,4 @@
-with_bpm 100
+use_bpm 100
 with_fx :reverb do
   with_fx :echo, phase: 0.25, wave: 2 do
     synth :sound_in, amp: 8
