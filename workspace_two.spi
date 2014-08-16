@@ -25,7 +25,7 @@ define :synths do
       play 33
 #      sleep 0.125
       use_synth :tri
-      5.times do
+      10.times do
         play chord(33 + 0, :minor).choose, amp: 1, release: 0.0, attack: 0.3
         sleep 0.33333
 end
