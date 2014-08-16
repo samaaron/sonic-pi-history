@@ -1,2 +1,4 @@
-p = synth :sound_in
-#synth :beep
+with_fx :reverb do
+  synth :sound_in
+end
+  #synth :beep
