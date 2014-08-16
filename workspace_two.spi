@@ -2,7 +2,7 @@
 define :play_bb do |n|
   sd = sample_duration :loop_amen
   with_fx :echo, phase: sd / 16, mix: 0.3 do
-    with_fx :lpf, cutoff: 100 do
+    with_fx :lpf, cutoff: 120 do
       sample :elec_snare, rate: 16, amp: 0.8
     end
   end
