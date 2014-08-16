@@ -1,4 +1,4 @@
-with_fx :lpf, cutoff: 50, amp: 5 do
+with_fx :lpf, cutoff: 50, amp: 1 do
   with_fx :reverb do
     with_fx :echo do
       synth :sound_in
