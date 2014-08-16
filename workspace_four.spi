@@ -12,10 +12,12 @@ end
 load_sample :drum_heavy_kick
 
 define :drums do
-  sample :drum_heavy_kick, rate: 0.75
-  sleep 0.5
-  sample :drum_heavy_kick
-  sleep 0.5
+  with_fx :echo do
+    sample :drum_heavy_kick, rate: 0.75
+    sleep 0.5
+    sample :drum_heavy_kick
+    sleep 0.5
+  end
 end
 
 define :synths do
