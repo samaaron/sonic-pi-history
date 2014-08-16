@@ -26,7 +26,7 @@ define :synths do
 #      sleep 0.125
       use_synth :tri
       4.times do
-        play chord(30 + 0, :m7).choose, amp: 1, release: 0.0, attack: 0.3
+        play chord(30 + 12, :m7).choose, amp: 1, release: 0.0, attack: 0.3
         sleep 0.25
 end
     end
