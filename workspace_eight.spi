@@ -9,8 +9,10 @@ define :foobar do
   end
 end
 
+in_thread(name: :sam) do
 with_fx(:echo, delay: 0.5, decay: 4) do
   loop do
     foobar
   end
+end
 end
