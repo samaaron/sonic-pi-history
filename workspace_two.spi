@@ -7,6 +7,7 @@ define :play_bb do |n|
   sleep sample_duration(:loop_amen) / n
 end
 
-
-loop {play_bb([1,2,4,8,16].choose)}
+in_thread(name: :beats) do
+  loop {play_bb([1,2,4,8,16].choose)}
+end
  
