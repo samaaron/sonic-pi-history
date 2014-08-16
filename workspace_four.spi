@@ -1,5 +1,5 @@
 with_fx :reverb do
-  with_fx :wobble, phase: 1, wave: 2 do
+  with_fx :wobble, phase: 2, wave: 2 do
     synth :sound_in, amp: 8
   end
   
