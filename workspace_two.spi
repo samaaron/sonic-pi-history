@@ -1,4 +1,4 @@
-synth :sound_in, amp: 2
+#synth :sound_in, amp: 2
 
 use_synth :dsaw
 play 50
