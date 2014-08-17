@@ -12,3 +12,5 @@ defonce :sis, override: false do
     end
   end
 end
+
+control r, room: 1
