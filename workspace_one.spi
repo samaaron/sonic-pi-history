@@ -8,5 +8,5 @@ end
 
 loop do
   sync :tick
-  sample :heavy_drum
+  sample :drum_bass_hard
   end
