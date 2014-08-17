@@ -2,4 +2,4 @@ defonce :sis do
   synth :sound_in, amp: 2
 end
 
-control sis, amp: 4
+control sis, amp: 1
