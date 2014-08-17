@@ -1,5 +1,14 @@
-defonce :sis do
-  synth :sound_in, amp: 2
-end
+defonce :sis, override: true do
+  with_fx :reverb do |r|
+    with_fx :echo do |e|
+      synth :sound_in, amp: 2
+      define :rev do
+        r
+      end
 
-control sis, amp: 6
+      define :ech do
+        e
+      end
+    end
+  end
+end
