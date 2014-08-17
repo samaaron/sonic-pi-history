@@ -9,4 +9,4 @@ end
 loop do
   sync :tick
   sample :drum_bass_hard
-  end
+end
