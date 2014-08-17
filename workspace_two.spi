@@ -1,5 +1,8 @@
 #synth :sound_in, amp: 2
 
+in_thread do
+use_bpm 50
+
 use_synth :dsaw
 play 50
 sleep 0.25
@@ -7,3 +10,4 @@ use_synth :fm
 play 73
 sleep 0.5
 play 45
+end
