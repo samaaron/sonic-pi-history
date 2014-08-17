@@ -17,4 +17,4 @@ end
 control rev, room: 0.2, mix: 0.1, mix_slide: 0.2
 
 
-control ech, phase: 0.125
+control ech, phase: 0.125 / 2
