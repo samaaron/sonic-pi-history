@@ -14,3 +14,4 @@ defonce :sis, override: false do
 end
 
 control rev, room: 0.4
+control ech, phase: 0.25
