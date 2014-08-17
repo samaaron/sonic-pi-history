@@ -2,3 +2,8 @@
 
 use_synth :dsaw
 play 50
+
+use_synth :beep
+play 73
+sleep 45
+play 45
