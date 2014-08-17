@@ -1,3 +1,3 @@
-#synth :sound_in, amp: 2
-
-play 50
+defonce :sis do
+  synth :sound_in, amp: 2
+end
