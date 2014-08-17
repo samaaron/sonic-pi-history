@@ -14,7 +14,7 @@ defonce :sis, override: false do
 end
 
 
-control rev, room: 0.8, mix: 0.8, mix_slide: 0.9
+control rev, room: 0.8, mix: 0.9, mix_slide: 0.9
 
 
 control ech, phase: 1
