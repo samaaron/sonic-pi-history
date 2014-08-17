@@ -13,4 +13,4 @@ defonce :sis, override: false do
   end
 end
 
-control r, room: 1
+control rev, room: 1
