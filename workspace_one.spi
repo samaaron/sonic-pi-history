@@ -18,3 +18,7 @@ control rev, room: 0.8, mix: 0.5, mix_slide: 0.2
 
 
 control ech, phase: 0.25
+
+define :foo do
+
+end
