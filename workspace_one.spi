@@ -1,12 +1,1 @@
-in_thread do
-  loop do
-    cue :tick
-    sleep 1
-  end
-end
-
-
-loop do
-  sync :tick
-  sample :drum_bass_hard
-end
+synth :sound_in, amp: 2
