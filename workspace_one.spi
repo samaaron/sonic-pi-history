@@ -1,4 +1,4 @@
-defonce :sis, override: true do
+defonce :sis, override: false do
   with_fx :reverb do |r|
     with_fx :echo do |e|
       synth :sound_in, amp: 2
