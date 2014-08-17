@@ -1,23 +1,12 @@
-
-sd = sample_duration :loop_compus
-
-
-define :loopr do
-  with_fx :wobble, phase: sd / 4 do
-    sample :loop_compus, rate: [0.5, 1, 1, 1, 1].choose
-    sleep sd
+in_thread do
+  loop do
+    cue :tick
+    sleep 1
   end
 end
 
-define :bass do
 
-#    sample :bass_voxy_c, amp: rrand(0.1, 0.2), rate: [0.5, 0.5, 1, 1,2,4].choose if rand < 0.25
-    use_synth :mod_fm
-    play :C1, mod_range: 12, attack: 0, release: 0.2
- #   play :C2, mod_range: [24, 36, 34].choose, amp: 0.35, mod_phase: sd/16, release: 2, cutoff: 60, pulse_width: rand
-    sleep sd / 16
-
-end
-
-in_thread(name: :t1){loop{loopr}}
-in_thread(name: :t2){loop{bass}}
+loop do
+  sync :tick
+  sample :heavy_drum
+  end
