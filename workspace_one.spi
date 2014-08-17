@@ -1,3 +1,3 @@
-defonce :sis, override: true do
+defonce :sis do
   synth :sound_in, amp: 2
 end
