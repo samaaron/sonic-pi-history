@@ -13,5 +13,5 @@ defonce :sis, override: false do
   end
 end
 
-control rev, room: 0.3
+control rev, room: 0.2
 control ech, phase: 0.125
