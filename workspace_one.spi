@@ -17,4 +17,4 @@ end
 control rev, room: 0.6, mix: 0.2
 
 
-control ech, phase: 0.5
+control ech, phase: 1
