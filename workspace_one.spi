@@ -1,9 +1,12 @@
 
 sd = sample_duration :loop_compus
 
+
 define :loopr do
+with_fx :pan do
   sample :loop_compus, rate: [0.5, 1, 1, 1, 1, 2].choose if rand < 0.9
   sleep sd
+  end
 end
 
 define :bass do
