@@ -2,7 +2,7 @@
 
 use_synth :dsaw
 play 50
-
+sleep 0.25
 use_synth :beep
 play 73
 sleep 45
