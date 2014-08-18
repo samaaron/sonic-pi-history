@@ -10,7 +10,7 @@ in_thread(name: :c9) do
 end
 
 define  :drums do
-  cue :tick
+  
   4.times do
     drums2 0.125
   end
