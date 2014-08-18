@@ -10,7 +10,7 @@ in_thread(name: :c9) do
 end
 
 define  :drums do
-  with_fx :lpf, cutoff: 70, amp: 3 do
+  with_fx :lpf, cutoff: 70, amp: 4 do
     with_fx :bitcrusher,bits: 7, sample_rate: 3000, phase: 0.125, mix: 0.7 do
       rrand_i(1, 8).times do
         drums2 0.25
