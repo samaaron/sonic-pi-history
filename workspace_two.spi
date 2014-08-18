@@ -4,7 +4,7 @@ define :rhythm do
   use_synth :dsaw
   use_synth_defaults attack: 0, release: 0.1
   use_transpose -12
-  with_fx :echo, phase: 0.5 do
+  with_fx :echo, phase: 0.5, decay: 0.25 do
     play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
   end
 end
