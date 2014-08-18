@@ -18,7 +18,7 @@ define :rhythm do
 
     end
     use_synth :fm
-    with_transpose  12 do
+    with_transpose  19 do
       play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.125, 0.125, 0.25], amp: 2
     end
   end
