@@ -30,25 +30,29 @@ define :drums do
     sample :elec_plip, rate: 4
   end
   with_synth :fm do
-#    play 50 - 12, attack: 0, release: 0.4
+    in_thread do
+      2.times do
+        play 50 - 12, attack: 0, release: 0.4
+        sleep 0.5
+      end
+    end
+    with_fx :none, phase: 0.125, decay: 0.5, mix: 0.2 do
+      with_fx :compressor do
+        sample :drum_heavy_kick, rate: 1, amp: 6, release: 0.01, sustain: 0, attack: 0
+      end
+    end
+    sleep 0.5
+
   end
-  with_fx :none, phase: 0.125, decay: 0.5, mix: 0.2 do
-    with_fx :compressor do
-      sample :drum_heavy_kick, rate: 1, amp: 6, release: 0.01, sustain: 0, attack: 0
+
+  in_thread(name: :loop_rhyth) do
+    loop do
+      rhythm
     end
   end
-  sleep 0.5
 
-end
-
-in_thread(name: :loop_rhyth) do
-  loop do
-    rhythm
+  in_thread(name: :loop_drums) do
+    loop do
+      drums
+    end
   end
-end
-
-in_thread(name: :loop_drums) do
-  loop do
-    drums
-  end
-end
