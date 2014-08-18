@@ -23,7 +23,7 @@ define :synths do
       use_transpose 12
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(90, 120), pulse_width: 0.2, mod_phase: 0.25
       play 33
-      sleep 0.125
+#      sleep 0.125
       use_synth :prophet
       4.times do
         play chord(33 + 0, :minor).choose, amp: 1, release: 0.0, attack: 0.3
