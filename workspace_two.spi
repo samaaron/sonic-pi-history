@@ -10,7 +10,7 @@ define :rhythm do
       sleep [0.125, 0.25, 0.5].choose
       use_synth :tb303
       with_transpose 12 do
-        with_fx :bitcrusher, phase: 0.125 / 2, wave: 1, decay: 0.25, bits: 8, sample_rate: 2000 do
+        with_fx :bitcrusher, phase: 0.125 / 2, wave: 1, decay: 0.25, bits: 8, sample_rate: 3000 do
           play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
         end
       end
