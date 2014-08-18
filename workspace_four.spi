@@ -10,16 +10,14 @@ in_thread(name: :c9) do
 end
 
 define  :drums do
-
-  0.times do
-    drums2 0.125
+  with_fx :reverb do
+    0.times do
+      drums2 0.125
+    end
+    1.times do
+      drums2 1
+    end
   end
-  1.times do
-    drums2 1
-  end
-
-
-
 end
 
 define :drums2 do |p|
