@@ -32,7 +32,7 @@ define :drums do
   with_synth :fm do
     in_thread do
       2.times do
-        play 50 - 12, attack: 0, release: 0.4
+        play chord(50, :minor), attack: 0, release: 0.4
         sleep 0.25
       end
     end
