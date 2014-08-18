@@ -32,8 +32,8 @@ define :drums do
   with_synth :fm do
     in_thread do
       1.times do
-        play chord(50, :minor), attack: 0, release: 0.4
-        sleep 2
+        play chord(50, :minor).choose, attack: 0, release: 0.4
+        sleep 
       end
     end
     with_fx :none, phase: 0.125, decay: 0.5, mix: 0.2 do
