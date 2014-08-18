@@ -15,7 +15,7 @@ define  :drums do
       drums2 0.125
     end
     1.times do
-      drums2 0.5
+      drums2 0.25
     end
   end
 end
