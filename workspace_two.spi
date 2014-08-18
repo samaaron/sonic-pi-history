@@ -1,5 +1,5 @@
 use_synth :dsaw
-use_bpm 65
+use_bpm 60
 define :rhythm do
   use_synth :dsaw
   use_synth_defaults attack: 0, release: 0.1
