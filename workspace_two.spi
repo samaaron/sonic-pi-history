@@ -9,7 +9,8 @@ define :rhythm do
     in_thread do
       play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
     end
-          play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
+    sleep 0.125
+    play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
   end
 end
 
