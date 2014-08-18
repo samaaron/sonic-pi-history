@@ -1,15 +1,17 @@
 use_synth :dsaw
 
+define :rhythm do
+  use_synth_defaults attack: 0, release: 0.1
+  play_pattern_timed [50, 50, 50], [0.25, 0.125, 0.25]
+end
 
 in_thread do
   loop do
-    use_synth_defaults attack: 0, release: 0.1
-
-    play_pattern_timed [50, 50, 50], [0.25, 0.125, 0.25]
+    rhythm
   end
 end
 
 loop do
-sample :drum_heavy_kick
-sleep 0.5
+  sample :drum_heavy_kick
+  sleep 0.5
 end
