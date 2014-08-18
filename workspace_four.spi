@@ -11,10 +11,10 @@ end
 
 define  :drums do
   with_fx :wobble,phase: 0.125, mix: 0.7 do
-    2.times do
+    rrand_i(1, 8).times do
       drums2 0.25
     end
-    2.times do
+    rrand_i(1, 8).times do
       drums2 0.125
     end
   end
