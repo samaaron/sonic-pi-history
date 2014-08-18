@@ -10,7 +10,7 @@ in_thread(name: :c9) do
 end
 
 define  :drums do
-  
+
   4.times do
     drums2 0.125
   end
@@ -34,13 +34,14 @@ end
 
 define :synths do
   sync :tick
-  
+
   use_synth :mod_pulse
   use_synth_defaults amp: 1, mod_range: 15, attack: 0.03, release: 0.6, cutoff: 80, pulse_width: 0.2, mod_phase: 0.25
   2.times do
-  play 30
-  sleep 0.25
-  play 38
+    play 30
+    sleep 0.25
+    play 38
+    sleep 0.25
   end
 end
 
