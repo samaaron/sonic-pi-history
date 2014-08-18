@@ -33,7 +33,7 @@ define :drums do
     in_thread do
       2.times do
         play chord(50, :minor), attack: 0, release: 0.4
-        sleep 0.25
+        sleep 0.5
       end
     end
     with_fx :none, phase: 0.125, decay: 0.5, mix: 0.2 do
