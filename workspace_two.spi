@@ -2,7 +2,7 @@ use_synth :dsaw
 
 define :rhythm do
   use_synth :dsaw
-  use_synth_defaults attack: 0, release: 0.3
+  use_synth_defaults attack: 0, release: 0.5
   use_transpose 0
 
   with_fx :reverb, phase: 0.125, decay: 0.25 do
