@@ -42,8 +42,8 @@ define :drums do
       end
     end
     sleep 0.25
-#    sample :drum_cymbal_hard
-sleep 0.25
+    sample :drum_cymbal_hard
+    sleep 0.25
   end
 end
 
