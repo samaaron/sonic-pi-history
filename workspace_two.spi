@@ -29,7 +29,7 @@ define :drums do
   with_fx :echo, phase: 0.125, mix: 0.5 do
     sample :elec_plip, rate: 4
   end
-  with_synth :fm do
+  with_synth :dsaw do
     in_thread do
       4.times do
         play chord(50, :minor).choose, attack: 0, release: 0.4
