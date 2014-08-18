@@ -11,10 +11,10 @@ end
 
 define  :drums do
   with_fx :bitcrusher,phase: 0.125, mix: 0.7 do
-    rrand_i(1, 8).to_i.times do
+    rrand_i(1, 8).times do
       drums2 0.25
     end
-    rrand_i(1, 8).to_i.times do
+    rrand_i(1, 8).times do
       drums2 0.125
     end
   end
