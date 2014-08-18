@@ -9,10 +9,20 @@ in_thread(name: :c9) do
 
 end
 
-load_sample :drum_heavy_kick
+load_sample :drums
+4.times do
+drums2 0.125
+end
+4.times do
+drums2 1
+end
 
-define :drums do
-  with_fx :echo, mix: 0.3, phase: 0.125 do
+
+
+end
+
+define :drums2 do |p|
+  with_fx :echo, mix: 0.3, phase: p do
     sample :drum_heavy_kick, rate: 0.75
     sleep 0.5
     sample :drum_heavy_kick
