@@ -1,4 +1,5 @@
 use_synth :dsaw
+sample :ambi_lunar_land
 use_bpm 70
 define :rhythm do
   use_synth :dsaw
