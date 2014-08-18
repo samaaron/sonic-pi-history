@@ -30,7 +30,7 @@ define :drums do
     sample :elec_plip, rate: 4
   end
   with_synth :fm do
-    play 50 - 12, attack: 0, release: 0.4
+#    play 50 - 12, attack: 0, release: 0.4
   end
   with_fx :none, phase: 0.125, decay: 0.5, mix: 0.2 do
     with_fx :compressor do
