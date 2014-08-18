@@ -1,4 +1,4 @@
 use_synth :dsaw
-$p = play 50, cutoff: 130, sustain: 5
+#$p = play 50, cutoff: 130, sustain: 5
 
-#control $p, cutoff: 60
+control $p, cutoff: 60
