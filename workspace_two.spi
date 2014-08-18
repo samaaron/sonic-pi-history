@@ -12,7 +12,7 @@ define :rhythm do
       use_synth :dsaw
       with_transpose 20 do
         #        with_fx :wobble, phase: 0.125 , wave: 2, decay: 0.25, bits: 9, sample_rate: 10000 do
-#        play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
+        play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
         #       end
       end
 
