@@ -8,10 +8,10 @@ define :rhythm do
   with_fx :reverb, phase: 0.125, decay: 0.25 do
     in_thread do
       sleep [0.125, 0.25, 0.5].choose
-      use_synth :tb303
+      use_synth :zawa
       with_transpose 24 do
         with_fx :echo, phase: 0.125 , wave: 1, decay: 0.25, bits: 9, sample_rate: 10000 do
-          play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.25, 0.25]
+          play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
         end
       end
 
