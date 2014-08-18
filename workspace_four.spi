@@ -11,10 +11,10 @@ end
 
 define  :drums do
 
-  4.times do
+  0.times do
     drums2 0.125
   end
-  0.times do
+  1.times do
     drums2 1
   end
 
