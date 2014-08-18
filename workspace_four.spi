@@ -23,7 +23,7 @@ define  :drums do
 end
 
 define :drums2 do |p|
-cue :tick
+  cue :tick
   with_fx :echo, mix: 0.3, phase: p do
     sample :drum_heavy_kick, rate: 0.75
     sleep 0.5
@@ -34,11 +34,14 @@ end
 
 define :synths do
   sync :tick
+  
   use_synth :mod_pulse
   use_synth_defaults amp: 1, mod_range: 15, attack: 0.03, release: 0.6, cutoff: 80, pulse_width: 0.2, mod_phase: 0.25
+  2.times do
   play 30
   sleep 0.25
   play 38
+  end
 end
 
 in_thread(name: :drums){loop{drums}}
