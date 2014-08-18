@@ -1,0 +1,2 @@
+use_synth :dsaw
+play 50, cutoff: 400
