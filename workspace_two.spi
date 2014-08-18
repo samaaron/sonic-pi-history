@@ -18,7 +18,7 @@ define :rhythm do
 
     end
     
-    play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.3333333], amp: 2
+    play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.6666666], amp: 2
   end
 end
 
