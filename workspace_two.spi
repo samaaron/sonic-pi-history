@@ -11,7 +11,7 @@ end
 
 define :drums do
   with_synth :fm do
-    play 50 - 24, attack: 0, release: 0.4
+    play 50 - 12, attack: 0, release: 0.4
   end
   with_fx :echo, phase: 0.125, decay: 0.5 do
     sample :drum_heavy_kick, rate: 1
