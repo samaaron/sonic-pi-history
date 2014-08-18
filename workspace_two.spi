@@ -23,7 +23,7 @@ end
 
 define :drums do
   with_fx :echo, phase: 0.125, mix: 0.5 do
-  sample :elec_snare, rate: [4, 8, 16].choose
+  sample :elec_snare, rate: [16].choose
   end
   with_synth :fm do
     play 50 - 12, attack: 0, release: 0.4
