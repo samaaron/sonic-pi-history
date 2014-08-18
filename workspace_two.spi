@@ -11,7 +11,7 @@ define :rhythm do
     end
     sleep [0.125, 0.25, 0.5].choose
     with_transpose 15 do
-      with_fx :wobble do
+      with_fx :wobble, phase: 0.25 do
         play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
       end
     end
