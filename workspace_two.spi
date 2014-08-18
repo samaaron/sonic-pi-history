@@ -10,8 +10,12 @@ define :rhythm do
 end
 
 define :drums do
-  sample :drum_heavy_kick, rate: 1
+  with_fx :echo do
+    sample :drum_heavy_kick, rate: 1
+
+  end
   sleep 0.5
+
 end
 
 in_thread(name: :loop_rhyth) do
