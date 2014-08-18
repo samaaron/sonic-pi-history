@@ -23,7 +23,7 @@ define  :drums do
 end
 
 define :drums2 do |p|
-
+cue :tick
   with_fx :echo, mix: 0.3, phase: p do
     sample :drum_heavy_kick, rate: 0.75
     sleep 0.5
