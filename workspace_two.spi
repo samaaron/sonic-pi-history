@@ -25,7 +25,7 @@ define :drums do
     play 50 - 12, attack: 0, release: 0.4
   end
   with_fx :echo, phase: 0.125, decay: 0.5, mix: 0.2 do
-    sample :drum_heavy_kick, rate: 5
+    sample :drum_heavy_kick, rate: 4
   end
   sleep 0.5
 
