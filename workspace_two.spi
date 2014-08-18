@@ -32,7 +32,7 @@ define :drums do
   with_synth :prophet do
     in_thread do
       4.times do
-        play chord(50, :minor).choose, attack: 0, release: 0.14
+        play chord(50, :minor).choose, attack: 0, release: 0.14, cutoff: rrand(40, 120)
         sleep 0.125
       end
     end
