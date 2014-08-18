@@ -7,14 +7,16 @@ define :rhythm do
 
   with_fx :reverb, phase: 0.125, decay: 0.25 do
     in_thread do
-      play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
-    end
-    sleep [0.125, 0.25, 0.5].choose
-    with_transpose 15 do
-      with_fx :wobble, phase: 0.125 / 2, wave: 1 do
-        play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
+      sleep [0.125, 0.25, 0.5].choose
+
+      with_transpose 15 do
+        with_fx :wobble, phase: 0.125 / 2, wave: 1 do
+          play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
+        end
       end
+
     end
+    play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
   end
 end
 
