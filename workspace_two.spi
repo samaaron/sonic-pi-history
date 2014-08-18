@@ -10,9 +10,9 @@ define :rhythm do
 end
 
 define :drums do
+  sample :bass_hit_c
   with_fx :echo, phase: 0.125, decay: 0.5 do
     sample :drum_heavy_kick, rate: 1
-
   end
   sleep 0.5
 
