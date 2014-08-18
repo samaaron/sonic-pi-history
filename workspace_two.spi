@@ -2,7 +2,7 @@ use_synth :dsaw
 
 define :rhythm do
   use_synth_defaults attack: 0, release: 0.1
-  play_pattern_timed [50, 55, 50], [0.25, 0.125, 0.25]
+  play_pattern_timed [50, 55, 57], [0.25, 0.125, 0.25]
 end
 
 define :drums do
