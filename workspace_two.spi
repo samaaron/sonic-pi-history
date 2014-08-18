@@ -41,7 +41,8 @@ define :drums do
         sample :drum_heavy_kick, rate: 1, amp: 6, release: 0.01, sustain: 0, attack: 0
       end
     end
-    sleep 0.5
+    sleep 0.25
+    sample :drum_cymbal_hard
 
   end
 end
