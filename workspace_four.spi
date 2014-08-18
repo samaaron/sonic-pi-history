@@ -14,7 +14,7 @@ define  :drums do
   4.times do
     drums2 0.125
   end
-  4.times do
+  0.times do
     drums2 1
   end
 
