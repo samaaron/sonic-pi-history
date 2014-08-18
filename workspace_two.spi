@@ -44,15 +44,16 @@ define :drums do
     sleep 0.5
 
   end
+end
 
-  in_thread(name: :loop_rhyth) do
-    loop do
-      rhythm
-    end
+in_thread(name: :loop_rhyth) do
+  loop do
+    rhythm
   end
+end
 
-  in_thread(name: :loop_drums) do
-    loop do
-      drums
-    end
+in_thread(name: :loop_drums) do
+  loop do
+    drums
   end
+end
