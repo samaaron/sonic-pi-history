@@ -23,7 +23,7 @@ end
 
 define :drums do
  
-  with_fx :echo, phase: 0.125, mix: 0.5 do
+  with_fx :echo, phase: 0.25, mix: 0.5 do
     sample :elec_plip, rate: 8
   end
   with_synth :fm do
