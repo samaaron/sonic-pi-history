@@ -10,7 +10,7 @@ define :rhythm do
 end
 
 define :drums do
-  sample :drum_heavy_kick
+  sample :drum_heavy_kick, rate: 0.5
   sleep 0.5
 end
 
