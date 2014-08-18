@@ -23,14 +23,14 @@ end
 define :drums do
  
   with_fx :echo, phase: 0.125, mix: 0.5 do
-    sample :elec_snare, rate: 10
+#    sample :elec_snare, rate: 10
   end
   with_synth :fm do
     play 50 - 12, attack: 0, release: 0.4
   end
   with_fx :none, phase: 0.125, decay: 0.5, mix: 0.2 do
     with_fx :compressor do
-      sample :drum_heavy_kick, rate: 1, amp: 6
+#      sample :drum_heavy_kick, rate: 1, amp: 6
     end
   end
   sleep 0.5
