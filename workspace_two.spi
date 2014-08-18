@@ -10,7 +10,7 @@ define :rhythm do
       sleep [0.125, 0.25, 0.5].choose
       use_synth :zawa
       with_transpose 0 do
-        with_fx :wobble, phase: 0.125 , wave: 1, decay: 0.25, bits: 9, sample_rate: 10000 do
+        with_fx :wobble, phase: 0.125 , wave: 0, decay: 0.25, bits: 9, sample_rate: 10000 do
           play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
         end
       end
