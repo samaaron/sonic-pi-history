@@ -1,2 +1,4 @@
 use_synth :dsaw
-play 50, cutoff: 130
+p = play 50, cutoff: 130
+sleep 0.1
+control p, cutoff: 131
