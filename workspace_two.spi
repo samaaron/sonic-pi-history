@@ -22,8 +22,8 @@ define :rhythm do
 end
 
 define :drums do
-  with_fx :echo, phase: 0.125, mix: 0.5 do
-  sample :elec_snare, rate: 10
+  with_fx :echo, phase: 0.333333, mix: 0.5 do
+    sample :elec_snare, rate: 10
   end
   with_synth :fm do
     play 50 - 12, attack: 0, release: 0.4
