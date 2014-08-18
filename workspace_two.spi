@@ -1,4 +1,5 @@
 use_synth :dsaw
 
 use_synth_defaults attack: 0, release: 0.1
-play 50
+
+play_pattern_timed[50, 50, 50], [0.25, 0.125, 0.25]
