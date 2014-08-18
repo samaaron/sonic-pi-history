@@ -10,7 +10,7 @@ in_thread(name: :c9) do
 end
 
 define  :drums do
-  with_fx :reverb do
+  with_fx :reverb, mix: 0.2 do
     0.times do
       drums2 0.125
     end
