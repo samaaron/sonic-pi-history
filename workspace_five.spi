@@ -3,7 +3,7 @@ load_sample :drum_heavy_kick
 #sample :ambi_lunar_land
 define :drums do
   #wait :tick
-    sample :drum_tom_hi_hard, amp: 0.2, rate: rand
+  #  sample :drum_tom_hi_hard, amp: 0.2, rate: rand
   use_bpm 120
   with_fx :none, phase: 0.333333333, mix: 0.6 do
      # sample :ambi_glass_hum, rate: [0.7].choose * 1, amp: 0.5
