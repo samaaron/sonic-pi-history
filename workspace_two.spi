@@ -4,7 +4,7 @@ use_bpm 70
 define :rhythm do
   use_synth :dsaw
   use_synth_defaults attack: 0, release: 0.1
-  use_transpose 5
+  use_transpose 12
 
   with_fx :reverb, phase: 0.25, decay: 0.1 do
     in_thread do
