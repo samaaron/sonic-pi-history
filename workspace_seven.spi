@@ -20,8 +20,8 @@ define :foo do
   use_synth :prophet
   in_thread do
     4.times do
-      sample :drum_bass_hard
-      sleep 1
+      sample :drum_bass_hard, amp: 0.3
+      sleep 0.5
     end
   end
   with_fx :wobble, mix: 0.4  do
