@@ -25,7 +25,7 @@ define :foo do
     end
   end
   in_thread do
-    with_fx :echo, phase: 0.25 do
+    with_fx :echo, phase: 0.125 do
     sample :elec_snare, rate: 16
     end
   end
