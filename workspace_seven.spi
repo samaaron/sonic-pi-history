@@ -24,6 +24,11 @@ define :foo do
       sleep 0.5
     end
   end
+  in_thread do
+    with_fx :echo, phase: 0.25 do
+    sample :elec_snare, rate: 16
+    end
+  end
   with_fx :wobble, mix: 0.4, phase: 0.5  do
     play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
   end
