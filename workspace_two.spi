@@ -41,7 +41,7 @@ define :drums do
       end
     end
     sleep 0.25
-    sample :drum_cymbal_hard, release: 0.2, sustain: 0
+    sample :drum_cymbal_hard, release: 0.3, sustain: 0
     sleep 0.25
   end
 end
