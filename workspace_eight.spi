@@ -3,8 +3,8 @@ use_synth :tb303
 use_bpm 45
 
 define :foobar do
-  with_fx :reverb, mix: 0.8 do
-  use_synth :prophet
+  with_fx :reverb, mix: 0.3 do
+    use_synth :prophet
     use_transpose -12
     play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5, attack: 0, release: 2
     sleep [0.25, 0.5, 0.5, 0.5, 1, 1].choose
