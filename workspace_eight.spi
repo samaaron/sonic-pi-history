@@ -3,7 +3,7 @@ use_synth :tb303
 use_bpm 45
 
 define :foobar do
-use_bpm 90
+  use_bpm 120
   with_fx :reverb, mix: 0.2 do
     use_synth :prophet
     use_transpose 0
