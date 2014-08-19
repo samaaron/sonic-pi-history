@@ -8,7 +8,7 @@ define :foobar do
     use_synth :prophet
     use_transpose 12
     play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(50, 100) - 20, amp: 0.5, attack: 0, release: 2
-    sleep [0.25, 0.5, 0.5, 0.5, 1, 1].choose
+    sleep 0.5
   end
 end
 
