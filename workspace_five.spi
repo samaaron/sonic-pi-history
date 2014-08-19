@@ -8,7 +8,7 @@ define :drums do
   with_fx :none, phase: 0.333333333, mix: 0.6 do
 #  sample :ambi_glass_hum, rate: [0.7].choose * 1, amp: 0.5
   end
-  with_fx :wobble , phase: 0.25 do
+  with_fx :wobble , phase: 0.25, wave: 1 do
     with_fx [:none, :none].choose, room: 0.8, phase: 0.25, amp: 0.8, mix: 0.8 do
       sample :elec_flip, rate: 10, amp: 1
       with_synth :prophet do
