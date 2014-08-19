@@ -10,7 +10,7 @@ define :drums do
   end
   with_fx :none , phase: 0.25, wave: 1 do
     with_fx [:reverb].choose, room: 0.8, phase: 0.25, amp: 0.8, mix: 0.38 do
-      sample :elec_flip, rate: 10, amp: 1
+#      sample :elec_flip, rate: 10, amp: 1
       with_synth :prophet do
         use_transpose 0
         play chord(:a3, :minor), attack: 0, release: 3, amp: 1.5, cutoff: rrand(60, 80)
@@ -31,7 +31,7 @@ define :synths do
 #  sample :drum_heavy_kick, amp: 1
   sleep 0.25
   with_fx :echo, phase: 0.125, amp: 0.5, mix: 0.3 do
-#    sample :elec_filt_snare, rate: [8].choose
+   sample :elec_filt_snare, rate: [8].choose
   end
   sleep 0.25
   # sync :tick
