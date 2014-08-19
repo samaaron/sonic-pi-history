@@ -5,7 +5,7 @@ define :rhythm do
   use_synth :dsaw
   use_synth_defaults attack: 0, release: 0.1
 
-  with_fx :reverb, phase: 0.125, decay: 0.1 do
+  with_fx :echo, phase: 0.125, decay: 0.1 do
     in_thread do
       sleep [0.125, 0.25, 0.5].choose
       use_synth :fm
