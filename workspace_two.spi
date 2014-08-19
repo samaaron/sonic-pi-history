@@ -35,7 +35,7 @@ define :drums do
         sleep 0.125
       end
     end
-    with_fx :reverb, phase: 0.5, decay: 0.5, mix: 0.9, room: 0.2, amp: 2 do
+    with_fx :reverb, phase: 0.5, decay: 0.5, mix: 0.3, room: 0.2, amp: 2 do
       with_fx :compressor do
         sample :drum_heavy_kick, rate: 1, amp: 10, release: 0.01, sustain: 0, attack: 0
       end
