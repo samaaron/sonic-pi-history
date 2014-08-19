@@ -11,7 +11,7 @@ define :drums do
   with_fx :none , phase: 0.25, wave: 1 do
     with_fx [:reverb, :none].choose, room: 0.8, phase: 0.25, amp: 0.8, mix: 0.38 do
       sample :elec_flip, rate: 10, amp: 1
-      with_synth :dsaw do
+      with_synth :fm do
         use_transpose 12
         play chord(:a3, :minor).choose, attack: 0, release: 0.25, amp: 1.5, cutoff: rrand(60, 80)
         play chord(:a1, :minor).choose, attack: 0, release: 0.15, amp: 1.5, cutoff: rrand(60, 100)
