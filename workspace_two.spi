@@ -41,7 +41,7 @@ define :drums do
       end
     end
     sleep 0.25
-    with_fx :echo do
+    with_fx :echo, phase: 0.125 do
       sample :drum_cymbal_hard, release: 0.1, sustain: 0
     end
     sleep 0.25
