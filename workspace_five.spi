@@ -13,7 +13,7 @@ define :drums do
       #      sample :elec_flip, rate: 10, amp: 1
       with_synth :tb303 do
         use_transpose 0
-        play chord(:a3, :minor), attack: 0, release: 3, amp: 1.5, cutoff: rrand(60, 80)
+        play chord(:a3, :minor), wave: 1, attack: 0, release: 3, amp: 1.5, cutoff: rrand(60, 80)
         play chord(:a2, :minor), attack: 0, release: 0.2, amp: 3, cutoff: rrand(90, 120)
       end
 
