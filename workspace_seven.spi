@@ -17,7 +17,7 @@ comment do
   end
 end
 define :foo do
-  use_synth :prophet
+  use_synth :tb303
   in_thread do
     8.times do
       sample :drum_bass_hard, amp: 0.3, sustain: 0, release: 0.2
