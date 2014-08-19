@@ -1,4 +1,3 @@
-
 in_thread do
   loop do
     sample :drum_cymbal_closed, rate: 0.9, amp: 0.4
