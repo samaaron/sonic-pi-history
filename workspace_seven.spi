@@ -17,5 +17,5 @@ comment do
   end
 end
 
-control rev, mix: 0.6
+control rev, mix: 0.26
 control ech, phase: 0.125
