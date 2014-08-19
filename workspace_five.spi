@@ -14,7 +14,7 @@ define :drums do
       with_synth :prophet do
         use_transpose 0
         play chord(:a4, :minor), attack: 0, release: 3, amp: 1.5, cutoff: rrand(60, 80)
-        play chord(:a2, :minor), attack: 0, release: 0.15, amp: 1.5, cutoff: rrand(60, 100)
+        play chord(:a2, :minor), attack: 0, release: 0.15, amp: 3, cutoff: rrand(60, 100)
       end
 
       sleep 5
