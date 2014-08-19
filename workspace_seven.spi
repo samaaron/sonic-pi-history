@@ -17,17 +17,19 @@ comment do
   end
 end
 define :foo do
-use_synth :prophet
-play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
-sleep 4
-cue :tick
+  use_synth :prophet
+  with_fx :reverb do
+    play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
+  end
+  sleep 4
+  cue :tick
 end
 
 
 comment do
-loop do
-foo
-end
+  loop do
+    foo
+  end
 end
 
 control rev, mix: 0.5
