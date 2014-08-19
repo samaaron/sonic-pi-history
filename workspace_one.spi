@@ -16,5 +16,6 @@ in_thread do
 end
 
 in_thread do
+  use_synth :tb303
   play_pattern_timed [50, 52, 55, 59], [1]
 end
