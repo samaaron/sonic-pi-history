@@ -15,4 +15,4 @@ in_thread(name: :foo) do
   end
 end
 
-control rev, mix: 0.3
+control rev, mix: 0.1
