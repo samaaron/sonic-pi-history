@@ -1,6 +1,7 @@
 use_synth :prophet
 
 define :foo do
+use_synth :beep
   play 50
   sleep 1
 end
