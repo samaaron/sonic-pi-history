@@ -8,6 +8,8 @@ end
 in_thread do
   loop do
     sample :drum_bass_hard
-    sleep 1
+    sleep 1.25
+    sample :drum_bass_hard
+    sleep 0.75
   end
 end
