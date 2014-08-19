@@ -3,25 +3,25 @@ load_sample :drum_heavy_kick
 #sample :ambi_lunar_land
 define :drums do
   #wait :tick
-#  sample :drum_tom_hi_hard, amp: 0.2, rate: rand
+  #  sample :drum_tom_hi_hard, amp: 0.2, rate: rand
   use_bpm 120
   with_fx :none, phase: 0.333333333, mix: 0.6 do
-#  sample :ambi_glass_hum, rate: [0.7].choose * 1, amp: 0.5
+      sample :ambi_glass_hum, rate: [0.7].choose * 1, amp: 0.5
   end
   with_fx :wobble , phase: 0.25, wave: 1 do
     with_fx [:reverb, :none].choose, room: 0.8, phase: 0.25, amp: 0.8, mix: 0.38 do
       sample :elec_flip, rate: 10, amp: 1
       with_synth :dsaw do
-      use_transpose 12
-       play chord(:a3, :minor).choose, attack: 0, release: 0.25, amp: 1.5, cutoff: rrand(60, 80)
-       play chord(:a1, :minor).choose, attack: 0, release: 0.15, amp: 1.5, cutoff: rrand(60, 100)
+        use_transpose 12
+        play chord(:a3, :minor).choose, attack: 0, release: 0.25, amp: 1.5, cutoff: rrand(60, 80)
+        play chord(:a1, :minor).choose, attack: 0, release: 0.15, amp: 1.5, cutoff: rrand(60, 100)
       end
 
       sleep 0.25
-            sample :drum_heavy_kick, amp: 0.5
-            sample :elec_plip, rate: [0.5, 2, 1, 4].choose * [1, 2, 3, 10].choose, amp: 0.6
-           sample :elec_blip, rate: [0.5, 1, 2].choose, amp: 0.8
-      
+      sample :drum_heavy_kick, amp: 0.5
+      sample :elec_plip, rate: [0.5, 2, 1, 4].choose * [1, 2, 3, 10].choose, amp: 0.6
+      sample :elec_blip, rate: [0.5, 1, 2].choose, amp: 0.8
+
     end
   end
 end
@@ -30,11 +30,11 @@ define :synths do
   sample :bass_hit_c, rate: 0.5, amp: 1
   sample :drum_heavy_kick, amp: 30
   sleep 0.25
-with_fx :echo, phase: 0.125, amp: 0.9, mix: 0.3 do
-  sample :elec_filt_snare, rate: [16].choose
- end
+  with_fx :echo, phase: 0.125, amp: 0.9, mix: 0.3 do
+    sample :elec_filt_snare, rate: [16].choose
+  end
   sleep 0.25
- # sync :tick
+  # sync :tick
 end
 
 in_thread(name: :drums){loop{drums}}
