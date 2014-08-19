@@ -17,6 +17,7 @@ comment do
   end
 end
 define :foo do
+use_synth :prophet
 play chord(:e1, :minor), attack: 0, release: 3
 sleep 4
 cue :tick
