@@ -29,7 +29,7 @@ define :foo do
     sample :elec_snare, rate: 16
     end
   end
-  with_fx :wobble, mix: 0.4, phase: 0.5  do
+  with_fx :wobble, mix: 0.4, phase: 0.125  do
     play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
   end
   sleep 4
