@@ -1,4 +1,4 @@
-with_fx :reverb, mix: 0.3 do
+with_fx :reverb, mix: 0.2 do
   in_thread do
     loop do
       sample :drum_cymbal_closed, rate: 0.9
