@@ -13,7 +13,7 @@ define :drums do
       sample :elec_flip, rate: 10, amp: 1
       with_synth :prophet do
        play chord(:a3, :minor).choose, attack: 0, release: 0.25, amp: 1.5, cutoff: rrand(60, 80)
-#       play chord(:a1, :minor).choose, attack: 0, release: 0.15, amp: 1.5, cutoff: rrand(60, 100)
+       play chord(:a1, :minor).choose, attack: 0, release: 0.15, amp: 1.5, cutoff: rrand(60, 100)
       end
 
       sleep 0.25
