@@ -1,10 +1,1 @@
-use_synth :fm
-
-3.times do
-  play 50
-  sleep 0.5
-  play 72
-  sleep 0.25
-  play :c4
-  sleep 0.25
-end
+play 60
