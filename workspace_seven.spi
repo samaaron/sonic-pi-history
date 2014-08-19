@@ -20,7 +20,8 @@ define :foo do
 play 30, attack: 0, release: 0.2
 sleep 1
 end
-comment
+
+
 loop do
 foo
 end
