@@ -1,1 +1,1 @@
-synth :tb303, note: 50, attack: 0, release: 1.5
+synth :prophet, note: 50, attack: 0, release: 1.5
