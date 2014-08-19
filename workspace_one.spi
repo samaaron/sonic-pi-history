@@ -1,7 +1,9 @@
 in_thread do
   loop do
-    sample :drum_cymbal_closed, rate: 0.9
-    sleep 0.25
-    sample :drum_cymbal_closed, rate: 0.9, amp: 0.5
+    2.times do
+      sample :drum_cymbal_closed, rate: 0.9
+      sleep 0.25
+      sample :drum_cymbal_closed, rate: 0.9, amp: 0.5
+    end
   end
 end
