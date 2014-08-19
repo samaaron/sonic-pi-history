@@ -37,8 +37,8 @@ define :drums do
     end
     with_fx :wobble, phase: 0.25, decay: 0.5, mix: 0.8, room: 0.2, amp: 20 do
       with_fx :compressor do
-        sample :drum_heavy_kick, rate: 1, amp: 10, release: 0.01, sustain: 0, attack: 0
-#        sample :drum_bass_hard
+#        sample :drum_heavy_kick, rate: 1, amp: 10, release: 0.01, sustain: 0, attack: 0
+        sample :drum_bass_hard
       end
     end
     sleep 0.25
