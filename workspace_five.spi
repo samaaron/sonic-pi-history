@@ -6,7 +6,7 @@ define :drums do
 #  sample :drum_tom_hi_hard, amp: 0.2, rate: rand
   use_bpm 120
   with_fx :none, phase: 0.333333333, mix: 0.6 do
-  sample :ambi_glass_hum, rate: [0.7].choose * 1, amp: 0.5
+  sample :ambi_glass_hum, rate: [0.7].choose * 1.1, amp: 0.5
   end
   with_fx :reverb do
     with_fx [:none, :none].choose, room: 0.8, phase: 0.25, amp: 0.8, mix: 0.8 do
