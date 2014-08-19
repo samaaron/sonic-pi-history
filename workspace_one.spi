@@ -1,15 +1,17 @@
-in_thread do
-  loop do
-    sample :drum_cymbal_closed, rate: 0.9
-    sleep 0.25
+with_fx :reverb do
+  in_thread do
+    loop do
+      sample :drum_cymbal_closed, rate: 0.9
+      sleep 0.25
+    end
   end
-end
 
-in_thread do
-  loop do
-    sample :drum_bass_hard
-    sleep 1.25
-    sample :drum_bass_hard
-    sleep 0.75
+  in_thread do
+    loop do
+      sample :drum_bass_hard
+      sleep 1.25
+      sample :drum_bass_hard
+      sleep 0.75
+    end
   end
 end
