@@ -1,4 +1,4 @@
-comment do
+#comment do
   in_thread(name: :foo) do
     with_fx :reverb do |r|
       define :rev do
@@ -14,13 +14,13 @@ comment do
         synth :sound_in
       end
     end
-  end
+ # end
 end
 define :foo do
 play 30, attack: 0, release: 0.2
 sleep 1
 end
-
+comment
 loop do
 foo
 end
