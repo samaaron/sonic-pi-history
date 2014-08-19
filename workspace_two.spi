@@ -25,9 +25,9 @@ end
 
 define :drums do
 
-  with_fx :echo, phase: 0.125, mix: 0.5, amp: 1 do
+  #with_fx :echo, phase: 0.125, mix: 0.5, amp: 1 do
  #   sample :elec_plip, rate: 32
-  end
+#  end
   with_synth :zawa do
     in_thread do
       4.times do
