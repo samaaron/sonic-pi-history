@@ -20,7 +20,7 @@ define :foo do
   use_synth :prophet
   in_thread do
     8.times do
-      sample :drum_bass_hard, amp: 0.4
+      sample :drum_bass_hard, amp: 0.3
       sleep 0.5
     end
   end
