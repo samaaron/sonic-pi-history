@@ -17,7 +17,7 @@ comment do
   end
 end
 
-sample :ambi_lunar_land, rate: 5.0/5
+sample :ambi_lunar_land, rate: 4.0/5
 define :foo do
   use_synth :tb303
   in_thread do
