@@ -1,45 +1,9 @@
-use_synth :dsaw
-sd = sample_duration :loop_amen, rate: 1.5
 
-with_fx :reverb do
-  in_thread do
-    loop do
-      a = [1, 4, 2].choose
-      8.times do
-        sample :elec_beep, rate: 0.75 * a, amp: 0.7
-        sleep sd / 8
-      end
-      sleep sd
-    end
-  end
+use_synth :fm
+
+loop do
+  p = play chord(:Eb3, :minor).choose - [0, 12, -12].choose, divisor: 0.01, div_slide: rrand(0, 100), depth: rrand(0.001, 2), attack: 0.01, release: rrand(0, 5), amp: 0.5
+  control p, divisor: rrand(0.001, 50)
+  sleep [0.5, 1, 2].choose
 end
-
-
-
-in_thread do
-    loop do
-      use_synth :tb303
-      n = [5, 4, 8, 16].choose
-      n.times do
-        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120), amp: 0.5
-        sleep sd / n
-      end
-    end
-  end
-
-with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
-  define :wbb do
-    wb
-  end
-  loop do
-    use_synth :dsaw
-
-
-    with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
-      play chord(:e1, :minor).choose, attack: 0, release: sd
-    end
-
-    sample :loop_amen, rate: 1.5
-    sleep sd
-  end
-end
+ 
