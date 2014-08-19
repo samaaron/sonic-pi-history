@@ -19,6 +19,7 @@ end
 define :foo do
 play 30, attack: 0, release: 0.1
 sleep 0.5
+cue :tick
 end
 
 comment do
