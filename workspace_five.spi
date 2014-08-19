@@ -17,7 +17,7 @@ define :drums do
 #        play chord(:a2, :minor), wave: 1,attack: 0, release: 0.2, amp: 3, cutoff: rrand(90, 120)
       end
 
-      sleep 0.5
+      sleep 0.25
             sample :drum_heavy_kick, amp: 0.5
             sample :elec_plip, rate: [0.5, 2, 1, 4].choose * [1, 2, 3, 10].choose, amp: 0.6
             sample :elec_blip, rate: [0.5, 1, 2].choose, amp: 0.8
