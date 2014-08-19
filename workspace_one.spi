@@ -6,5 +6,6 @@ in_thread do
       sample :drum_cymbal_closed, rate: 0.9, amp: 0.5
       sleep 0.25
     end
+    sample :drum_bass_hard
   end
 end
