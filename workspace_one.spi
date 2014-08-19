@@ -1,10 +1,22 @@
 
-with_fx(:rlpf, cutoff: 10, cutoff_slide: 20) do |c|
-  loop do
-    sample :bass_dnb_f, amp: 5
-    sample :loop_amen, amp: 5
-    sleep sample_duration :loop_amen
-    control c, cutoff: rrand(40, 120), cutoff_slide: rrand(1, 20)
-  end
+load_sample :drum_heavy_kick
+
+define :drums do
+  sample :drum_heavy_kick, rate: 0.75
+  sleep 0.5
+  sample :drum_heavy_kick
+  sleep 0.5
 end
+
+define :synths do
+  use_synth :mod_pulse
+  use_synth_defaults amp: 1, mod_range: 15, attack: 0.03, release: 0.6, cutoff: 80, pulse_width: 0.2, mod_phase: 0.25
+  play 30
+  sleep 0.25
+  play 38
+  sleep 0.25
+end
+
+in_thread(name: :drums){loop{drums}}
+in_thread(name: :synths){loop{synths}}
  
