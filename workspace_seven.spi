@@ -1,5 +1,16 @@
-with_fx :reverb do
-  with_fx :echo do
-    synth :sound_in
+in_thread(name: :foo) do
+  with_fx :reverb do |r|
+    define :rev do
+      r
+    end
+
+
+
+    with_fx :echo do |e|
+      define :ech do
+        e
+      end
+      synth :sound_in
+    end
   end
 end
