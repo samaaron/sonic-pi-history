@@ -28,7 +28,7 @@ end
 
 define :synths do
  # sample :bass_hit_c, rate: 0.5, amp: 1
-  sample :drum_heavy_kick, amp: 1
+#  sample :drum_heavy_kick, amp: 1
   sleep 0.25
   with_fx :echo, phase: 0.125, amp: 0.5, mix: 0.3 do
 #    sample :elec_filt_snare, rate: [8].choose
