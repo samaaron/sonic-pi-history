@@ -18,7 +18,7 @@ comment do
 end
 define :foo do
   use_synth :prophet
-  with_fx :wobble, mix: 0.1  do
+  with_fx :wobble, mix: 0.2  do
     play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
   end
   sleep 4
