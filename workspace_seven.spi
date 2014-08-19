@@ -17,8 +17,8 @@ comment do
   end
 end
 define :foo do
-play 30, attack: 0, release: 0.2
-sleep 1
+play 30, attack: 0, release: 0.1
+sleep 0.5
 end
 
 comment do
