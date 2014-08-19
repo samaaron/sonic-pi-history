@@ -1,7 +1,7 @@
 use_synth :prophet
 
 define :foo do
-  play 55
+  play 60
   sleep 1
 end
 
