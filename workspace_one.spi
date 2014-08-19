@@ -20,7 +20,7 @@ in_thread do
     loop do
       in_thread do
         use_transpose 12
-        play_pattern_timed [50, 52, 55, 59] * 2, [0.25, 0.5], amp: 0.3
+        play_pattern_timed [50, 52, 55, 59] * 2, [0.25, 0.5], amp: 0.3, release: 0.1
       end
       play_pattern_timed [50, 52, 55, 59], [1, 0.5], amp: 0.3
 
