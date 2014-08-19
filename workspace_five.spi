@@ -20,7 +20,7 @@ define :drums do
       sleep 4
       #      sample :drum_heavy_kick, amp: 0.5
       #      sample :elec_plip, rate: [0.5, 2, 1, 4].choose * [1, 2, 3, 10].choose, amp: 0.6
-      #      sample :elec_blip, rate: [0.5, 1, 2].choose, amp: 0.8
+            sample :elec_blip, rate: [0.5, 1, 2].choose, amp: 0.8
 
     end
   end
@@ -29,7 +29,7 @@ end
 define :synths do
   # sample :bass_hit_c, rate: 0.5, amp: 1
   with_fx :lpf do
-    sample :drum_bass_hard, amp: 6, rate: 1
+    sample :drum_bass_hard, amp: 3, rate: 1
   end
   sleep 0.25
   with_fx :echo, phase: 0.125, amp: 1, mix: 0.3 do
