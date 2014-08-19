@@ -18,7 +18,11 @@ in_thread do
   use_synth :tb303
   with_fx :echo do
     loop do
+      in_thread do
+        play_pattern_timed [50, 52, 55, 59], [0.5, 1], amp: 0.3
+      end
       play_pattern_timed [50, 52, 55, 59], [1, 0.5], amp: 0.3
+
       sleep 3
     end
   end
