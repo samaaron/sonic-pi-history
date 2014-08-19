@@ -16,6 +16,14 @@ comment do
     end
   end
 end
+define :foo do
+play 30, attack: 0, release: 0.2
+sleep 1
+end
+
+loop do
+foo
+end
 
 control rev, mix: 0.5
 control ech, phase: 0.5
