@@ -15,5 +15,5 @@ in_thread(name: :foo) do
   end
 end
 
-control rev, mix: 0.1
+control rev, mix: 0.9
 control ech, phase: 0.125
