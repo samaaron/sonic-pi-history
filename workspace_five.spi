@@ -33,7 +33,7 @@ define :synths do
   with_fx :echo, phase: 0.125, amp: 2, mix: 0.3 do
     sample :elec_filt_snare, rate: [8].choose
   end
-  sleep 0.125
+  sleep 0.25
   # sync :tick
 end
 
