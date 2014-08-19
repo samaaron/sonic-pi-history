@@ -18,6 +18,12 @@ comment do
 end
 define :foo do
   use_synth :prophet
+  in_thread do
+    4.times do
+      sample :drum_bass_hard
+      sleep 1
+    end
+  end
   with_fx :wobble, mix: 0.4  do
     play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
   end
