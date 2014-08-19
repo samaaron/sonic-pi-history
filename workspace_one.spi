@@ -1,6 +1,6 @@
 in_thread do
   loop do
-    sample :drum_splash_soft
+    sample :drum_cymbal_open
     sleep 1
   end
 end
