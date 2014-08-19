@@ -1,1 +1,3 @@
 play 50
+sleep 0.5
+play 72
