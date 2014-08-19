@@ -16,11 +16,13 @@ comment do
     end
   end
 end
+
+sample :ambi_lunar_land, rate: 5.0/5
 define :foo do
   use_synth :tb303
   in_thread do
     8.times do
-#      sample :drum_bass_hard, amp: 0.3, sustain: 0, release: 0.2
+      sample :drum_bass_hard, amp: 0.3, sustain: 0, release: 0.2
       sleep 0.5
     end
   end
@@ -31,7 +33,7 @@ define :foo do
     end
   end
   with_fx :wobble, mix: 0.4, phase: 0.5  do
-#    play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
+    play chord(:e2, :minor), attack: 0, release: 3, amp: 0.2
   end
   sleep 4
   cue :tick
