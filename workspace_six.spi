@@ -23,6 +23,6 @@ with_fx :slicer, wave: 1, phase: 0.125 do |s|
     end
     play 42, res: 0.3
     sleep 2
-    control s, invert_wave: [0, 1].choose, phase: [0.125, 0.125, 0.125, 0.5, 0.125].choose
+    control s, invert_wave: [0, 1].choose, phase: [0.125, 0.125, 0.125, 0.125, 0.125].choose
   end
 end
