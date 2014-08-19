@@ -17,7 +17,7 @@ comment do
   end
 end
 define :foo do
-play chord(:e1, :minor), attack: 0, release: 0.3
+play chord(:e1, :minor), attack: 0, release: 3
 sleep 4
 cue :tick
 end
