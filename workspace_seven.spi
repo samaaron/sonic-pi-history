@@ -17,10 +17,11 @@ comment do
   end
 end
 define :foo do
-play 30, attack: 0, release: 0.1
+play chord(:e1, :minor).choose, attack: 0, release: 0.1
 sleep 0.5
 cue :tick
 end
+
 
 comment do
 loop do
