@@ -10,7 +10,7 @@ define :rhythm do
     in_thread do
       sleep [0.125, 0.25, 0.5].choose
       use_synth :dsaw
-      with_transpose 12 do
+      with_transpose 24 do
 
         play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
 
