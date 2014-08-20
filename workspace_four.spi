@@ -1,4 +1,6 @@
+n = 1
 loop do
-  play 60
+  n = n + 1
+  play 60 + n
   sleep 0.5
 end
