@@ -2,5 +2,5 @@
 loop do
 
   play 60 
-  sleep 0.125
+  sleep 0.25
 end
