@@ -1,45 +1,60 @@
 use_synth :dsaw
-sd = sample_duration :loop_amen, rate: 1.5
+#sample :ambi_lunar_land, rate: 1.0/5
+use_bpm 70
+define :rhythm do
+  use_synth :dsaw
+  use_synth_defaults attack: 0, release: 0.1
+  use_transpose 0
 
-with_fx :reverb do
-  in_thread do
-    loop do
-      a = [1, 4, 2].choose
-      8.times do
-        sample :elec_beep, rate: 0.75 * a, amp: 0.7
-        sleep sd / 8
+  with_fx :reverb, phase: 0.125, decay: 0.1 do
+    in_thread do
+      sleep [0.125, 0.25, 0.5].choose
+      use_synth :dsaw
+      with_transpose 19 do
+
+        play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.25, 0.125, 0.25]
+
       end
-      sleep sd
+
+    end
+    use_synth :fm
+    with_transpose  -12 do
+      play_pattern_timed [50, 55, 50, 50, 62, 55, 50, 50], [0.125, 0.125, 0.25], amp: 2
     end
   end
 end
 
+define :drums do
 
-
-in_thread do
-    loop do
-      use_synth :tb303
-      n = [5, 4, 8, 16].choose
-      n.times do
-        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120), amp: 0.5
-        sleep sd / n
+  with_fx :echo, phase: 0.125, mix: 0.5 do
+    sample :elec_plip, rate: 4
+  end
+  with_synth :prophet do
+    in_thread do
+      4.times do
+        play chord(50, :minor).choose, attack: 0, release: 0.14, cutoff: rrand(40, 120)
+        sleep 0.125
       end
     end
-  end
-
-with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
-  define :wbb do
-    wb
-  end
-  loop do
-    use_synth :dsaw
-
-
-    with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
-      play chord(:e1, :minor).choose, attack: 0, release: sd
+    with_fx :wobble, phase: 0.125, decay: 0.5, mix: 1 do
+      with_fx :compressor do
+        sample :drum_heavy_kick, rate: 1, amp: 6, release: 0.01, sustain: 0, attack: 0
+      end
     end
+    sleep 0.25
+    sample :drum_cymbal_hard, release: 0.07, sustain: 0
+    sleep 0.25
+  end
+end
 
-    sample :loop_amen, rate: 1.5
-    sleep sd
+in_thread(name: :loop_rhyth) do
+  loop do
+    rhythm
+  end
+end
+
+in_thread(name: :loop_drums) do
+  loop do
+    drums
   end
 end
