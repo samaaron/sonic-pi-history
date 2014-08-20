@@ -1,4 +1,3 @@
-use_bpm 120
 with_fx :wobble, phase: 0.5 do
   use_synth :dsaw
   play 40, release: 2
