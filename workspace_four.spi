@@ -1,6 +1,4 @@
 use_synth :dsaw
 play 60
 sleep 0.5
-play 67
-sleep 1
-play 32
+sample :ambi_lunar_land
