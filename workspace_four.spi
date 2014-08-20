@@ -1,4 +1,4 @@
-use_synth :dsaw
-play 60
-sleep 0.5
-sample :ambi_lunar_land
+scale(:c3, :minor).each do |n|
+play n
+sleep 1
+end
