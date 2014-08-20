@@ -1,3 +1,4 @@
-with_fx :echo, phase: 0.25 do
-  play 50
+with_fx :wobble do
+  use_synth :dsaw
+  play 40
 end
