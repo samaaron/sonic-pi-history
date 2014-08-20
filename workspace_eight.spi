@@ -1,6 +1,6 @@
 sd = sample_duration :loop_amen
 
-with_fx :bitcrusher, bits: 16, sample_rate: 4000 do
+with_fx :bitcrusher, bits: 16, sample_rate: 3000 do
   use_synth :dsaw
   sample :loop_amen, rate: 0.5
 end
