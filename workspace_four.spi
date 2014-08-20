@@ -1,4 +1,4 @@
-scale(:c3, :minor_pentatonic).each do |n|
+scale(:c3, :minor_pentatonic, num_octaves: 4).each do |n|
 play n
-sleep 0.25
+sleep 0.125
 end
