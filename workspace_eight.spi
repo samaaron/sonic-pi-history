@@ -1,47 +1,21 @@
 
-load_sample :drum_heavy_kick
+use_synth :tb303
+use_bpm 45
 
-lp = :loop_industrial
-sd = sample_duration lp
-
-define :drums do
-  sync :tick
-
-
-  sleep sd/2
-end
-
-define :bd do
-  wait :tick
-  #  sample :drum_bass_hard, amp: 2
-  #sample :drum_heavy_kick, amp: 2
-
-end
-
-define :synths do
-  wait :tick
-  use_synth :fm
-  n = 2
-  p = [52, 48, 50].choose
-  in_thread do
-    2.times do
-      play p, release: sd/8, attack: 0
-      sleep sd/ 4
-    end
-  end
-  use_transpose 0
-  with_fx :reverb, room: 0.8 do
-    with_fx :ixi_techno, rate: sd/16 do
-      n.times do
-        use_synth :prophet
-        #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
-        play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/4], attack: 0, release: 1, amp: 2, cutoff: rrand(80, 100)
-      end
-    end
+define :foobar do
+  use_bpm 120
+  with_fx :reverb, mix: 0.2 do
+    use_synth :prophet
+    use_transpose 12
+    play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(50, 100) - 20, amp: 0.5, attack: 0, release: 2
+    sleep 1
   end
 end
 
-in_thread(name: :drums){loop{drums}}
-in_thread(name: :synths){loop{synths}}
-in_thread(name: :bd){loop{bd}}
- 
+in_thread(name: :sam) do
+  with_fx(:echo, delay: 0.5, decay: 4) do
+    loop do
+      foobar
+    end
+  end
+end
