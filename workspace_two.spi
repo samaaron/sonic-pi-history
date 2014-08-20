@@ -6,7 +6,7 @@ define :drums do
     sample :elec_plip, rate: 2, amp: 3 if rand < 0.5
     sleep 0.25
   end
-  sample :ambi_lunar_land,  rate: 1.0/5
+#  sample :ambi_lunar_land,  rate: 1.0/5
   with_fx :echo, decay: 1, phase: 0.125, mix: 0.5 do
     sample :elec_filt_snare, rate: 16
   end
