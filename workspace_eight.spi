@@ -1,6 +1,6 @@
 sd = sample_duration :loop_amen
 
-with_fx :wobble, phase: sd / 8, wave: 0, invert_wave: 1, mix: 0.2 do
+with_fx :bitcrusher, phase: sd / 8, wave: 0, invert_wave: 1, mix: 0.2 do
   use_synth :dsaw
   sample :loop_amen, rate: 0.5
 end
