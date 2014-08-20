@@ -1,3 +1,5 @@
 with_fx :reverb do
-  synth :sound_in
+  with_fx :echo do
+    synth :sound_in
+  end
 end
