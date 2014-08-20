@@ -1,4 +1,6 @@
-with_fx :wobble, phase: 0.5, wave: 0, invert_wave: 1 do
+sd = sample_duration :loop_amen
+
+with_fx :wobble, phase: sd / 8, wave: 0, invert_wave: 1 do
   use_synth :dsaw
   sample :loop_amen
 end
