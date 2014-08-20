@@ -1,6 +1,6 @@
 
 loop do
 
-  play 60 
+  sample :drum_heavy_kick 
   sleep 0.25
 end
