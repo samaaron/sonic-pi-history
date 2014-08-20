@@ -1,7 +1,7 @@
 in_thread do
   with_fx :reverb do
     loop do
-      sample :drum_cymbal_closed, rate: rrand(0.5, 2), amp: 0.4
+      sample :drum_cymbal_closed, rate: [1, 1.5, 2, 4].choose, amp: 0.4
       sleep 0.25
     end
   end
