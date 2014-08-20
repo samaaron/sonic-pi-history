@@ -25,9 +25,9 @@ define :synths do
       play 33
 #      sleep 0.125
       use_synth :dsaw
-      4.times do
+      8.times do
         play chord(33 + 0, :minor).choose, amp: 1, release: 0.0, attack: 0.3
-        sleep 0.333333
+        sleep 0.333333/ 2
 end
     end
   end
