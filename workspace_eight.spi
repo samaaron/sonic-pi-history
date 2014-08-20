@@ -8,3 +8,13 @@ in_thread do
     play 70
   end
 end
+sleep 0.5
+in_thread do
+  with_fx :echo do
+    play 50
+    sleep 1
+    play 62
+    sleep 2
+    play 70
+  end
+end
