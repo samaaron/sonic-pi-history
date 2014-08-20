@@ -1,29 +1,45 @@
+use_synth :dsaw
+sd = sample_duration :loop_amen, rate: 1.5
+
+with_fx :reverb do
+  in_thread do
+    loop do
+      a = [1, 4, 2].choose
+      8.times do
+        sample :elec_beep, rate: 0.75 * a, amp: 0.7
+        sleep sd / 8
+      end
+      sleep sd
+    end
+  end
+end
+
+
+
 in_thread do
-  with_fx :reverb do
-    with_fx :echo, phase: 0.125 do
-      loop do
-        sample :drum_cymbal_closed, rate: [1, 1.5, 2, 4].choose, amp: 0.4
-        sleep 0.5
+    loop do
+      use_synth :tb303
+      n = [5, 4, 8, 16].choose
+      n.times do
+        play chord(:e3, :minor).choose, attack: 0, release: sd / n, cutoff: rrand(60, 120), amp: 0.5
+        sleep sd / n
       end
     end
   end
-end
 
-in_thread do
-  loop do
-    sample :drum_bass_hard, amp: 2
-    sleep 0.5
-    sample :drum_bass_hard, amp: 2
-    sleep 0.5
+with_fx :wobble, mix: 1, phase: sd/ 2, wave: 0, invert_wave: 1, cutoff_min: 80, cutoff_max: 120 do |wb|
+  define :wbb do
+    wb
   end
-end
+  loop do
+    use_synth :dsaw
 
-in_thread do
-  use_synth :tb303
-  with_fx :echo do
-    loop do
-      play_pattern_timed [50, 52, 55, 59], [1, 0.5], amp: 0.3
-      sleep 3
+
+    with_fx :wobble, phase: sd / 8, cutoff_max: 80 do
+      play chord(:e1, :minor).choose, attack: 0, release: sd
     end
+
+    sample :loop_amen, rate: 1.5
+    sleep sd
   end
 end
