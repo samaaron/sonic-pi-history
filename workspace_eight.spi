@@ -1,5 +1,5 @@
 
-with_fx :wobble do
+with_fx :echo do
 play 50
 sleep 1
 play 62
