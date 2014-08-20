@@ -1,7 +1,8 @@
-use_bpm 240
 
+with_fx :wobble do
 play 50
 sleep 1
 play 62
 sleep 2
 play 70
+end
