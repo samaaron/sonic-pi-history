@@ -1,1 +1,1 @@
-sample :misc_burp
+sample :misc_burp, rate: 0.5
