@@ -1,4 +1,5 @@
-use_bpm 120
+use_bpm 240
+
 play 50
 sleep 1
 play 62
