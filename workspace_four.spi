@@ -1,6 +1,1 @@
-n = 2
-loop do
-  n = n - 0.2
-  sample :misc_burp, rate: n
-  sleep 0.3
-end
+play 50
