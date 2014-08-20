@@ -1,21 +1,5 @@
-
-use_synth :tb303
-use_bpm 45
-
-define :foobar do
-  use_bpm 120
-  with_fx :reverb, mix: 0.2 do
-    use_synth :prophet
-    use_transpose 12
-    play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(50, 100) - 20, amp: 0.5, attack: 0, release: 2
-    sleep 1
-  end
-end
-
-in_thread(name: :sam) do
-  with_fx(:echo, delay: 0.5, decay: 4) do
-    loop do
-      foobar
-    end
-  end
-end
+play 50
+sleep 1
+play 62
+sleep 2
+play 70
