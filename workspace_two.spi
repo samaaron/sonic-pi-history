@@ -1,12 +1,1 @@
-in_thread do
-  loop do
-    cue :tick
-    sleep 1
-  end
-end
-
-
-loop do
-  sync :tick
-  sample :drum_heavy_kick
-end
+sample :drum_bass_hard, rate: -1
