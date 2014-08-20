@@ -10,6 +10,7 @@ in_thread do
 end
 sleep 0.5
 in_thread do
+  use_tranpose 12
   with_fx :echo do
     play 50
     sleep 1
