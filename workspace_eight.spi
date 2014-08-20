@@ -1,9 +1,10 @@
-use_bpm 120
-
-with_fx :echo do
-play 50
-sleep 1
-play 62
-sleep 2
-play 70
+use_bpm 100
+in_thread do
+  with_fx :echo do
+    play 50
+    sleep 1
+    play 62
+    sleep 2
+    play 70
+  end
 end
