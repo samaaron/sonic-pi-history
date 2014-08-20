@@ -1,4 +1,4 @@
 scale(:c3, :minor).each do |n|
 play n
-sleep 1
+sleep 0.25
 end
