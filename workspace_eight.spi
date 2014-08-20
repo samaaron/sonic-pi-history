@@ -1,8 +1,11 @@
 in_thread do
   with_fx :reverb do
-    loop do
-      sample :drum_cymbal_closed, rate: [1, 1.5, 2, 4].choose, amp: 0.4
-      sleep 0.25
+    with_fx :echo do
+      loop do
+
+        sample :drum_cymbal_closed, rate: [1, 1.5, 2, 4].choose, amp: 0.4
+        sleep 0.5
+      end
     end
   end
 end
