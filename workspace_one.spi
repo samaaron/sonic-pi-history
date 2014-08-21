@@ -6,7 +6,7 @@ use_bpm 60
 define :drums do
   with_fx :none, bits: 12, sample_rate: 10000, phase: 0.25 / 1 do
 
-    sample :drum_heavy_kick
+    sample :drum_heavy_kick, amp: 4
     with_fx :echo, phase: 0.125, amp: 1, mix: 0.8 do
       sample :elec_blup, rate: 32, amp: 1
     end
