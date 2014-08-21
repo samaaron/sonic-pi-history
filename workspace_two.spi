@@ -1,5 +1,5 @@
 define :drums do
- with_fx :reverb, room: 0.4 do
+ with_fx :reverb, room: 0.4, mix: 0.4 do
 
    sample :drum_heavy_kick, amp: 5
    with_fx :echo, phase: 0.5, amp: 1, mix: 0.28 do
