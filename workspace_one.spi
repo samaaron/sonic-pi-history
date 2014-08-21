@@ -14,7 +14,7 @@ define :drums do
   end
   #      sample :ambi_lunar_land,  rate: 1.0/5, amp: 1
   with_fx :none do
-    with_fx :none, decay: 2, phase: 0.25, mix: 0.7 do
+    with_fx :echo, decay: 2, phase: 0.25, mix: 0.7 do
       sample :elec_filt_snare, rate: 16, amp: 200000
     end
   end
