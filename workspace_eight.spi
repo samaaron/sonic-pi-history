@@ -22,7 +22,7 @@ define :synths do
     with_fx :wobble, sample_rate: 10000, bits: 8 do
 
       use_synth :fm
-      use_transpose 34
+      use_transpose 36
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(90, 120), pulse_width: 0.2, mod_phase: 0.25
       play 33
 #      sleep 0.125
