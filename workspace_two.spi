@@ -3,7 +3,7 @@ define :drums do
 
    sample :drum_heavy_kick, amp: 5
    with_fx :echo, phase: 0.125, amp: 1, mix: 0.28 do
-     sample :elec_plip, rate: 1, amp: 2
+     sample :elec_plip, rate: 1, amp: 1
    end
    sleep 0.25
  end
