@@ -1,5 +1,5 @@
 define :foo do
-  play 50
+  play 51
   sleep 1
 end
 
