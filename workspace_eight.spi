@@ -31,7 +31,7 @@ define :synths do
         play 33 - 24, attack: 0, release: 2, amp: 2
       end
       #      sleep 0.125
-      use_synth :prophet
+      use_synth :tb303
       r = rrand(0.01, 0.25)
       r = 0.1
       8.times do
