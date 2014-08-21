@@ -31,7 +31,7 @@ define :synths do
         play 33 - 24, attack: 0, release: 2, amp: 2
       end
       #      sleep 0.125
-      use_synth :zawa
+      use_synth :dsaw
       r = rrand(0.01, 0.25)
       r = 0.5
       4.times do
