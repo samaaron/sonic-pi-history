@@ -1,3 +1,5 @@
+use_bpm 120
+
 5.times do
   play rrand_i(50, 100)
   sleep 0.5
