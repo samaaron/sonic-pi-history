@@ -1,1 +1,4 @@
-sample :loop_amen, rate: -1
+loop do
+  sample :loop_amen, rate: -1
+  sleep 1
+end
