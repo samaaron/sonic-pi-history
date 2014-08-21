@@ -35,7 +35,7 @@ define :synths do
       #      sleep 0.125
       use_synth :dsaw
       r = rrand(0.1, 0.25)
-      r = 0.05
+      r = 0.09
       8.times do
         play chord(33 + 0, :m), amp: 2, release: r, attack: 0, detune: 19 + 12
         sleep 0.125
