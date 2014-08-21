@@ -1,5 +1,5 @@
 a = with_fx :bitcrusher, bits: 3, sample_rate: 1000 do
-  loop do
+  1.times do
     sample :bass_dnb_f
     sample :loop_amen, rate: [0.5, 1, -1].choose
     sleep sample_duration :loop_amen
