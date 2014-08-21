@@ -35,9 +35,9 @@ define :synths do
       use_synth :supersaw
       r = rrand(0.01, 0.25)
       r = 0.5
-      3.times do
+      6.times do
         play chord(33 + 12, :m).choose, amp: 2, release: r, attack: 0
-        sleep 0.3333333333
+        sleep 0.3333333333 / 2
       end
     end
   end
