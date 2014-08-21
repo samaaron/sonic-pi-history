@@ -1,4 +1,4 @@
-with_fx :reverb do
+with_fx :bitcrusher do
   loop do
     sample :bass_dnb_f
     sample :loop_amen, rate: [0.5, 1, -1].choose
