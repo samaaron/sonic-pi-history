@@ -1,7 +1,7 @@
 load_sample :drum_heavy_kick
 use_bpm 60
 
-set_sched_ahead_time! 0
+set_sched_ahead_time! 0.05
 
 define :drums do
   with_fx :none, bits: 12, sample_rate: 10000, phase: 0.25 / 1 do
