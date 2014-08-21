@@ -26,7 +26,7 @@ define :synths do
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(90, 120), pulse_width: 0.2, mod_phase: 0.25
       play 33
 #      sleep 0.125
-      use_synth :tb303
+      use_synth :prophet
       r = rrand(0.01, 0.25)
       r = 0.05
       8.times do
