@@ -1,1 +1,4 @@
-puts sample_duration :loop_amen
+loop do
+  sample :loop_amen
+  sleep 1.753310657596372
+end
