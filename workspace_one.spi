@@ -18,7 +18,7 @@ define :drums do
 end
 
 define :synths do
-  with_fx :echo, phase: 0.25, wave: 1 do
+  with_fx :echo, phase: 0.125, wave: 1 do
     with_fx :none, sample_rate: 10000, bits: 4 do
       use_transpose 12
       use_synth :fm
