@@ -21,7 +21,7 @@ end
 
 define :synths do
   with_fx :none, phase: 1, wave: 1 do
-    with_fx :none, sample_rate: 10000, bits: 8 do
+    with_fx :bitcrusher, sample_rate: 10000, bits: 8 do
 
       use_transpose 12
       use_synth :dsaw
