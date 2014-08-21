@@ -32,8 +32,8 @@ define :synths do
           play 45, attack: 0, release: 2, amp: 2
         end
       end
-      #      sleep 0.125
-      use_synth :dsaw
+
+      use_synth :prophet
       r = rrand(0.1, 0.25)
       r = 0.08
       8.times do
