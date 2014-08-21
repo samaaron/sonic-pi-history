@@ -7,7 +7,7 @@ define :drums do
   with_fx :none, bits: 12, sample_rate: 10000, phase: 0.25 / 1 do
     sample :drum_heavy_kick, rate: 1, amp: 3
     with_fx :echo, amp: 0.3 do
-      sample :elec_filt_snare, rate: 0.5, amp: 5 if rand < 0.5
+      sample :elec_bell, rate: 0.5, amp: 5 if rand < 0.5
     end
     sleep 0.25
   end
