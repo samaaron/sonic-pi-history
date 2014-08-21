@@ -1,6 +1,6 @@
 define :foo do
   play 51
-  sleep 0.25
+  sleep 1
 end
 
 in_thread(name: :sam) do
