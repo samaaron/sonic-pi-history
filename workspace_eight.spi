@@ -32,7 +32,7 @@ define :synths do
         end
       end
       #      sleep 0.125
-      use_synth :tb303
+      use_synth :zawa
       r = rrand(0.01, 0.25)
       r = 0.5
       4.times do
