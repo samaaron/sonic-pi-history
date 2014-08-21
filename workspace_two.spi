@@ -1,5 +1,5 @@
 define :foo do
-  use_synth :prophet
+  use_synth :tb303
   play chord(:e2, :m9).choose, attack: 0, release: 0.2
   sleep 0.25
 end
