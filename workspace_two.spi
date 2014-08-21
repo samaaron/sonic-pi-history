@@ -1,5 +1,5 @@
 define :drums do
- with_fx :none, bits: 12, sample_rate: 10000, phase: 0.25 / 1 do
+ with_fx :reverb, bits: 12, sample_rate: 10000, phase: 0.25 / 1 do
 
    sample :drum_heavy_kick, amp: 5
    with_fx :echo, phase: 0.5, amp: 1, mix: 0.28 do
