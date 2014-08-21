@@ -1,5 +1,8 @@
-play 50
-sleep 0.5
-play 60
-sleep 0.25
-play 30
+5.times do
+  play 50
+  sleep 0.5
+  play 60
+  sleep 0.25
+  play 30
+  sleep 0.25
+end
