@@ -28,7 +28,7 @@ define :synths do
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(70, 120), pulse_width: 0.2, mod_phase: 0.25
       
       with_fx :wobble, phase: 1, wave: 0, invert_wave: 1, cutoff_min: 60, cutoff_max: 129 do
-        play 33 - 12, attack: 0, release: 2, amp: 2
+        play 33 - 17, attack: 0, release: 2, amp: 2
       end
       #      sleep 0.125
       use_synth :dsaw
