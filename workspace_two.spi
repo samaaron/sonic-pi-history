@@ -1,4 +1,6 @@
-loop do
-  sample :loop_amen, rate: [0.5, 1, -1].choose
-  sleep sample_duration :loop_amen
+with_fx :reverb do
+  loop do
+    sample :loop_amen, rate: [0.5, 1, -1].choose
+    sleep sample_duration :loop_amen
+  end
 end
