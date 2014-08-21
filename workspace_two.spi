@@ -1,6 +1,6 @@
 define :foo do
   use_synth :tb303
-  sample :drum_heavy_kick
+  sample :drum_heavy_kick, rate: rrand(0, 1)
   play chord(:e2, :m9).choose, attack: 0, release: 0.2, cutoff: rrand(30, 100)
   sleep 0.125
 end
