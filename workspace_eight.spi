@@ -27,8 +27,9 @@ define :synths do
       play 33
 #      sleep 0.125
       use_synth :dsaw
+      r = rrand(0.1, 2)
       8.times do
-        play chord(33 + 0, :minor).choose, amp: 1, release: 0.2, attack: 0
+        play chord(33 + 0, :minor).choose, amp: 1, release: r, attack: 0
         sleep 0.125
 end
     end
