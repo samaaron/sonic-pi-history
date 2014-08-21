@@ -21,7 +21,7 @@ in_thread do
       in_thread do
         use_transpose 24
         use_synth :prophet
-        play_pattern_timed [50, 52, 55, 59] * 2, [0.25, 0.5], amp: 0.3, release: 0.2, attack: 0
+        play_pattern_timed [50, 52, 55, 59] * 2, [0.25, 0.5], amp: 0.6, release: 0.2, attack: 0
       end
       play_pattern_timed [50, 52, 55, 59].reverse       , [1, 0.5], amp: 0.3
       sleep 3
