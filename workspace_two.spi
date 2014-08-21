@@ -1,5 +1,5 @@
 define :foo do
-  play chord(:e3, :minor)
+  play chord(:e3, :m7)
   sleep 1
 end
 
