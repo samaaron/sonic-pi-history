@@ -27,7 +27,7 @@ define :synths do
       play 33
 #      sleep 0.125
       use_synth :tb303
-      r = rrand(0.01, 0.45)
+      r = rrand(0.01, 0.65)
       16.times do
         play chord(33 + 0, :minor).choose, amp: 1, release: r, attack: 0
         sleep 0.125 / 2
