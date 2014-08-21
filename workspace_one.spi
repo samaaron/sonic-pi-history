@@ -1,7 +1,7 @@
 define :drums do
   with_fx :echo, bits: 12, sample_rate: 10000, phase: 0.125 / 1, mix: 0.2 do
 
-    sample :drum_heavy_kick, amp: 5
+    sample :drum_heavy_kick, amp: 1
     with_fx :echo, phase: 0.25, amp: 1, mix: 0.28 do
       sample :elec_plip, rate: 1, amp: 1
     end
