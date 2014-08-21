@@ -1,5 +1,6 @@
 define :foo do
-  play chord(:e3, :m9).choose
+  use_synth :prophet
+  play chord(:e2, :m9).choose
   sleep 1
 end
 
