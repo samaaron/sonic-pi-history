@@ -30,7 +30,7 @@ define :synths do
       r = rrand(0.01, 0.25)
       r = 0.1
       8.times do
-        play chord(33 + 0, :minor).choose, amp: 1, release: r, attack: 0
+        play chord(33 + 12, :minor).choose, amp: 1, release: r, attack: 0
         sleep 0.125
 end
     end
