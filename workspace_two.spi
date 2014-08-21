@@ -1,4 +1,1 @@
-loop do
-  sample :loop_amen, rate: 1
-  sleep 1
-end
+puts sample_duration :loop_amen
