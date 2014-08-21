@@ -3,7 +3,7 @@ define :drums do
 
     sample :drum_heavy_kick, amp: 1
     with_synth :dsaw do
-      play 42, attack: 0, release: 0.35, amp: 5
+      play 45, attack: 0, release: 0.35, amp: 5
     end
     with_fx :echo, phase: 0.125, amp: 1, mix: 0.28 do
       sample :drum_cymbal_pedal, rate: 2, amp: 1
