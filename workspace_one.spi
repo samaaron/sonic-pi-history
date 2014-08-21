@@ -30,7 +30,7 @@ define :synths do
       end
       
       use_synth :supersaw
-      play 35 + 36, release: 2
+      play 33 + 36, release: 2
       r = rrand(0.01, 0.25)
       r = 0.1
       8.times do
