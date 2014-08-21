@@ -9,7 +9,7 @@ define :drums do
     sample :elec_plip, rate: 2, amp: 5 if rand < 0.5
     sleep 0.25
   end
-#  sample :ambi_lunar_land,  rate: 5.0/5, amp: 1
+  #  sample :ambi_lunar_land,  rate: 5.0/5, amp: 1
   with_fx :echo, decay: 1, phase: 0.125, mix: 0.2 do
     sample :elec_filt_snare, rate: 8
   end
@@ -21,18 +21,20 @@ define :synths do
   with_fx :wobble, phase: 1, wave: 1 do
     with_fx :wobble, sample_rate: 10000, bits: 8 do
 
-      use_transpose 36  
+      use_transpose 36
       use_synth :fm
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(40, 120), pulse_width: 0.2, mod_phase: 0.25
-      play 33 + 12, attack: 0.4, release: 1, cutoff: 90, divisor: 2, depth: 70
-#      sleep 0.125
+      with_fx :lpf do
+        play 33 + 12, attack: 0.4, release: 1, cutoff: 90, divisor: 2, depth: 70
+      end
+      #      sleep 0.125
       use_synth :prophet
       r = rrand(0.01, 0.25)
       r = 0.1
       8.times do
         play chord(33 + 0, :minor).choose, amp: 1, release: r, attack: 0
         sleep 0.125
-end
+      end
     end
   end
 end
