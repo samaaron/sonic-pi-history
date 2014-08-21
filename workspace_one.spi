@@ -22,7 +22,7 @@ define :synths do
     with_fx :none, sample_rate: 10000, bits: 4 do
       use_transpose 12
       use_synth :fm
-      diff = -2
+      diff = -0
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(70, 120), pulse_width: 0.2, mod_phase: 0.25
       with_fx :none, phase: 1, wave: 0, amp: 1 do
         with_fx :wobble, phase: 1, wave: 0, invert_wave: 0, cutoff_min: 90, cutoff_max: 120 do
