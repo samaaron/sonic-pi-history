@@ -1,7 +1,7 @@
 define :foo do
   use_synth :prophet
   play chord(:e2, :m9).choose
-  sleep 1
+  sleep 0.25
 end
 
 in_thread(name: :sam) do
