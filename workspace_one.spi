@@ -27,7 +27,7 @@ define :synths do
         with_fx :wobble, phase: 1, wave: 0, invert_wave: 0, cutoff_min: 90, cutoff_max: 120 do
           in_thread do
             2.times do
-              play 33, attack: 0, release: 0.5, amp: 2
+              play 33, attack: 0, release: 0.5, amp: 2, detune: 12
               sleep 0.25 
             end
 
