@@ -78,7 +78,7 @@ define :drumit do
   with_fx :echo, phase: p, mix: 0.1 do
     sample :drum_heavy_kick
     in_thread do
-      sleep 0
+#      sleep 0
       with_fx :wobble do
         sample :elec_blip2, rate: p
       end
