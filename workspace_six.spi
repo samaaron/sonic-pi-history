@@ -1,1 +1,1 @@
-synth :bnoise
+synth :bnoise, attack: 0, release: 0.1
