@@ -94,7 +94,7 @@ end
 
 define :drumit do
   with_synth :dsaw do
-#    play :e6, release: 0.1, amp: 0.2
+    #    play :e6, release: 0.1, amp: 0.2
   end
   sync :tick
   with_fx :wobble, phase: 0.4, mix: 0.2 do
@@ -104,8 +104,11 @@ define :drumit do
   use_synth :fm
   puts blue * 4
   n = chord((note :e2), :minor).choose
-  play [n, n + 12, n+ 24].choose, attack: 0, release: 0.1, depth: blue * 8, divisor: green * 2
+  with_fx :reverb do
+    play [n, n + 12, n+ 24].choose, attack: 0, release: 0.1, depth: blue * 8, divisor: green * 2
+  end
   osc "/beat", 1
+
 end
 
 in_thread(name: :drums) do
@@ -134,12 +137,12 @@ define :drumit2 do
       #sample :elec_snare, rate: 32, amp: 2
       sample :drum_bass_hard, amp: 2
     end
-     sleep 0.4
-  with_fx :slicer, phase: 0.1, decay: 0.5 do
-    sample :elec_snare, rate: 4
+    sleep 0.4
+    with_fx :slicer, phase: 0.1, decay: 0.5 do
+      sample :elec_snare, rate: 4
+    end
   end
-  end
- 
+
   sleep 0.4
 
 end
