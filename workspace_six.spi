@@ -2,7 +2,7 @@
 
 define :freddy do
   use_synth :tb303
-  play chord(:e3, :minor).choose
+  play chord(:e3, :minor).choose, attack: 0
   sleep 0.25
 end
 
