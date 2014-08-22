@@ -7,7 +7,7 @@ define :drums do
    end
    sleep 0.25
  end
-      sample :ambi_lunar_land,  rate: 5.0/5, amp: 1
+      sample :ambi_lunar_land,  rate: 4.0/5, amp: 1
  with_fx :none do
    with_fx :echo, decay: 2, phase: 0.125, mix: 0.7 do
      sample :elec_filt_snare, rate: 16, amp: 1
