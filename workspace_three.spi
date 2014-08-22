@@ -69,6 +69,7 @@ with_fx :wobble do |w|
     co = 70
     a = 0.9
     co = blue * 100 + 20
+    puts co
     puts blue
     n = note(:e3) + -12
     use_synth_defaults release: 0.01
