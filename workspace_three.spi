@@ -69,6 +69,7 @@ with_fx :wobble do |w|
     co = 70
     a = 1
     co = red * 100 + 20
+    puts red
     control s, note: chord(:e3, :m7).choose, cutoff: co, amp: a
     control s1, note: :e3, cutoff: co, amp: a
 
