@@ -9,7 +9,7 @@ defonce :out do
 end
 
 define :amp do
- val.read("/palimpsest/amp")
+  val.read("/palimpsest/amp")
 end
 
 define :left do
@@ -17,8 +17,8 @@ define :left do
 end
 
 define :right do
- val.read("/palimpsest/right")
- 
+  val.read("/palimpsest/right")
+
 end
 
 define :colour do |idx=0|
@@ -56,7 +56,7 @@ with_fx :wobble do |w|
     control s1, note: tonic + colour(1) * range, cutoff: co, amp: a
 
     control s2, note: tonic + colour(2) * range, cutoff: co, amp: a
-    
+
     control wob, amp_slide: 0.3, amp: 0.2, phase: 0.125, cutoff_max: 120, cutoff_min: 70, wave: 0
     beat += 1
   end
@@ -71,7 +71,7 @@ end
 define :drumit do
   sync :tick
   with_fx :reverb, phase: 0.2, mix: 0.9 do
-     sample :ambi_choir, amp: 1, rate: 0.2,pan: colour(2) * 2 - 1
+    sample :ambi_choir, amp: 1, rate: 0.2,pan: colour(2) * 2 - 1
 
   end
   sample :bass_hit_c, amp: 2, rate: 1
@@ -103,9 +103,9 @@ end
 
 define :drumit2 do
   sync :tick
-with_fx :echo, phase: 0.4 do
-  sample :drum_heavy_kick, amp: 4
-  sample :drum_bass_hard, amp: 2
+  with_fx :echo, phase: 0.2 do
+    sample :drum_heavy_kick, amp: 4
+    sample :drum_bass_hard, amp: 2
   end
   sleep 0.8
 
