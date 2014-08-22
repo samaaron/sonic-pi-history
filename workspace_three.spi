@@ -76,7 +76,7 @@ define :drumit do
   end
   sample :bass_hit_c, amp: 2, rate: 1
 
-  sleep 0.4
+  sleep 0.8
 
 
 
