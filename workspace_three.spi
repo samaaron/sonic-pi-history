@@ -143,7 +143,7 @@ define :drumit2 do
       #sample :elec_snare, rate: 10, amp: 2
       
     end
-    sleep 1.6
+    sleep 0.4
 
   end
 
