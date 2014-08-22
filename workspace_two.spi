@@ -53,7 +53,7 @@ define :synths do
           #play 31, attack: 0, release: [2, 1.7, 2.3].choose, amp: rrand(2, 2.5)
         end
       end
-      with_fx :compressor do
+      with_fx :echo do
         use_synth :supersaw
         r = rrand(0.08, 0.12)
         if rand <0.05
