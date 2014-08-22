@@ -1,3 +1,3 @@
 play 50
 sleep 0.5
-play 62
+play 50 + 12
