@@ -152,7 +152,7 @@ define :melody do
      play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
   end
 
-  sleep 0.8
+#  sleep 0.8
 end
 
 
