@@ -27,7 +27,7 @@ define :synths do
         with_fx :bitcrusher, phase: 0.125, wave: 1, invert_wave: 0, cutoff_min: 90, cutoff_max: 120 do
           in_thread do
             2.times do
-              play 33, attack: 0, release: 0.5, amp: 2, detune: 0.01, mod_phase: 0.25, cutoff: 120
+              play 38, attack: 0, release: 0.5, amp: 2, detune: 0.01, mod_phase: 0.25, cutoff: 120
               sleep 0.25
             end
 
