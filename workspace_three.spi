@@ -95,7 +95,7 @@ end
 define :drumit do
   sync :tick
   with_fx :reverb, phase: 0.2, mix: 0.9 do
-   sample :ambi_choir, amp: 1, rate: 0.2,pan: cred * 2 - 1
+   sample :ambi_choir, amp: 1, rate: 0.2,pan: red * 2 - 1
 
   end
   use_synth :fm
