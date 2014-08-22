@@ -2,7 +2,7 @@
 
 define :freddy do
   use_synth :tb303
-  with_fx :reverb, mix: 0.1 do
+  with_fx :reverb, mix: 0.9 do
     play chord(:e3, :minor).choose, attack: 0, release: 0.2, cutoff: rrand(40, 120)
   end
   sleep 0.125
