@@ -99,7 +99,7 @@ define :drumit do
 
   end
   use_synth :fm
-  n = (note :e2) + -12
+  n = (note :e2) + 24
   play n, attack: 0, release: 0.1
   osc "/beat", n / 130
   sleep 0.4
