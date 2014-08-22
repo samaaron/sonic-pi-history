@@ -1,5 +1,6 @@
 with_fx :wobble do
-loop do
-  synth :noise, attack: 0, release: 0.5, cutoff: 120, res: 1
-  sleep 1
+  loop do
+    synth :noise, attack: 0, release: 0.5, cutoff: 120, res: 1
+    sleep 1
+  end
 end
