@@ -56,7 +56,6 @@ with_fx :wobble do |w|
     l = 0.9
     r = 0.8
     l = 0.001
-    puts c
     sleep 0.1
     tonic = chord(:e3, :minor).choose
     range = 36
