@@ -78,7 +78,7 @@ with_fx :wobble do |w|
 end
 
 define :drumit do
-  syncf :tick
+  sync :tick
   with_fx :reverb, phase: 0.2, mix: 0.9 do
     # sample :ambi_choir, amp: 1, rate: 0.2,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
 
