@@ -93,9 +93,7 @@ with_fx :wobble do |w|
 end
 
 define :drumit do
-  with_synth :dsaw do
-  #   play :a6, release: 0.2, amp: 0.1, attack: 0, detune: 9
-  end
+
   sync :tick
 
 #  sample :ambi_lunar_land, amp: 0.4, rate: 3.0/5
@@ -103,9 +101,7 @@ define :drumit do
   use_synth :fm
   puts blue * 4
   n = chord((note :a3), :minor).choose
-#  with_fx :wobble, phase: 0.8 do
-#    synth :bnoise, release: 0.7, amp: 0.8
-#  end
+
   with_fx :reverb, phase: 0, amp: 0.89, bits: 6, sample_rate: 4000 + (10000 * amp) do
     play [n].choose, attack: 0, release: 0.1, depth: blue * (1 * amp), divisor: green * (1 * amp)
   end
@@ -135,14 +131,14 @@ end
 define :drumit2 do
   sync :tick
   with_fx :none, bits: 5, mix: 0.4 do
-  sample :drum_heavy_kick, amp: 1
+
     with_fx :echo, phase: 0.2, decay: 0.8, mix: 0.25, amp: 0.3 do
       sample :elec_snare, rate: 10, amp: 2
       
     end
     sleep 0.4
 
-  end
+
 
 end
 
