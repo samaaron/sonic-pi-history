@@ -103,10 +103,6 @@ define :drumit do
   n = chord((note :e2), :minor).choose
   play n, attack: 0, release: 0.1, depth: red * 8, divisor: blue
   osc "/beat", 1
-
-
-
-
 end
 
 in_thread(name: :drums) do
@@ -138,7 +134,7 @@ define :drumit2 do
   end
   sleep 0.4
   with_fx :echo, phase: 0.2, decay: 0.5 do
-    sample :elec_snare, rate: 1.5
+    sample :elec_snare, rate: 1
   end
   sleep 0.4
 
