@@ -12,6 +12,7 @@ in_thread do
 end
 
 loop do
+use_synth :tb303
 play 62, attack: 0, release: 0.1
 sleep 0.125
 end
