@@ -141,7 +141,7 @@ end
 define :drumit2 do
   sync :tick
   with_fx :none, bits: 5, mix: 0.4 do
-    sample :drum_heavy_kick, amp: 3
+    #sample :drum_heavy_kick, amp: 3
     sleep 0.2
     with_fx :echo, phase: 0.1, decay: 0.4, mix: 0.1, amp: 0.3 do
       #sample :elec_snare, rate: -10, amp: 2
