@@ -77,7 +77,7 @@ with_fx :wobble do |w|
 
     
     control s, note: cn, cutoff: co, amp: a, detune: 24
-    control s1, note: cn, cutoff: co, amp: a - 0.5
+    control s1, note: cn, cutoff: co, amp: a
 
     control s2, note: n, cutoff: co, amp: a 
 
