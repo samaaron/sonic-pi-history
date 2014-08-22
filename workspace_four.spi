@@ -1,6 +1,6 @@
 with_fx :wobble, phase: 0.125 do
   loop do
-    synth :noise, attack: 0, release: 0.5, cutoff: 80, res: 1
+    synth :noise, attack: 0, release: 0.5, cutoff: 130, res: 1
     sleep 1
   end
 end
