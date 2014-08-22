@@ -104,9 +104,9 @@ define :drumit do
   use_synth :fm
   puts blue * 4
   n = chord((note :a3), :minor).choose
-  with_fx :wobble, phase: 0.8 do
-    synth :bnoise, release: 0.7, amp: 0.8
-  end
+#  with_fx :wobble, phase: 0.8 do
+#    synth :bnoise, release: 0.7, amp: 0.8
+#  end
   with_fx :reverb, phase: 0, amp: 0.89, bits: 6, sample_rate: 4000 + (10000 * amp) do
     play [n].choose, attack: 0, release: 0.1, depth: blue * (8 * amp), divisor: green * (16 * amp)
   end
