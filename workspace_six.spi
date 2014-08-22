@@ -1,10 +1,11 @@
 
-with_fx(:rlpf, cutoff: 10, cutoff_slide: 20) do |c|
+use_synth :prophet
+use_bpm 45
+
+with_fx(:echo, delay: 0.5, decay: 4) do
   loop do
-    sample :bass_dnb_f, amp: 5
-    sample :loop_amen, amp: 5
-    sleep sample_duration :loop_amen
-    control c, cutoff: rrand(40, 120), cutoff_slide: rrand(1, 20)
+    play chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose, cutoff: rrand(40, 100), amp: 0.5, attack: 0, release: 2
+    sleep [0.25, 0.5, 0.5, 0.5, 1, 1].choose
   end
 end
  
