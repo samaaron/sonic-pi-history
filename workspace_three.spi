@@ -51,11 +51,12 @@ with_fx :wobble do |w|
     tonic = chord(:e3, :minor).choose
     range = 36
     co = 70
-    control s, note: 50, cutoff: 90, amp: 1
-    control s1, note: tonic + colour(1) * range, cutoff: co
+    a = 0
+    control s, note: 50, cutoff: 90, amp: a
+    control s1, note: tonic + colour(1) * range, cutoff: co, amp: a
 
-    control s2, note: tonic + colour(2) * range, cutoff: co
-
+    control s2, note: tonic + colour(2) * range, cutoff: co, amp: a
+    
     control wob, amp_slide: 0.3, amp: 0.2, phase: 0.125, cutoff_max: 120, cutoff_min: 70, wave: 0
     beat += 1
   end
