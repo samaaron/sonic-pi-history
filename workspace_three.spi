@@ -75,7 +75,7 @@ with_fx :wobble do |w|
     control s, note: chord(n, :m7).choose + 12, cutoff: co, amp: a
     control s1, note: n, cutoff: co, amp: a - 0.5
 
-    control s2, note: n, cutoff: co, amp: a
+    control s2, note: n, cutoff: co, amp: a - 0.5
 
     control wob, amp_slide: 0.3, amp: 0.2, phase: 0.5, cutoff_max: 120, cutoff_min: 70, wave: 0, mix: 0
     beat += 1
