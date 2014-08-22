@@ -1,17 +1,12 @@
 
-loop do
-  with_synth :dsaw do
-    with_fx(:slicer, phase: [0.25,0.125].choose) do
-      with_fx(:reverb, room: 0.5, mix: 0.3) do
-        n1 = chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose
-        n2 = chord([:b1, :b2, :e1, :e2, :b3, :e3].choose, :minor).choose
-
-        p = play n1, amp: 2, release: 8, note_slide: 4, cutoff: 30, cutoff_slide: 4, detune: rrand(0, 0.2)
-        control p, note: n2, cutoff: rrand(80, 120)
-      end
-    end
-  end
-
-  sleep 8
+define :play_bb do |n|
+  sample :drum_heavy_kick
+  sample :ambi_drone, rate: [0.25, 0.5, 0.125, 1].choose, amp: 0.25 if rand < 0.125
+  sample :ambi_lunar_land, rate: [0.5, 0.125, 1, -1, -0.5].choose, amp: 0.25 if rand < 0.125
+  sample :loop_amen, attack: 0, release: 0.05, start: 1 - (1.0 / n), rate: [1,1,1,1,1,1,-1].choose
+  sleep sample_duration(:loop_amen) / n
 end
+
+
+loop {play_bb([1,2,4,8,16].choose)}
  
