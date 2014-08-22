@@ -104,7 +104,7 @@ define :drumit do
   puts blue * 4
   n = chord((note :a3), :minor).choose - 0
   with_fx :reverb, phase: 0.8 do
-    synth :pnoise, release: 0.1, attack: 0, amp: 0.8
+    synth :pnoise, release: 0.1, attack: 0.1, amp: 0.8
   end
   blue = 0.1
   green = rrand(0, 1)
