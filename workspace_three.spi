@@ -98,7 +98,7 @@ define :drumit do
     #sample :ambi_lunar_land, amp: 0.4, rate: 0.3,pan: blue * 2 - 1
 
   end
-  use_synth :fm
+  use_synth :dsaw
   puts blue * 4
   n = chord((note :e2), :minor).choose
   play n, attack: 0, release: 0.2, depth: red * 8, divisor: blue
