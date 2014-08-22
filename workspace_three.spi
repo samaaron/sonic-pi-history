@@ -98,7 +98,7 @@ define :drumit do
   end
   sync :tick
 
-    sample :ambi_lunar_land, amp: 0.4, rate: 5.0/5
+  sample :ambi_lunar_land, amp: 0.4, rate: 5.0/5
 
 
   use_synth :fm
@@ -139,7 +139,7 @@ define :drumit2 do
     end
     sleep 0.4
 
-
+  end
 
 end
 
