@@ -1,11 +1,1 @@
-in_thread do
-  loop do
-    synth [:noise, :bnoise, :pnoise].choose, attack: 0, release: 0.125, amp: 0.3, res: 1, cutoff: rrand(50, 130)
-    sleep 0.125
-  end
-end
-
-loop do
-  sample :drum_heavy_kick
-  sleep 0.5
-end
+play 50
