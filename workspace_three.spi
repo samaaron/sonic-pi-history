@@ -95,7 +95,7 @@ end
 define :drumit do
   sync :tick
   with_fx :wobble, phase: 0.4, mix: 0.2 do
-  #sample :ambi_lunar_land, amp: 0.4, rate: 0.3,pan: blue * 2 - 1
+    #sample :ambi_lunar_land, amp: 0.4, rate: 0.3,pan: blue * 2 - 1
 
   end
   use_synth :fm
@@ -136,8 +136,8 @@ define :drumit2 do
     end
   end
   sleep 0.4
-  with_fx :echo, phase: 0.2, decay: 0.5 do
-  sample :elec_snare, rate: 1.5
+  with_fx :echo, phase: 0.4, decay: 0.5 do
+    sample :elec_snare, rate: 1.5
   end
   sleep 0.4
 
