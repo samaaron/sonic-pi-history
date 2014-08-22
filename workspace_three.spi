@@ -104,7 +104,7 @@ end
 define :drumit2 do
   sync :tick
   with_fx :compressor do
-    with_fx :echo, phase: 0.4 do
+    with_fx :echo, phase: 0.8 do
       sample :drum_heavy_kick, amp: 4
       sample :drum_bass_hard, amp: 2
     end
