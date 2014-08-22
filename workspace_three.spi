@@ -75,7 +75,7 @@ with_fx :wobble do |w|
     cn = chord(n, :m7).choose + 12
     use_synth_defaults release: 0.01
     puts (cn.to_f / 130) * 10 - 4
-    osc "/beat", 0.2#(cn.to_f / 130) * 10 - 4
+    osc "/beat", 0.9#(cn.to_f / 130) * 10 - 4
     control s, note: cn, cutoff: co, amp: a, detune: 24
     control s1, note: cn, cutoff: co, amp: a - 0.5
 
