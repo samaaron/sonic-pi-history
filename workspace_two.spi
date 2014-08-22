@@ -59,7 +59,7 @@ define :synths do
         if rand <0.05
           4.times do
             play chord([31, 45].choose, :m7).choose, amp: 2, release: r, attack: 0
-            sleep 0.25
+            sleep 0.125
           end
         else
           8.times do
