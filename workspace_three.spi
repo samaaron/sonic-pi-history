@@ -103,18 +103,18 @@ define :drumit do
   use_synth :fm
   puts blue * 4
   n = chord((note :a3), :minor).choose - 0
-    with_fx :wobble, phase: 0.8 do
-      synth :bnoise, release: 0.1, attack: 0.1, amp: 0.8
-    end
+  with_fx :none, phase: 0.8 do
+    synth :bnoise, release: 0.1, attack: 0.1, amp: 0.8
+  end
   blue = 0.1
   green = rrand(0, 1)
   amp = 1
   with_fx :none, phase: 0, amp: 0.89, bits: 6, sample_rate: 4000 + (10000 * amp) do
-   play [n].choose, amp: 2, attack: 0, release: 0.121, depth: blue * (4 * amp), divisor: green * (4 * amp)
-        play [n].choose + 24, amp: 2, attack: 0, release: 0.121, depth: blue * (4 * amp), divisor: green * (4 * amp)
+    play [n].choose, amp: 2, attack: 0, release: 0.121, depth: blue * (4 * amp), divisor: green * (4 * amp)
+    play [n].choose + 24, amp: 2, attack: 0, release: 0.121, depth: blue * (4 * amp), divisor: green * (4 * amp)
 
   end
-  
+
   osc "/beat", n
 
 end
