@@ -148,7 +148,7 @@ define :melody do
   sync :tick
   use_synth :prophet
   n = chord([:a2, :a3, :a4].choose, :minor).choose
-  with_fx :none, phase: 0.2, mix: 0.2 do
+  with_fx :reverb, phase: 0.2, mix: 0.2 do
      play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
   end
 
