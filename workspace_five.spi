@@ -79,7 +79,7 @@ define :drumit do
     sample :drum_heavy_kick
     in_thread do
 #      sleep 0
-      with_fx :slicer, wave: 1, phase: val.read_all("/palimpsest/colour")[1] do
+      with_fx :slicer, wave: 0, phase: val.read_all("/palimpsest/colour")[1] do
         sample :elec_blip2, rate: p
       end
     end
