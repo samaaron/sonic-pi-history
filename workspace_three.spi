@@ -26,7 +26,7 @@ define :colour do |idx=0|
  # 0.5
 end
 
-o = true
+o = false
 
 with_fx :wobble do |w|
   defonce :wob, override: o do
