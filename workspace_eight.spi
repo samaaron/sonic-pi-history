@@ -1,22 +1,47 @@
 
 load_sample :drum_heavy_kick
 
+lp = :loop_industrial
+sd = sample_duration lp
+
 define :drums do
-  sample :drum_heavy_kick, rate: 0.75
-  sleep 0.5
-  sample :drum_heavy_kick
-  sleep 0.5
+  sync :tick
+
+
+  sleep sd/2
+end
+
+define :bd do
+  wait :tick
+  #  sample :drum_bass_hard, amp: 2
+  #sample :drum_heavy_kick, amp: 2
+
 end
 
 define :synths do
+  wait :tick
   use_synth :fm
-  use_synth_defaults amp: 1, mod_range: 15, attack: 0.03, release: 0.6, cutoff: 100, pulse_width: 0.1, mod_phase: 0.25
-  play 30
-  sleep 0.25
-  play 38
-  sleep 0.25
+  n = 2
+  p = [52, 48, 50].choose
+  in_thread do
+    2.times do
+      play p, release: sd/8, attack: 0
+      sleep sd/ 4
+    end
+  end
+  use_transpose 0
+  with_fx :reverb, room: 0.8 do
+    with_fx :ixi_techno, rate: sd/16 do
+      n.times do
+        use_synth :prophet
+        #play chord(:c4, :minor).choose, release: 0.1, attack: 0, cutoff: rrand(90, 120)
+        play_pattern_timed [55, p, 55, p, 57,p, 59,p]*2, [sd/4], attack: 0, release: 1, amp: 2, cutoff: rrand(80, 100)
+      end
+    end
+  end
 end
 
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
- 
+in_thread(name: :bd){loop{bd}}
+ 
