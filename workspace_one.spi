@@ -24,10 +24,10 @@ define :synths do
       use_synth :tb303
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(70, 120), pulse_width: 0.2, mod_phase: 0.25
       with_fx :none, phase: 1, wave: 0, amp: 1 do
-        with_fx :wobble, phase: 0.125, wave: 1, invert_wave: 0, cutoff_min: 90, cutoff_max: 120 do
+        with_fx :bitcrusher, phase: 0.125, wave: 1, invert_wave: 0, cutoff_min: 90, cutoff_max: 120 do
           in_thread do
             2.times do
-              play 31, attack: 0, release: 0.5, amp: 2, detune: 0.01, mod_phase: 0.25, cutoff: 120
+              play 33, attack: 0, release: 0.5, amp: 2, detune: 0.01, mod_phase: 0.25, cutoff: 120
               sleep 0.5
             end
 
