@@ -137,7 +137,7 @@ define :drumit2 do
   with_fx :none, bits: 5, mix: 0.4 do
   sample :drum_heavy_kick, amp: 1
     with_fx :none, phase: 0.1, decay: 0.1, mix: 0.25, amp: 0.3 do
-#      sample :elec_snare, rate: 10, amp: 2
+      sample :elec_snare, rate: 10, amp: 2
       
     end
     sleep 1.6
