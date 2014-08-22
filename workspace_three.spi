@@ -72,6 +72,7 @@ with_fx :wobble do |w|
     puts blue
     n = note(:e3) + -12
     use_synth_defaults release: 0.01
+    osc "/beat", n.to_f / 130
     control s, note: chord(n, :m7).choose + 12, cutoff: co, amp: a, detune: 24
     control s1, note: n, cutoff: co, amp: a - 0.5
 
@@ -139,7 +140,7 @@ define :melody do
   n = chord([:a2, :a3, :a4].choose, :minor).choose
   Thread.new do
     Kernel.sleep 0.5
-    osc "/beat", 0.2 #1.0 / (n.to_f / 60) - 0.6#
+
   end
   with_fx :none, phase: 0.2, mix: 0.2 do
    # play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
