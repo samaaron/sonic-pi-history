@@ -76,7 +76,8 @@ define :drumit do
   #  sample :ambi_lunar_land, rate: 1.0/5
   out.send(OSC::Message.new("/beat", p))  
   with_fx :echo, phase: p, mix: 0.1 do
-    sample :drum_heavy_kick
+#    sample :drum_heavy_kick
+    sample :elec_blip2
   end
   sleep 0.25
   with_fx :echo, phase: 0.25, mix: 0.2, amp: 0.2 do
