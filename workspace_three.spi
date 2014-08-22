@@ -94,7 +94,7 @@ end
 
 define :drumit do
   with_synth :zawa do
-    play :e5, release: 0.2, amp: 0.2
+    play :e6, release: 0.2, amp: 0.2
   end
   sync :tick
   with_fx :wobble, phase: 0.4, mix: 0.2 do
