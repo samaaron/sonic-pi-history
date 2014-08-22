@@ -104,7 +104,7 @@ define :drumit do
   use_synth :fm
   puts blue * 4
   n = chord((note :e2), :minor).choose
-  with_fx :bitcrusher, phase: 0, amp: 0.5, bits: 6 do
+  with_fx :bitcrusher, phase: 0, amp: 0.5, bits: 6, sample_rate: 5000 do
     play [n, n + 12, n+ 24].choose, attack: 0, release: 0.1, depth: blue * (16 * amp), divisor: green * (8 * amp)
   end
   osc "/beat", 1
