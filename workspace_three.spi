@@ -133,14 +133,14 @@ end
 define :drumit2 do
   sync :tick
   with_fx :bitcrusher, room: 0.2, mix: 0.4 do
-    with_fx :wobble, phase: 0.2, decay: 0.8, mix: 0.5 do
+    with_fx :echo, phase: 0.2, decay: 0.8, mix: 0.5 do
       sample :elec_snare, rate: 10, amp: 2
       sample :drum_heavy_kick, amp: 1
     end
     sleep 0.4
-    with_fx :slicer, phase: 0.1, decay: 0.5 do
+#    with_fx :slicer, phase: 0.1, decay: 0.5 do
 #      sample :elec_snare, rate: 3
-    end
+#    end
   end
 
   sleep 0.4
