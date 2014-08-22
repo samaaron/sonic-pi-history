@@ -129,7 +129,7 @@ end
 
 define :drumit2 do
   sync :tick
-  with_fx :bitcrusher, room: 0.2, mix: 0.4 do
+  with_fx :none, room: 0.2, mix: 0.4 do
     with_fx :slicer, phase: 0.2, decay: 0.8, mix: 0.5 do
       #sample :elec_snare, rate: 32, amp: 2
       sample :drum_bass_hard, amp: 2
