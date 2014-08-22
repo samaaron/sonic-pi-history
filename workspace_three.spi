@@ -5,11 +5,11 @@ end
 
 defonce :out do
   #OSC::Client.new("192.168.15.14", 8112)
-  OSC::Client.new("10.0.0.8", 8112)
+  #OSC::Client.new("10.0.0.8", 8112)
 end
 
 define :osc do |msg, val|
-  out.send(OSC::Message.new(msg, val))
+  #out.send(OSC::Message.new(msg, val))
 end
 
 define :amp do
