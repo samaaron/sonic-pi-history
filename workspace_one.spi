@@ -28,7 +28,7 @@ define :synths do
           in_thread do
             2.times do
               play 33, attack: 0, release: 1, amp: 2
-              sleep 0.5 
+              sleep 0.25 
             end
 
           end
