@@ -105,7 +105,7 @@ define :drumit do
   puts blue * 4
   n = chord((note :e2), :minor).choose
   with_fx :reverb do
-    play [n, n + 12, n+ 24].choose, attack: 0, release: 0.1, depth: blue * 8, divisor: green * 8
+    play [n, n + 12, n+ 24].choose, attack: 0, release: 0.1, depth: blue * 8, divisor: green * 16
   end
   osc "/beat", 1
 
