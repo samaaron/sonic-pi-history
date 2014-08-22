@@ -153,7 +153,7 @@ define :melody do
   use_synth :prophet
   n = chord([:a2].choose, :minor).choose
   with_fx :reverb, phase: 0.2, mix: 0.5 do
-     play n, attack: 0, amp: 3, release: 10, cutoff: rrand(50, 100)
+     play n, attack: 0.5, amp: 3, release: 10, cutoff: rrand(50, 100)
   end
 
   sleep 10
