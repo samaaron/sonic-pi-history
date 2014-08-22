@@ -1,1 +1,3 @@
-play :c5
+play 40
+sleep 0.5
+play 53
