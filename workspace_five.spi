@@ -79,7 +79,7 @@ define :drumit do
     sample :drum_heavy_kick
     in_thread do
 #      sleep 0
-      with_fx :slicer do
+      with_fx :slicer, phase: p do
         sample :elec_blip2, rate: p
       end
     end
