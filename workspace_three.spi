@@ -123,7 +123,7 @@ define :melody do
   n = chord([:a2, :a3, :a4].choose, :minor).choose
   Thread.new do
     Kernel.sleep 0.5
-    osc "/beat", 1 #1.0 / (n.to_f / 60) - 0.6#
+    osc "/beat", 0.1 #1.0 / (n.to_f / 60) - 0.6#
   end
   with_fx :echo, phase: 0.2, mix: 0.2 do
     play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
