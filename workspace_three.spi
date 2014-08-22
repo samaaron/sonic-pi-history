@@ -139,7 +139,7 @@ define :drumit2 do
     end
     sleep 0.2
     with_fx :slicer, phase: 0.1, decay: 0.5 do
-      sample :elec_plip, rate: 4
+      sample :elec_plip, rate: 2
     end
   end
 
