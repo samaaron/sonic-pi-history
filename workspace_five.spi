@@ -75,7 +75,7 @@ define :drumit do
 
   sleep 0.25
   with_fx :echo, phase: 0.25, mix: 0.2, amp: 0.2 do
-    sample :elec_filt_snare, rate: 0.2
+    sample :elec_filt_snare, rate: 0.1
     use_synth :prophet
    # play 30, attack: 0, release: 0.3, cutoff: val.read_all("/palimpsest/colour")[0] * 100
   end
