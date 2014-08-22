@@ -8,7 +8,7 @@ define :drums do
     sleep 0.25
   end
   with_synth :zawa do
-   play 33 + 24, release: 2  
+   play 33 + 24, release: 2, amp: 0.2  
   end
   
 #        sample :ambi_lunar_land,  rate: 1.0/5, amp: 1
