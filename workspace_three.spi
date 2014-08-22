@@ -103,7 +103,7 @@ define :drumit do
 
   use_synth :fm
   puts blue * 4
-  n = chord((note :e2), :minor).choose
+  n = chord((note :a2), :minor).choose
   with_fx :reverb, phase: 0, amp: 0.5, bits: 6, sample_rate: 4000 + (10000 * amp) do
     play [n].choose, attack: 0, release: 0.1, depth: blue * (16 * amp), divisor: green * (8 * amp)
   end
