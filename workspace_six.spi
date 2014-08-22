@@ -1,18 +1,8 @@
-use_synth :prophet
-use_synth_defaults attack: 0, release: 1
 
-in_thread do
-  loop do
-    play 50
-    play 55
-    sleep 0.5
-    play 50 + 12
-    sleep 0.25
-  end
+
+define :freddy do
+ play 50
+ sleep 1
 end
 
-loop do
-use_synth :tb303
-play 62, attack: 0, release: 0.1
-sleep 0.125
-end
+fredy
