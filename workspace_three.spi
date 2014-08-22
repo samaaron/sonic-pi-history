@@ -94,7 +94,7 @@ define :drumit do
   #  sample :ambi_choir, amp: 1, rate: 0.2,pan: colour(2) * 2 - 1
 
   end
-  #sample :bass_hit_c, amp: 2, rate: 1
+  sample :bass_hit_c, amp: 2, rate: 1
 
   sleep 0.8
 
