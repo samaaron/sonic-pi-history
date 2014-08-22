@@ -72,7 +72,7 @@ define :drumit do
     #    sample :ambi_piano, rate: 0.4 + (val.read_all("/palimpsest/colour")[1] * 8) ,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
     #        sample :ambi_piano, rate: 0.4 + (val.read_all("/palimpsest/colour")[1] * 8) ,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
   end
-  p = 0.125
+  p = 0.25
   #  sample :ambi_lunar_land, rate: 1.0/5
   out.send(OSC::Message.new("/beat", p))
   with_fx :echo, phase: p, mix: 0.1 do
