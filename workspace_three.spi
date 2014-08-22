@@ -8,6 +8,22 @@ defonce :out do
   OSC::Client.new("10.0.0.8", 8112)
 end
 
+define :amp do
+ val.read("/palimpsest/amp")
+end
+
+define :left do
+  val.read("/palimpsest/left")
+end
+
+define :right do
+ val.read("/palimpsest/right")
+end
+
+define :colour do |idx=0|
+  val.read("/palimpsest/colour", idx)
+end
+
 o = false
 
 with_fx :wobble do |w|
@@ -31,12 +47,12 @@ with_fx :wobble do |w|
     start = beat % 4
     size = start == 0 ? 0.8 : 0.5
 
-   
 
-    v = val.read("/palimpsest/amp")
-    l = val.read("/palimpsest/left")
-    r = val.read("/palimpsest/right")
-    c = val.read_all("/palimpsest/colour")
+
+    v = amp
+    l = left
+    r = right
+
     l = 0.9
     r = 0.8
     l = 0.001
@@ -45,10 +61,10 @@ with_fx :wobble do |w|
     tonic = chord(:e3, :minor).choose
     range = 36
     co = 70
-    control s, note: tonic + c.first * range, cutoff: co
-    control s1, note: tonic + c[1] * range, cutoff: co
+    control s, note: tonic + c * range, cutoff: co
+    control s1, note: tonic + c(1) * range, cutoff: co
 
-    control s2, note: tonic + c[2] * range, cutoff: co
+    control s2, note: tonic + c(2) * range, cutoff: co
 
     control wob, amp_slide: 0.3, amp: 0.2, phase: 0.125, cutoff_max: 120, cutoff_min: 70, wave: 0
     beat += 1
@@ -62,9 +78,9 @@ with_fx :wobble do |w|
 end
 
 define :drumit do
-  sync :tick
+  syncf :tick
   with_fx :reverb, phase: 0.2, mix: 0.9 do
-   # sample :ambi_choir, amp: 1, rate: 0.2,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
+    # sample :ambi_choir, amp: 1, rate: 0.2,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
 
   end
   sample :bass_hit_c, amp: 2, rate: 1
@@ -107,9 +123,9 @@ define :melody do
   use_synth :prophet
   n = chord([:a2, :a3, :a4].choose, :minor).choose
   Thread.new do
-      Kernel.sleep 0.5
-      out.send(OSC::Message.new("/beat", 1.0 / (n.to_f / 60) - 0.6))
-    end
+    Kernel.sleep 0.5
+    out.send(OSC::Message.new("/beat", 1.0 / (n.to_f / 60) - 0.6))
+  end
   with_fx :echo, phase: 0.2, mix: 0.2 do
     play n, attack: 0, amp: 1, release: 1, cutoff: rrand(50, 100)
   end
