@@ -9,7 +9,7 @@ define :drums do
   end
   with_fx :slicer, wave: 2, amp_min: 0.5, amp_max: 1, phase: 0.125/ 2 do
     with_synth :zawa do
-      play 36 + 36, release: 2, amp: 0.2
+      play 35 + 36, release: 2, amp: 0.2
     end
   end
 
