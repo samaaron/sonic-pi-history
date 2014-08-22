@@ -78,7 +78,7 @@ end
 define :bd do
 sync :tick
 sample :drum_bass_hard
-sleep 0.5
+sleep 0.25
 end
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
