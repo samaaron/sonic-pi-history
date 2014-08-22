@@ -94,7 +94,7 @@ end
 
 define :drumit do
   with_synth :dsaw do
-        play :a6, release: 0.1, amp: 0.1, attack: 0
+        play :a6, release: 0.2, amp: 0.1, attack: 0
   end
   sync :tick
 
