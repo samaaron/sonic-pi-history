@@ -1,1 +1,1 @@
-puts midi_to_hz(130)
+puts midi_to_hz(150)
