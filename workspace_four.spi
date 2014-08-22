@@ -1,1 +1,1 @@
-synth :noise, attack: 0, release: 0.1, cutoff: 135, res: 1
+synth :noise, attack: 0, release: 0.1, cutoff: 140, res: 1
