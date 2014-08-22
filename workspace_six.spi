@@ -1,1 +1,1 @@
-synth :bnoise, attack: 0, release: 0.5, amp: 1, res: 1, cutoff: 131
+synth :bnoise, attack: 0, release: 0.5, amp: 1, res: 1, cutoff: 13
