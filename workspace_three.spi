@@ -68,7 +68,7 @@ with_fx :wobble do |w|
     range = 36
     co = 70
     a = 0.9
-    co = red * 100 + 20
+    co = green * 100 + 20
     puts red
     n = note(:e3) + -12
     use_synth_defaults release: 0.01
