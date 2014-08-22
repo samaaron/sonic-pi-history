@@ -59,6 +59,7 @@ with_fx :wobble do |w|
     r = 0.8
     l = 0.001
     sleep 0.1
+    puts colour
     tonic = chord(:e3, :minor).choose
     range = 36
     co = 70
