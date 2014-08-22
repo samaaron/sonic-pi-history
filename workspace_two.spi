@@ -50,7 +50,7 @@ define :synths do
       use_synth_defaults amp: 0.5, mod_range: 14, attack: 0.3, release: 0.125, cutoff: rrand(70, 120), pulse_width: 0.2, mod_phase: 0.25
       with_fx :none, phase: 1, wave: 0, amp: 1 do
         with_fx :none, phase: 1, wave: 0, invert_wave: 0, cutoff_min: 90, cutoff_max: 120 do
-          play 33, attack: 0, release: [2, 1.7, 2.3].choose, amp: rrand(2, 2.5)
+          play [33, 33, 33, 33, 33, 31].choose, attack: 0, release: [2, 1.7, 2.3].choose, amp: rrand(2, 2.5)
         end
       end
       with_fx :compressor do
