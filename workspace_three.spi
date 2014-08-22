@@ -49,13 +49,13 @@ with_fx :wobble do |w|
   end
   use_synth :dsaw
   defonce :s, override: o do
-    play 40, sustain: 1000000, amp_slide: 0.2
+    play 40, sustain: 1000000, amp_slide: 0.2, cutoff_slide: 1
   end
   defonce :s1, override: o do
-    play 40, sustain: 1000000, amp_slide: 0.2
+    play 40, sustain: 1000000, amp_slide: 0.2, cutoff_slide: 1
   end
   defonce :s2, override: o do
-    play 40, sustain: 1000000, amp_slide: 0.2
+    play 40, sustain: 1000000, amp_slide: 0.2, cutoff_slide: 1
   end
   beat = 0
 
