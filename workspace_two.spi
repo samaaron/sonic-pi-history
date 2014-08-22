@@ -43,7 +43,7 @@ sample :drum_heavy_kick, amp: 5
 end
 
 define :synths do
-  with_fx :echo, phase: 1, wave: 1 do
+  with_fx :none, phase: 1, wave: 1 do
     with_fx :compressor, sample_rate: 10000, bits: 4, amp: 0.5 do
       use_transpose 12
       use_synth :fm
