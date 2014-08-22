@@ -48,18 +48,7 @@ with_fx :wobble do |w|
     cue :tick
     start = beat % 4
     size = start == 0 ? 0.8 : 0.5
-
-
-
-    v = amp
-    l = left
-    r = right
-
-    l = 0.9
-    r = 0.8
-    l = 0.001
     sleep 0.1
-    puts colour(1)
     tonic = chord(:e3, :minor).choose
     range = 36
     co = 70
@@ -85,7 +74,7 @@ define :drumit do
     # sample :ambi_choir, amp: 1, rate: 0.2,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
 
   end
-  sample :bass_hit_c, amp: 2, rate: 1
+  #sample :bass_hit_c, amp: 2, rate: 1
 
   sleep 0.4
 
