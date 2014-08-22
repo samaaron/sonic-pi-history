@@ -1,1 +1,1 @@
-synth :bnoise, attack: 0, release: 0.1, amp: 2
+synth :bnoise, attack: 0, release: 0.1, amp: 1
