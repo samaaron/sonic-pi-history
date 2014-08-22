@@ -135,7 +135,7 @@ define :drumit2 do
   with_fx :none, room: 0.2, mix: 0.4 do
     with_fx :slicer, phase: 0.2, decay: 0.8, mix: 0.5 do
       #sample :elec_snare, rate: 32, amp: 2
-      sample :drum_bass_hard, amp: 2
+      sample :drum_heavy_kick, amp: 2
     end
     sleep 0.2
     with_fx :slicer, phase: 0.1, decay: 0.5 do
