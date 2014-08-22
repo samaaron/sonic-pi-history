@@ -1,7 +1,7 @@
 
 
 define :freddy do
-  play 50
+  play 55
   sleep 1
 end
 
