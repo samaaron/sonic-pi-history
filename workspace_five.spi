@@ -32,7 +32,7 @@ with_fx :wobble do |w|
 
     Thread.new do
       Kernel.sleep 0.5
-      out.send(OSC::Message.new("/beat", 0.1))
+#      out.send(OSC::Message.new("/beat", 0.1))
     end
 
     v = val.read("/palimpsest/amp")
@@ -73,14 +73,16 @@ define :drumit do
         sample :ambi_piano, rate: 0.4 + (val.read_all("/palimpsest/colour")[1] * 8) ,pan: (val.read_all("/palimpsest/colour")[2] * 2) - 1
   end
   #  sample :ambi_lunar_land, rate: 1.0/5
-  with_fx :echo, phase: 0.125, mix: 0.1 do
+  p = 0.125
+  out.send(OSC::Message.new("/beat", p))  
+  with_fx :echo, phase: p, mix: 0.1 do
     sample :drum_heavy_kick
   end
   sleep 0.25
   with_fx :echo, phase: 0.25, mix: 0.2, amp: 0.2 do
     sample :elec_filt_snare, rate: 5
     use_synth :prophet
-     play 30, attack: 0, release: 0.3, cutoff: val.read_all("/palimpsest/colour")[0] * 100
+    # play 30, attack: 0, release: 0.3, cutoff: val.read_all("/palimpsest/colour")[0] * 100
   end
   sleep 0.25
 end
