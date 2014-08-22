@@ -70,7 +70,7 @@ with_fx :wobble do |w|
     a = 1
     co = red * 100 + 20
     puts red
-    n = note(:e3) 5
+    n = note(:e3) + 5
     use_synth_defaults release: 0.01
     control s, note: chord(n, :m7).choose, cutoff: co, amp: a
     control s1, note: n, cutoff: co, amp: a
