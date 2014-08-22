@@ -103,10 +103,12 @@ end
 
 define :drumit2 do
   sync :tick
-
+with_fx :echo do
   sample :drum_heavy_kick, amp: 4
   sample :drum_bass_hard, amp: 2
+  end
   sleep 0.8
+
 end
 
 define :melody do
