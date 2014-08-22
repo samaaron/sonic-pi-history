@@ -138,7 +138,7 @@ define :drumit2 do
   sleep 0.4
   
   sample :elec_snare, rate: 32
-  sleep 0.8
+  sleep 0.4
 
 end
 
