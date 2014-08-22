@@ -1,3 +1,3 @@
-synth :noise
+synth :noise, attack: 0, release: 0.1
 
 play 55
