@@ -1,1 +1,4 @@
-synth :bnoise, attack: 0, release: 0.5, amp: 1, res: 1, cutoff: 100
+loop do
+synth :bnoise, attack: 0, release: 0.125, amp: 1, res: 1, cutoff: rrand(50, 130)
+sleep 0.125
+end
