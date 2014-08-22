@@ -101,7 +101,7 @@ define :drumit do
   use_synth :fm
   puts blue * 4
   n = chord((note :e2), :minor).choose
-  play n, attack: 0, release: 0.1, depth: red * 16, divisor: blue
+  play n, attack: 0, release: 0.1, depth: red * 32, divisor: blue
   osc "/beat", 1
   sleep 0.12
 
