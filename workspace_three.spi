@@ -18,6 +18,7 @@ end
 
 define :right do
  val.read("/palimpsest/right")
+ 1
 end
 
 define :colour do |idx=0|
