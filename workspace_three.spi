@@ -93,7 +93,7 @@ with_fx :wobble do |w|
 end
 
 define :drumit do
-  with_synth :zawa do
+  with_synth :dsaw do
     play :e6, release: 0.2, amp: 0.2
   end
   sync :tick
