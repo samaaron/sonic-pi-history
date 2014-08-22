@@ -110,7 +110,7 @@ in_thread(name: :meelody) do
 end
 
 define :drumit2 do
-  wait :tick
+  sync :tick
 
   sample :drum_heavy_kick, amp: 4
   #sample :drum_bass_hard, amp: 2
@@ -118,7 +118,7 @@ define :drumit2 do
 end
 
 define :melody do
-  wait :tick
+  sync :tick
   use_synth :prophet
   n = chord([:a2, :a3, :a4].choose, :minor).choose
   Thread.new do
