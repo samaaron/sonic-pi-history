@@ -1,9 +1,13 @@
 
 
 define :freddy do
- play 50
- sleep 1
+  play 50
+  sleep 1
 end
 
-freddy
-freddy 
+
+in_thread(name: :johnny) do
+  loop  do
+    freddy
+  end
+end
