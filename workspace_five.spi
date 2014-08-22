@@ -56,7 +56,7 @@ with_fx :wobble do |w|
       control wob, amp_slide: 0.3, amp: 0, phase: 0.25, cutoff_max: 100, cutoff_min: 70, wave: 2
   
     
-    puts v
+
     beat += 1
   end
 
