@@ -76,6 +76,7 @@ cue :tick
   end
 end
 define :bd do
+sync :tick
 sample :drum_bass_hard
 sleep 0.5
 end
