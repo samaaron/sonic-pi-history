@@ -136,8 +136,9 @@ define :drumit2 do
     end
   end
   sleep 0.4
-  
+  with_fx :echo, phase: 0.2, decay: 0.5 do
   sample :elec_snare, rate: 1.5
+  end
   sleep 0.4
 
 end
