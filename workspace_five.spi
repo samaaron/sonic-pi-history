@@ -49,13 +49,13 @@ with_fx :wobble do |w|
     co = 70
   
 #      control s, note: tonic + c.first * range, cutoff: co
-      control s1, note: tonic + (l || 0) * range, cutoff: co
+ #     control s1, note: tonic + (l || 0) * range, cutoff: co
 
 #      control s2, note: tonic + c[2] * range, cutoff: co
 
 #      control wob, amp_slide: 0.3, amp: 0, phase: 0.25, cutoff_max: 100, cutoff_min: 70, wave: 2
   
-    
+    puts l
 
     beat += 1
   end
