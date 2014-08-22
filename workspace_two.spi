@@ -77,7 +77,7 @@ cue :tick
 end
 define :bd do
 sample :drum_bass_hard
-sleep 0.25
+sleep 0.5
 end
 in_thread(name: :drums){loop{drums}}
 in_thread(name: :synths){loop{synths}}
