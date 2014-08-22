@@ -74,8 +74,8 @@ with_fx :wobble do |w|
     n = note(:e3) + -12
     cn = chord(n, :m7).choose + 12
     use_synth_defaults release: 0.01
-    puts (cn.to_f / 130) * 10 - 4
-    osc "/beat", 0.9#(cn.to_f / 130) * 10 - 4
+
+    
     control s, note: cn, cutoff: co, amp: a, detune: 24
     control s1, note: cn, cutoff: co, amp: a - 0.5
 
@@ -98,8 +98,10 @@ define :drumit do
   #  sample :ambi_choir, amp: 1, rate: 0.2,pan: colour(2) * 2 - 1
 
   end
-  sample :bass_hit_c, amp: 2, rate: 1
-
+  use_synth :fm
+  n = (note :e2)
+  play b, attack: 0, release: 0.1
+  osc "/beat", n / 130
   sleep 0.4
 
 
