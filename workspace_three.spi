@@ -41,7 +41,7 @@ define :blue do
   colour(2)
 end
 
-o = false
+o = false 
 
 with_fx :wobble do |w|
   defonce :wob, override: o do
@@ -99,7 +99,7 @@ define :drumit do
 
   end
   use_synth :fm
-  n = (note :e2)
+  n = (note :e2) - 2
   play n, attack: 0, release: 0.1
   osc "/beat", n / 130
   sleep 0.4
