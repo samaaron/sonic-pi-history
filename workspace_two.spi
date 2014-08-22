@@ -70,7 +70,7 @@ define :synths do
       end
     end
   end
-
+end
 
   in_thread(name: :drums){loop{drums}}
   in_thread(name: :synths){loop{synths}}
