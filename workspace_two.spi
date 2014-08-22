@@ -1,7 +1,7 @@
 use_bpm 63
 
 define :drums do
-  #sample :drum_heavy_kick, amp: 5
+  sample :drum_heavy_kick, amp: 5
   with_fx :compressor, bits: 12, sample_rate: 10000, phase: 0.25 / 1, amp: 0.7 do
 
     with_fx :echo, phase: 0.25, amp: 1, mix: 0.28 do
