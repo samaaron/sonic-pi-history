@@ -107,7 +107,7 @@ define :drumit do
 #    synth :bnoise, release: 0.7, amp: 0.8
 #  end
   with_fx :reverb, phase: 0, amp: 0.89, bits: 6, sample_rate: 4000 + (10000 * amp) do
-    play [n].choose, attack: 0, release: 0.1, depth: blue * (2 * amp), divisor: green * (5 * amp)
+    play [n].choose, attack: 0, release: 0.1, depth: blue * (2 * amp), divisor: green * (7 * amp)
   end
   osc "/beat", 1
 
