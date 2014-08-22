@@ -102,7 +102,7 @@ define :drumit do
 
   use_synth :fm
   puts blue * 4
-  n = chord((note :a3), :minor).choose
+  n = chord((note :a3), :minor).choose - 2
   #  with_fx :wobble, phase: 0.8 do
   #    synth :bnoise, release: 0.7, amp: 0.8
   #  end
