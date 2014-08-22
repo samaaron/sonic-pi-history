@@ -79,7 +79,7 @@ define :drumit do
     use_synth :prophet
     play 30, attack: 0, release: 0.3, cutoff: val.read_all("/palimpsest/colour")[0] * 100
   end
-  sleep 0.25
+  sleep 0.125
 end
 
 in_thread(name: :drums) do
