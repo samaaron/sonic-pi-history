@@ -29,6 +29,18 @@ define :colour do |idx=0|
   val.read("/palimpsest/colour", idx)
 end
 
+define :red do
+  colour(0)
+end
+
+define :green do
+  colour(1)
+end
+
+define :blue do
+  colour(2)
+end
+
 o = false
 
 with_fx :wobble do |w|
@@ -57,7 +69,7 @@ with_fx :wobble do |w|
     co = 70
     a = 0
     control s, note: 50, cutoff: 90, amp: a
-    control s1, note: tonic + colour(1) * range, cutoff: co, amp: a
+    control s1, note: tonic + colour(1) * range, cutoff: red * 100 + 20, amp: a
 
     control s2, note: tonic + colour(2) * range, cutoff: co, amp: a
 
