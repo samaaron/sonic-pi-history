@@ -109,8 +109,8 @@ define :drumit do
   blue = 0.3
   green = rrand(0, 2)
   amp = 1
-  with_fx :reverb, phase: 0, amp: 0.89, bits: 6, sample_rate: 4000 + (10000 * amp) do
-    play [n].choose, amp: 2, attack: 0, release: 0.121, depth: blue * (4 * amp), divisor: green * (4 * amp)
+  with_fx :none, phase: 0, amp: 0.89, bits: 6, sample_rate: 4000 + (10000 * amp) do
+   play [n].choose, amp: 2, attack: 0, release: 0.121, depth: blue * (4 * amp), divisor: green * (4 * amp)
         play [n].choose, amp: 2, attack: 0, release: 0.121, depth: blue * (4 * amp), divisor: green * (4 * amp)
 
   end
