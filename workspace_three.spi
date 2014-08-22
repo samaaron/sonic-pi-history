@@ -70,10 +70,11 @@ with_fx :wobble do |w|
     a = 1
     co = red * 100 + 20
     puts red
-    control s, note: chord(:e3, :m7).choose, cutoff: co, amp: a
-    control s1, note: :e3, cutoff: co, amp: a
+    n = note(:e3)
+    control s, note: chord(n, :m7).choose, cutoff: co, amp: a
+    control s1, note: n, cutoff: co, amp: a
 
-    control s2, note: :e3, cutoff: co, amp: a
+    control s2, note: n, cutoff: co, amp: a
 
     control wob, amp_slide: 0.3, amp: 0.2, phase: 0.125, cutoff_max: 120, cutoff_min: 70, wave: 0
     beat += 1
