@@ -2,7 +2,7 @@
 
 define :freddy do
   play 55
-  sleep 0.5
+  sleep 0.25
 end
 
 
