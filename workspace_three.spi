@@ -98,7 +98,7 @@ define :drumit do
   end
   sync :tick
 
-#    sample :ambi_lunar_land, amp: 0.4, rate: 0.123,pan: blue * 2 - 0
+    sample :ambi_lunar_land, amp: 0.4, rate: 0.123,pan: blue * 2 - 0
 
 
   use_synth :fm
