@@ -68,8 +68,9 @@ with_fx :wobble do |w|
     range = 36
     co = 70
     a = 1
-    control s, note: chord(:e3, :m7).choose, cutoff: 90, amp: a
-    control s1, note: :e3, cutoff: red * 100 + 20, amp: a
+    co = red * 100 + 20
+    control s, note: chord(:e3, :m7).choose, cutoff: co, amp: a
+    control s1, note: :e3, cutoff: co, amp: a
 
     control s2, note: :e3, cutoff: co, amp: a
 
