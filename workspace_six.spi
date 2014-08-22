@@ -1,7 +1,7 @@
 
 
 define :freddy do
-  play chord(:e2, :minor).choose
+  play chord(:e3, :minor).choose
   sleep 1
 end
 
